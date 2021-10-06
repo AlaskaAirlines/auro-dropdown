@@ -1,0 +1,166 @@
+{
+  "//": [
+    "================================================================================",
+    "# To work within the development environment, run the following tasks",
+    "  1. $ npm run dev",
+    "  2. $ npm run serve",
+    "  3. Go to http://localhost:8000",
+    "================================================================================"
+  ],
+  "name": "@aurolabs/aurolabs-dropdown",
+  "version": "0.0.0",
+  "description": "aurolabs-dropdown HTML custom element",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlaskaAirlines/aurolabs-dropdown"
+  },
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "lit-element": "^2.5.1",
+    "chalk": "^4.1.2"
+  },
+  "peerDependencies": {
+    "@alaskaairux/design-tokens": "^3.3.0",
+    "@alaskaairux/webcorestylesheets": "^3.6.3",
+    "@webcomponents/webcomponentsjs": "^2.6.0",
+    "focus-visible": "^5.2.0"
+  },
+  "devDependencies": {
+    "@alaskaairux/design-tokens": "^3.3.0",
+    "@alaskaairux/webcorestylesheets": "^3.6.3",
+    "@aurodesignsystem/eslint-config": "^1.2.0",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/runtime": "^7.15.4",
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
+    "@open-wc/testing": "^2.5.33",
+    "@rollup/plugin-alias": "^3.1.5",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/git": "^10.0.0",
+    "@semantic-release/npm": "^8.0.0",
+    "@web/dev-server": "^0.1.25",
+    "@web/test-runner": "^0.13.18",
+    "@webcomponents/webcomponentsjs": "^2.6.0",
+    "autoprefixer": "^10.3.7",
+    "babel-loader": "^8.2.2",
+    "compression": "^1.7.4",
+    "concat": "^1.0.3",
+    "copyfiles": "^2.4.1",
+    "core-js": "^3.18.2",
+    "eslint": "^7.32.0",
+    "focus-visible": "^5.2.0",
+    "husky": "^6.0.0",
+    "lodash": "^4.17.21",
+    "marked": "^3.0.4",
+    "nodemon": "^2.0.13",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.9",
+    "postcss-custom-properties": "^12.0.0",
+    "postcss-discard-comments": "^5.0.1",
+    "postcss-rem-to-pixel": "^4.1.2",
+    "postcss-remove-rules": "^1.0.0",
+    "postcss-selector-replace": "^1.0.2",
+    "prismjs": "^1.25.0",
+    "rollup": "^2.58.0",
+    "rollup-plugin-minify-html-literals": "^1.2.6",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "semantic-release": "^18.0.0",
+    "sass": "^1.42.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.21.0",
+    "wc-sass-render": "^1.2.3",
+    "web-component-analyzer": "^1.1.6",
+    "whatwg-fetch": "^3.6.2",
+    "yaml-lint": "^1.2.4"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 iOS major versions",
+    "ie 11",
+    "last 2 Firefox versions",
+    "last 2 Edge versions",
+    "last 2 Safari major versions"
+  ],
+  "nodemonConfig": {
+    "ignore": ["*-css.js", "*.css"]
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "./CHANGELOG.md",
+          "changelogTitle": "# Semantic Release Automated Changelog"
+        }
+      ],
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "./CHANGELOG.md",
+            "package.json",
+            "./docs/api.md"
+          ]
+        }
+      ],
+      "@semantic-release/github"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "alaska airlines",
+    "auro",
+    "design system",
+    "web components"
+  ],
+  "scripts": {
+    "build": "npm-run-all build:sass sass:render dist:js build:api test bundler postinstall",
+    "build:ci": "npm-run-all sweep build",
+    "build:api": "wca analyze 'src/aurolabs-dropdown.js' --outFiles docs/api.md",
+    "build:demo": "npm-run-all build demo:rm:build demo:new:build demo:copy:index demo:copy:demo demo:update:index",
+    "build:dev:assets": "npm-run-all build:sass:demo build:sass:component postCss:component sass:render",
+    "build:sass": "npm-run-all build:sass:demo build:sass:component postCss:component sass:render",
+    "build:sass:demo": "sass demo:demo",
+    "build:sass:component": "sass src:src",
+    "build:watch": "nodemon -e scss,js --watch src --exec npm run build:dev:assets",
+    "bundler": "rollup -c",
+    "bundler:test": "rollup -c -w",
+    "scssLint": "stylelint \"./src/**/*.scss\"",
+    "demo:copy:demo": "copyfiles -u 1 -V './demo/demo.md' ./build/demo",
+    "demo:copy:index": "copyfiles -u 1 -V './demo/index.html' ./build",
+    "demo:new:build": "mkdir ./build && mkdir ./build/css && mkdir ./build/demo",
+    "demo:rm:build": "rm -rf ./build",
+    "demo:update:index": "node ./scripts/prepForBuild",
+    "dev": "npm run build:watch",
+    "dist:js": "copyfiles -u 1 -V './src/**/*.js' ./dist",
+    "esLint": "./node_modules/.bin/eslint src/**/*.js",
+    "linters": "npm-run-all scssLint esLint",
+    "preCommit": "node scripts/pre-commit.js",
+    "postCss:component": "node ./scripts/postCss.js",
+    "postinstall": "node packageScripts/postinstall.js",
+    "sass:render": "sass-render src/*.css -t ./scripts/staticStyles-template.js",
+    "serve": "web-dev-server --open demo/ --node-resolve --watch",
+    "sweep": "rm -rf ./demo/css ./dist | rm ./src/*.css ./src/*-css.js",
+    "test": "wtr --coverage",
+    "test:watch": "wtr --watch"
+  }
+}
