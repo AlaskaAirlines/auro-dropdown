@@ -17,6 +17,7 @@
   "main": "index.js",
   "license": "Apache-2.0",
   "dependencies": {
+    "@popperjs/core": "^2.9.2",
     "lit-element": "^2.5.1",
     "chalk": "^4.1.2"
   },
