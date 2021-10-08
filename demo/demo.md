@@ -14,20 +14,24 @@ The `auro-dropdown` element should be used in situations where users may:
 
 Auro popover allows two ways to layout the HTML. Please see the following examples.
 
+## Default Example
+
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="full-name">
-    Top popover content!
-    <auro-input slot="trigger" label="Name" id="full-name" helptext="Please enter your full name"></auro-input>
+  <auro-dropdown for="full-name2" triggerEvent="show" id="auroDropdown1">
+    <div>
+      <p>Lorem ipsum solar</p>
+      <auro-button id="button1" onclick="document.querySelector('#auroDropdown1').hide()">Dismiss Dropdown</auro-button>
+    </div>
+    <auro-input slot="trigger" label="Name" id="full-name2" helptext="Please enter your full name"></auro-input>
   </auro-dropdown>
 </div>
 
+## Example using toggle attribute
+
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="full-name2" triggerEvent="show">
-    <div>
-      <p>Lorem ipsum solar</p>
-      <auro-button id="button1">Dismiss Dropdown</auro-button>
-    </div>
-    <auro-input slot="trigger" label="Name" id="full-name2" helptext="Please enter your full name"></auro-input>
+  <auro-dropdown for="full-name" toggle>
+    Top popover content!
+    <auro-input slot="trigger" label="Name" id="full-name" helptext="Please enter your full name"></auro-input>
   </auro-dropdown>
 </div>
 

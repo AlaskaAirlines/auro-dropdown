@@ -3,6 +3,8 @@
 
 // ---------------------------------------------------------------------
 
+/* eslint-disable lit-a11y/click-events-have-key-events */
+
 import { LitElement, html, css } from "lit-element";
 
 // Import touch detection lib
@@ -18,9 +20,10 @@ import Popover from "../lib/popover";
  * @attr {String} for - Defines an `id` for an element in the DOM to trigger on hover/blur
  * @attr {boolean} addSpace - If true, will add additional top and bottom space around the appearance of the popover in relation to the trigger
  * @attr {boolean} removeSpace - If true, will remove top and bottom space around the appearance of the popover in relation to the trigger
- * @attr {String} trigger - Defines event interaction for show/hide of popper content
+ * @attr {boolean} toggle - If true, the trigger will toggle the show/hide state of the dropdown
  * @slot - Default unnamed slot for the use of popover content
  * @slot trigger - Slot for entering the trigger element into the scope of the shadow DOM
+ * @function toggleViewable - toggles the 'open' property on the element
  */
 class AuroDropdown extends LitElement {
   constructor() {
@@ -29,7 +32,7 @@ class AuroDropdown extends LitElement {
     this.privateDefaults();
 
     this.placement = 'bottom-start';
-    this.triggerEvent = undefined;
+    this.toggle = false;
 
     // adds toggle function to root element based on touch
     this.addEventListener('touchstart', function() {
@@ -51,7 +54,7 @@ class AuroDropdown extends LitElement {
     return {
       placement:  { type: String },
       for:        { type: String },
-      triggerEvent:    { type: String }
+      toggle:     { type: Boolean }
     };
   }
 
@@ -67,7 +70,6 @@ class AuroDropdown extends LitElement {
 
   disconnectedCallback() {
     super.disconnectedCallback();
-    document.removeEventListener('click', this.documentClickHandler);
   }
 
   firstUpdated() {
@@ -88,11 +90,15 @@ class AuroDropdown extends LitElement {
       }
     };
 
-    const handleHide = () => {
-        this.toggleHide();
-      },
-      handleShow = () => {
+    const handleShow = () => {
         this.toggleShow();
+      },
+      hideByKeyboard = (event) => {
+        const key = event.key.toLowerCase();
+
+        if (key === 'escape') {
+          this.toggleHide();
+        }
       },
       showByKeyboard = (event) => {
         const key = event.key.toLowerCase();
@@ -103,38 +109,21 @@ class AuroDropdown extends LitElement {
       toggleByKeyboard = (event) => {
         const key = event.key.toLowerCase();
 
-        if (this.isPopoverVisible) {
-          if (key === 'escape') {
-            handleHide; /* eslint-disable-line no-unused-expressions */
-          }
-        } else if (key === ' ' || key === 'enter') {
+        if (key === ' ' || key === 'enter') {
           toggleDropdown; /* eslint-disable-line no-unused-expressions */
         }
       };
 
-    if (this.triggerEvent === 'show') {
-      this.trigger.addEventListener('click', handleShow);
-      this.trigger.addEventListener('keydown', showByKeyboard);
-    } else {
+    if (this.toggle) {
       this.trigger.addEventListener('click', toggleDropdown);
       this.trigger.addEventListener('keydown', toggleByKeyboard);
+    } else {
+      this.trigger.addEventListener('click', handleShow);
+      this.trigger.addEventListener('keydown', showByKeyboard);
     }
 
-    this.addEventListener('showPopover', handleShow);
-    this.addEventListener('hidePopover', handleHide);
+    this.trigger.addEventListener('keydown', hideByKeyboard);
   }
-
-  // /**
-  //   * @private Toggles the display of the popover content
-  //   * @returns {Void} Fires an update lifecycle.
-  // */
-  // toggle() {
-  //   if (this.isPopoverVisible) {
-  //     this.toggleHide();
-  //   } else {
-  //     this.toggleShow();
-  //   }
-  // }
 
   /**
    * @private
@@ -156,9 +145,24 @@ class AuroDropdown extends LitElement {
     this.setAttribute('data-show', true);
   }
 
+  /**
+   * @returns {void} Hides the dropdown content.
+   */
+  hide() {
+    this.toggleHide();
+  }
+
+  /**
+   * @returns {void} Shows the dropdown content.
+   */
+  show() {
+    this.toggleShow();
+  }
+
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
+      <div id="backdrop" @click=${this.hide}></div>
       <div id="popover" class="popover" aria-live="polite">
         <!-- <div id="arrow" class="arrow" data-popper-arrow></div> -->
         <slot role="tooltip"></slot>
