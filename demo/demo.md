@@ -29,9 +29,12 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 ## Example using toggle attribute
 
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="full-name" toggle>
+  <auro-dropdown for="menu1" toggle>
     Top popover content!
-    <auro-input slot="trigger" label="Name" id="full-name" helptext="Please enter your full name"></auro-input>
+    <!-- <auro-input slot="trigger" label="Name" id="full-name" helptext="Please enter your full name"></auro-input> -->
+    <auro-button slot="trigger" id="menu1">
+      Dropdown
+    </auro-button>
   </auro-dropdown>
 </div>
 

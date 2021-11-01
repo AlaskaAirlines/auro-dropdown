@@ -1,5 +1,5 @@
 const fs = require('fs');
-const bundle = 'aurolabs-dropdown__bundled.js';
+const bundle = 'auro-dropdown__bundled.js';
 const indexFile = './build/index.html';
 
 // File destination.txt will be created or overwritten by default.
@@ -23,7 +23,7 @@ fs.readFile(indexFile, 'utf8', function (err,data) {
     return console.log(err);
   }
 
-  const element = data.replace(`../src/aurolabs-dropdown.js`, `aurolabs-dropdown__bundled.js`);
+  const element = data.replace(`../src/auro-dropdown.js`, `auro-dropdown__bundled.js`);
 
   fs.writeFile(indexFile, element, 'utf8', function (err) {
      if (err) return console.log(err);

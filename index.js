@@ -1,1 +1,1 @@
-export * from './dist/aurolabs-dropdown';
+export * from './dist/auro-dropdown';

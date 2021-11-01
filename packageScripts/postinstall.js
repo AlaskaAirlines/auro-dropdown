@@ -19,7 +19,7 @@ console.log(chalk.hex('#f26135')(`
 ╭ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ──────────────────────────────╮
 
         Thanks for installing the latest version
-                of `) + chalk.hex('#ffd200').bold(`aurolabs-dropdown v${pjson.version}.`) + chalk.hex('#f26135')(`
+                of `) + chalk.hex('#ffd200').bold(`auro-dropdown v${pjson.version}.`) + chalk.hex('#f26135')(`
 
 ╰─────────────────────────────── ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─╯
 `)

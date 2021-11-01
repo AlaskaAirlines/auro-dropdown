@@ -1,6 +1,6 @@
-# auroLabs - Dropdown
+# auro-dropdown
 
-`<aurolabs-dropdown>` is an experimental [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) only available as a PRE RELEASE. Users of this element understand the risks of using a pre-released version of this element.
+`<auro-dropdown>` is an experimental [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) only available as a PRE RELEASE. Users of this element understand the risks of using a pre-released version of this element.
 
 ## UI development browser support
 
@@ -8,12 +8,12 @@ For the most up to date information on [UI development browser support](https://
 
 ## Install
 
-[![Build Status](https://img.shields.io/github/workflow/status/AlaskaAirlines/aurolabs-dropdown/Test%20and%20publish?branch=master&style=for-the-badge)](https://github.com/AlaskaAirlines/aurolabs-dropdown/actions?query=workflow%3A%22test+and+publish%22)
-[![See it on NPM!](https://img.shields.io/npm/v/@aurolabs/aurolabs-dropdown?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@aurolabs/aurolabs-dropdown)
-[![License](https://img.shields.io/npm/l/@aurolabs/aurolabs-dropdown?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Build Status](https://img.shields.io/github/workflow/status/AlaskaAirlines/auro-dropdown/Test%20and%20publish?branch=master&style=for-the-badge)](https://github.com/AlaskaAirlines/auro-dropdown/actions?query=workflow%3A%22test+and+publish%22)
+[![See it on NPM!](https://img.shields.io/npm/v/@aurolabs/auro-dropdown?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@aurolabs/auro-dropdown)
+[![License](https://img.shields.io/npm/l/@aurolabs/auro-dropdown?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
 
 ```shell
-$ npm i @aurolabs/aurolabs-dropdown
+$ npm i @aurolabs/auro-dropdown
 ```
 
 Installing as a direct, dev or peer dependency is up to the user installing the package. If you are unsure as to what type of dependency you should use, consider reading this [stack overflow](https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencies) answer.
@@ -30,21 +30,21 @@ Any update to the Auro Design Tokens will be immediately reflected with browsers
 
 ### Define dependency in project component
 
-Defining the component dependency within each component that is using the `<aurolabs-dropdown>` component.
+Defining the component dependency within each component that is using the `<auro-dropdown>` component.
 
 ```javascript
-import "@aurolabs/aurolabs-dropdown";
+import "@aurolabs/auro-dropdown";
 ```
 
 **Reference component in HTML**
 
 ```html
-<aurolabs-dropdown>Hello World</aurolabs-dropdown>
+<auro-dropdown>Hello World</auro-dropdown>
 ```
 
 ## Install bundled assets from CDN
 
-In cases where the project is not able to process JS assets, there are pre-processed assets available for use. Two bundles are available -- `aurolabs-dropdown__bundled.js` for modern browsers and `aurolabs-dropdown__bundled.es5.js` for legacy browsers (including IE11).
+In cases where the project is not able to process JS assets, there are pre-processed assets available for use. Two bundles are available -- `auro-dropdown__bundled.js` for modern browsers and `auro-dropdown__bundled.es5.js` for legacy browsers (including IE11).
 
 Since the legacy bundle includes many polyfills that are not needed by modern browsers, we recommend you load these bundles using [differential serving](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/) so that the browser only loads the bundle it needs. To accomplish this, the script tag for the modern bundle should have `type="module"` and the script tag for the legacy bundle should have the `nomodule` attribute. See the example below.
 
@@ -56,16 +56,16 @@ Since the legacy bundle includes many polyfills that are not needed by modern br
 <link rel="stylesheet" href="https://unpkg.com/@alaskaairux/design-tokens@latest/dist/tokens/CSSCustomProperties.css" />
 <link rel="stylesheet" href="https://unpkg.com/@alaskaairux/webcorestylesheets@latest/dist/bundled/essentials.css" />
 
-<script src="https://unpkg.com/@aurolabs/aurolabs-dropdown@latest/dist/aurolabs-dropdown__bundled.js" type="module"></script>
-<script src="https://unpkg.com/@aurolabs/aurolabs-dropdown@latest/dist/aurolabs-dropdown__bundled.es5.js" nomodule></script>
+<script src="https://unpkg.com/@aurolabs/auro-dropdown@latest/dist/auro-dropdown__bundled.js" type="module"></script>
+<script src="https://unpkg.com/@aurolabs/auro-dropdown@latest/dist/auro-dropdown__bundled.es5.js" nomodule></script>
 ```
 
 ## API Code Examples
 
-Default aurolabs-dropdown
+Default auro-dropdown
 
 ```html
-<aurolabs-dropdown>Hello World</aurolabs-dropdown>
+<auro-dropdown>Hello World</auro-dropdown>
 ```
 
 ## Development
@@ -94,7 +94,7 @@ The custom element API file is generated in the build and committed back to the 
 
 ### Testing
 
-Automated tests are required for every Auro component. See `.\test\aurolabs-dropdown.test.js` for the tests for this component. Run `npm test` to run the tests and check code coverage. Tests must pass and meet a certain coverage threshold to commit. See [the testing documentation](https://auro.alaskaair.com/support/tests) for more details.
+Automated tests are required for every Auro component. See `.\test\auro-dropdown.test.js` for the tests for this component. Run `npm test` to run the tests and check code coverage. Tests must pass and meet a certain coverage threshold to commit. See [the testing documentation](https://auro.alaskaair.com/support/tests) for more details.
 
 ### Bundled assets
 
@@ -104,4 +104,4 @@ Bundled assets are only generated in the remote and not merged back to this repo
 
 To deploy a demo version of the component for review, run `npm run demo:build` to create a `./build` directory that can be pushed to any static server.
 
-<small>Built from WC-Generator v3.9.3</small>
+<small>Built from WC-Generator v3.9.4</small>

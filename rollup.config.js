@@ -27,7 +27,7 @@ const getSharedPlugins = (isLegacy) => [
 
 const modernConfig = {
   input: {
-    ['aurolabs-dropdown__bundled']: './src/aurolabs-dropdown.js',
+    ['auro-dropdown__bundled']: './src/auro-dropdown.js',
   },
   output: {
     format: 'esm',
@@ -53,13 +53,13 @@ const modernConfig = {
   ]
 };
 
-const aurolabsDropdownConfig = {
+const auroDropdownConfig = {
   input: 'src/es5.js',
   output: {
     format: 'iife',
-    file: 'dist/aurolabs-dropdown__bundled.es5.js'
+    file: 'dist/auro-dropdown__bundled.es5.js'
   },
   plugins: getSharedPlugins(true)
 };
 
-export default [modernConfig, aurolabsDropdownConfig];
+export default [modernConfig, auroDropdownConfig];
