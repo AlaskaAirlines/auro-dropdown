@@ -4,6 +4,26 @@ The Auro Design System fully supports `top` and `bottom` placed popovers. The fo
 
 See [install instructions](https://auro.alaskaair.com/components/auro/popover/install) for more information as how to install and full API for the `auro-dropdown` element.
 
+## Interaction
+
+The dropdown can be opened with the following actions:
+
+- `click` on the trigger
+- Apply `focus` to the trigger and press any of the following keys:
+  - `enter`
+  - `spacebar`
+
+The dropdown can be closed with the following actions:
+
+- `click` anywhere in the document outside of the dropdown
+- Call the `hide` method (useful to call from within the dropdown content)
+- If the `toggle` attribute is applied the dropdown can additionally be closed by the following actions:
+  - `click` on the trigger
+  - Apply `focus` to the trigger and press any of the following keys:
+    - `enter`
+    - `spacebar`
+    - `esc`
+
 ## Dropdown use cases
 
 The `auro-dropdown` element should be used in situations where users may:
@@ -17,142 +37,226 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 ## Default Example
 
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="full-name2" triggerEvent="show" id="auroDropdown1">
-    <div>
-      <p>Lorem ipsum solar</p>
-      <auro-button id="button1" onclick="document.querySelector('#auroDropdown1').hide()">Dismiss Dropdown</auro-button>
+  <auro-dropdown for="defaultExampleTrigger" id="defaultExample">
+    <p>Lorem ipsum solar</p>
+    <div slot="trigger" id="defaultExampleTrigger">
+      Trigger
     </div>
-    <auro-input slot="trigger" label="Name" id="full-name2" helptext="Please enter your full name"></auro-input>
   </auro-dropdown>
 </div>
 
-## Example using toggle attribute
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-dropdown for="defaultExampleTrigger" id="defaultExample">
+    <p>Lorem ipsum solar</p>
+    <div slot="trigger" id="defaultExampleTrigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
+
+## Example using a button trigger
 
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="menu1" toggle>
-    Top popover content!
-    <!-- <auro-input slot="trigger" label="Name" id="full-name" helptext="Please enter your full name"></auro-input> -->
-    <auro-button slot="trigger" id="menu1">
+  <auro-dropdown for="buttonExampleTrigger" id="buttonExample">
+    <p>Lorem ipsum solar</p>
+    <auro-button slot="trigger" id="buttonExampleTrigger">
       Dropdown
     </auro-button>
   </auro-dropdown>
 </div>
 
-<!-- ## Using slots, internal to the popover element
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
 
-The following examples illustrates using the `trigger` slot within the scope of the `auro-dropdown` element.
+  ```html
+  <auro-dropdown for="buttonExampleTrigger" id="buttonExample">
+    <p>Lorem ipsum solar</p>
+    <auro-button slot="trigger" id="buttonExampleTrigger">
+      Dropdown
+    </auro-button>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
+
+## Example with input trigger
 
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="button1">
-    Top popover content!
-    <auro-button id="button1" slot="trigger">Popover Test</auro-button>
-  </auro-dropdown>
-
-  <auro-dropdown for="button2">
-    Bottom popover content!
-    <auro-button secondary id="button2" slot="trigger">Popover Test</auro-button>
+  <auro-dropdown for="inputExampleTrigger" id="inputExample">
+    <div>
+      <p>Lorem ipsum solar</p>
+      <auro-button id="buttonInputExample" onclick="document.querySelector('#auroDropdown1').hide()">Dismiss Dropdown</auro-button>
+    </div>
+    <auro-input slot="trigger" label="Name" id="inputExampleTrigger" helptext="Please enter your full name"></auro-input>
   </auro-dropdown>
 </div>
 
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
-```html
-<auro-dropdown for="button1">
-  Top popover content!
-  <auro-button id="button1" slot="trigger">Popover Test</auro-button>
-</auro-dropdown>
+  ```html
+  <auro-dropdown for="inputExampleTrigger" id="inputExample">
+    <div>
+      <p>Lorem ipsum solar</p>
+      <auro-button id="buttonInputExample" onclick="document.querySelector('#auroDropdown1').hide()">Dismiss Dropdown</auro-button>
+    </div>
+    <auro-input slot="trigger" label="Name" id="inputExampleTrigger" helptext="Please enter your full name"></auro-input>
+  </auro-dropdown>
+  ```
 
-<auro-dropdown for="button2">
-  Bottom popover content!
-  <auro-button secondary id="button2" slot="trigger">Popover Test</auro-button>
-</auro-dropdown>
-```
 </auro-accordion>
 
-## Add space around popover
-
-Sometimes you just need more space. For these instances, use the `addSpace` attribute.
+## Example with fixedWidth
 
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="button10" addSpace>
-    Notice this popover is a little<br>further away from the trigger.
-    <auro-button id="button10" slot="trigger">Popover w/additional space above</auro-button>
-  </auro-dropdown>
-
-  <auro-dropdown for="button11" addSpace>
-    Notice this popover is a little<br>further away from the trigger.
-    <auro-button secondary id="button11" slot="trigger">Popover w/additional space below</auro-button>
+  <auro-dropdown for="fixedWidthTrigger" id="fixedWidth" fixedWidth="500px">
+    <p>Lorem ipsum solar</p>
+    <auro-input slot="trigger" label="Name" id="fixedWidthTrigger" helptext="Please enter your full name"></auro-input>
   </auro-dropdown>
 </div>
 
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
-```html
-<auro-dropdown for="button10" addSpace>
-  Notice this popover is a little<br>further away from the trigger.
-  <auro-button id="button10" slot="trigger">Popover w/additional space above</auro-button>
-</auro-dropdown>
+  ```html
+  <auro-dropdown for="fixedWidthTrigger" id="fixedWidth" fixedWidth="500px">
+    <p>Lorem ipsum solar</p>
+    <auro-input slot="trigger" label="Name" id="fixedWidthTrigger" helptext="Please enter your full name"></auro-input>
+  </auro-dropdown>
+  ```
 
-<auro-dropdown for="button11" addSpace>
-  Notice this popover is a little<br>further away from the trigger.
-  <auro-button secondary id="button11" slot="trigger">Popover w/additional space below</auro-button>
-</auro-dropdown>
-
-```
 </auro-accordion>
 
-## Guidelines
+## Example using toggle attribute
 
-The auro-dropdown element is meant to be used when the interaction and it's content is passive. A popover is not to be used for cases where the user must adjust their focus and acknowledge the presented content. For these cases, please see the [auro-dialog](https://auro.alaskaair.com/components/auro/dialog) element.
-
-Binding a `trigger` event to a hyperlink is **not** recommended. This is a poor user experience for mobile devices, the event required to make the popover appear is a `tap`. The tap will also trigger the hyperlink to fire as well, thus negating the impact of the popover.
-
-The use of a hyperlink for to trigger an event in the UI is semantically incorrect and this will present itself as a confusing scenario to assistive devices.
-
-<auro-alerts error noIcon>
-  <div class="exampleWrapper">
-    <auro-dropdown for="link">
-      This works, but not recommended
-      <auro-hyperlink id="link" href="#" relative nav slot="trigger">hyperlink popover trigger</auro-hyperlink>
-    </auro-dropdown>
-  </div>
-</auro-alerts>
+<div class="exampleWrapper" style="overflow: unset">
+  <auro-dropdown for="toggleExampleTrigger" id="toggleExample" toggle>
+    <p>Lorem ipsum solar</p>
+    <div slot="trigger" id="toggleExampleTrigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
 
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
-```html
-<auro-dropdown for="link">
-  This works, but not recommended
-  <auro-hyperlink id="link" href="#" relative nav slot="trigger">hyperlink popover trigger</auro-hyperlink>
-</auro-dropdown>
-```
+  ```html
+  <auro-dropdown for="toggleExampleTrigger" id="toggleExample" toggle>
+    <p>Lorem ipsum solar</p>
+    <div slot="trigger" id="toggleExampleTrigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
 </auro-accordion>
 
-In the event that a hyperlink UI is desired, it is recommended to use the `role="button"` semantic reassignment to the hyperlink element.
+## Example using bordered attribute
 
-<auro-alerts success noIcon>
-  <div class="exampleWrapper">
-    <auro-dropdown for="linkButton">
-      Role button is recommended
-      <auro-hyperlink id="linkButton" role="button" slot="trigger">hyperlink, role button</auro-hyperlink>
-    </auro-dropdown>
-  </div>
-</auro-alerts>
+<div class="exampleWrapper" style="overflow: unset">
+  <auro-dropdown for="borderedExampleTrigger" id="borderedExample" bordered>
+    <p>Lorem ipsum solar</p>
+    <div slot="trigger" id="borderedExampleTrigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
 
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
-```html
-<auro-dropdown for="linkButton">
-  Role button is recommended
-  <auro-hyperlink id="linkButton" role="button" slot="trigger">hyperlink, role button</auro-hyperlink>
-</auro-dropdown>
-```
+  ```html
+  <auro-dropdown for="borderedExampleTrigger" id="borderedExample" bordered>
+    <p>Lorem ipsum solar</p>
+    <div slot="trigger" id="borderedExampleTrigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
 </auro-accordion>
 
-## Developer notes
+## Example using rounded attribute
 
-The default trigger for a popover is a `hover` event. Mobile devices do not support `hover` events directly, so the `hover` event is replaced with a `touchstart` event to produce the popover. This is to ensure reliability of the action versus versus a dependency on a secondary interruption of the `hover` event on mobile devices. -->
+_Note: best combined with bordered attribute_
+
+<div class="exampleWrapper" style="overflow: unset">
+  <auro-dropdown for="roundedExampleTrigger" id="roundedExample" bordered rounded inset>
+    <p>Lorem ipsum solar</p>
+    <div slot="trigger" id="roundedExampleTrigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-dropdown for="roundedExampleTrigger" id="roundedExample" bordered rounded inset>
+    <p>Lorem ipsum solar</p>
+    <div slot="trigger" id="roundedExampleTrigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
+
+## Example using inset attribute
+
+<div class="exampleWrapper" style="overflow: unset">
+  <auro-dropdown for="insetExampleTrigger" id="insetExample" inset>
+    <p>Lorem ipsum solar</p>
+    <div slot="trigger" id="insetExampleTrigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-dropdown for="insetExampleTrigger" id="insetExample" inset>
+    <p>Lorem ipsum solar</p>
+    <div slot="trigger" id="insetExampleTrigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
+
+## Example using hide method programmatically
+
+<div class="exampleWrapper" style="overflow: unset">
+  <auro-dropdown for="hideExampleTrigger" id="hideExample" fixedWidth="500px">
+    <div>
+      <p>Lorem ipsum solar</p>
+      <auro-button id="buttonHideExample" onclick="document.querySelector('#hideExample').hide()">Dismiss Dropdown</auro-button>
+    </div>
+    <auro-input slot="trigger" label="Name" id="hideExampleTrigger" helptext="Please enter your full name"></auro-input>
+  </auro-dropdown>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-dropdown for="hideExampleTrigger" id="hideExample" fixedWidth="500px">
+    <div>
+      <p>Lorem ipsum solar</p>
+      <auro-button id="buttonHideExample" onclick="document.querySelector('#hideExample').hide()">Dismiss Dropdown</auro-button>
+    </div>
+    <auro-input slot="trigger" label="Name" id="hideExampleTrigger" helptext="Please enter your full name"></auro-input>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
