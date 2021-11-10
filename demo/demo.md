@@ -157,6 +157,31 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 
 </auro-accordion>
 
+## Disabled Example
+
+<div class="exampleWrapper" style="overflow: unset">
+  <auro-dropdown for="disabledExampleTrigger" id="disabledExample" disabled>
+    <p>Lorem ipsum solar</p>
+    <div slot="trigger" id="disabledExampleTrigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-dropdown for="disabledExampleTrigger" id="disabledExample" disabled>
+    <p>Lorem ipsum solar</p>
+    <div slot="trigger" id="disabledExampleTrigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
+
 ## Example using bordered attribute
 
 <div class="exampleWrapper" style="overflow: unset">

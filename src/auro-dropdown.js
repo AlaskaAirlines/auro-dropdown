@@ -154,13 +154,15 @@ class AuroDropdown extends LitElement {
    * @returns {void} Shows the popover. Fires an update lifecycle.
    */
   toggleShow(event) {
-    event.stopPropagation();
-    document.addEventListener('click', this.offClick);
-    this.fixWidth();
-    this.popper.show();
-    this.isPopoverVisible = true;
-    this.setAttribute('data-show', true);
-    this.dispatchEventDropdownToggle();
+    if (!this.hasAttribute('disabled')) {
+      event.stopPropagation();
+      document.addEventListener('click', this.offClick);
+      this.fixWidth();
+      this.popper.show();
+      this.isPopoverVisible = true;
+      this.setAttribute('data-show', true);
+      this.dispatchEventDropdownToggle();
+    }
   }
 
   /**
