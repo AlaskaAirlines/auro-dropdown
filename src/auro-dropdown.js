@@ -16,17 +16,9 @@ import Popover from "../lib/popover";
 // import { createPopper } from '@popperjs/core';
 
 /**
- * Popover attaches to an element and displays on hover/blur.
- *
- * @attr {String} placement - Expects top/bottom - position for popover in relation to the element
- * @attr {String} for - Defines an `id` for an element in the DOM to use as the trigger
- * @attr {boolean} addSpace - If true, will add additional top and bottom space around the appearance of the popover in relation to the trigger
- * @attr {boolean} removeSpace - If true, will remove top and bottom space around the appearance of the popover in relation to the trigger
  * @attr {boolean} toggle - If true, the trigger will toggle the show/hide state of the dropdown
- * @attr {Array} dropdownWidth - Width in pixels of how wide the auro-dropdown field is, which dictates width of options container.
  * @slot - Default unnamed slot for the use of popover content
  * @slot trigger - Slot for entering the trigger element into the scope of the shadow DOM
- * @function toggleViewable - toggles the 'open' property on the element
  */
 class AuroDropdown extends LitElement {
   constructor() {
@@ -36,7 +28,6 @@ class AuroDropdown extends LitElement {
 
     this.placement = 'bottom-start';
     this.toggle = false;
-    this.fixedWidth = 'auto';
 
     // adds toggle function to root element based on touch
     this.addEventListener('touchstart', function() {
@@ -59,8 +50,7 @@ class AuroDropdown extends LitElement {
       placement:     { type: String },
       for:           { type: String },
       toggle:        { type: Boolean },
-      dropdownWidth: { type: Number },
-      fixedWidth:    { type: String }
+      dropdownWidth: { type: Number }
     };
   }
 
@@ -85,12 +75,7 @@ class AuroDropdown extends LitElement {
   firstUpdated() {
     this.fixWidth();
 
-    this.trigger = document.querySelector(`#${this.for}`);
-    // allow placement in shadow roots
-    if (this.trigger === null) {
-      this.trigger = this.getRootNode().querySelector(`#${this.for}`);
-    }
-
+    this.trigger = this.shadowRoot.querySelector(`#trigger`);
     this.popover = this.shadowRoot.querySelector('#popover');
     this.popper = new Popover(this.trigger, this.popover, this.placement);
 
@@ -204,7 +189,7 @@ class AuroDropdown extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
-      <div style=${`width: ${this.fixedWidth}; display: inline-block`}>
+      <div id="defaultExample">
         <div id="popover" class="popover" aria-live="polite" style=${`width: ${this.dropdownWidth}px;`}>
           <slot role="tooltip"></slot>
         </div>

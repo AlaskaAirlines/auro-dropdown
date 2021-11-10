@@ -37,9 +37,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 ## Default Example
 
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="defaultExampleTrigger" id="defaultExample">
-    <p>Lorem ipsum solar</p>
-    <div slot="trigger" id="defaultExampleTrigger">
+  <auro-dropdown>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <div slot="trigger">
       Trigger
     </div>
   </auro-dropdown>
@@ -49,9 +51,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-dropdown for="defaultExampleTrigger" id="defaultExample">
-    <p>Lorem ipsum solar</p>
-    <div slot="trigger" id="defaultExampleTrigger">
+  <auro-dropdown>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <div slot="trigger">
       Trigger
     </div>
   </auro-dropdown>
@@ -62,9 +66,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 ## Example using a button trigger
 
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="buttonExampleTrigger" id="buttonExample">
-    <p>Lorem ipsum solar</p>
-    <auro-button slot="trigger" id="buttonExampleTrigger">
+  <auro-dropdown>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <auro-button slot="trigger">
       Dropdown
     </auro-button>
   </auro-dropdown>
@@ -75,8 +81,10 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 
   ```html
   <auro-dropdown for="buttonExampleTrigger" id="buttonExample">
-    <p>Lorem ipsum solar</p>
-    <auro-button slot="trigger" id="buttonExampleTrigger">
+    <p>
+      Lorem ipsum solar
+    </p>
+    <auro-button slot="trigger">
       Dropdown
     </auro-button>
   </auro-dropdown>
@@ -87,12 +95,16 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 ## Example with input trigger
 
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="inputExampleTrigger" id="inputExample">
-    <div>
-      <p>Lorem ipsum solar</p>
-      <auro-button id="buttonInputExample" onclick="document.querySelector('#auroDropdown1').hide()">Dismiss Dropdown</auro-button>
-    </div>
-    <auro-input slot="trigger" label="Name" id="inputExampleTrigger" helptext="Please enter your full name"></auro-input>
+  <auro-dropdown>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <auro-input
+      slot="trigger"
+      label="Name"
+      id="inputExampleTrigger"
+      helptext="Please enter your full name">
+    </auro-input>
   </auro-dropdown>
 </div>
 
@@ -100,33 +112,16 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-dropdown for="inputExampleTrigger" id="inputExample">
-    <div>
-      <p>Lorem ipsum solar</p>
-      <auro-button id="buttonInputExample" onclick="document.querySelector('#auroDropdown1').hide()">Dismiss Dropdown</auro-button>
-    </div>
-    <auro-input slot="trigger" label="Name" id="inputExampleTrigger" helptext="Please enter your full name"></auro-input>
-  </auro-dropdown>
-  ```
-
-</auro-accordion>
-
-## Example with fixedWidth
-
-<div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="fixedWidthTrigger" id="fixedWidth" fixedWidth="500px">
-    <p>Lorem ipsum solar</p>
-    <auro-input slot="trigger" label="Name" id="fixedWidthTrigger" helptext="Please enter your full name"></auro-input>
-  </auro-dropdown>
-</div>
-
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-  ```html
-  <auro-dropdown for="fixedWidthTrigger" id="fixedWidth" fixedWidth="500px">
-    <p>Lorem ipsum solar</p>
-    <auro-input slot="trigger" label="Name" id="fixedWidthTrigger" helptext="Please enter your full name"></auro-input>
+  <auro-dropdown>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <auro-input
+      slot="trigger"
+      label="Name"
+      id="inputExampleTrigger"
+      helptext="Please enter your full name">
+    </auro-input>
   </auro-dropdown>
   ```
 
@@ -135,9 +130,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 ## Example using toggle attribute
 
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="toggleExampleTrigger" id="toggleExample" toggle>
-    <p>Lorem ipsum solar</p>
-    <div slot="trigger" id="toggleExampleTrigger">
+  <auro-dropdown toggle>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <div slot="trigger">
       Trigger
     </div>
   </auro-dropdown>
@@ -147,9 +144,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-dropdown for="toggleExampleTrigger" id="toggleExample" toggle>
-    <p>Lorem ipsum solar</p>
-    <div slot="trigger" id="toggleExampleTrigger">
+  <auro-dropdown toggle>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <div slot="trigger">
       Trigger
     </div>
   </auro-dropdown>
@@ -160,9 +159,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 ## Disabled Example
 
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="disabledExampleTrigger" id="disabledExample" disabled>
-    <p>Lorem ipsum solar</p>
-    <div slot="trigger" id="disabledExampleTrigger">
+  <auro-dropdown disabled>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <div slot="trigger">
       Trigger
     </div>
   </auro-dropdown>
@@ -172,9 +173,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-dropdown for="disabledExampleTrigger" id="disabledExample" disabled>
-    <p>Lorem ipsum solar</p>
-    <div slot="trigger" id="disabledExampleTrigger">
+  <auro-dropdown disabled>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <div slot="trigger">
       Trigger
     </div>
   </auro-dropdown>
@@ -185,9 +188,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 ## Example using bordered attribute
 
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="borderedExampleTrigger" id="borderedExample" bordered>
-    <p>Lorem ipsum solar</p>
-    <div slot="trigger" id="borderedExampleTrigger">
+  <auro-dropdown bordered>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <div slot="trigger">
       Trigger
     </div>
   </auro-dropdown>
@@ -197,9 +202,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-dropdown for="borderedExampleTrigger" id="borderedExample" bordered>
-    <p>Lorem ipsum solar</p>
-    <div slot="trigger" id="borderedExampleTrigger">
+  <auro-dropdown bordered>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <div slot="trigger">
       Trigger
     </div>
   </auro-dropdown>
@@ -212,9 +219,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 _Note: best combined with bordered attribute_
 
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="roundedExampleTrigger" id="roundedExample" bordered rounded inset>
-    <p>Lorem ipsum solar</p>
-    <div slot="trigger" id="roundedExampleTrigger">
+  <auro-dropdown bordered rounded>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <div slot="trigger">
       Trigger
     </div>
   </auro-dropdown>
@@ -224,9 +233,11 @@ _Note: best combined with bordered attribute_
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-dropdown for="roundedExampleTrigger" id="roundedExample" bordered rounded inset>
-    <p>Lorem ipsum solar</p>
-    <div slot="trigger" id="roundedExampleTrigger">
+  <auro-dropdown bordered rounded>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <div slot="trigger">
       Trigger
     </div>
   </auro-dropdown>
@@ -237,9 +248,11 @@ _Note: best combined with bordered attribute_
 ## Example using inset attribute
 
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="insetExampleTrigger" id="insetExample" inset>
-    <p>Lorem ipsum solar</p>
-    <div slot="trigger" id="insetExampleTrigger">
+  <auro-dropdown inset>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <div slot="trigger">
       Trigger
     </div>
   </auro-dropdown>
@@ -249,9 +262,11 @@ _Note: best combined with bordered attribute_
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-dropdown for="insetExampleTrigger" id="insetExample" inset>
-    <p>Lorem ipsum solar</p>
-    <div slot="trigger" id="insetExampleTrigger">
+  <auro-dropdown inset>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <div slot="trigger">
       Trigger
     </div>
   </auro-dropdown>
@@ -262,12 +277,19 @@ _Note: best combined with bordered attribute_
 ## Example using hide method programmatically
 
 <div class="exampleWrapper" style="overflow: unset">
-  <auro-dropdown for="hideExampleTrigger" id="hideExample" fixedWidth="500px">
-    <div>
-      <p>Lorem ipsum solar</p>
-      <auro-button id="buttonHideExample" onclick="document.querySelector('#hideExample').hide()">Dismiss Dropdown</auro-button>
-    </div>
-    <auro-input slot="trigger" label="Name" id="hideExampleTrigger" helptext="Please enter your full name"></auro-input>
+  <auro-dropdown id="hideExample">
+    <p>
+      Lorem ipsum solar
+    </p>
+    <auro-button onclick="document.querySelector('#hideExample').hide()">
+      Dismiss Dropdown
+    </auro-button>
+    <auro-input
+      slot="trigger"
+      label="Name"
+      id="hideExampleTrigger"
+      helptext="Please enter your full name">
+    </auro-input>
   </auro-dropdown>
 </div>
 
@@ -275,12 +297,19 @@ _Note: best combined with bordered attribute_
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-dropdown for="hideExampleTrigger" id="hideExample" fixedWidth="500px">
-    <div>
-      <p>Lorem ipsum solar</p>
-      <auro-button id="buttonHideExample" onclick="document.querySelector('#hideExample').hide()">Dismiss Dropdown</auro-button>
-    </div>
-    <auro-input slot="trigger" label="Name" id="hideExampleTrigger" helptext="Please enter your full name"></auro-input>
+  <auro-dropdown id="hideExample">
+    <p>
+      Lorem ipsum solar
+    </p>
+    <auro-button onclick="document.querySelector('#hideExample').hide()">
+      Dismiss Dropdown
+    </auro-button>
+    <auro-input
+      slot="trigger"
+      label="Name"
+      id="hideExampleTrigger"
+      helptext="Please enter your full name">
+    </auro-input>
   </auro-dropdown>
   ```
 
