@@ -517,7 +517,7 @@ The dropdown container will grow in height to the size of the content. A combina
 
 </auro-accordion>
 
-## Disabled Example
+## Disabled example
 
 <div class="exampleWrapper">
   <auro-dropdown disabled>
@@ -589,6 +589,89 @@ The dropdown container will grow in height to the size of the content. A combina
 
   ```html
   <auro-dropdown disabled rounded bordered chevron>
+    <span>
+      Lorem ipsum solar
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
+
+## Error example
+
+<div class="exampleWrapper">
+  <auro-dropdown error>
+    <span>
+      Lorem ipsum solar
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-dropdown error>
+    <span>
+      Lorem ipsum solar
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
+
+<div class="exampleWrapper">
+  <auro-dropdown error rounded bordered>
+    <span>
+      Lorem ipsum solar
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-dropdown error rounded bordered>
+    <span>
+      Lorem ipsum solar
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
+
+<div class="exampleWrapper">
+  <auro-dropdown error rounded bordered chevron>
+    <span>
+      Lorem ipsum solar
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-dropdown error rounded bordered chevron>
     <span>
       Lorem ipsum solar
     </span>
