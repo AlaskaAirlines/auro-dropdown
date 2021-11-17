@@ -38,6 +38,13 @@
   }
 }
 
+:host([bordered][error]) {
+  #trigger {
+    border-color: var(--auro-color-border-error-on-light);
+    outline: 1px solid var(--auro-color-alert-error-on-light);
+  }
+}
+
 :host([rounded]) {
   #trigger,
   .popover {
