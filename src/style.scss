@@ -54,21 +54,10 @@
   }
 }
 
-:host([insetSm]) {
-  .popover {
-    padding: .5rem 1rem;
-  }
-}
-
 :host([inset]) {
+  #trigger,
   .popover {
-    padding: 1rem 2rem;
-  }
-}
-
-:host([insetLg]) {
-  .popover {
-    padding: 1.5rem 3rem;
+    padding: var(--auro-size-xs);
   }
 }
 

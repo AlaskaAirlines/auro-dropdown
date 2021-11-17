@@ -409,85 +409,6 @@ _Note: best combined with bordered attribute_
 
 </auro-accordion>
 
-## Examples with custom dimensions
-
-The `auro-dropdown` trigger will fill 100% of the available width of it's parent container. The dropdown content will always be at least as wide as the trigger. If the container is narrower than the desired width of the dropdown content (e.g. using just an icon for the trigger) you may apply CSS to your dropdown content to define a custom width.
-
-<div class="exampleWrapper" style="width: 100px;">
-  <auro-dropdown rounded bordered chevron>
-    <div style="width: 300px;">
-      <img src="https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2" width="100%" />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
-    <div slot="trigger">
-      Trigger
-    </div>
-  </auro-dropdown>
-</div>
-
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-  ```html
-  <auro-dropdown rounded bordered chevron>
-    <div style="width: 300px;">
-      <img src="https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2" width="100%" />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
-    <div slot="trigger">
-      Trigger
-    </div>
-  </auro-dropdown>
-  ```
-
-</auro-accordion>
-
-The dropdown container will grow in height to the size of the content. A combination of `height` or `max-height` and `overflow: scroll;` can be used to define a smaller container with larger content.
-
-<div class="exampleWrapper" style="width: 300px;">
-  <auro-dropdown bordered rounded chevron>
-    <div style="width: 300px; max-height: 200px; overflow: scroll;">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-    <div slot="trigger">
-      Trigger
-    </div>
-  </auro-dropdown>
-</div>
-
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-  ```html
-  <auro-dropdown bordered rounded chevron>
-    <div style="width: 300px; max-height: 200px; overflow: scroll;">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-    <div slot="trigger">
-      Trigger
-    </div>
-  </auro-dropdown>
-  ```
-
-</auro-accordion>
-
-
 ## Example using inset attribute
 
 <div class="exampleWrapper">
@@ -517,10 +438,88 @@ The dropdown container will grow in height to the size of the content. A combina
 
 </auro-accordion>
 
+## Examples with custom dimensions
+
+The `auro-dropdown` trigger will fill 100% of the available width of it's parent container. The dropdown content will always be at least as wide as the trigger. If the container is narrower than the desired width of the dropdown content (e.g. using just an icon for the trigger) you may apply CSS to your dropdown content to define a custom width.
+
+<div class="exampleWrapper" style="width: 100px;">
+  <auro-dropdown inset rounded bordered chevron>
+    <div style="width: 300px;">
+      <img src="https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2" width="100%" />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-dropdown inset rounded bordered chevron>
+    <div style="width: 300px;">
+      <img src="https://sitecore-test-single-westus2.azurewebsites.net/-/media/Images/pages/examples/ad2" width="100%" />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
+
+The dropdown container will grow in height to the size of the content. A combination of `height` or `max-height` and `overflow: scroll;` can be used to define a smaller container with larger content.
+
+<div class="exampleWrapper" style="width: 300px;">
+  <auro-dropdown inset bordered rounded chevron>
+    <div style="width: 300px; max-height: 200px; overflow: scroll;">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-dropdown inset bordered rounded chevron>
+    <div style="width: 300px; max-height: 200px; overflow: scroll;">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
+
 ## Disabled example
 
 <div class="exampleWrapper">
-  <auro-dropdown disabled>
+  <auro-dropdown inset disabled>
     <span>
       Lorem ipsum solar
     </span>
@@ -534,7 +533,7 @@ The dropdown container will grow in height to the size of the content. A combina
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-dropdown disabled>
+  <auro-dropdown inset disabled>
     <span>
       Lorem ipsum solar
     </span>
@@ -547,7 +546,7 @@ The dropdown container will grow in height to the size of the content. A combina
 </auro-accordion>
 
 <div class="exampleWrapper">
-  <auro-dropdown disabled rounded bordered>
+  <auro-dropdown inset disabled rounded bordered>
     <span>
       Lorem ipsum solar
     </span>
@@ -561,7 +560,7 @@ The dropdown container will grow in height to the size of the content. A combina
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-dropdown disabled rounded bordered>
+  <auro-dropdown inset disabled rounded bordered>
     <span>
       Lorem ipsum solar
     </span>
@@ -574,7 +573,7 @@ The dropdown container will grow in height to the size of the content. A combina
 </auro-accordion>
 
 <div class="exampleWrapper">
-  <auro-dropdown disabled rounded bordered chevron>
+  <auro-dropdown inset disabled rounded bordered chevron>
     <span>
       Lorem ipsum solar
     </span>
@@ -588,7 +587,7 @@ The dropdown container will grow in height to the size of the content. A combina
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-dropdown disabled rounded bordered chevron>
+  <auro-dropdown inset disabled rounded bordered chevron>
     <span>
       Lorem ipsum solar
     </span>
@@ -603,7 +602,7 @@ The dropdown container will grow in height to the size of the content. A combina
 ## Error example
 
 <div class="exampleWrapper">
-  <auro-dropdown error>
+  <auro-dropdown inset error>
     <span>
       Lorem ipsum solar
     </span>
@@ -617,7 +616,7 @@ The dropdown container will grow in height to the size of the content. A combina
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-dropdown error>
+  <auro-dropdown inset error>
     <span>
       Lorem ipsum solar
     </span>
@@ -630,7 +629,7 @@ The dropdown container will grow in height to the size of the content. A combina
 </auro-accordion>
 
 <div class="exampleWrapper">
-  <auro-dropdown error rounded bordered>
+  <auro-dropdown inset error rounded bordered>
     <span>
       Lorem ipsum solar
     </span>
@@ -644,7 +643,7 @@ The dropdown container will grow in height to the size of the content. A combina
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-dropdown error rounded bordered>
+  <auro-dropdown inset error rounded bordered>
     <span>
       Lorem ipsum solar
     </span>
@@ -657,7 +656,7 @@ The dropdown container will grow in height to the size of the content. A combina
 </auro-accordion>
 
 <div class="exampleWrapper">
-  <auro-dropdown error rounded bordered chevron>
+  <auro-dropdown inset error rounded bordered chevron>
     <span>
       Lorem ipsum solar
     </span>
@@ -671,7 +670,7 @@ The dropdown container will grow in height to the size of the content. A combina
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-dropdown error rounded bordered chevron>
+  <auro-dropdown inset error rounded bordered chevron>
     <span>
       Lorem ipsum solar
     </span>
