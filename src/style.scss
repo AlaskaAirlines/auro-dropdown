@@ -6,12 +6,6 @@
   }
 }
 
-// [data-trigger-placement^='top']::slotted(*:hover):before{
-//   top:-20px; }
-
-// [data-trigger-placement^='bottom']::slotted(*:hover):before{
-//   bottom:-20px; }
-
 :host([data-show]) {
   .popover {
     z-index:300;
@@ -42,21 +36,18 @@
 }
 
 :host([insetSm]) {
-  // #trigger,
   .popover {
     padding: .5rem 1rem;
   }
 }
 
 :host([inset]) {
-  // #trigger,
   .popover {
     padding: 1rem 2rem;
   }
 }
 
 :host([insetLg]) {
-  // #trigger,
   .popover {
     padding: 1.5rem 3rem;
   }
@@ -66,11 +57,43 @@
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  display: block;
+  display: flex;
+  align-items: center;
+  position: relative;
 
   &:hover {
     cursor: pointer;
   }
+}
+
+#triggerContent {
+  flex: 1;
+
+  &[chevron='true'] {
+    padding-right: 1.5rem;
+  }
+}
+
+#showStateIcon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  auro-icon {
+    transition: transform 200ms ease-in;
+    height: 1.5rem;
+    line-height: 1.5rem;
+
+  }
+
+  &[data-expanded='true'] {
+    auro-icon {   
+      transform: rotate(-180deg);
+    }
+  }  
 }
 
 .popover{
