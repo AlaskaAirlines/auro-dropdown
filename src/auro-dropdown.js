@@ -12,8 +12,6 @@ import "focus-visible/dist/focus-visible.min.js";
 import styleCss from "./style-css.js";
 
 import Popover from "../lib/popover";
-// import { indexOf } from "core-js/core/array";
-// import { createPopper } from '@popperjs/core';
 
 /**
  * @attr {boolean} toggle - If true, the trigger will toggle the show/hide state of the dropdown
@@ -25,9 +23,6 @@ class AuroDropdown extends LitElement {
     super();
 
     this.privateDefaults();
-
-    this.placement = 'bottom-start';
-    this.toggle = false;
 
     // adds toggle function to root element based on touch
     this.addEventListener('touchstart', function() {
@@ -42,6 +37,9 @@ class AuroDropdown extends LitElement {
    */
   privateDefaults() {
     this.isPopoverVisible = false;
+    this.placement = 'bottom-start';
+    this.toggle = false;
+    this.chevron = false;
   }
 
   // function to define props used within the scope of this component
@@ -50,6 +48,7 @@ class AuroDropdown extends LitElement {
       placement:     { type: String },
       for:           { type: String },
       toggle:        { type: Boolean },
+      chevron:       { type: Boolean },
       dropdownWidth: { type: Number }
     };
   }
@@ -76,6 +75,7 @@ class AuroDropdown extends LitElement {
     this.fixWidth();
 
     this.trigger = this.shadowRoot.querySelector(`#trigger`);
+    this.triggerChevron = this.shadowRoot.querySelector(`#showStateIcon`);
     this.popover = this.shadowRoot.querySelector('#popover');
     this.popper = new Popover(this.trigger, this.popover, this.placement);
 
@@ -131,6 +131,9 @@ class AuroDropdown extends LitElement {
     this.popper.hide();
     this.isPopoverVisible = false;
     this.removeAttribute('data-show');
+    if (this.chevron) {
+      this.triggerChevron.removeAttribute('data-expanded');
+    }
     this.dispatchEventDropdownToggle();
   }
 
@@ -146,6 +149,9 @@ class AuroDropdown extends LitElement {
       this.popper.show();
       this.isPopoverVisible = true;
       this.setAttribute('data-show', true);
+      if (this.chevron) {
+        this.triggerChevron.setAttribute('data-expanded', true);
+      }
       this.dispatchEventDropdownToggle();
     }
   }
@@ -194,7 +200,14 @@ class AuroDropdown extends LitElement {
           <slot role="tooltip"></slot>
         </div>
         <div id="trigger" data-trigger-placement="${this.placement}">
-          <slot name="trigger"></slot>
+          <div id="triggerContent" chevron=${this.chevron}>
+            <slot name="trigger"></slot>
+          </div>
+          ${this.chevron ? html`
+            <div id="showStateIcon">
+              <auro-icon category="interface" name="chevron-up"></auro-icon>
+            </div>
+          ` : undefined}
         </div>
       </div>
     `;
