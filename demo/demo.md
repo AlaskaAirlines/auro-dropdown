@@ -604,9 +604,9 @@ The dropdown container will grow in height to the size of the content. A combina
 
 <div class="exampleWrapper">
   <auro-dropdown id="hideExample">
-    <span>
+    <p>
       Lorem ipsum solar
-    </span>
+    </p>
     <auro-button onclick="document.querySelector('#hideExample').hide()">
       Dismiss Dropdown
     </auro-button>
@@ -624,9 +624,9 @@ The dropdown container will grow in height to the size of the content. A combina
 
   ```html
   <auro-dropdown id="hideExample">
-    <span>
+    <p>
       Lorem ipsum solar
-    </span>
+    </p>
     <auro-button onclick="document.querySelector('#hideExample').hide()">
       Dismiss Dropdown
     </auro-button>

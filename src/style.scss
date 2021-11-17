@@ -14,15 +14,27 @@
 }
 
 :host([bordered]) {
-  #trigger,
-  .popover {
-    border-color: gray;
-  }
-
   #trigger {
+    border-color: var(--auro-color-border-primary-on-dark);
+
     &:hover {
-      border-color: blue;
+      background-color: var(--auro-color-background-lighter);
     }
+  }
+}
+
+:host([disabled]) {
+  pointer-events: none;
+
+  #trigger,
+  #showStateIcon {
+    color: var(--auro-color-text-disabled-on-light);
+  }
+}
+
+:host([bordered][disabled]) {
+  #trigger {
+    border-color: var(--auro-color-border-disabled-on-light);
   }
 }
 
@@ -60,6 +72,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  color: var(--auro-color-text-primary-on-light);
 
   &:hover {
     cursor: pointer;
@@ -81,6 +94,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  color: var(--auro-color-icon-primary-on-light);
 
   auro-icon {
     transition: transform 200ms ease-in;
