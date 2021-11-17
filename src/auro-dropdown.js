@@ -196,7 +196,7 @@ class AuroDropdown extends LitElement {
   render() {
     return html`
       <div id="defaultExample">
-        <div id="popover" class="popover" aria-live="polite" style=${`width: ${this.dropdownWidth}px;`}>
+        <div id="popover" class="popover" aria-live="polite" style=${`min-width: ${this.dropdownWidth}px;`}>
           <slot role="tooltip"></slot>
         </div>
         <div id="trigger" data-trigger-placement="${this.placement}">
