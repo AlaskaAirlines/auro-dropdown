@@ -16,6 +16,9 @@
   },
   "main": "index.js",
   "license": "Apache-2.0",
+  "engines": {
+    "node": ">=16.13.0"
+  },
   "dependencies": {
     "@popperjs/core": "^2.10.2",
     "chalk": "^4.1.2",
@@ -58,8 +61,8 @@
     "eslint": "^8.1.0",
     "focus-visible": "^5.2.0",
     "husky": "^7.0.0",
+    "lit-html": "^1.4.1",
     "lodash": "^4.17.21",
-    "marked": "^3.0.8",
     "nodemon": "^2.0.14",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.11",
@@ -80,7 +83,7 @@
     "stylelint-config-standard": "^23.0.0",
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.0.0",
-    "wc-sass-render": "^1.2.3",
+    "wc-sass-render": "^1.4.0",
     "web-component-analyzer": "^1.1.6",
     "whatwg-fetch": "^3.6.2",
     "yaml-lint": "^1.2.4"
@@ -143,8 +146,8 @@
     "build:demo": "npm-run-all build demo:rm:build demo:new:build demo:copy:index demo:copy:demo demo:update:index",
     "build:dev:assets": "npm-run-all build:sass:demo build:sass:component postCss:component sass:render",
     "build:sass": "npm-run-all build:sass:demo build:sass:component postCss:component sass:render",
-    "build:sass:demo": "sass demo:demo",
-    "build:sass:component": "sass src:src",
+    "build:sass:demo": "sass --no-source-map demo:demo",
+    "build:sass:component": "sass --no-source-map src:src",
     "build:watch": "nodemon -e scss,js --watch src --exec npm run build:dev:assets",
     "bundler": "rollup -c",
     "bundler:test": "rollup -c -w",
