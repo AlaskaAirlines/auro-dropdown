@@ -30,12 +30,12 @@
     <main></main>
 
     <script type="module">
-      import 'https://unpkg.com/marked@3.0.8/marked.min.js';
+      import 'https://unpkg.com/marked@latest/marked.min.js';
       import 'https://unpkg.com/prismjs@latest/prism.js';
       fetch('/demo/demo.md')
         .then((response) => response.text())
         .then((text) => {
-          const rawHtml = marked(text);
+          const rawHtml = marked.parse(text);
           document.querySelector('main').innerHTML = rawHtml;
           Prism.highlightAll();
         });
