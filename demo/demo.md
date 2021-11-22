@@ -324,33 +324,6 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 
 </auro-accordion>
 
-<div class="exampleWrapper">
-  <auro-dropdown bordered chevron>
-    <span>
-      Lorem ipsum solar
-    </span>
-    <div slot="trigger">
-      Trigger
-    </div>
-  </auro-dropdown>
-</div>
-
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-  ```html
-  <auro-dropdown bordered chevron>
-    <span>
-      Lorem ipsum solar
-    </span>
-    <div slot="trigger">
-      Trigger
-    </div>
-  </auro-dropdown>
-  ```
-
-</auro-accordion>
-
 ## Example using rounded attribute
 
 _Note: best combined with bordered attribute_
@@ -382,33 +355,6 @@ _Note: best combined with bordered attribute_
 
 </auro-accordion>
 
-<div class="exampleWrapper">
-  <auro-dropdown bordered rounded chevron>
-    <span>
-      Lorem ipsum solar
-    </span>
-    <div slot="trigger">
-      Trigger
-    </div>
-  </auro-dropdown>
-</div>
-
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-  ```html
-  <auro-dropdown bordered rounded chevron>
-    <span>
-      Lorem ipsum solar
-    </span>
-    <div slot="trigger">
-      Trigger
-    </div>
-  </auro-dropdown>
-  ```
-
-</auro-accordion>
-
 ## Example using inset attribute
 
 <div class="exampleWrapper">
@@ -427,6 +373,62 @@ _Note: best combined with bordered attribute_
 
   ```html
   <auro-dropdown inset>
+    <span>
+      Lorem ipsum solar
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
+
+<div class="exampleWrapper">
+  <auro-dropdown inset rounded bordered>
+    <span>
+      Lorem ipsum solar
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-dropdown inset rounded bordered>
+    <span>
+      Lorem ipsum solar
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
+
+## Example using label attribute
+
+<div class="exampleWrapper">
+  <auro-dropdown label="Label" bordered rounded inset chevron>
+    <span>
+      Lorem ipsum solar
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-dropdown label="Label" bordered rounded inset chevron>
     <span>
       Lorem ipsum solar
     </span>
@@ -546,33 +548,6 @@ The dropdown container will grow in height to the size of the content. A combina
 </auro-accordion>
 
 <div class="exampleWrapper">
-  <auro-dropdown inset disabled rounded bordered>
-    <span>
-      Lorem ipsum solar
-    </span>
-    <div slot="trigger">
-      Trigger
-    </div>
-  </auro-dropdown>
-</div>
-
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-  ```html
-  <auro-dropdown inset disabled rounded bordered>
-    <span>
-      Lorem ipsum solar
-    </span>
-    <div slot="trigger">
-      Trigger
-    </div>
-  </auro-dropdown>
-  ```
-
-</auro-accordion>
-
-<div class="exampleWrapper">
   <auro-dropdown inset disabled rounded bordered chevron>
     <span>
       Lorem ipsum solar
@@ -644,33 +619,6 @@ The dropdown container will grow in height to the size of the content. A combina
 
   ```html
   <auro-dropdown inset error rounded bordered>
-    <span>
-      Lorem ipsum solar
-    </span>
-    <div slot="trigger">
-      Trigger
-    </div>
-  </auro-dropdown>
-  ```
-
-</auro-accordion>
-
-<div class="exampleWrapper">
-  <auro-dropdown inset error rounded bordered chevron>
-    <span>
-      Lorem ipsum solar
-    </span>
-    <div slot="trigger">
-      Trigger
-    </div>
-  </auro-dropdown>
-</div>
-
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-  ```html
-  <auro-dropdown inset error rounded bordered chevron>
     <span>
       Lorem ipsum solar
     </span>

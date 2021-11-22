@@ -61,6 +61,12 @@
   }
 }
 
+#label {
+  color: var(--auro-color-text-secondary-on-light);
+  font-size: var(--auro-text-body-size-xs);
+  line-height: var(--auro-text-body-size-default);
+}
+
 #trigger {
   border-style: solid;
   border-width: 1px;

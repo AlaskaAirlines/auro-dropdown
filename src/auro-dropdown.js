@@ -49,7 +49,8 @@ class AuroDropdown extends LitElement {
       for:           { type: String },
       toggle:        { type: Boolean },
       chevron:       { type: Boolean },
-      dropdownWidth: { type: Number }
+      dropdownWidth: { type: Number },
+      label:         { type: String }
     };
   }
 
@@ -199,8 +200,13 @@ class AuroDropdown extends LitElement {
           <slot role="tooltip"></slot>
         </div>
         <div id="trigger" data-trigger-placement="${this.placement}">
-          <div id="triggerContent" chevron=${this.chevron}>
-            <slot name="trigger"></slot>
+          <div>
+            ${this.label ? html`
+              <div id="label">${this.label}</div>
+            ` : undefined}
+            <div id="triggerContent" chevron=${this.chevron}>
+              <slot name="trigger"></slot>
+            </div>
           </div>
           ${this.chevron ? html`
             <div id="showStateIcon">
