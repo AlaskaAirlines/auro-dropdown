@@ -18,6 +18,7 @@ import Popover from "../lib/popover";
  * @attr {boolean} toggle - If true, the trigger will toggle the show/hide state of the dropdown.
  * @slot - Default unnamed slot for the use of popover content.
  * @slot label - Sets the label text for the input.
+ * @slot helperText - Sets the helperText text for the input.
  * @slot trigger - Slot for entering the trigger element into the scope of the shadow DOM.
  */
 class AuroDropdown extends LitElement {
@@ -212,6 +213,9 @@ class AuroDropdown extends LitElement {
             <auro-icon category="interface" name="chevron-up" customColor style="color: inherit;"></auro-icon>
           </div>
         ` : undefined}
+      </div>
+      <div class="helperText">
+        <slot name="helperText"></slot>
       </div>
     `;
   }
