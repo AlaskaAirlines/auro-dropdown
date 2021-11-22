@@ -143,7 +143,6 @@ class AuroDropdown extends LitElement {
    */
   toggleShow(event) {
     if (!this.hasAttribute('disabled')) {
-      event.stopPropagation();
       document.addEventListener('click', this.offClick);
       this.fixWidth();
       this.popper.show();
