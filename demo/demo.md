@@ -434,6 +434,71 @@ _Note: best combined with bordered attribute_
 
 </auro-accordion>
 
+## Example using helperText attribute
+
+<div class="exampleWrapper">
+  <auro-dropdown inset bordered rounded>
+    <span>
+      Lorem ipsum solar
+    </span>
+    <span slot="helperText">
+      Helper text
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-dropdown inset bordered rounded helperText="Helper text">
+    <span>
+      Lorem ipsum solar
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
+
+<div class="exampleWrapper">
+  <auro-dropdown inset bordered rounded error>
+    <span>
+      Lorem ipsum solar
+    </span>
+    <span slot="helperText">
+      Helper text
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-dropdown inset bordered rounded error>
+    <span>
+      Lorem ipsum solar
+    </span>
+    <span slot="helperText">
+      Helper text
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+  ```
+
+</auro-accordion>
+
 ## Examples with custom dimensions
 
 The `auro-dropdown` trigger will fill 100% of the available width of it's parent container. The dropdown content will always be at least as wide as the trigger. If the container is narrower than the desired width of the dropdown content (e.g. using just an icon for the trigger) you may apply CSS to your dropdown content to define a custom width.
