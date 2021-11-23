@@ -15,9 +15,9 @@ import Popover from "../lib/popover";
 
 /**
  * @attr {boolean} chevron - If true, the dropdown displays an display state chevron on the right.
- * @attr {string} label - Sets the label text for the input.
  * @attr {boolean} toggle - If true, the trigger will toggle the show/hide state of the dropdown.
  * @slot - Default unnamed slot for the use of popover content.
+ * @slot label - Sets the label text for the input.
  * @slot trigger - Slot for entering the trigger element into the scope of the shadow DOM.
  */
 class AuroDropdown extends LitElement {
@@ -50,8 +50,7 @@ class AuroDropdown extends LitElement {
       placement:     { type: String },
       toggle:        { type: Boolean },
       chevron:       { type: Boolean },
-      dropdownWidth: { type: Number },
-      label:         { type: String }
+      dropdownWidth: { type: Number }
     };
   }
 
@@ -196,25 +195,23 @@ class AuroDropdown extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
-      <div id="defaultExample">
-        <div id="popover" class="popover" aria-live="polite" style=${`min-width: ${this.dropdownWidth}px;`}>
-          <slot role="tooltip"></slot>
-        </div>
-        <div id="trigger" data-trigger-placement="${this.placement}">
-          <div>
-            ${this.label ? html`
-              <div id="label">${this.label}</div>
-            ` : undefined}
-            <div id="triggerContent" chevron=${this.chevron}>
-              <slot name="trigger"></slot>
-            </div>
+      <div id="popover" class="popover" aria-live="polite" style=${`min-width: ${this.dropdownWidth}px;`}>
+        <slot role="tooltip"></slot>
+      </div>
+      <div id="trigger" data-trigger-placement="${this.placement}">
+        <div class="triggerContentWrapper">
+          <div class="label">
+            <slot name="label"></slot>
           </div>
-          ${this.chevron ? html`
-            <div id="showStateIcon">
-              <auro-icon category="interface" name="chevron-up" customColor style="color: inherit;"></auro-icon>
-            </div>
-          ` : undefined}
+          <div class="triggerContent" chevron=${this.chevron}>
+            <slot name="trigger"></slot>
+          </div>
         </div>
+        ${this.chevron ? html`
+          <div id="showStateIcon">
+            <auro-icon category="interface" name="chevron-up" customColor style="color: inherit;"></auro-icon>
+          </div>
+        ` : undefined}
       </div>
     `;
   }

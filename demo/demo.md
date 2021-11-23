@@ -124,9 +124,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
     </span>
     <auro-input
       slot="trigger"
-      label="Name"
-      id="inputExampleTrigger"
-      helptext="Please enter your full name">
+      id="inputExampleTrigger">
     </auro-input>
   </auro-dropdown>
 </div>
@@ -141,9 +139,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
     </span>
     <auro-input
       slot="trigger"
-      label="Name"
-      id="inputExampleTrigger"
-      helptext="Please enter your full name">
+      id="inputExampleTrigger">
     </auro-input>
   </auro-dropdown>
   ```
@@ -240,9 +236,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
     </span>
     <auro-input
       slot="trigger"
-      label="Name"
-      id="inputExampleTrigger"
-      helptext="Please enter your full name">
+      id="inputExampleTrigger">
     </auro-input>
   </auro-dropdown>
 </div>
@@ -257,9 +251,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
     </span>
     <auro-input
       slot="trigger"
-      label="Name"
-      id="inputExampleTrigger"
-      helptext="Please enter your full name">
+      id="inputExampleTrigger">
     </auro-input>
   </auro-dropdown>
   ```
@@ -418,6 +410,7 @@ _Note: best combined with bordered attribute_
     <span>
       Lorem ipsum solar
     </span>
+    <span slot="label">Name</span>
     <div slot="trigger">
       Trigger
     </div>
@@ -432,6 +425,7 @@ _Note: best combined with bordered attribute_
     <span>
       Lorem ipsum solar
     </span>
+    <span slot="label">Name</span>
     <div slot="trigger">
       Trigger
     </div>
@@ -642,9 +636,7 @@ The dropdown container will grow in height to the size of the content. A combina
     </auro-button>
     <auro-input
       slot="trigger"
-      label="Name"
-      id="hideExampleTrigger"
-      helptext="Please enter your full name">
+      id="hideExampleTrigger">
     </auro-input>
   </auro-dropdown>
 </div>
@@ -662,9 +654,7 @@ The dropdown container will grow in height to the size of the content. A combina
     </auro-button>
     <auro-input
       slot="trigger"
-      label="Name"
-      id="hideExampleTrigger"
-      helptext="Please enter your full name">
+      id="hideExampleTrigger">
     </auro-input>
   </auro-dropdown>
   ```

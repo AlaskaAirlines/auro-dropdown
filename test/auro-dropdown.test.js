@@ -1,27 +1,75 @@
-// import { fixture, html, expect } from '@open-wc/testing';
-// import '../src/aurolabs-dropdown.js';
+import { fixture, html, expect } from '@open-wc/testing';
+import '../src/auro-dropdown.js';
 
-// describe('aurolabs-dropdown', () => {
-//   it('sets the CSS class on aurolabs-dropdown > div element', async () => {
-//     const el = await fixture(html`
-//       <aurolabs-dropdown cssclass="testClass"></aurolabs-dropdown>
-//     `);
+describe('auro-dropdown', () => {
+  it('auro-dropdown is accessible', async () => {
+    const el = await fixture(html`
+      <auro-dropdown></auro-dropdown>
+    `);
 
-//     const div = el.shadowRoot.querySelector('div');
-//     expect(div.className).to.equal('testClass');
-//   });
+    await expect(el).to.be.accessible();
+  });
 
-//   it('aurolabs-dropdown is accessible', async () => {
-//     const el = await fixture(html`
-//       <aurolabs-dropdown cssclass="testClass"></aurolabs-dropdown>
-//     `);
+  it('auro-dropdown custom element is defined', async () => {
+    const el = await !!customElements.get("auro-dropdown");
 
-//     await expect(el).to.be.accessible();
-//   });
+    await expect(el).to.be.true;
+  });
 
-//   it('aurolabs-dropdown custom element is defined', async () => {
-//     const el = await !!customElements.get("aurolabs-dropdown");
+  it('auro-dropdown with chevron', async () => {
+    const el = await fixture(html`
+      <auro-dropdown chevron></auro-dropdown>
+    `);
 
-//     await expect(el).to.be.true;
-//   });
-// });
+    const chevronEl = el.shadowRoot.querySelector('#showStateIcon');
+    expect(chevronEl).to.be.visible;
+  })
+
+  it('auro-dropdown toggles with click', async () => {
+    const el = await fixture(html`
+      <auro-dropdown toggle chevron></auro-dropdown>
+    `);
+
+    const trigger = el.shadowRoot.querySelector('#trigger');
+    const chevron = el.shadowRoot.querySelector('#showStateIcon');
+    expectPopoverHidden(el);
+    expect(chevron).to.not.have.attribute('data-expanded');
+
+    trigger.click();
+    expectPopoverShown(el);
+    expect(chevron).to.have.attribute('data-expanded');
+
+    trigger.click();
+    expectPopoverHidden(el);
+    expect(chevron).to.not.have.attribute('data-expanded');
+  })
+
+  it('auro-dropdown programmatically show and hide', async () => {
+    const el = await fixture(html`
+      <auro-dropdown toggle chevron></auro-dropdown>
+    `);
+
+    const trigger = el.shadowRoot.querySelector('#trigger');
+    const chevron = el.shadowRoot.querySelector('#showStateIcon');
+    expectPopoverHidden(el);
+    expect(chevron).to.not.have.attribute('data-expanded');
+
+    // trigger.click();
+    el.show();
+    expectPopoverShown(el);
+    expect(chevron).to.have.attribute('data-expanded');
+
+    // trigger.click();
+    el.hide();
+    expectPopoverHidden(el);
+    expect(chevron).to.not.have.attribute('data-expanded');
+  })
+});
+
+function expectPopoverShown(el) {
+  expect(el.hasAttribute('data-show')).to.equal(true);
+}
+
+function expectPopoverHidden(el) {
+  expect(el.hasAttribute('data-show')).to.equal(false);
+}
