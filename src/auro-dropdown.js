@@ -14,9 +14,11 @@ import styleCss from "./style-css.js";
 import Popover from "../lib/popover";
 
 /**
- * @attr {boolean} toggle - If true, the trigger will toggle the show/hide state of the dropdown
- * @slot - Default unnamed slot for the use of popover content
- * @slot trigger - Slot for entering the trigger element into the scope of the shadow DOM
+ * @attr {boolean} chevron - If true, the dropdown displays an display state chevron on the right.
+ * @attr {string} label - Sets the label text for the input.
+ * @attr {boolean} toggle - If true, the trigger will toggle the show/hide state of the dropdown.
+ * @slot - Default unnamed slot for the use of popover content.
+ * @slot trigger - Slot for entering the trigger element into the scope of the shadow DOM.
  */
 class AuroDropdown extends LitElement {
   constructor() {
@@ -46,7 +48,6 @@ class AuroDropdown extends LitElement {
   static get properties() {
     return {
       placement:     { type: String },
-      for:           { type: String },
       toggle:        { type: Boolean },
       chevron:       { type: Boolean },
       dropdownWidth: { type: Number },
