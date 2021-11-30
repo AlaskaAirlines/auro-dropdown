@@ -48,10 +48,16 @@ class AuroDropdown extends LitElement {
   // function to define props used within the scope of this component
   static get properties() {
     return {
-      placement:     { type: String },
-      toggle:        { type: Boolean },
       chevron:       { type: Boolean },
-      dropdownWidth: { type: Number }
+      toggle:        { type: Boolean },
+      /**
+       * @private
+       */
+      dropdownWidth: { type: Number },
+      /**
+       * @private
+       */
+      placement:     { type: String }
     };
   }
 
@@ -69,6 +75,10 @@ class AuroDropdown extends LitElement {
     super.disconnectedCallback();
   }
 
+  /**
+   * @private
+   * @returns {void} Makes dropdown content width match the trigger.
+   */
   fixWidth() {
     this.dropdownWidth = this.getBoundingClientRect().width;
   }
@@ -158,14 +168,16 @@ class AuroDropdown extends LitElement {
   }
 
   /**
-   * @returns {void} Hides the dropdown content.
+   * Hides the dropdown content.
+   * @returns {void}
    */
   hide() {
     this.toggleHide();
   }
 
   /**
-   * @returns {void} Shows the dropdown content.
+   * Shows the dropdown content.
+   * @returns {void}
    */
   show() {
     this.toggleShow();
@@ -182,6 +194,10 @@ class AuroDropdown extends LitElement {
     }
   }
 
+  /**
+   * @private
+   * @returns {void} Dispatches event with an object showing the state of the dropdown
+   */
   dispatchEventDropdownToggle() {
     let event = new CustomEvent('dropdownToggled', {
       detail: {
