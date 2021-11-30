@@ -38,17 +38,6 @@ import "@aurolabs/auro-dropdown";
 
 **Reference component in HTML**
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/basic.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/basic.html -->
-```html
-<auro-dropdown>
-  <span>
-    Lorem ipsum solar
-  </span>
-  <div slot="trigger">
-    Trigger
-  </div>
-</auro-dropdown>
-```
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## Install bundled assets from CDN
@@ -82,17 +71,6 @@ The `<auro-dropdown>` element should be used in situations where users may:
 Default auro-dropdown
 
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/basic.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/basic.html -->
-```html
-<auro-dropdown>
-  <span>
-    Lorem ipsum solar
-  </span>
-  <div slot="trigger">
-    Trigger
-  </div>
-</auro-dropdown>
-```
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## Development
