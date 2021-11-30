@@ -1,8 +1,8 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: 'auro-dropdown: [issue summary]'
-labels: 'Type: Bug, not-reviewed'
+title: '[issue summary]'
+labels: 'auro-dropdown, Type: Bug, not-reviewed'
 assignees: blackfalcon
 ---
 

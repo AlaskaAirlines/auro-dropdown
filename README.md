@@ -1,6 +1,6 @@
-# auro-dropdown
+# Dropdown
 
-`<auro-dropdown>` is an experimental [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) only available as a PRE RELEASE. Users of this element understand the risks of using a pre-released version of this element.
+`<auro-dropdown>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for the purpose of ...
 
 ## UI development browser support
 
@@ -9,8 +9,8 @@ For the most up to date information on [UI development browser support](https://
 ## Install
 
 [![Build Status](https://img.shields.io/github/workflow/status/AlaskaAirlines/auro-dropdown/Test%20and%20publish?branch=master&style=for-the-badge)](https://github.com/AlaskaAirlines/auro-dropdown/actions?query=workflow%3A%22test+and+publish%22)
-[![See it on NPM!](https://img.shields.io/npm/v/@aurolabs/auro-dropdown?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@aurolabs/auro-dropdown)
-[![License](https://img.shields.io/npm/l/@aurolabs/auro-dropdown?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
+[![See it on NPM!](https://img.shields.io/npm/v/@aurodesignsystem/auro-dropdown?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@aurodesignsystem/auro-dropdown)
+[![License](https://img.shields.io/npm/l/@aurodesignsystem/auro-dropdown?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
 
 ```shell
 $ npm i @aurolabs/auro-dropdown
@@ -37,10 +37,12 @@ import "@aurolabs/auro-dropdown";
 ```
 
 **Reference component in HTML**
-
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./apiExamples/basic.html) -->
+<!-- The below code snippet is automatically added from ./apiExamples/basic.html -->
 ```html
 <auro-dropdown>Hello World</auro-dropdown>
 ```
+<!-- AURO-GENERATED-CONTENT:END -->
 
 ## Install bundled assets from CDN
 
@@ -56,37 +58,52 @@ Since the legacy bundle includes many polyfills that are not needed by modern br
 <link rel="stylesheet" href="https://unpkg.com/@alaskaairux/design-tokens@latest/dist/tokens/CSSCustomProperties.css" />
 <link rel="stylesheet" href="https://unpkg.com/@alaskaairux/webcorestylesheets@latest/dist/bundled/essentials.css" />
 
-<script src="https://unpkg.com/@aurolabs/auro-dropdown@latest/dist/auro-dropdown__bundled.js" type="module"></script>
-<script src="https://unpkg.com/@aurolabs/auro-dropdown@latest/dist/auro-dropdown__bundled.es5.js" nomodule></script>
+<script src="https://unpkg.com/@aurodesignsystem/auro-dropdown@latest/dist/auro-dropdown__bundled.js" type="module"></script>
+<script src="https://unpkg.com/@aurodesignsystem/auro-dropdown@latest/dist/auro-dropdown__bundled.es5.js" nomodule></script>
 ```
+
+## auro-dropdown use cases
+
+The `<auro-dropdown>` element should be used in situations where users may:
+
+* ...
+* ...
+* ...
 
 ## API Code Examples
 
 Default auro-dropdown
 
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./apiExamples/basic.html) -->
+<!-- The below code snippet is automatically added from ./apiExamples/basic.html -->
 ```html
 <auro-dropdown>Hello World</auro-dropdown>
 ```
+<!-- AURO-GENERATED-CONTENT:END -->
 
 ## Development
 
 In order to develop against this project, if you are not part of the core team, you will be required to fork the project prior to submitting a pull request.
 
-Please be sure to review the [contribution guidelines](https://auro.alaskaair.com/getting-started/developers/contributing) for this project. Please make sure to **pay special attention** to the **conventional commits** section of the document.
+Please be sure to review the [contribution guidelines](https://auro.alaskaair.com/contributing) for this project. Please make sure to **pay special attention** to the **conventional commits** section of the document.
 
 ### Start development environment
 
-Once the project has been cloned to your local resource and you have installed all the dependencies you will need to open two different shell sessions. One is for the **npm tasks**, the second is to run the **server**.
+Once the project has been cloned to your local resource and you have installed all the dependencies you will need to open a shell session to run the **dev server**.
 
 ```shell
-// shell terminal one
 $ npm run dev
-
-// shell terminal two
-$ npm run serve
 ```
 
 Open [localhost:8000](http://localhost:8000/)
+
+If running separate sessions is preferred, please run the following commands in individual terminal shells.
+
+```shell
+$ npm run build:watch
+
+$ npm run serve
+```
 
 ### API generation
 
@@ -102,6 +119,6 @@ Bundled assets are only generated in the remote and not merged back to this repo
 
 ### Demo deployment
 
-To deploy a demo version of the component for review, run `npm run demo:build` to create a `./build` directory that can be pushed to any static server.
+To deploy a demo version of the component for review, run `npm run build:demo` to create a `./build` directory that can be pushed to any static server.
 
-<small>Built from WC-Generator v3.9.4</small>
+<small>Built from WC-Generator v3.11.1</small>

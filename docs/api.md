@@ -2,21 +2,17 @@
 
 ## Properties
 
-| Property        | Attribute       | Type      | Default        | Description                                      |
-|-----------------|-----------------|-----------|----------------|--------------------------------------------------|
-| `dropdownWidth` | `dropdownWidth` | `number`  |                |                                                  |
-| `for`           | `for`           | `string`  |                |                                                  |
-| `placement`     | `placement`     | `string`  | "bottom-start" |                                                  |
-| `toggle`        | `toggle`        | `boolean` | false          | If true, the trigger will toggle the show/hide state of the dropdown |
+| Property  | Attribute | Type      | Description                                      |
+|-----------|-----------|-----------|--------------------------------------------------|
+| `chevron` | `chevron` | `boolean` | If true, the dropdown displays an display state chevron on the right. |
+| `toggle`  | `toggle`  | `boolean` | If true, the trigger will toggle the show/hide state of the dropdown. |
 
 ## Methods
 
-| Method                        | Type       |
-|-------------------------------|------------|
-| `dispatchEventDropdownToggle` | `(): void` |
-| `fixWidth`                    | `(): void` |
-| `hide`                        | `(): void` |
-| `show`                        | `(): void` |
+| Method | Type       | Description                 |
+|--------|------------|-----------------------------|
+| `hide` | `(): void` | Hides the dropdown content. |
+| `show` | `(): void` | Shows the dropdown content. |
 
 ## Events
 
@@ -26,7 +22,9 @@
 
 ## Slots
 
-| Name      | Description                                      |
-|-----------|--------------------------------------------------|
-|           | Default unnamed slot for the use of popover content |
-| `trigger` | Slot for entering the trigger element into the scope of the shadow DOM |
+| Name         | Description                                      |
+|--------------|--------------------------------------------------|
+|              | Default unnamed slot for the use of popover content. |
+| `helperText` | Sets the helperText text for the input.          |
+| `label`      | Sets the label text for the input.               |
+| `trigger`    | Slot for entering the trigger element into the scope of the shadow DOM. |
