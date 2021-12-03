@@ -42,9 +42,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basic.html) -->
       <!-- The below content is automatically added from ./../apiExamples/basic.html -->
       <auro-dropdown>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -55,9 +53,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basic-onDark.html) -->
       <!-- The below content is automatically added from ./../apiExamples/basic-onDark.html -->
       <auro-dropdown onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -74,9 +70,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- The below code snippet is automatically added from ./../apiExamples/basic.html -->
 ```html
 <auro-dropdown>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -94,9 +88,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- The below code snippet is automatically added from ./../apiExamples/basic-onDark.html -->
 ```html
 <auro-dropdown onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -112,9 +104,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicIcon.html) -->
       <!-- The below content is automatically added from ./../apiExamples/basicIcon.html -->
       <auro-dropdown>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           <auro-icon
             category="interface"
@@ -127,9 +117,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicIcon-onDark.html) -->
       <!-- The below content is automatically added from ./../apiExamples/basicIcon-onDark.html -->
       <auro-dropdown onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           <auro-icon
             category="interface"
@@ -149,9 +137,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- The below code snippet is automatically added from ./../apiExamples/basicIcon.html -->
 ```html
 <auro-dropdown>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     <auro-icon
       category="interface"
@@ -171,9 +157,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- The below code snippet is automatically added from ./../apiExamples/basicIcon-onDark.html -->
 ```html
 <auro-dropdown onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     <auro-icon
       category="interface"
@@ -192,9 +176,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicButton.html) -->
       <!-- The below content is automatically added from ./../apiExamples/basicButton.html -->
       <auro-dropdown>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           <auro-button
             slot="trigger"
@@ -209,9 +191,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicButton-onDark.html) -->
       <!-- The below content is automatically added from ./../apiExamples/basicButton-onDark.html -->
       <auro-dropdown onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+      
+        Lorem ipsum solar
+      
         <div slot="trigger">
           <auro-button
             slot="trigger"
@@ -233,9 +215,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- The below code snippet is automatically added from ./../apiExamples/basicButton.html -->
 ```html
 <auro-dropdown>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     <auro-button
       slot="trigger"
@@ -257,9 +237,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- The below code snippet is automatically added from ./../apiExamples/basicButton-onDark.html -->
 ```html
 <auro-dropdown onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+
+  Lorem ipsum solar
+
   <div slot="trigger">
     <auro-button
       slot="trigger"
@@ -280,9 +260,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicInput.html) -->
       <!-- The below content is automatically added from ./../apiExamples/basicInput.html -->
       <auro-dropdown>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           <auro-input
             slot="trigger"
@@ -296,9 +274,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicInput-onDark.html) -->
       <!-- The below content is automatically added from ./../apiExamples/basicInput-onDark.html -->
       <auro-dropdown onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           <auro-input
             slot="trigger"
@@ -319,9 +295,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- The below code snippet is automatically added from ./../apiExamples/basicInput.html -->
 ```html
 <auro-dropdown>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     <auro-input
       slot="trigger"
@@ -342,9 +316,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- The below code snippet is automatically added from ./../apiExamples/basicInput-onDark.html -->
 ```html
 <auro-dropdown onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     <auro-input
       slot="trigger"
@@ -369,9 +341,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevron.html) -->
       <!-- The below content is automatically added from ./../apiExamples/chevron.html -->
       <auro-dropdown chevron>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -384,9 +354,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <auro-dropdown
         onDark
         chevron>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -403,9 +371,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- The below code snippet is automatically added from ./../apiExamples/chevron.html -->
 ```html
 <auro-dropdown chevron>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -425,9 +391,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <auro-dropdown
   onDark
   chevron>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -443,9 +407,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronIcon.html) -->
       <!-- The below content is automatically added from ./../apiExamples/chevronIcon.html -->
       <auro-dropdown chevron>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           <auro-icon
             category="interface"
@@ -460,9 +422,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <auro-dropdown
         onDark
         chevron>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           <auro-icon
             category="interface"
@@ -482,9 +442,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- The below code snippet is automatically added from ./../apiExamples/chevronIcon.html -->
 ```html
 <auro-dropdown chevron>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     <auro-icon
       category="interface"
@@ -506,9 +464,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <auro-dropdown
   onDark
   chevron>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     <auro-icon
       category="interface"
@@ -527,9 +483,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronButton.html) -->
       <!-- The below content is automatically added from ./../apiExamples/chevronButton.html -->
       <auro-dropdown chevron>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           <auro-button
             slot="trigger"
@@ -546,9 +500,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <auro-dropdown
         onDark
         chevron>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           <auro-button
             slot="trigger"
@@ -570,9 +522,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- The below code snippet is automatically added from ./../apiExamples/chevronButton.html -->
 ```html
 <auro-dropdown chevron>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     <auro-button
       slot="trigger"
@@ -596,9 +546,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <auro-dropdown
   onDark
   chevron>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     <auro-button
       slot="trigger"
@@ -619,9 +567,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronInput.html) -->
       <!-- The below content is automatically added from ./../apiExamples/chevronInput.html -->
       <auro-dropdown chevron>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           <auro-input
             slot="trigger"
@@ -637,9 +583,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <auro-dropdown
         onDark
         chevron>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           <auro-input
             slot="trigger"
@@ -660,9 +604,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- The below code snippet is automatically added from ./../apiExamples/chevronInput.html -->
 ```html
 <auro-dropdown chevron>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     <auro-input
       slot="trigger"
@@ -685,9 +627,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <auro-dropdown
   onDark
   chevron>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     <auro-input
       slot="trigger"
@@ -712,9 +652,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/bordered.html) -->
       <!-- The below content is automatically added from ./../apiExamples/bordered.html -->
       <auro-dropdown bordered>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -727,9 +665,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <auro-dropdown
         bordered
         onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -746,9 +682,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- The below code snippet is automatically added from ./../apiExamples/bordered.html -->
 ```html
 <auro-dropdown bordered>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -768,9 +702,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <auro-dropdown
   bordered
   onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -795,9 +727,7 @@ _Note: best combined with bordered attribute_
       <auro-dropdown
         rounded
         bordered>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -811,9 +741,7 @@ _Note: best combined with bordered attribute_
         rounded
         bordered
         onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -832,9 +760,7 @@ _Note: best combined with bordered attribute_
 <auro-dropdown
   rounded
   bordered>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -855,9 +781,7 @@ _Note: best combined with bordered attribute_
   rounded
   bordered
   onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -878,9 +802,7 @@ _Note: best combined with bordered attribute_
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/inset.html) -->
       <!-- The below content is automatically added from ./../apiExamples/inset.html -->
       <auro-dropdown inset>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -893,9 +815,7 @@ _Note: best combined with bordered attribute_
       <auro-dropdown
         inset
         onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -912,9 +832,7 @@ _Note: best combined with bordered attribute_
 <!-- The below code snippet is automatically added from ./../apiExamples/inset.html -->
 ```html
 <auro-dropdown inset>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -934,9 +852,7 @@ _Note: best combined with bordered attribute_
 <auro-dropdown
   inset
   onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -955,9 +871,7 @@ _Note: best combined with bordered attribute_
         inset
         rounded
         bordered>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -972,9 +886,7 @@ _Note: best combined with bordered attribute_
         rounded
         bordered
         onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -994,9 +906,7 @@ _Note: best combined with bordered attribute_
   inset
   rounded
   bordered>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -1018,9 +928,7 @@ _Note: best combined with bordered attribute_
   rounded
   bordered
   onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -1043,9 +951,7 @@ _Note: best combined with bordered attribute_
       <auro-dropdown
         inset
         error>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -1058,9 +964,7 @@ _Note: best combined with bordered attribute_
       <auro-dropdown
         error
         onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -1079,9 +983,7 @@ _Note: best combined with bordered attribute_
 <auro-dropdown
   inset
   error>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -1101,9 +1003,7 @@ _Note: best combined with bordered attribute_
 <auro-dropdown
   error
   onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -1123,9 +1023,7 @@ _Note: best combined with bordered attribute_
         error
         rounded
         bordered>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -1141,9 +1039,7 @@ _Note: best combined with bordered attribute_
         rounded
         bordered
         onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -1164,9 +1060,7 @@ _Note: best combined with bordered attribute_
   error
   rounded
   bordered>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -1189,9 +1083,7 @@ _Note: best combined with bordered attribute_
   rounded
   bordered
   onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -1212,14 +1104,11 @@ _Note: best combined with bordered attribute_
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/label.html) -->
       <!-- The below content is automatically added from ./../apiExamples/label.html -->
       <auro-dropdown
-        label="Label"
         bordered
         rounded
         inset
         chevron>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <span slot="label">Name</span>
         <div slot="trigger">
           Trigger
@@ -1231,15 +1120,12 @@ _Note: best combined with bordered attribute_
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/label-onDark.html) -->
       <!-- The below content is automatically added from ./../apiExamples/label-onDark.html -->
       <auro-dropdown
-        label="Label"
         bordered
         rounded
         inset
         chevron
         onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <span slot="label">Name</span>
         <div slot="trigger">
           Trigger
@@ -1257,14 +1143,11 @@ _Note: best combined with bordered attribute_
 <!-- The below code snippet is automatically added from ./../apiExamples/label.html -->
 ```html
 <auro-dropdown
-  label="Label"
   bordered
   rounded
   inset
   chevron>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <span slot="label">Name</span>
   <div slot="trigger">
     Trigger
@@ -1283,15 +1166,12 @@ _Note: best combined with bordered attribute_
 <!-- The below code snippet is automatically added from ./../apiExamples/label-onDark.html -->
 ```html
 <auro-dropdown
-  label="Label"
   bordered
   rounded
   inset
   chevron
   onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <span slot="label">Name</span>
   <div slot="trigger">
     Trigger
@@ -1316,9 +1196,7 @@ _Note: best combined with bordered attribute_
         inset
         bordered
         rounded>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <span slot="helperText">
           Helper text
         </span>
@@ -1337,9 +1215,7 @@ _Note: best combined with bordered attribute_
         rounded
         error
         onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <span slot="helperText">
           Helper text
         </span>
@@ -1362,9 +1238,7 @@ _Note: best combined with bordered attribute_
   inset
   bordered
   rounded>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <span slot="helperText">
     Helper text
   </span>
@@ -1390,9 +1264,7 @@ _Note: best combined with bordered attribute_
   rounded
   error
   onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <span slot="helperText">
     Helper text
   </span>
@@ -1415,9 +1287,7 @@ _Note: best combined with bordered attribute_
         bordered
         rounded
         error>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <span slot="helperText">
           Helper text
         </span>
@@ -1436,9 +1306,7 @@ _Note: best combined with bordered attribute_
         rounded
         error
         onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <span slot="helperText">
           Helper text
         </span>
@@ -1462,9 +1330,7 @@ _Note: best combined with bordered attribute_
   bordered
   rounded
   error>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <span slot="helperText">
     Helper text
   </span>
@@ -1490,9 +1356,7 @@ _Note: best combined with bordered attribute_
   rounded
   error
   onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <span slot="helperText">
     Helper text
   </span>
@@ -1516,9 +1380,7 @@ _Note: best combined with bordered attribute_
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabled.html) -->
       <!-- The below content is automatically added from ./../apiExamples/disabled.html -->
       <auro-dropdown disabled>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -1531,9 +1393,7 @@ _Note: best combined with bordered attribute_
       <auro-dropdown
         disabled
         onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -1550,9 +1410,7 @@ _Note: best combined with bordered attribute_
 <!-- The below code snippet is automatically added from ./../apiExamples/disabled.html -->
 ```html
 <auro-dropdown disabled>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -1572,9 +1430,7 @@ _Note: best combined with bordered attribute_
 <auro-dropdown
   disabled
   onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -1592,9 +1448,7 @@ _Note: best combined with bordered attribute_
       <auro-dropdown
         disabled
         chevron>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -1608,9 +1462,7 @@ _Note: best combined with bordered attribute_
         disabled
         chevron
         onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -1629,9 +1481,7 @@ _Note: best combined with bordered attribute_
 <auro-dropdown
   disabled
   chevron>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -1652,9 +1502,7 @@ _Note: best combined with bordered attribute_
   disabled
   chevron
   onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -1675,9 +1523,7 @@ _Note: best combined with bordered attribute_
         rounded
         inset
         bordered>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -1700,9 +1546,7 @@ _Note: best combined with bordered attribute_
         bordered
         inset
         onDark>
-        <span>
-          Lorem ipsum solar
-        </span>
+        Lorem ipsum solar
         <div slot="trigger">
           Trigger
         </div>
@@ -1730,9 +1574,7 @@ _Note: best combined with bordered attribute_
   rounded
   inset
   bordered>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -1762,9 +1604,7 @@ _Note: best combined with bordered attribute_
   bordered
   inset
   onDark>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -1893,9 +1733,7 @@ The dropdown container will grow in height to the size of the content. A combina
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/toggle.html) -->
   <!-- The below content is automatically added from ./../apiExamples/toggle.html -->
   <auro-dropdown toggle>
-    <span>
-      Lorem ipsum solar
-    </span>
+    Lorem ipsum solar
     <div slot="trigger">
       Trigger
     </div>
@@ -1910,9 +1748,7 @@ The dropdown container will grow in height to the size of the content. A combina
 <!-- The below code snippet is automatically added from ./../apiExamples/bordered.html -->
 ```html
 <auro-dropdown bordered>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
