@@ -25,23 +25,34 @@ describe('auro-dropdown', () => {
     expect(chevronEl).to.be.visible;
   })
 
-  it('auro-dropdown toggles with click', async () => {
+  it('auro-dropdown shows only with click', async () => {
     const el = await fixture(html`
-      <auro-dropdown toggle chevron></auro-dropdown>
+      <auro-dropdown></auro-dropdown>
     `);
 
     const trigger = el.shadowRoot.querySelector('#trigger');
-    const chevron = el.shadowRoot.querySelector('#show-state-icon');
     expectPopoverHidden(el);
-    expect(chevron).to.not.have.attribute('data-expanded');
 
     trigger.click();
     expectPopoverShown(el);
-    expect(chevron).to.have.attribute('data-expanded');
+
+    trigger.click();
+    expectPopoverShown(el);
+  })
+
+  it('auro-dropdown toggle with click', async () => {
+    const el = await fixture(html`
+      <auro-dropdown toggle></auro-dropdown>
+    `);
+
+    const trigger = el.shadowRoot.querySelector('#trigger');
+    expectPopoverHidden(el);
+
+    trigger.click();
+    expectPopoverShown(el);
 
     trigger.click();
     expectPopoverHidden(el);
-    expect(chevron).to.not.have.attribute('data-expanded');
   })
 
   it('auro-dropdown programmatically show and hide', async () => {
@@ -49,17 +60,14 @@ describe('auro-dropdown', () => {
       <auro-dropdown toggle chevron></auro-dropdown>
     `);
 
-    const trigger = el.shadowRoot.querySelector('#trigger');
     const chevron = el.shadowRoot.querySelector('#show-state-icon');
     expectPopoverHidden(el);
     expect(chevron).to.not.have.attribute('data-expanded');
 
-    // trigger.click();
     el.show();
     expectPopoverShown(el);
     expect(chevron).to.have.attribute('data-expanded');
 
-    // trigger.click();
     el.hide();
     expectPopoverHidden(el);
     expect(chevron).to.not.have.attribute('data-expanded');
