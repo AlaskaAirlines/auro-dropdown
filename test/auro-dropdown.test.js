@@ -21,7 +21,7 @@ describe('auro-dropdown', () => {
       <auro-dropdown chevron></auro-dropdown>
     `);
 
-    const chevronEl = el.shadowRoot.querySelector('#showStateIcon');
+    const chevronEl = el.shadowRoot.querySelector('#show-state-icon');
     expect(chevronEl).to.be.visible;
   })
 
@@ -31,7 +31,7 @@ describe('auro-dropdown', () => {
     `);
 
     const trigger = el.shadowRoot.querySelector('#trigger');
-    const chevron = el.shadowRoot.querySelector('#showStateIcon');
+    const chevron = el.shadowRoot.querySelector('#show-state-icon');
     expectPopoverHidden(el);
     expect(chevron).to.not.have.attribute('data-expanded');
 
@@ -50,7 +50,7 @@ describe('auro-dropdown', () => {
     `);
 
     const trigger = el.shadowRoot.querySelector('#trigger');
-    const chevron = el.shadowRoot.querySelector('#showStateIcon');
+    const chevron = el.shadowRoot.querySelector('#show-state-icon');
     expectPopoverHidden(el);
     expect(chevron).to.not.have.attribute('data-expanded');
 
