@@ -41,9 +41,7 @@ import "@aurolabs/auro-dropdown";
 <!-- The below code snippet is automatically added from ./../apiExamples/basic.html -->
 ```html
 <auro-dropdown>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>
@@ -85,9 +83,7 @@ Default auro-dropdown
 <!-- The below code snippet is automatically added from ./../apiExamples/basic.html -->
 ```html
 <auro-dropdown>
-  <span>
-    Lorem ipsum solar
-  </span>
+  Lorem ipsum solar
   <div slot="trigger">
     Trigger
   </div>

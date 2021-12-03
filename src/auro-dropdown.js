@@ -226,7 +226,7 @@ class AuroDropdown extends LitElement {
         </div>
         ${this.chevron ? html`
           <div id="showStateIcon">
-            <auro-icon category="interface" name="chevron-up" customColor style="color: inherit;"></auro-icon>
+            <auro-icon category="interface" name="chevron-down" customColor style="color: inherit;"></auro-icon>
           </div>
         ` : undefined}
       </div>
