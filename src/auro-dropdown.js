@@ -50,10 +50,12 @@ class AuroDropdown extends LitElement {
     return {
       chevron:       { type: Boolean },
       toggle:        { type: Boolean },
+
       /**
        * @private
        */
       dropdownWidth: { type: Number },
+
       /**
        * @private
        */
@@ -91,16 +93,16 @@ class AuroDropdown extends LitElement {
     this.popover = this.shadowRoot.querySelector('#popover');
     this.popper = new Popover(this.trigger, this.popover, this.placement);
 
-    const toggleDropdown = (event) => {
+    const toggleDropdown = () => {
       if (this.isPopoverVisible) {
         this.toggleHide();
       } else {
-        this.toggleShow(event);
+        this.toggleShow();
       }
     };
 
-    const handleShow = (event) => {
-        this.toggleShow(event);
+    const handleShow = () => {
+        this.toggleShow();
       },
       hideByKeyboard = (event) => {
         const key = event.key.toLowerCase();
@@ -153,7 +155,7 @@ class AuroDropdown extends LitElement {
    * @private
    * @returns {void} Shows the popover. Fires an update lifecycle.
    */
-  toggleShow(event) {
+  toggleShow() {
     if (!this.hasAttribute('disabled')) {
       document.addEventListener('click', this.offClick);
       this.fixWidth();
@@ -196,10 +198,10 @@ class AuroDropdown extends LitElement {
 
   /**
    * @private
-   * @returns {void} Dispatches event with an object showing the state of the dropdown
+   * @returns {void} Dispatches event with an object showing the state of the dropdown.
    */
   dispatchEventDropdownToggle() {
-    let event = new CustomEvent('dropdownToggled', {
+    const event = new CustomEvent('dropdownToggled', {
       detail: {
         expanded: this.isPopoverVisible,
       },
@@ -207,7 +209,7 @@ class AuroDropdown extends LitElement {
     });
 
     this.dispatchEvent(event);
-  };
+  }
 
   // function that renders the HTML and CSS into  the scope of the component
   render() {
