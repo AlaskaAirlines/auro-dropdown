@@ -93,15 +93,24 @@ class AuroDropdown extends LitElement {
     this.popover = this.shadowRoot.querySelector('#popover');
     this.popper = new Popover(this.trigger, this.popover, this.placement);
 
-    const toggleDropdown = () => {
-      if (this.isPopoverVisible) {
-        this.toggleHide();
-      } else {
-        this.toggleShow();
-      }
-    };
+    const offClick = (event) => {
+        // Hide the dropdown content if we clicked anywhere outside auro-dropdown
+        const expectedIndex = -1;
+        if (event.composedPath().indexOf(this) === expectedIndex) {
+          document.removeEventListener('click', offClick);
+          this.toggleHide();
+        }
+      },
+      toggleDropdown = () => {
+        if (this.isPopoverVisible) {
+          this.toggleHide();
+        } else {
+          this.toggleShow();
+        }
+      };
 
     const handleShow = () => {
+        document.addEventListener('click', offClick);
         this.toggleShow();
       },
       hideByKeyboard = (event) => {
@@ -141,7 +150,6 @@ class AuroDropdown extends LitElement {
    * @returns {void} Hides the popover. Fires an update lifecycle.
    */
   toggleHide() {
-    document.removeEventListener('click', this.offClick);
     this.popper.hide();
     this.isPopoverVisible = false;
     this.removeAttribute('data-show');
@@ -157,7 +165,6 @@ class AuroDropdown extends LitElement {
    */
   toggleShow() {
     if (!this.hasAttribute('disabled')) {
-      document.addEventListener('click', this.offClick);
       this.fixWidth();
       this.popper.show();
       this.isPopoverVisible = true;
@@ -183,17 +190,6 @@ class AuroDropdown extends LitElement {
    */
   show() {
     this.toggleShow();
-  }
-
-  /**
-   * @private
-   * @returns {void} Handles clicking outside the dropdown while it's open.
-   */
-  offClick = (event) => {
-    // Hide the dropdown content if we clicked anywhere outside auro-dropdown
-    if (event.composedPath().indexOf(this) === -1) {
-      this.toggleHide();
-    }
   }
 
   /**
