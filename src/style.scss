@@ -97,7 +97,6 @@
   align-items: center;
   color: var(--auro-color-icon-primary-on-light);
   margin-left: var(--auro-size-xs);
-  margin-right: var(--auro-size-sm);
 
   auro-icon {
     transition: transform 200ms ease-in;
@@ -107,10 +106,10 @@
   }
 
   &[data-expanded='true'] {
-    auro-icon {   
+    auro-icon {
       transform: rotate(-180deg);
     }
-  }  
+  }
 }
 
 .helperText {
