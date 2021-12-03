@@ -23,10 +23,14 @@
   border-style: solid;
   border-color: transparent;
   color: var(--auro-color-text-primary-on-light);
+}
 
-  &:hover {
-    background-color: var(--auro-color-background-lighter);
-    cursor: pointer;
+@media (hover: hover) {
+  .trigger {
+    &:hover {
+      background-color: var(--auro-color-background-lighter);
+      cursor: pointer;
+    }
   }
 }
 
@@ -99,9 +103,15 @@
 :host([bordered]) {
   .trigger {
     border-color: var(--auro-color-border-primary-on-dark);
+  }
+}
 
-    &:hover {
-      background-color: var(--auro-color-background-lighter);
+@media (hover: hover) {
+  :host([bordered]) {
+    .trigger {
+      &:hover {
+        background-color: var(--auro-color-background-lighter);
+      }
     }
   }
 }
@@ -132,9 +142,15 @@
 :host([onDark]) { /* stylelint-disable-line no-descending-specificity */
   .trigger { /* stylelint-disable-line no-descending-specificity */
     color: var(--auro-color-text-primary-on-dark);
+  }
+}
 
-    &:hover {
-      background-color: rgba(178 178 178 / .1);
+@media (hover: hover) {
+  :host([onDark]) {
+    .trigger {
+      &:hover {
+        background-color: rgba(178 178 178 / .1);
+      }
     }
   }
 }
