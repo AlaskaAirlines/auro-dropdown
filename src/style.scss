@@ -154,6 +154,10 @@
   .helper-text {
     color: var(--auro-color-text-secondary-on-dark);
   }
+
+  #show-state-icon {
+    color: var(--auro-color-icon-primary-on-dark)
+  }
 }
 
 @media (hover: hover) {
