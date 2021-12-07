@@ -34,11 +34,11 @@
   }
 }
 
-.trigger-content-wrapper {
+.triggerContentWrapper {
   flex: 1;
 }
 
-#show-state-icon {
+#showStateIcon {
   display: flex;
   height: 100%;
   align-items: center;
@@ -58,7 +58,7 @@
   }
 }
 
-.helper-text {
+.helperText {
   margin-top: 4px;
   color: var(--auro-color-text-secondary-on-light);
   font-size: var(--auro-text-body-size-xs);
@@ -96,7 +96,7 @@
 
   .trigger,
   .label,
-  #show-state-icon {
+  #showStateIcon {
     color: var(--auro-color-text-disabled-on-light);
   }
 }
@@ -118,7 +118,7 @@
 }
 
 :host([error]) {
-  .helper-text {
+  .helperText {
     color: var(--auro-color-text-error-on-light);
   }
 
@@ -151,12 +151,12 @@
   }
 
   .label,
-  .helper-text {
+  .helperText {
     color: var(--auro-color-text-secondary-on-dark);
   }
 
-  #show-state-icon {
-    color: var(--auro-color-icon-primary-on-dark)
+  #showStateIcon {
+    color: var(--auro-color-icon-primary-on-dark);
   }
 }
 
@@ -171,7 +171,7 @@
 }
 
 :host([onDark][error]) {
-  .helper-text {
+  .helperText {
     color: var(--auro-color-text-error-on-dark);
   }
 
@@ -184,7 +184,7 @@
 :host([onDark][disabled]) {
   .trigger,
   .label,
-  .helper-text {
+  .helperText {
     color: var(--auro-color-text-disabled-on-dark);
   }
 }
