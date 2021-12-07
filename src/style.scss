@@ -156,24 +156,28 @@
 }
 
 :host([onDark][error]) {
-  .trigger {
-    border-color: var(--auro-color-border-error-on-dark);
-    outline: 1px solid var(--auro-color-border-error-on-dark);
-  }
-
   .helper-text {
     color: var(--auro-color-text-error-on-dark);
   }
 }
 
 :host([onDark][disabled]) {
-  .trigger {
-    border-color: var(--auro-color-border-disabled-on-dark);
-  }
-
   .trigger,
   .label,
   .helper-text {
     color: var(--auro-color-text-disabled-on-dark);
+  }
+}
+
+:host([onDark][error][bordered]) {
+  .trigger {
+    border-color: var(--auro-color-border-error-on-dark);
+    outline: 1px solid var(--auro-color-border-error-on-dark);
+  }
+}
+
+:host([onDark][disabled][bordered]) {
+  .trigger {
+    border-color: var(--auro-color-border-disabled-on-dark);
   }
 }
