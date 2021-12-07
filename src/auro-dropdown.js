@@ -89,7 +89,7 @@ class AuroDropdown extends LitElement {
     this.fixWidth();
 
     this.trigger = this.shadowRoot.querySelector(`#trigger`);
-    this.triggerChevron = this.shadowRoot.querySelector(`#show-state-icon`);
+    this.triggerChevron = this.shadowRoot.querySelector(`#showStateIcon`);
     this.popover = this.shadowRoot.querySelector('#popover');
     this.popper = new Popover(this.trigger, this.popover, this.placement);
 
@@ -214,7 +214,7 @@ class AuroDropdown extends LitElement {
         <slot role="tooltip"></slot>
       </div>
       <div id="trigger" class="trigger" data-trigger-placement="${this.placement}">
-        <div class="trigger-content-wrapper">
+        <div class="triggerContentWrapper">
           <div class="label">
             <slot name="label"></slot>
           </div>
@@ -223,7 +223,7 @@ class AuroDropdown extends LitElement {
           </div>
         </div>
         ${this.chevron ? html`
-          <div id="show-state-icon">
+          <div id="showStateIcon">
             <auro-icon
               category="interface"
               name="chevron-down"
@@ -233,7 +233,7 @@ class AuroDropdown extends LitElement {
           </div>
         ` : undefined}
       </div>
-      <div class="helper-text">
+      <div class="helperText">
         <slot name="helperText"></slot>
       </div>
     `;
