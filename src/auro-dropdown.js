@@ -94,45 +94,49 @@ class AuroDropdown extends LitElement {
     this.popper = new Popover(this.trigger, this.popover, this.placement);
 
     const offClick = (event) => {
-        // Hide the dropdown content if we clicked anywhere outside auro-dropdown
-        const expectedIndex = -1;
-        if (event.composedPath().indexOf(this) === expectedIndex) {
-          document.removeEventListener('click', offClick);
-          this.toggleHide();
-        }
-      },
-      toggleDropdown = () => {
-        if (this.isPopoverVisible) {
-          this.toggleHide();
-        } else {
-          this.toggleShow();
-        }
-      };
+      // Hide the dropdown content if we clicked anywhere outside auro-dropdown
+      const expectedIndex = -1;
+      if (event.composedPath().indexOf(this) === expectedIndex) {
+        document.removeEventListener('click', offClick);
+        this.toggleHide();
+      }
+    };
 
     const handleShow = () => {
-        document.addEventListener('click', offClick);
-        this.toggleShow();
-      },
-      hideByKeyboard = (event) => {
-        const key = event.key.toLowerCase();
+      document.addEventListener('click', offClick);
+      this.toggleShow();
+    };
 
-        if (key === 'escape') {
-          this.toggleHide(event);
-        }
-      },
-      showByKeyboard = (event) => {
-        const key = event.key.toLowerCase();
-        if (key === ' ' || key === 'enter') {
-          this.toggleShow();
-        }
-      },
-      toggleByKeyboard = (event) => {
-        const key = event.key.toLowerCase();
+    const toggleDropdown = () => {
+      if (this.isPopoverVisible) {
+        this.toggleHide();
+      } else {
+        handleShow();
+      }
+    };
 
-        if (key === ' ' || key === 'enter') {
-          toggleDropdown; /* eslint-disable-line no-unused-expressions */
-        }
-      };
+    const hideByKeyboard = (event) => {
+      const key = event.key.toLowerCase();
+
+      if (key === 'escape') {
+        this.toggleHide();
+      }
+    };
+
+    const showByKeyboard = (event) => {
+      const key = event.key.toLowerCase();
+      if (key === ' ' || key === 'enter') {
+        handleShow();
+      }
+    };
+
+    const toggleByKeyboard = (event) => {
+      const key = event.key.toLowerCase();
+
+      if (key === ' ' || key === 'enter') {
+        toggleDropdown; /* eslint-disable-line no-unused-expressions */
+      }
+    };
 
     if (this.toggle) {
       this.trigger.addEventListener('click', toggleDropdown);
