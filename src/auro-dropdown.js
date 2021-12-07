@@ -50,6 +50,7 @@ class AuroDropdown extends LitElement {
     return {
       chevron:       { type: Boolean },
       toggle:        { type: Boolean },
+      onDark:        { type: Boolean },
 
       /**
        * @private
@@ -224,7 +225,11 @@ class AuroDropdown extends LitElement {
         </div>
         ${this.chevron ? html`
           <div id="show-state-icon">
-            <auro-icon category="interface" name="chevron-down" customColor style="color: inherit;"></auro-icon>
+            <auro-icon
+              category="interface"
+              name="chevron-down"
+              ?onDark="${this.onDark}">
+            </auro-icon>
           </div>
         ` : undefined}
       </div>
