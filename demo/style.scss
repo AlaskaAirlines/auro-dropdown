@@ -1,10 +1,11 @@
-.auro-markdown table tr td {
-  font-weight: 500;
-  width: 50%;
-  vertical-align: top;
-  border-collapse: unset;
+.twoColDemoRow {
+  display: flex;
+
+  > * {
+    flex: 1;
+  }
 }
 
-.auro-markdown table tr:nth-child(even) {
-  background-color: unset;
+[class^="exampleWrapper"] {
+  padding: var(--auro-size-xs);
 }

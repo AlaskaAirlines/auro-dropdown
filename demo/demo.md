@@ -1,6 +1,6 @@
 # Dropdown
 
-The `auro-dropdown` component is a trigger and dropdown element combination intended to be used with dropdown content that is interactive. `auro-dropdown` is content agnostic and any valid HTML can be placed in either the trigger or the dropdown. 
+The `auro-dropdown` component is a trigger and dropdown element combination intended to be used with dropdown content that is interactive. `auro-dropdown` is content agnostic and any valid HTML can be placed in either the trigger or the dropdown.
 
 See [install instructions](https://auro.alaskaair.com/components/auro/popover/install) for more information as how to install and full API for the `auro-dropdown` element.
 
@@ -36,9 +36,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 
 ## Default examples
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basic.html) -->
       <!-- The below content is automatically added from ./../apiExamples/basic.html -->
       <auro-dropdown>
@@ -48,21 +48,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basic-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/basic-onDark.html -->
-      <auro-dropdown onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          Trigger
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -79,8 +65,19 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basic-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/basic-onDark.html -->
+      <auro-dropdown onDark>
+        Lorem ipsum solar
+        <div slot="trigger">
+          Trigger
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -97,10 +94,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicIcon.html) -->
       <!-- The below content is automatically added from ./../apiExamples/basicIcon.html -->
       <auro-dropdown>
@@ -112,24 +110,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicIcon-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/basicIcon-onDark.html -->
-      <auro-dropdown onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-icon
-            category="interface"
-            name="arrow-down"
-            onDark></auro-icon>
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -148,8 +129,22 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicIcon-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/basicIcon-onDark.html -->
+      <auro-dropdown onDark>
+        Lorem ipsum solar
+        <div slot="trigger">
+          <auro-icon
+            category="interface"
+            name="arrow-down"
+            onDark></auro-icon>
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -169,10 +164,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicButton.html) -->
       <!-- The below content is automatically added from ./../apiExamples/basicButton.html -->
       <auro-dropdown>
@@ -186,28 +182,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicButton-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/basicButton-onDark.html -->
-      <auro-dropdown onDark>
-      
-        Lorem ipsum solar
-      
-        <div slot="trigger">
-          <auro-button
-            slot="trigger"
-            fluid
-            onDark>
-            Dropdown
-          </auro-button>
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -228,8 +203,24 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicButton-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/basicButton-onDark.html -->
+      <auro-dropdown onDark>
+        Lorem ipsum solar
+        <div slot="trigger">
+          <auro-button
+            slot="trigger"
+            fluid
+            onDark>
+            Dropdown
+          </auro-button>
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -237,9 +228,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- The below code snippet is automatically added from ./../apiExamples/basicButton-onDark.html -->
 ```html
 <auro-dropdown onDark>
-
   Lorem ipsum solar
-
   <div slot="trigger">
     <auro-button
       slot="trigger"
@@ -253,10 +242,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicInput.html) -->
       <!-- The below content is automatically added from ./../apiExamples/basicInput.html -->
       <auro-dropdown>
@@ -269,25 +259,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicInput-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/basicInput-onDark.html -->
-      <auro-dropdown onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-input
-            slot="trigger"
-            id="inputExampleTrigger"
-            onDark>
-          </auro-input>
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -307,8 +279,23 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicInput-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/basicInput-onDark.html -->
+      <auro-dropdown onDark>
+        Lorem ipsum solar
+        <div slot="trigger">
+          <auro-input
+            slot="trigger"
+            id="inputExampleTrigger"
+            onDark>
+          </auro-input>
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -329,15 +316,14 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Examples with state chevron
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevron.html) -->
       <!-- The below content is automatically added from ./../apiExamples/chevron.html -->
       <auro-dropdown chevron>
@@ -347,23 +333,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevron-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/chevron-onDark.html -->
-      <auro-dropdown
-        onDark
-        chevron>
-        Lorem ipsum solar
-        <div slot="trigger">
-          Trigger
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -380,8 +350,21 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevron-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/chevron-onDark.html -->
+      <auro-dropdown
+        onDark
+        chevron>
+        Lorem ipsum solar
+        <div slot="trigger">
+          Trigger
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -400,10 +383,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronIcon.html) -->
       <!-- The below content is automatically added from ./../apiExamples/chevronIcon.html -->
       <auro-dropdown chevron>
@@ -415,26 +399,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronIcon-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/chevronIcon-onDark.html -->
-      <auro-dropdown
-        onDark
-        chevron>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-icon
-            category="interface"
-            name="arrow-down"
-            onDark></auro-icon>
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -453,8 +418,24 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronIcon-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/chevronIcon-onDark.html -->
+      <auro-dropdown
+        onDark
+        chevron>
+        Lorem ipsum solar
+        <div slot="trigger">
+          <auro-icon
+            category="interface"
+            name="arrow-down"
+            onDark></auro-icon>
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -476,10 +457,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronButton.html) -->
       <!-- The below content is automatically added from ./../apiExamples/chevronButton.html -->
       <auro-dropdown chevron>
@@ -493,28 +475,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronButton-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/chevronButton-onDark.html -->
-      <auro-dropdown
-        onDark
-        chevron>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-button
-            slot="trigger"
-            fluid
-            onDark>
-            Dropdown
-          </auro-button>
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -535,8 +496,26 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronButton-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/chevronButton-onDark.html -->
+      <auro-dropdown
+        onDark
+        chevron>
+        Lorem ipsum solar
+        <div slot="trigger">
+          <auro-button
+            slot="trigger"
+            fluid
+            onDark>
+            Dropdown
+          </auro-button>
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -560,10 +539,11 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronInput.html) -->
       <!-- The below content is automatically added from ./../apiExamples/chevronInput.html -->
       <auro-dropdown chevron>
@@ -576,27 +556,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronInput-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/chevronInput-onDark.html -->
-      <auro-dropdown
-        onDark
-        chevron>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-input
-            slot="trigger"
-            id="inputExampleTrigger"
-            onDark>
-          </auro-input>
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -616,8 +576,25 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronInput-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/chevronInput-onDark.html -->
+      <auro-dropdown
+        onDark
+        chevron>
+        Lorem ipsum solar
+        <div slot="trigger">
+          <auro-input
+            slot="trigger"
+            id="inputExampleTrigger"
+            onDark>
+          </auro-input>
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -640,15 +617,14 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Example using bordered attribute
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/bordered.html) -->
       <!-- The below content is automatically added from ./../apiExamples/bordered.html -->
       <auro-dropdown bordered>
@@ -658,23 +634,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/bordered-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/bordered-onDark.html -->
-      <auro-dropdown
-        bordered
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          Trigger
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -691,8 +651,21 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/bordered-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/bordered-onDark.html -->
+      <auro-dropdown
+        bordered
+        onDark>
+        Lorem ipsum solar
+        <div slot="trigger">
+          Trigger
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -711,17 +684,14 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Example using rounded attribute
 
-_Note: best combined with bordered attribute_
-
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/rounded.html) -->
       <!-- The below content is automatically added from ./../apiExamples/rounded.html -->
       <auro-dropdown
@@ -733,24 +703,7 @@ _Note: best combined with bordered attribute_
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/rounded-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/rounded-onDark.html -->
-      <auro-dropdown
-        rounded
-        bordered
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          Trigger
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -769,8 +722,22 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/rounded-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/rounded-onDark.html -->
+      <auro-dropdown
+        rounded
+        bordered
+        onDark>
+        Lorem ipsum solar
+        <div slot="trigger">
+          Trigger
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -790,15 +757,14 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Example using inset attribute
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/inset.html) -->
       <!-- The below content is automatically added from ./../apiExamples/inset.html -->
       <auro-dropdown inset>
@@ -808,23 +774,7 @@ _Note: best combined with bordered attribute_
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/inset-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/inset-onDark.html -->
-      <auro-dropdown
-        inset
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          Trigger
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -841,8 +791,21 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/inset-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/inset-onDark.html -->
+      <auro-dropdown
+        inset
+        onDark>
+        Lorem ipsum solar
+        <div slot="trigger">
+          Trigger
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -861,10 +824,11 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/insetBordered.html) -->
       <!-- The below content is automatically added from ./../apiExamples/insetBordered.html -->
       <auro-dropdown
@@ -877,25 +841,7 @@ _Note: best combined with bordered attribute_
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/insetBordered-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/insetBordered-onDark.html -->
-      <auro-dropdown
-        inset
-        rounded
-        bordered
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          Trigger
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -915,8 +861,23 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/insetBordered-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/insetBordered-onDark.html -->
+      <auro-dropdown
+        inset
+        rounded
+        bordered
+        onDark>
+        Lorem ipsum solar
+        <div slot="trigger">
+          Trigger
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -937,19 +898,17 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Error example
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/error.html) -->
       <!-- The below content is automatically added from ./../apiExamples/error.html -->
       <auro-dropdown
-        inset
         error>
         Lorem ipsum solar
         <div slot="trigger">
@@ -957,8 +916,27 @@ _Note: best combined with bordered attribute_
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
+    </div>
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/error.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/error.html -->
+```html
+<auro-dropdown
+  error>
+  Lorem ipsum solar
+  <div slot="trigger">
+    Trigger
+  </div>
+</auro-dropdown>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
+
+</auro-accordion>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/error-onDark.html) -->
       <!-- The below content is automatically added from ./../apiExamples/error-onDark.html -->
       <auro-dropdown
@@ -970,30 +948,7 @@ _Note: best combined with bordered attribute_
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/error.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/error.html -->
-```html
-<auro-dropdown
-  inset
-  error>
-  Lorem ipsum solar
-  <div slot="trigger">
-    Trigger
-  </div>
-</auro-dropdown>
-```
-<!-- AURO-GENERATED-CONTENT:END -->
-
-</auro-accordion>
-    </td>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1012,10 +967,11 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/errorBordered.html) -->
       <!-- The below content is automatically added from ./../apiExamples/errorBordered.html -->
       <auro-dropdown
@@ -1029,26 +985,7 @@ _Note: best combined with bordered attribute_
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/errorBordered-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/errorBordered-onDark.html -->
-      <auro-dropdown
-        inset
-        error
-        rounded
-        bordered
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          Trigger
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1069,8 +1006,24 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/errorBordered-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/errorBordered-onDark.html -->
+      <auro-dropdown
+        inset
+        error
+        rounded
+        bordered
+        onDark>
+        Lorem ipsum solar
+        <div slot="trigger">
+          Trigger
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1092,15 +1045,14 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Example using label attribute
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/label.html) -->
       <!-- The below content is automatically added from ./../apiExamples/label.html -->
       <auro-dropdown
@@ -1115,27 +1067,7 @@ _Note: best combined with bordered attribute_
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/label-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/label-onDark.html -->
-      <auro-dropdown
-        bordered
-        rounded
-        inset
-        chevron
-        onDark>
-        Lorem ipsum solar
-        <span slot="label">Name</span>
-        <div slot="trigger">
-          Trigger
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1157,8 +1089,25 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/label-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/label-onDark.html -->
+      <auro-dropdown
+        bordered
+        rounded
+        inset
+        chevron
+        onDark>
+        Lorem ipsum solar
+        <span slot="label">Name</span>
+        <div slot="trigger">
+          Trigger
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1181,15 +1130,14 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Example using helperText attribute
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/helperText.html) -->
       <!-- The below content is automatically added from ./../apiExamples/helperText.html -->
       <auro-dropdown
@@ -1205,29 +1153,7 @@ _Note: best combined with bordered attribute_
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/helperText-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/helperText-onDark.html -->
-      <auro-dropdown
-        inset
-        bordered
-        rounded
-        error
-        onDark>
-        Lorem ipsum solar
-        <span slot="helperText">
-          Helper text
-        </span>
-        <div slot="trigger">
-          Trigger
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1250,8 +1176,26 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/helperText-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/helperText-onDark.html -->
+      <auro-dropdown
+        inset
+        bordered
+        rounded
+        onDark>
+        Lorem ipsum solar
+        <span slot="helperText">
+          Helper text
+        </span>
+        <div slot="trigger">
+          Trigger
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1262,7 +1206,6 @@ _Note: best combined with bordered attribute_
   inset
   bordered
   rounded
-  error
   onDark>
   Lorem ipsum solar
   <span slot="helperText">
@@ -1276,10 +1219,11 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-   <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/helperTextError.html) -->
       <!-- The below content is automatically added from ./../apiExamples/helperTextError.html -->
       <auro-dropdown
@@ -1296,29 +1240,7 @@ _Note: best combined with bordered attribute_
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/helperTextError-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/helperTextError-onDark.html -->
-      <auro-dropdown
-        inset
-        bordered
-        rounded
-        error
-        onDark>
-        Lorem ipsum solar
-        <span slot="helperText">
-          Helper text
-        </span>
-        <div slot="trigger">
-          Trigger
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1342,8 +1264,27 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/helperTextError-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/helperTextError-onDark.html -->
+      <auro-dropdown
+        inset
+        bordered
+        rounded
+        error
+        onDark>
+        Lorem ipsum solar
+        <span slot="helperText">
+          Helper text
+        </span>
+        <div slot="trigger">
+          Trigger
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1368,15 +1309,14 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Disabled example
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabled.html) -->
       <!-- The below content is automatically added from ./../apiExamples/disabled.html -->
       <auro-dropdown disabled>
@@ -1386,23 +1326,7 @@ _Note: best combined with bordered attribute_
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabled-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/disabled-onDark.html -->
-      <auro-dropdown
-        disabled
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          Trigger
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1419,8 +1343,21 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabled-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/disabled-onDark.html -->
+      <auro-dropdown
+        disabled
+        onDark>
+        Lorem ipsum solar
+        <div slot="trigger">
+          Trigger
+        </div>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1439,82 +1376,11 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabledChevron.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/disabledChevron.html -->
-      <auro-dropdown
-        disabled
-        chevron>
-        Lorem ipsum solar
-        <div slot="trigger">
-          Trigger
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabledChevron-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/disabledChevron-onDark.html -->
-      <auro-dropdown
-        disabled
-        chevron
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          Trigger
-        </div>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/disabledChevron.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/disabledChevron.html -->
-```html
-<auro-dropdown
-  disabled
-  chevron>
-  Lorem ipsum solar
-  <div slot="trigger">
-    Trigger
   </div>
-</auro-dropdown>
-```
-<!-- AURO-GENERATED-CONTENT:END -->
-
-</auro-accordion>
-    </td>
-    <td>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/disabledChevron-onDark.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/disabledChevron-onDark.html -->
-```html
-<auro-dropdown
-  disabled
-  chevron
-  onDark>
-  Lorem ipsum solar
-  <div slot="trigger">
-    Trigger
-  </div>
-</auro-dropdown>
-```
-<!-- AURO-GENERATED-CONTENT:END -->
-
-</auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabledAll.html) -->
       <!-- The below content is automatically added from ./../apiExamples/disabledAll.html -->
       <auro-dropdown
@@ -1535,33 +1401,7 @@ _Note: best combined with bordered attribute_
         </span>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabledAll-onDark.html) -->
-      <!-- The below content is automatically added from ./../apiExamples/disabledAll-onDark.html -->
-      <auro-dropdown
-        disabled
-        chevron
-        rounded
-        bordered
-        inset
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          Trigger
-        </div>
-        <span slot="helperText">
-          Helper text
-        </span>
-        <span slot="label">
-          Name
-        </span>
-      </auro-dropdown>
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1589,8 +1429,31 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabledAll-onDark.html) -->
+      <!-- The below content is automatically added from ./../apiExamples/disabledAll-onDark.html -->
+      <auro-dropdown
+        disabled
+        chevron
+        rounded
+        bordered
+        inset
+        onDark>
+        Lorem ipsum solar
+        <div slot="trigger">
+          Trigger
+        </div>
+        <span slot="helperText">
+          Helper text
+        </span>
+        <span slot="label">
+          Name
+        </span>
+      </auro-dropdown>
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1619,42 +1482,41 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Examples with custom dimensions
 
-The `auro-dropdown` trigger will fill 100% of the available width of it's parent container. The dropdown content will always be at least as wide as the trigger. If the container is narrower than the desired width of the dropdown content (e.g. using just an icon for the trigger) you may apply CSS to your dropdown content to define a custom width.
-
-<div class="exampleWrapper" style="width: 100px;">
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/customDimensions100.html) -->
-<!-- The below content is automatically added from ./../apiExamples/customDimensions100.html -->
-<auro-dropdown inset bordered rounded chevron>
-  <div style="width: 100px; max-height: 200px; overflow: scroll;">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/customDimensions100.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/customDimensions100.html -->
+  <div style="width: 100px;">
+    <auro-dropdown inset bordered rounded chevron>
+      <div style="width: 100px; max-height: 200px; overflow: scroll;">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div slot="trigger">
+        Trigger
+      </div>
+    </auro-dropdown>
   </div>
-  <div slot="trigger">
-    Trigger
-  </div>
-</auro-dropdown>
-<!-- AURO-GENERATED-CONTENT:END -->
+  <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
-  <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/customDimensions100.html) -->
-  <!-- The below code snippet is automatically added from ./../apiExamples/customDimensions100.html -->
-  ```html
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/customDimensions100.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/customDimensions100.html -->
+```html
+<div style="width: 100px;">
   <auro-dropdown inset bordered rounded chevron>
     <div style="width: 100px; max-height: 200px; overflow: scroll;">
       <p>
@@ -1671,41 +1533,41 @@ The `auro-dropdown` trigger will fill 100% of the available width of it's parent
       Trigger
     </div>
   </auro-dropdown>
-  ```
-  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-
-The dropdown container will grow in height to the size of the content. A combination of `height` or `max-height` and `overflow: scroll;` can be used to define a smaller container with larger content.
-
-<div class="exampleWrapper" style="width: 300px;">
+<div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/customDimensions300.html) -->
   <!-- The below content is automatically added from ./../apiExamples/customDimensions300.html -->
-  <auro-dropdown inset bordered rounded chevron>
-    <div style="width: 300px; max-height: 200px; overflow: scroll;">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-    <div slot="trigger">
-      Trigger
-    </div>
-  </auro-dropdown>
+  <div style="width: 300px;">
+    <auro-dropdown inset bordered rounded chevron>
+      <div style="width: 300px; max-height: 200px; overflow: scroll;">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div slot="trigger">
+        Trigger
+      </div>
+    </auro-dropdown>
+  </div>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
-  <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/customDimensions300.html) -->
-  <!-- The below code snippet is automatically added from ./../apiExamples/customDimensions300.html -->
-  ```html
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/customDimensions300.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/customDimensions300.html -->
+```html
+<div style="width: 300px;">
   <auro-dropdown inset bordered rounded chevron>
     <div style="width: 300px; max-height: 200px; overflow: scroll;">
       <p>
@@ -1722,8 +1584,9 @@ The dropdown container will grow in height to the size of the content. A combina
       Trigger
     </div>
   </auro-dropdown>
-  ```
-  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
 
@@ -1740,14 +1603,13 @@ The dropdown container will grow in height to the size of the content. A combina
   </auro-dropdown>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/bordered.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/bordered.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/toggle.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/toggle.html -->
 ```html
-<auro-dropdown bordered>
+<auro-dropdown toggle>
   Lorem ipsum solar
   <div slot="trigger">
     Trigger
@@ -1777,7 +1639,6 @@ The dropdown container will grow in height to the size of the content. A combina
   </auro-dropdown>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 

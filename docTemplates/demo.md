@@ -1,6 +1,6 @@
 # Dropdown
 
-The `auro-dropdown` component is a trigger and dropdown element combination intended to be used with dropdown content that is interactive. `auro-dropdown` is content agnostic and any valid HTML can be placed in either the trigger or the dropdown. 
+The `auro-dropdown` component is a trigger and dropdown element combination intended to be used with dropdown content that is interactive. `auro-dropdown` is content agnostic and any valid HTML can be placed in either the trigger or the dropdown.
 
 See [install instructions](https://auro.alaskaair.com/components/auro/popover/install) for more information as how to install and full API for the `auro-dropdown` element.
 
@@ -36,19 +36,12 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 
 ## Default examples
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basic.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basic-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -56,8 +49,12 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basic-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -65,20 +62,14 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicIcon.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicIcon-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -86,8 +77,12 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicIcon-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -95,20 +90,14 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicButton.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicButton-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -116,8 +105,12 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicButton-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -125,20 +118,14 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicInput.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicInput-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -146,8 +133,12 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basicInput-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -155,25 +146,17 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Examples with state chevron
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevron.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevron-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -181,8 +164,12 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevron-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -190,20 +177,14 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronIcon.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronIcon-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -211,8 +192,12 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronIcon-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -220,20 +205,14 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronButton.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronButton-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -241,8 +220,12 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronButton-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -250,20 +233,14 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronInput.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronInput-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -271,8 +248,12 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/chevronInput-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -280,25 +261,17 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Example using bordered attribute
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/bordered.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/bordered-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -306,8 +279,12 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/bordered-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -315,27 +292,17 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Example using rounded attribute
 
-_Note: best combined with bordered attribute_
-
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/rounded.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/rounded-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -343,8 +310,12 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/rounded-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -352,25 +323,17 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Example using inset attribute
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/inset.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/inset-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -378,8 +341,12 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/inset-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -387,20 +354,14 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/insetBordered.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/insetBordered-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -408,8 +369,12 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/insetBordered-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -417,25 +382,17 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Error example
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/error.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/error-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -443,8 +400,12 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/error-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -452,20 +413,14 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/errorBordered.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/errorBordered-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -473,8 +428,12 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/errorBordered-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -482,25 +441,17 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Example using label attribute
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/label.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/label-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -508,8 +459,12 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/label-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -517,25 +472,17 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Example using helperText attribute
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/helperText.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/helperText-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -543,8 +490,12 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/helperText-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -552,20 +503,14 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-   <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/helperTextError.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/helperTextError-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -573,8 +518,12 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/helperTextError-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -582,25 +531,17 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Disabled example
 
-<table>
-  <tr>
-    <td class="exampleWrapper">
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabled.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabled-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -608,8 +549,12 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabled-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -617,50 +562,14 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabledChevron.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabledChevron-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/disabledChevron.html) -->
-<!-- AURO-GENERATED-CONTENT:END -->
-
-</auro-accordion>
-    </td>
-    <td>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/disabledChevron-onDark.html) -->
-<!-- AURO-GENERATED-CONTENT:END -->
-
-</auro-accordion>
-    </td>
-  </tr>
-  <tr>
-    <td class="exampleWrapper">
+  </div>
+</div>
+<div class="twoColDemoRow">
+  <div>
+    <div class="exampleWrapper">
       <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabledAll.html) -->
       <!-- AURO-GENERATED-CONTENT:END -->
-  </td>
-    <td class="exampleWrapper--ondark">
-      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabledAll-onDark.html) -->
-      <!-- AURO-GENERATED-CONTENT:END -->
-    </td>
-  </tr>
-  <tr>
-    <td>
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -668,8 +577,12 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-    <td>
+  </div>
+  <div>
+    <div class="exampleWrapper--ondark">
+      <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabledAll-onDark.html) -->
+      <!-- AURO-GENERATED-CONTENT:END -->
+    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -677,39 +590,31 @@ _Note: best combined with bordered attribute_
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-    </td>
-  </tr>
-</table>
+  </div>
+</div>
 
 ## Examples with custom dimensions
 
-The `auro-dropdown` trigger will fill 100% of the available width of it's parent container. The dropdown content will always be at least as wide as the trigger. If the container is narrower than the desired width of the dropdown content (e.g. using just an icon for the trigger) you may apply CSS to your dropdown content to define a custom width.
-
-<div class="exampleWrapper" style="width: 100px;">
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/customDimensions100.html) -->
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/customDimensions100.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
-  <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/customDimensions100.html) -->
-  <!-- AURO-GENERATED-CONTENT:END -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/customDimensions100.html) -->
+<!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
-
-The dropdown container will grow in height to the size of the content. A combination of `height` or `max-height` and `overflow: scroll;` can be used to define a smaller container with larger content.
-
-<div class="exampleWrapper" style="width: 300px;">
+<div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/customDimensions300.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
-  <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/customDimensions300.html) -->
-  <!-- AURO-GENERATED-CONTENT:END -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/customDimensions300.html) -->
+<!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
 
@@ -719,11 +624,10 @@ The dropdown container will grow in height to the size of the content. A combina
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/toggle.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/bordered.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/toggle.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -734,7 +638,6 @@ The dropdown container will grow in height to the size of the content. A combina
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/programmaticallyHide.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
