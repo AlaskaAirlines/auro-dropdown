@@ -95,6 +95,7 @@
   pointer-events: none;
 
   .trigger,
+  .label,
   #show-state-icon {
     color: var(--auro-color-text-disabled-on-light);
   }
@@ -120,11 +121,16 @@
   .helper-text {
     color: var(--auro-color-text-error-on-light);
   }
+
+  .trigger {
+    border-color: var(--auro-color-border-error-on-light);
+    outline: 1px solid var(--auro-color-alert-error-on-light);
+  }
 }
 
-:host([bordered][disabled]) {
+:host([disabled][bordered]) {
   .trigger {
-    border-color: var(--auro-color-border-disabled-on-light);
+    border-color: var(--auro-color-border-disabled);
   }
 }
 
@@ -143,6 +149,11 @@
   .trigger { /* stylelint-disable-line no-descending-specificity */
     color: var(--auro-color-text-primary-on-dark);
   }
+
+  .label,
+  .helper-text {
+    color: var(--auro-color-text-secondary-on-dark);
+  }
 }
 
 @media (hover: hover) {
@@ -159,6 +170,11 @@
   .helper-text {
     color: var(--auro-color-text-error-on-dark);
   }
+
+  .trigger {
+    border-color: var(--auro-color-border-error-on-dark);
+    outline: 1px solid var(--auro-color-border-error-on-dark);
+  }
 }
 
 :host([onDark][disabled]) {
@@ -166,13 +182,6 @@
   .label,
   .helper-text {
     color: var(--auro-color-text-disabled-on-dark);
-  }
-}
-
-:host([onDark][error][bordered]) {
-  .trigger {
-    border-color: var(--auro-color-border-error-on-dark);
-    outline: 1px solid var(--auro-color-border-error-on-dark);
   }
 }
 
