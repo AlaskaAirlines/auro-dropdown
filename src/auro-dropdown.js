@@ -228,7 +228,9 @@ class AuroDropdown extends LitElement {
             <auro-icon
               category="interface"
               name="chevron-down"
-              ?onDark="${this.onDark}">
+              ?onDark="${this.onDark}"
+              customColor
+              style="color:inherit;">
             </auro-icon>
           </div>
         ` : undefined}
