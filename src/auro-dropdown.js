@@ -50,6 +50,10 @@ class AuroDropdown extends LitElement {
     return {
       chevron:       { type: Boolean },
       toggle:        { type: Boolean },
+
+      /**
+       * @private
+       */
       onDark:        { type: Boolean },
 
       /**
