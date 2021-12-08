@@ -26,12 +26,6 @@ class AuroDropdown extends LitElement {
     super();
 
     this.privateDefaults();
-
-    // adds toggle function to root element based on touch
-    this.addEventListener('touchstart', function() {
-      this.toggle();
-      this.setAttribute("isTouch", "true");
-    });
   }
 
   /**
