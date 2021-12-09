@@ -225,8 +225,7 @@ class AuroDropdown extends LitElement {
             <auro-icon
               category="interface"
               name="chevron-down"
-              customColor
-              style="color:inherit;">
+              customColor>
             </auro-icon>
           </div>
         ` : undefined}
