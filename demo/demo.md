@@ -44,7 +44,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <auro-dropdown>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -58,7 +60,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <auro-dropdown>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -73,7 +77,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <auro-dropdown onDark>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -87,7 +93,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <auro-dropdown onDark>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -329,7 +337,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <auro-dropdown chevron>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -343,7 +353,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <auro-dropdown chevron>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -360,7 +372,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         chevron>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -376,7 +390,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   chevron>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -630,7 +646,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <auro-dropdown bordered>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -644,7 +662,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <auro-dropdown bordered>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -661,7 +681,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         onDark>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -677,7 +699,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   onDark>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -699,7 +723,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         bordered>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -715,7 +741,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   bordered>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -733,7 +761,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         onDark>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -750,7 +780,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   onDark>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -770,7 +802,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <auro-dropdown inset>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -784,7 +818,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <auro-dropdown inset>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -801,7 +837,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         onDark>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -817,7 +855,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   onDark>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -837,7 +877,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         bordered>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -854,7 +896,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   bordered>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -873,7 +917,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         onDark>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -891,7 +937,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   onDark>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -912,7 +960,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         error>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -927,7 +977,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   error>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -944,7 +996,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         onDark>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -960,7 +1014,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   onDark>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -981,7 +1037,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         bordered>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -999,7 +1057,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   bordered>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -1019,7 +1079,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         onDark>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -1038,7 +1100,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   onDark>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -1063,7 +1127,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         Lorem ipsum solar
         <span slot="label">Name</span>
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -1082,7 +1148,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   Lorem ipsum solar
   <span slot="label">Name</span>
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -1103,7 +1171,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         Lorem ipsum solar
         <span slot="label">Name</span>
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -1123,7 +1193,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   Lorem ipsum solar
   <span slot="label">Name</span>
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -1149,7 +1221,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
           Helper text
         </span>
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -1169,7 +1243,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
     Helper text
   </span>
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -1191,7 +1267,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
           Helper text
         </span>
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -1212,7 +1290,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
     Helper text
   </span>
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -1236,7 +1316,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
           Helper text
         </span>
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -1257,7 +1339,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
     Helper text
   </span>
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -1280,7 +1364,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
           Helper text
         </span>
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -1302,7 +1388,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
     Helper text
   </span>
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -1322,7 +1410,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       <auro-dropdown disabled>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -1336,7 +1426,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <auro-dropdown disabled>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -1353,7 +1445,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         onDark>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
       </auro-dropdown>
       <!-- AURO-GENERATED-CONTENT:END -->
@@ -1369,7 +1463,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   onDark>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -1391,7 +1487,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         bordered>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
         <span slot="helperText">
           Helper text
@@ -1416,7 +1514,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   bordered>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
   <span slot="helperText">
     Helper text
@@ -1443,7 +1543,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
         onDark>
         Lorem ipsum solar
         <div slot="trigger">
-          Trigger
+          <span tabindex="0">
+            Trigger
+          </span>
         </div>
         <span slot="helperText">
           Helper text
@@ -1469,7 +1571,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   onDark>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
   <span slot="helperText">
     Helper text
@@ -1598,7 +1702,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
   <auro-dropdown toggle>
     Lorem ipsum solar
     <div slot="trigger">
-      Trigger
+      <span tabindex="0">
+        Trigger
+      </span>
     </div>
   </auro-dropdown>
   <!-- AURO-GENERATED-CONTENT:END -->
@@ -1612,7 +1718,9 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <auro-dropdown toggle>
   Lorem ipsum solar
   <div slot="trigger">
-    Trigger
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
 ```
@@ -1625,7 +1733,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/programmaticallyHide.html) -->
   <!-- The below content is automatically added from ./../apiExamples/programmaticallyHide.html -->
-  <auro-dropdown id="hideExample">
+  <auro-dropdown id="hideExample" rounded bordered inset>
     <p>
       Lorem ipsum solar
     </p>
@@ -1636,6 +1744,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
       slot="trigger"
       id="hideExampleTrigger">
     </auro-input>
+    <span slot="helperText">Helper Text</span>
   </auro-dropdown>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
@@ -1645,7 +1754,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/programmaticallyHide.html) -->
 <!-- The below code snippet is automatically added from ./../apiExamples/programmaticallyHide.html -->
 ```html
-<auro-dropdown id="hideExample">
+<auro-dropdown id="hideExample" rounded bordered inset>
   <p>
     Lorem ipsum solar
   </p>
@@ -1656,6 +1765,7 @@ Auro popover allows two ways to layout the HTML. Please see the following exampl
     slot="trigger"
     id="hideExampleTrigger">
   </auro-input>
+  <span slot="helperText">Helper Text</span>
 </auro-dropdown>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
