@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 .popover {
   display: inline-block;
   box-sizing: border-box;
@@ -23,6 +25,15 @@
   border-style: solid;
   border-color: transparent;
   color: var(--auro-color-text-primary-on-light);
+
+  &:focus-within {
+    border-color: var(--auro-color-border-active-on-light);
+  }
+
+  &:active {
+    border-color: var(--auro-color-border-active-on-light);
+    outline: 1px solid var(--auro-color-border-active-on-light);
+  }
 }
 
 @media (hover: hover) {
@@ -104,6 +115,10 @@
 :host([bordered]) {
   .trigger {
     border-color: var(--auro-color-border-primary-on-dark);
+
+    &:focus-within {
+      border-color: var(--auro-color-border-active-on-light);
+    }
   }
 }
 
@@ -125,6 +140,16 @@
   .trigger {
     border-color: var(--auro-color-border-error-on-light);
     outline: 1px solid var(--auro-color-alert-error-on-light);
+
+    &:focus-within {
+      border-color: var(--auro-color-border-active-on-light);
+      outline: none;
+    }
+
+    &:active {
+      border-color: var(--auro-color-border-active-on-light);
+      outline: 1px solid var(--auro-color-border-active-on-light);
+    }
   }
 }
 
@@ -138,6 +163,16 @@
   .trigger {
     border-color: var(--auro-color-border-error-on-light);
     outline: 1px solid var(--auro-color-alert-error-on-light);
+
+    &:focus-within {
+      border-color: var(--auro-color-border-active-on-light);
+      outline: none;
+    }
+
+    &:active {
+      border-color: var(--auro-color-border-active-on-light);
+      outline: 1px solid var(--auro-color-border-active-on-light);
+    }
   }
 }
 
@@ -145,9 +180,19 @@
  * All styles below pertain to the onDark theme
  */
 
-:host([onDark]) { /* stylelint-disable-line no-descending-specificity */
-  .trigger { /* stylelint-disable-line no-descending-specificity */
+:host([onDark]) {
+  .trigger {
     color: var(--auro-color-text-primary-on-dark);
+
+    &:focus-within {
+      border-color: var(--auro-color-border-active-on-dark);
+      outline: none;
+    }
+
+    &:active {
+      border-color: var(--auro-color-border-active-on-dark);
+      outline: 1px solid var(--auro-color-border-active-on-dark);
+    }
   }
 
   .label,
@@ -178,6 +223,16 @@
   .trigger {
     border-color: var(--auro-color-border-error-on-dark);
     outline: 1px solid var(--auro-color-border-error-on-dark);
+
+    &:focus-within {
+      border-color: var(--auro-color-border-active-on-dark);
+      outline: none;
+    }
+
+    &:active {
+      border-color: var(--auro-color-border-active-on-dark);
+      outline: 1px solid var(--auro-color-border-active-on-dark);
+    }
   }
 }
 
