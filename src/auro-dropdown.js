@@ -150,7 +150,6 @@ class AuroDropdown extends LitElement {
   toggleHide() {
     this.popper.hide();
     this.isPopoverVisible = false;
-    this.requestUpdate();
     this.removeAttribute('data-show');
     if (this.chevron) {
       this.triggerChevron.removeAttribute('data-expanded');
@@ -167,7 +166,6 @@ class AuroDropdown extends LitElement {
       this.fixWidth();
       this.popper.show();
       this.isPopoverVisible = true;
-      this.requestUpdate();
       this.setAttribute('data-show', true);
       if (this.chevron) {
         this.triggerChevron.setAttribute('data-expanded', true);
@@ -210,6 +208,9 @@ class AuroDropdown extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
+      <div id="popover" class="popover" aria-live="polite" style=${`min-width: ${this.dropdownWidth}px;`}>
+        <slot role="tooltip"></slot>
+      </div>
       <div id="trigger" class="trigger" data-trigger-placement="${this.placement}">
         <div class="triggerContentWrapper">
           <div class="label">
@@ -231,11 +232,6 @@ class AuroDropdown extends LitElement {
       </div>
       <div class="helperText">
         <slot name="helperText"></slot>
-      </div>
-      <div id="popover" class="popover" aria-live="polite" style=${`min-width: ${this.dropdownWidth}px;`}>
-        ${this.isPopoverVisible ? html`
-          <slot role="tooltip"></slot>
-        ` : undefined}
       </div>
     `;
   }
