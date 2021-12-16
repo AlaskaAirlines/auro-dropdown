@@ -32,7 +32,7 @@
 
   &:active {
     border-color: var(--auro-color-border-active-on-light);
-    outline: 1px solid var(--auro-color-border-active-on-light);
+    box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-light);
   }
 }
 
@@ -139,16 +139,16 @@
 
   .trigger {
     border-color: var(--auro-color-border-error-on-light);
-    outline: 1px solid var(--auro-color-alert-error-on-light);
+    box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-light);
 
     &:focus-within {
       border-color: var(--auro-color-border-active-on-light);
-      outline: none;
+      box-shadow: none;
     }
 
     &:active {
       border-color: var(--auro-color-border-active-on-light);
-      outline: 1px solid var(--auro-color-border-active-on-light);
+      box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-light);
     }
   }
 }
@@ -162,16 +162,16 @@
 :host([bordered][error]) {
   .trigger {
     border-color: var(--auro-color-border-error-on-light);
-    outline: 1px solid var(--auro-color-alert-error-on-light);
+    box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-light);
 
     &:focus-within {
       border-color: var(--auro-color-border-active-on-light);
-      outline: none;
+      box-shadow: none;
     }
 
     &:active {
       border-color: var(--auro-color-border-active-on-light);
-      outline: 1px solid var(--auro-color-border-active-on-light);
+      box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-light);
     }
   }
 }
@@ -186,12 +186,12 @@
 
     &:focus-within {
       border-color: var(--auro-color-border-active-on-dark);
-      outline: none;
+      box-shadow: none;
     }
 
     &:active {
       border-color: var(--auro-color-border-active-on-dark);
-      outline: 1px solid var(--auro-color-border-active-on-dark);
+      box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-dark);
     }
   }
 
@@ -222,16 +222,16 @@
 
   .trigger {
     border-color: var(--auro-color-border-error-on-dark);
-    outline: 1px solid var(--auro-color-border-error-on-dark);
+    box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-dark);
 
     &:focus-within {
       border-color: var(--auro-color-border-active-on-dark);
-      outline: none;
+      box-shadow: none;
     }
 
     &:active {
       border-color: var(--auro-color-border-active-on-dark);
-      outline: 1px solid var(--auro-color-border-active-on-dark);
+      box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-dark);
     }
   }
 }
