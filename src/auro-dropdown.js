@@ -120,6 +120,7 @@ class AuroDropdown extends LitElement {
     const showByKeyboard = (event) => {
       const key = event.key.toLowerCase();
       if (key === ' ' || key === 'enter') {
+        event.preventDefault();
         handleShow();
       }
     };
