@@ -3,13 +3,13 @@ repository:
   # See https://github.com/apps/settings for app settings
 
   # A short description of the repository that will show up on GitHub
-  description: Custom element that ....
+  description: An auroLabs custom element w/an experimental API. You've been warned.
 
   # A URL with more information about the repository
-  homepage: https://auro.alaskaair.com/components/auro/dropdown
+  homepage: https://auro.alaskaair.com/components/auroLabs
 
   # A comma-separated list of topics to set on the repository
-  topics: auro, design-system, custom-element, generator-v3-11-1
+  topics: auro-labs, design-system, custom-element, generator-v3-13-0
 
   # Either `true` to enable issues for this repository, `false` to disable them.
   has_issues: true
