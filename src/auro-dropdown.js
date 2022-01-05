@@ -14,12 +14,17 @@ import styleCss from "./style-css.js";
 import Popover from "../lib/popover";
 
 /**
- * @attr {boolean} chevron - If true, the dropdown displays an display state chevron on the right.
- * @attr {boolean} toggle - If true, the trigger will toggle the show/hide state of the dropdown.
- * @slot - Default unnamed slot for the use of popover content.
- * @slot label - Sets the label text for the input.
- * @slot helperText - Sets the helperText text for the input.
- * @slot trigger - Slot for entering the trigger element into the scope of the shadow DOM.
+ * @attr { Boolean } bordered - If declared, applies a border around the trigger slot.
+ * @attr { Boolean } chevron - If declared, the dropdown displays an display state chevron on the right.
+ * @attr { Boolean } disabled - If declared, the dropdown is not interactive.
+ * @attr { Boolean } error - If declared in combination with `bordered` property or `helperText` slot content, will apply red color to both.
+ * @attr { Boolean } inset - If declared, will apply padding around trigger slot content.
+ * @attr { Boolean } rounded - If declared, will apply border-radius to trigger and default slots.
+ * @attr { Boolean } toggle - If declared, the trigger will toggle the show/hide state of the dropdown.
+ * @slot - Default slot for the popover content.
+ * @slot label - Defines the content of the label.
+ * @slot helperText - Defines the content of the helperText.
+ * @slot trigger - Defines the content of the trigger.
  */
 class AuroDropdown extends LitElement {
   constructor() {
@@ -35,15 +40,25 @@ class AuroDropdown extends LitElement {
   privateDefaults() {
     this.isPopoverVisible = false;
     this.placement = 'bottom-start';
-    this.toggle = false;
+    this.bordered = false;
     this.chevron = false;
+    this.disabled = false;
+    this.error = false;
+    this.inset = false;
+    this.rounded = false;
+    this.toggle = false;
   }
 
   // function to define props used within the scope of this component
   static get properties() {
     return {
-      chevron:       { type: Boolean },
-      toggle:        { type: Boolean },
+      bordered: { type: Boolean },
+      chevron:  { type: Boolean },
+      disabled: { type: Boolean },
+      error:    { type: Boolean },
+      inset:    { type: Boolean },
+      rounded:  { type: Boolean },
+      toggle:   { type: Boolean },
 
       /**
        * @private
