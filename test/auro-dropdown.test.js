@@ -55,7 +55,7 @@ describe('auro-dropdown', () => {
     expectPopoverHidden(el);
   })
 
-  it('auro-dropdown programmatically show and hide', async () => {
+  it('auro-dropdown programmatically hide', async () => {
     const el = await fixture(html`
       <auro-dropdown toggle chevron></auro-dropdown>
     `);
@@ -64,9 +64,11 @@ describe('auro-dropdown', () => {
     expectPopoverHidden(el);
     expect(chevron).to.not.have.attribute('data-expanded');
 
-    el.show();
+    const trigger = el.shadowRoot.querySelector('#trigger');
+    expectPopoverHidden(el);
+
+    trigger.click();
     expectPopoverShown(el);
-    expect(chevron).to.have.attribute('data-expanded');
 
     el.hide();
     expectPopoverHidden(el);
