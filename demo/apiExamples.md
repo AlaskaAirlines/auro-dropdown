@@ -19,7 +19,6 @@
 | Method | Type       | Description                 |
 |--------|------------|-----------------------------|
 | [hide](#hide) | `(): void` | Hides the dropdown content. |
-| [show](#show) | `(): void` | Shows the dropdown content. |
 
 ## Events
 
@@ -1447,50 +1446,6 @@ The `hide` method may also be called from anywhere in your code by executing `do
 ```
 
 </auro-accordion>
-
-#### <a name="show"></a>`show`<a href="#auro-dropdown" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
-The `show` method is available for any situation where the dropdown needs to be displayed without manual user interaction. The `show` method may be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').show()`.
-
-<div class="exampleWrapper">
-  <auro-dropdown id="showHideExample" rounded bordered inset>
-    <p>
-      Lorem ipsum solar
-    </p>
-    <auro-input
-      slot="trigger"
-      id="showHideExampleTrigger">
-    </auro-input>
-  </auro-dropdown>
-  <br />
-  <auro-button onclick="document.querySelector('#showHideExample').show()">
-    Show Dropdown
-  </auro-button>
-  <auro-button onclick="document.querySelector('#showHideExample').hide()">
-    Hide Dropdown
-  </auro-button>
-</div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-dropdown id="showHideExample" rounded bordered inset>
-  <p>
-    Lorem ipsum solar
-  </p>
-  <auro-input
-    slot="trigger"
-    id="showHideExampleTrigger">
-  </auro-input>
-</auro-dropdown>
-<br />
-<auro-button onclick="document.querySelector('#showHideExample').show()">
-  Show Dropdown
-</auro-button>
-<auro-button onclick="document.querySelector('#showHideExample').hide()">
-  Hide Dropdown
-</auro-button>
-```
-
 </auro-accordion>
 
 ### Other Examples

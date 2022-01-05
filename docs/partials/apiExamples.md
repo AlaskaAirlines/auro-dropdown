@@ -619,20 +619,6 @@ The `hide` method may also be called from anywhere in your code by executing `do
 
 </auro-accordion>
 
-#### `show`
-
-The `show` method is available for any situation where the dropdown needs to be displayed without manual user interaction. The `show` method may be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').show()`.
-
-<div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/programmaticallyShowHide.html) -->
-  <!-- AURO-GENERATED-CONTENT:END -->
-</div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/programmaticallyShowHide.html) -->
-<!-- AURO-GENERATED-CONTENT:END -->
-
 </auro-accordion>
 
 ### Other Examples
