@@ -139,7 +139,7 @@
 
   .trigger {
     border-color: var(--auro-color-border-error-on-light);
-    box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-light);
+    box-shadow: inset 0 0 0 1px var(--auro-color-border-error-on-light);
 
     &:focus-within {
       border-color: var(--auro-color-border-active-on-light);
@@ -162,7 +162,7 @@
 :host([bordered][error]) {
   .trigger {
     border-color: var(--auro-color-border-error-on-light);
-    box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-light);
+    box-shadow: inset 0 0 0 1px var(--auro-color-border-error-on-light);
 
     &:focus-within {
       border-color: var(--auro-color-border-active-on-light);
@@ -222,7 +222,7 @@
 
   .trigger {
     border-color: var(--auro-color-border-error-on-dark);
-    box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-dark);
+    box-shadow: inset 0 0 0 1px var(--auro-color-border-error-on-dark);
 
     &:focus-within {
       border-color: var(--auro-color-border-active-on-dark);
