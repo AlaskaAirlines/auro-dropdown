@@ -6,7 +6,7 @@
     "  2. Go to http://localhost:8000",
     "================================================================================"
   ],
-  "name": "@aurolabs/auro-dropdown",
+  "name": "@aurodesignsystem/auro-dropdown",
   "version": "0.0.0",
   "description": "auro-dropdown HTML custom element",
   "repository": {

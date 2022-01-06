@@ -1,7 +1,5 @@
 # Dropdown
 
-`<auro-dropdown>` is an experimental [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) only available as a PRE RELEASE. Users of this element understand the risks of using a pre-released version of this element.
-
 The `auro-dropdown` component is a trigger and dropdown element combination intended to be used with dropdown content that is interactive. `auro-dropdown` is content agnostic and any valid HTML can be placed in either the trigger or the dropdown.
 
 _Note: if the dropdown content in your implementation is not interactive (e.g. a tooltip) [auro-popover](http://auro.alaskaair.com/components/auro/popover) may better serve your needs._
@@ -13,11 +11,11 @@ For the most up to date information on [UI development browser support](https://
 ## Install
 
 [![Build Status](https://img.shields.io/github/workflow/status/AlaskaAirlines/auro-dropdown/Test%20and%20publish?branch=master&style=for-the-badge)](https://github.com/AlaskaAirlines/auro-dropdown/actions?query=workflow%3A%22test+and+publish%22)
-[![See it on NPM!](https://img.shields.io/npm/v/@aurolabs/auro-dropdown?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@aurolabs/auro-dropdown)
-[![License](https://img.shields.io/npm/l/@aurolabs/auro-dropdown?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
+[![See it on NPM!](https://img.shields.io/npm/v/@aurodesignsystem/auro-dropdown?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@aurodesignsystem/auro-dropdown)
+[![License](https://img.shields.io/npm/l/@aurodesignsystem/auro-dropdown?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
 
 ```shell
-$ npm i @aurolabs/auro-dropdown
+$ npm i @aurodesignsystem/auro-dropdown
 ```
 
 Installing as a direct, dev or peer dependency is up to the user installing the package. If you are unsure as to what type of dependency you should use, consider reading this [stack overflow](https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencies) answer.
@@ -37,7 +35,7 @@ Any update to the Auro Design Tokens will be immediately reflected with browsers
 Defining the component dependency within each component that is using the `<auro-dropdown>` component.
 
 ```js
-import "@aurolabs/auro-dropdown";
+import "@aurodesignsystem/auro-dropdown";
 ```
 
 **Reference component in HTML**
@@ -65,8 +63,8 @@ Since the legacy bundle includes many polyfills that are not needed by modern br
 <!-- **NOTE:** Be sure to replace `@latest` in the URL with the version of the asset you want. @latest is NOT aware of any MAJOR releases, use at your own risk. -->
 <link rel="stylesheet" href="https://unpkg.com/@alaskaairux/design-tokens@latest/dist/tokens/CSSCustomProperties.css" />
 <link rel="stylesheet" href="https://unpkg.com/@alaskaairux/webcorestylesheets@latest/dist/bundled/essentials.css" />
-<script src="https://unpkg.com/@aurolabs/auro-dropdown@latest/dist/auro-dropdown__bundled.js" type="module"></script>
-<script src="https://unpkg.com/@aurolabs/auro-dropdown@latest/dist/auro-dropdown__bundled.es5.js" nomodule></script>
+<script src="https://unpkg.com/@aurodesignsystem/auro-dropdown@latest/dist/auro-dropdown__bundled.js" type="module"></script>
+<script src="https://unpkg.com/@aurodesignsystem/auro-dropdown@latest/dist/auro-dropdown__bundled.es5.js" nomodule></script>
 ```
 
 ## auro-dropdown use cases
