@@ -38,19 +38,16 @@
 ## API Examples
 
 ### Basic
-
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
+<div class="exampleWrapper">
+  <auro-dropdown>
+    Lorem ipsum solar
+    <div slot="trigger">
+      <span tabindex="0">
+        Trigger
+      </span>
     </div>
+  </auro-dropdown>
+</div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -66,47 +63,16 @@
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-dropdown onDark>
+<div class="exampleWrapper">
+<auro-dropdown>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    <auro-icon
+      category="interface"
+      name="arrow-down"></auro-icon>
   </div>
 </auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
 </div>
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-icon
-            category="interface"
-            name="arrow-down"></auro-icon>
-        </div>
-      </auro-dropdown>
-    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -122,51 +88,18 @@
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-icon
-            category="interface"
-            name="arrow-down"
-            onDark></auro-icon>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-dropdown onDark>
+<div class="exampleWrapper">
+<auro-dropdown>
   Lorem ipsum solar
   <div slot="trigger">
-    <auro-icon
-      category="interface"
-      name="arrow-down"
-      onDark></auro-icon>
+    <auro-button
+      slot="trigger"
+      fluid>
+      Dropdown
+    </auro-button>
   </div>
 </auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
 </div>
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-button
-            slot="trigger"
-            fluid>
-            Dropdown
-          </auro-button>
-        </div>
-      </auro-dropdown>
-    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -184,54 +117,17 @@
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-button
-            slot="trigger"
-            fluid
-            onDark>
-            Dropdown
-          </auro-button>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-dropdown onDark>
+<div class="exampleWrapper">
+<auro-dropdown>
   Lorem ipsum solar
   <div slot="trigger">
-    <auro-button
+    <auro-input
       slot="trigger"
-      fluid
-      onDark>
-      Dropdown
-    </auro-button>
+      id="inputExampleTrigger">
+    </auro-input>
   </div>
 </auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
 </div>
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-input
-            slot="trigger"
-            id="inputExampleTrigger">
-          </auro-input>
-        </div>
-      </auro-dropdown>
-    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -248,55 +144,21 @@
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-input
-            slot="trigger"
-            id="inputExampleTrigger"
-            onDark>
-          </auro-input>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-dropdown onDark>
-  Lorem ipsum solar
-  <div slot="trigger">
-    <auro-input
-      slot="trigger"
-      id="inputExampleTrigger"
-      onDark>
-    </auro-input>
-  </div>
-</auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
-</div>
 
 ### Property Examples
 
-#### <a name="bordered"></a>`bordered`<a href="#auro-dropdown" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown bordered>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
+#### <a name="bordered"></a>`bordered`
+
+<div class="exampleWrapper">
+<auro-dropdown bordered>
+  Lorem ipsum solar
+  <div slot="trigger">
+    <span tabindex="0">
+      Trigger
+    </span>
+  </div>
+</auro-dropdown>
+</div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -312,27 +174,11 @@
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        bordered
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
 
-```html
-<auro-dropdown
-  bordered
-  onDark>
+#### <a name="chevron"></a>`chevron`
+
+<div class="exampleWrapper">
+<auro-dropdown chevron>
   Lorem ipsum solar
   <div slot="trigger">
     <span tabindex="0">
@@ -340,25 +186,7 @@
     </span>
   </div>
 </auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
 </div>
-
-#### <a name="chevron"></a>`chevron`<a href="#auro-dropdown" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown chevron>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -374,51 +202,16 @@
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        onDark
-        chevron>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-dropdown
-  onDark
-  chevron>
+'<div class="exampleWrapper">
+<auro-dropdown chevron>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    <auro-icon
+      category="interface"
+      name="arrow-down"></auro-icon>
   </div>
 </auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
 </div>
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown chevron>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-icon
-            category="interface"
-            name="arrow-down"></auro-icon>
-        </div>
-      </auro-dropdown>
-    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -434,55 +227,18 @@
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        onDark
-        chevron>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-icon
-            category="interface"
-            name="arrow-down"
-            onDark></auro-icon>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-dropdown
-  onDark
-  chevron>
+<div class="exampleWrapper">
+<auro-dropdown chevron>
   Lorem ipsum solar
   <div slot="trigger">
-    <auro-icon
-      category="interface"
-      name="arrow-down"
-      onDark></auro-icon>
+    <auro-button
+      slot="trigger"
+      fluid>
+      Dropdown
+    </auro-button>
   </div>
 </auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
 </div>
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown chevron>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-button
-            slot="trigger"
-            fluid>
-            Dropdown
-          </auro-button>
-        </div>
-      </auro-dropdown>
-    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -500,58 +256,17 @@
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        onDark
-        chevron>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-button
-            slot="trigger"
-            fluid
-            onDark>
-            Dropdown
-          </auro-button>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-dropdown
-  onDark
-  chevron>
+<div class="exampleWrapper">
+<auro-dropdown chevron>
   Lorem ipsum solar
   <div slot="trigger">
-    <auro-button
+    <auro-input
       slot="trigger"
-      fluid
-      onDark>
-      Dropdown
-    </auro-button>
+      id="inputExampleTrigger">
+    </auro-input>
   </div>
 </auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
 </div>
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown chevron>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-input
-            slot="trigger"
-            id="inputExampleTrigger">
-          </auro-input>
-        </div>
-      </auro-dropdown>
-    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -568,57 +283,19 @@
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        onDark
-        chevron>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <auro-input
-            slot="trigger"
-            id="inputExampleTrigger"
-            onDark>
-          </auro-input>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
 
-```html
-<auro-dropdown
-  onDark
-  chevron>
+#### <a name="disabled"></a>`disabled`
+
+<div class="exampleWrapper">
+<auro-dropdown disabled>
   Lorem ipsum solar
   <div slot="trigger">
-    <auro-input
-      slot="trigger"
-      id="inputExampleTrigger"
-      onDark>
-    </auro-input>
+    <span tabindex="0">
+      Trigger
+    </span>
   </div>
 </auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
 </div>
-
-#### <a name="disabled"></a>`disabled`<a href="#auro-dropdown" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown disabled>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -634,62 +311,27 @@
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        disabled
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
+<div class="exampleWrapper">
+  <auro-dropdown
+    disabled
+    chevron
+    rounded
+    inset
+    bordered>
+    Lorem ipsum solar
+    <div slot="trigger">
+      <span tabindex="0">
+        Trigger
+      </span>
     </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-dropdown
-  disabled
-  onDark>
-  Lorem ipsum solar
-  <div slot="trigger">
-    <span tabindex="0">
-      Trigger
+    <span slot="helperText">
+      Helper text
     </span>
-  </div>
-</auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
+    <span slot="label">
+      Name
+    </span>
+  </auro-dropdown>
 </div>
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown
-        disabled
-        chevron
-        rounded
-        inset
-        bordered>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-        <span slot="helperText">
-          Helper text
-        </span>
-        <span slot="label">
-          Name
-        </span>
-      </auro-dropdown>
-    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -716,74 +358,20 @@
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        disabled
-        chevron
-        rounded
-        bordered
-        inset
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-        <span slot="helperText">
-          Helper text
-        </span>
-        <span slot="label">
-          Name
-        </span>
-      </auro-dropdown>
+
+#### <a name="error"></a>`error`
+
+<div class="exampleWrapper">
+  <auro-dropdown
+    error>
+    Lorem ipsum solar
+    <div slot="trigger">
+      <span tabindex="0">
+        Trigger
+      </span>
     </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-dropdown
-  disabled
-  chevron
-  rounded
-  bordered
-  inset
-  onDark>
-  Lorem ipsum solar
-  <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
-  </div>
-  <span slot="helperText">
-    Helper text
-  </span>
-  <span slot="label">
-    Name
-  </span>
-</auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
+  </auro-dropdown>
 </div>
-
-#### <a name="error"></a>`error`<a href="#auro-dropdown" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown
-        error>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -800,55 +388,20 @@
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        error
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
+<div class="exampleWrapper">
+  <auro-dropdown
+    inset
+    error
+    rounded
+    bordered>
+    Lorem ipsum solar
+    <div slot="trigger">
+      <span tabindex="0">
+        Trigger
+      </span>
     </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-dropdown
-  error
-  onDark>
-  Lorem ipsum solar
-  <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
-  </div>
-</auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
+  </auro-dropdown>
 </div>
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown
-        inset
-        error
-        rounded
-        bordered>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -868,61 +421,21 @@
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        inset
-        error
-        rounded
-        bordered
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
 
-```html
-<auro-dropdown
-  inset
-  error
-  rounded
-  bordered
-  onDark>
-  Lorem ipsum solar
-  <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
-  </div>
-</auro-dropdown>
-```
+#### <a name="inset"></a>`inset`
 
-</auro-accordion>
-  </div>
-</div>
-
-#### <a name="inset"></a>`inset`<a href="#auro-dropdown" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
 The `inset` property applies a predefined amount of CSS `padding` to the `trigger` slot content.
 
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown inset>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
+<div class="exampleWrapper">
+  <auro-dropdown inset>
+    Lorem ipsum solar
+    <div slot="trigger">
+      <span tabindex="0">
+        Trigger
+      </span>
     </div>
+  </auro-dropdown>
+</div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -938,54 +451,19 @@ The `inset` property applies a predefined amount of CSS `padding` to the `trigge
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        inset
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
+<div class="exampleWrapper">
+  <auro-dropdown
+    inset
+    rounded
+    bordered>
+    Lorem ipsum solar
+    <div slot="trigger">
+      <span tabindex="0">
+        Trigger
+      </span>
     </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-dropdown
-  inset
-  onDark>
-  Lorem ipsum solar
-  <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
-  </div>
-</auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
+  </auro-dropdown>
 </div>
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown
-        inset
-        rounded
-        bordered>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1004,61 +482,23 @@ The `inset` property applies a predefined amount of CSS `padding` to the `trigge
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        inset
-        rounded
-        bordered
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
 
-```html
-<auro-dropdown
-  inset
-  rounded
-  bordered
-  onDark>
-  Lorem ipsum solar
-  <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
-  </div>
-</auro-dropdown>
-```
+#### <a name="rounded"></a>`rounded`
 
-</auro-accordion>
-  </div>
-</div>
-
-#### <a name="rounded"></a>`rounded`<a href="#auro-dropdown" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
 The `rounded` property applies `border-radius` CSS to the trigger and default slot content.
 
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown
-        rounded
-        bordered>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
+<div class="exampleWrapper">
+  <auro-dropdown
+    rounded
+    bordered>
+    Lorem ipsum solar
+    <div slot="trigger">
+      <span tabindex="0">
+        Trigger
+      </span>
     </div>
+  </auro-dropdown>
+</div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1076,43 +516,9 @@ The `rounded` property applies `border-radius` CSS to the trigger and default sl
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        rounded
-        bordered
-        onDark>
-        Lorem ipsum solar
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
 
-```html
-<auro-dropdown
-  rounded
-  bordered
-  onDark>
-  Lorem ipsum solar
-  <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
-  </div>
-</auro-dropdown>
-```
+#### <a name="toggle"></a>`toggle`
 
-</auro-accordion>
-  </div>
-</div>
-
-#### <a name="toggle"></a>`toggle`<a href="#auro-dropdown" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
 In cases where it is desired behavior for `auro-dropdown` to hide already displayed dropdown content when clicking on the trigger the `toggle` attribute must be applied.
 
 <div class="exampleWrapper">
@@ -1143,30 +549,29 @@ In cases where it is desired behavior for `auro-dropdown` to hide already displa
 
 ### Slot Examples
 
-#### <a name="trigger"></a>`trigger`<a href="#auro-dropdown" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a> & default
+#### <a name="trigger"></a>`trigger` & default
 
 All examples shown on this page include default and `trigger` slot content.
 
-#### <a name="label"></a>`label`<a href="#auro-dropdown" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
+#### <a name="label"></a>`label`
+
 Content defined in the `label` slot will be rendered left aligned inside the trigger above all other defined trigger slot content.
 
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown
-        bordered
-        rounded
-        inset
-        chevron>
-        Lorem ipsum solar
-        <span slot="label">Name</span>
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
+<div class="exampleWrapper">
+  <auro-dropdown
+    bordered
+    rounded
+    inset
+    chevron>
+    Lorem ipsum solar
+    <span slot="label">Name</span>
+    <div slot="trigger">
+      <span tabindex="0">
+        Trigger
+      </span>
     </div>
+  </auro-dropdown>
+</div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1187,69 +592,27 @@ Content defined in the `label` slot will be rendered left aligned inside the tri
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        bordered
-        rounded
-        inset
-        chevron
-        onDark>
-        Lorem ipsum solar
-        <span slot="label">Name</span>
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
 
-```html
-<auro-dropdown
-  bordered
-  rounded
-  inset
-  chevron
-  onDark>
-  Lorem ipsum solar
-  <span slot="label">Name</span>
-  <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
-  </div>
-</auro-dropdown>
-```
+#### <a name="helperText"></a>`helperText`
 
-</auro-accordion>
-  </div>
-</div>
-
-#### <a name="helperText"></a>`helperText`<a href="#auro-dropdown" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
 Content defined in the `helperText` slot will be rendered left aligned below the trigger.
 
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown
-        inset
-        bordered
-        rounded>
-        Lorem ipsum solar
-        <span slot="helperText">
-          Helper text
-        </span>
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
+<div class="exampleWrapper">
+  <auro-dropdown
+    inset
+    bordered
+    rounded>
+    Lorem ipsum solar
+    <span slot="helperText">
+      Helper text
+    </span>
+    <div slot="trigger">
+      <span tabindex="0">
+        Trigger
+      </span>
     </div>
+  </auro-dropdown>
+</div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1271,73 +634,28 @@ Content defined in the `helperText` slot will be rendered left aligned below the
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        inset
-        bordered
-        rounded
-        onDark>
-        Lorem ipsum solar
-        <span slot="helperText">
-          Helper text
-        </span>
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-dropdown
-  inset
-  bordered
-  rounded
-  onDark>
-  Lorem ipsum solar
-  <span slot="helperText">
-    Helper text
-  </span>
-  <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
-  </div>
-</auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
-</div>
 
 #####
 
 When combined with the `error` property the `helperText` slot content is colored red.
 
-<div class="twoColDemoRow">
-  <div>
-    <div class="exampleWrapper">
-      <auro-dropdown
-        inset
-        bordered
-        rounded
-        error>
-        Lorem ipsum solar
-        <span slot="helperText">
-          Helper text
-        </span>
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
+<div class="exampleWrapper">
+  <auro-dropdown
+    inset
+    bordered
+    rounded
+    error>
+    Lorem ipsum solar
+    <span slot="helperText">
+      Helper text
+    </span>
+    <div slot="trigger">
+      <span tabindex="0">
+        Trigger
+      </span>
     </div>
+  </auro-dropdown>
+</div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
@@ -1360,55 +678,11 @@ When combined with the `error` property the `helperText` slot content is colored
 ```
 
 </auro-accordion>
-  </div>
-  <div>
-    <div class="exampleWrapper--ondark">
-      <auro-dropdown
-        inset
-        bordered
-        rounded
-        error
-        onDark>
-        Lorem ipsum solar
-        <span slot="helperText">
-          Helper text
-        </span>
-        <div slot="trigger">
-          <span tabindex="0">
-            Trigger
-          </span>
-        </div>
-      </auro-dropdown>
-    </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-```html
-<auro-dropdown
-  inset
-  bordered
-  rounded
-  error
-  onDark>
-  Lorem ipsum solar
-  <span slot="helperText">
-    Helper text
-  </span>
-  <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
-  </div>
-</auro-dropdown>
-```
-
-</auro-accordion>
-  </div>
-</div>
 
 ### Method Examples
 
-#### <a name="hide"></a>`hide`<a href="#auro-dropdown" style="float: right; font-size: 1rem; font-weight: 100;">back to top</a>
+#### <a name="hide"></a>`hide`
+
 The `hide` method can be called from within the default slot content. This is useful for cases such as `auro-dropdownmenu`.
 
 The `hide` method may also be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').hide()`.
