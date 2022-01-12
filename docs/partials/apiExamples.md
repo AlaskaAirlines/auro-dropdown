@@ -88,7 +88,7 @@
 
 </auro-accordion>
 
-'<div class="exampleWrapper">
+<div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/chevronIcon.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 </div>
