@@ -147,7 +147,7 @@
 
 ### Property Examples
 
-#### <a name="bordered"></a>`bordered`
+#### <a name="bordered"></a>bordered
 
 <div class="exampleWrapper">
 <auro-dropdown bordered>
@@ -175,7 +175,7 @@
 
 </auro-accordion>
 
-#### <a name="chevron"></a>`chevron`
+#### <a name="chevron"></a>chevron
 
 <div class="exampleWrapper">
 <auro-dropdown chevron>
@@ -202,7 +202,7 @@
 ```
 
 </auro-accordion>
-'<div class="exampleWrapper">
+<div class="exampleWrapper">
 <auro-dropdown chevron>
   Lorem ipsum solar
   <div slot="trigger">
@@ -284,7 +284,7 @@
 
 </auro-accordion>
 
-#### <a name="disabled"></a>`disabled`
+#### <a name="disabled"></a>disabled
 
 <div class="exampleWrapper">
 <auro-dropdown disabled>
@@ -359,7 +359,7 @@
 
 </auro-accordion>
 
-#### <a name="error"></a>`error`
+#### <a name="error"></a>error
 
 <div class="exampleWrapper">
   <auro-dropdown
@@ -422,7 +422,7 @@
 
 </auro-accordion>
 
-#### <a name="inset"></a>`inset`
+#### <a name="inset"></a>inset
 
 The `inset` property applies a predefined amount of CSS `padding` to the `trigger` slot content.
 
@@ -483,7 +483,7 @@ The `inset` property applies a predefined amount of CSS `padding` to the `trigge
 
 </auro-accordion>
 
-#### <a name="rounded"></a>`rounded`
+#### <a name="rounded"></a>rounded
 
 The `rounded` property applies `border-radius` CSS to the trigger and default slot content.
 
@@ -517,7 +517,7 @@ The `rounded` property applies `border-radius` CSS to the trigger and default sl
 
 </auro-accordion>
 
-#### <a name="toggle"></a>`toggle`
+#### <a name="toggle"></a>toggle
 
 In cases where it is desired behavior for `auro-dropdown` to hide already displayed dropdown content when clicking on the trigger the `toggle` attribute must be applied.
 
@@ -549,11 +549,11 @@ In cases where it is desired behavior for `auro-dropdown` to hide already displa
 
 ### Slot Examples
 
-#### <a name="trigger"></a>`trigger` & default
+#### <a name="trigger"></a>trigger & default
 
 All examples shown on this page include default and `trigger` slot content.
 
-#### <a name="label"></a>`label`
+#### <a name="label"></a>label
 
 Content defined in the `label` slot will be rendered left aligned inside the trigger above all other defined trigger slot content.
 
@@ -593,7 +593,7 @@ Content defined in the `label` slot will be rendered left aligned inside the tri
 
 </auro-accordion>
 
-#### <a name="helperText"></a>`helperText`
+#### <a name="helperText"></a>helperText
 
 Content defined in the `helperText` slot will be rendered left aligned below the trigger.
 
@@ -681,7 +681,7 @@ When combined with the `error` property the `helperText` slot content is colored
 
 ### Method Examples
 
-#### <a name="hide"></a>`hide`
+#### <a name="hide"></a>hide
 
 The `hide` method can be called from within the default slot content. This is useful for cases such as `auro-dropdownmenu`.
 
@@ -724,7 +724,7 @@ The `hide` method may also be called from anywhere in your code by executing `do
 
 ### Other Examples
 
-#### Width inheritance
+#### <a name="Width"></a>Width inheritance
 
 `auro-dropdown` will consume all available width of the parent container. `auro-dropdown` can be made narrower by wrapping it in a container of the desired width.
 

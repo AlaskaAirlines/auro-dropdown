@@ -58,7 +58,7 @@
 
 ### Property Examples
 
-#### `bordered`
+#### bordered
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/bordered.html) -->
@@ -73,7 +73,7 @@
 
 </auro-accordion>
 
-#### `chevron`
+#### chevron
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/chevron.html) -->
@@ -127,7 +127,7 @@
 
 </auro-accordion>
 
-#### `disabled`
+#### disabled
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/disabled.html) -->
@@ -155,7 +155,7 @@
 
 </auro-accordion>
 
-#### `error`
+#### error
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/error.html) -->
@@ -183,7 +183,7 @@
 
 </auro-accordion>
 
-#### `inset`
+#### inset
 
 The `inset` property applies a predefined amount of CSS `padding` to the `trigger` slot content.
 
@@ -213,7 +213,7 @@ The `inset` property applies a predefined amount of CSS `padding` to the `trigge
 
 </auro-accordion>
 
-#### `rounded`
+#### rounded
 
 The `rounded` property applies `border-radius` CSS to the trigger and default slot content.
 
@@ -230,7 +230,7 @@ The `rounded` property applies `border-radius` CSS to the trigger and default sl
 
 </auro-accordion>
 
-#### `toggle`
+#### toggle
 
 In cases where it is desired behavior for `auro-dropdown` to hide already displayed dropdown content when clicking on the trigger the `toggle` attribute must be applied.
 
@@ -248,11 +248,11 @@ In cases where it is desired behavior for `auro-dropdown` to hide already displa
 
 ### Slot Examples
 
-#### `trigger` & default
+#### trigger & default
 
 All examples shown on this page include default and `trigger` slot content.
 
-#### `label`
+#### label
 
 Content defined in the `label` slot will be rendered left aligned inside the trigger above all other defined trigger slot content.
 
@@ -269,7 +269,7 @@ Content defined in the `label` slot will be rendered left aligned inside the tri
 
 </auro-accordion>
 
-#### `helperText`
+#### helperText
 
 Content defined in the `helperText` slot will be rendered left aligned below the trigger.
 
@@ -305,7 +305,7 @@ When combined with the `error` property the `helperText` slot content is colored
 
 ### Method Examples
 
-#### `hide`
+#### hide
 
 The `hide` method can be called from within the default slot content. This is useful for cases such as `auro-dropdownmenu`.
 
