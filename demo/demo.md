@@ -1,3 +1,11 @@
+<!--
+The demo.md file is a compiled document. No edits should be made directly to this file.
+
+demo.md is created by running `npm run build:markdownDocs`.
+
+This file is generated based on a template fetched from `./docs/partials/demo.md`
+-->
+
 # Dropdown
 
 The `auro-dropdown` component is a trigger and dropdown element combination intended to be used with dropdown content that is interactive. `auro-dropdown` is content agnostic and any valid HTML can be placed in either the trigger or the dropdown.
@@ -80,7 +88,7 @@ The dropdown can be closed with the following actions:
         Dismiss Dropdown
       </auro-button>
     </div>
-    <span slot="helperText">
+    <span slot="helpText">
       Helper text
     </span>
     <span slot="label">
@@ -105,7 +113,7 @@ The dropdown can be closed with the following actions:
       Dismiss Dropdown
     </auro-button>
   </div>
-  <span slot="helperText">
+  <span slot="helpText">
     Helper text
   </span>
   <span slot="label">
