@@ -269,36 +269,36 @@ Content defined in the `label` slot will be rendered left aligned inside the tri
 
 </auro-accordion>
 
-#### helperText
+#### helpText
 
-Content defined in the `helperText` slot will be rendered left aligned below the trigger.
+Content defined in the `helpText` slot will be rendered left aligned below the trigger.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/helperText.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/helpText.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/helperText.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/helpText.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
 
 #####
 
-When combined with the `error` property the `helperText` slot content is colored red.
+When combined with the `error` property the `helpText` slot content is colored red.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/helperTextError.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/helpTextError.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/helperTextError.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/helpTextError.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
