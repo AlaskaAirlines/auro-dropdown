@@ -17,13 +17,13 @@ import Popover from "../lib/popover";
  * @attr { Boolean } bordered - If declared, applies a border around the trigger slot.
  * @attr { Boolean } chevron - If declared, the dropdown displays an display state chevron on the right.
  * @attr { Boolean } disabled - If declared, the dropdown is not interactive.
- * @attr { Boolean } error - If declared in combination with `bordered` property or `helperText` slot content, will apply red color to both.
+ * @attr { Boolean } error - If declared in combination with `bordered` property or `helpText` slot content, will apply red color to both.
  * @attr { Boolean } inset - If declared, will apply padding around trigger slot content.
  * @attr { Boolean } rounded - If declared, will apply border-radius to trigger and default slots.
  * @attr { Boolean } toggle - If declared, the trigger will toggle the show/hide state of the dropdown.
  * @slot - Default slot for the popover content.
  * @slot label - Defines the content of the label.
- * @slot helperText - Defines the content of the helperText.
+ * @slot helpText - Defines the content of the helpText.
  * @slot trigger - Defines the content of the trigger.
  */
 class AuroDropdown extends LitElement {
@@ -238,8 +238,8 @@ class AuroDropdown extends LitElement {
           </div>
         ` : undefined}
       </div>
-      <div class="helperText">
-        <slot name="helperText"></slot>
+      <div class="helpText">
+        <slot name="helpText"></slot>
       </div>
     `;
   }

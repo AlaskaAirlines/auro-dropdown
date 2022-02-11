@@ -69,7 +69,7 @@
   }
 }
 
-.helperText {
+.helpText {
   margin-top: 4px;
   color: var(--auro-color-text-secondary-on-light);
   font-size: var(--auro-text-body-size-xs);
@@ -133,7 +133,7 @@
 }
 
 :host([error]) {
-  .helperText {
+  .helpText {
     color: var(--auro-color-text-error-on-light);
   }
 
@@ -196,7 +196,7 @@
   }
 
   .label,
-  .helperText {
+  .helpText {
     color: var(--auro-color-text-secondary-on-dark);
   }
 
@@ -216,7 +216,7 @@
 }
 
 :host([onDark][error]) {
-  .helperText {
+  .helpText {
     color: var(--auro-color-text-error-on-dark);
   }
 
@@ -239,7 +239,7 @@
 :host([onDark][disabled]) {
   .trigger,
   .label,
-  .helperText {
+  .helpText {
     color: var(--auro-color-text-disabled-on-dark);
   }
 }
