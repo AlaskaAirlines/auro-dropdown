@@ -20,9 +20,9 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.10.2",
+    "chalk": "^4.1.2",
     "lit-element": "^2.5.1",
-    "lit-html": "^1.4.1",
-    "chalk": "^4.1.2"
+    "lit-html": "^1.4.1"
   },
   "peerDependencies": {
     "@alaskaairux/design-tokens": "^3.5.0",
@@ -48,7 +48,7 @@
     "@rollup/plugin-node-resolve": "^13.1.2",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/npm": "^8.0.3",
+    "@semantic-release/npm": "^9.0.0",
     "@web/dev-server": "^0.1.29",
     "@web/test-runner": "^0.13.23",
     "@webcomponents/webcomponentsjs": "^2.6.0",
@@ -79,11 +79,11 @@
     "rollup-plugin-minify-html-literals": "^1.2.6",
     "rollup-plugin-serve": "^1.1.0",
     "rollup-plugin-terser": "^7.0.2",
-    "semantic-release": "^18.0.1",
     "sass": "^1.45.2",
+    "semantic-release": "^19.0.2",
     "stylelint": "^14.2.0",
     "stylelint-config-idiomatic-order": "^8.1.0",
-    "stylelint-config-standard": "^24.0.0",
+    "stylelint-config-standard": "^25.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.1.0",
