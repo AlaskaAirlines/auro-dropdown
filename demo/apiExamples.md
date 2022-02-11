@@ -9,7 +9,7 @@
 | [bordered](#bordered)         | `bordered` | ` Boolean ` |         | If declared, applies a border around the trigger slot. |
 | [chevron](#chevron)          | `chevron`  | ` Boolean ` |         | If declared, the dropdown displays an display state chevron on the right. |
 | [disabled](#disabled)         | `disabled` | ` Boolean ` |         | If declared, the dropdown is not interactive.    |
-| [error](#error)            | `error`    | ` Boolean ` |         | If declared in combination with `bordered` property or `helperText` slot content, will apply red color to both. |
+| [error](#error)            | `error`    | ` Boolean ` |         | If declared in combination with `bordered` property or `helpText` slot content, will apply red color to both. |
 | [inset](#inset)            | `inset`    | ` Boolean ` |         | If declared, will apply padding around trigger slot content. |
 | [isPopoverVisible](#isPopoverVisible) |            | ` Boolean ` | false   | If true, the dropdown bib is displayed.          |
 | [rounded](#rounded)          | `rounded`  | ` Boolean ` |         | If declared, will apply border-radius to trigger and default slots. |
@@ -29,12 +29,12 @@
 
 ## Slots
 
-| Name         | Description                            |
-|--------------|----------------------------------------|
-|              | Default slot for the popover content.  |
-| [helperText](#helperText) | Defines the content of the helperText. |
-| [label](#label)      | Defines the content of the label.      |
-| [trigger](#trigger)    | Defines the content of the trigger.    |
+| Name       | Description                           |
+|------------|---------------------------------------|
+|            | Default slot for the popover content. |
+| [helpText](#helpText) | Defines the content of the helpText.  |
+| [label](#label)    | Defines the content of the label.     |
+| [trigger](#trigger)  | Defines the content of the trigger.   |
 
 ## API Examples
 
