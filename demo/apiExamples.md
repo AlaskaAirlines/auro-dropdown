@@ -325,7 +325,7 @@
         Trigger
       </span>
     </div>
-    <span slot="helperText">
+    <span slot="helpText">
       Helper text
     </span>
     <span slot="label">
@@ -349,7 +349,7 @@
       Trigger
     </span>
   </div>
-  <span slot="helperText">
+  <span slot="helpText">
     Helper text
   </span>
   <span slot="label">
@@ -594,9 +594,9 @@ Content defined in the `label` slot will be rendered left aligned inside the tri
 
 </auro-accordion>
 
-#### <a name="helperText"></a>helperText
+#### <a name="helpText"></a>helpText
 
-Content defined in the `helperText` slot will be rendered left aligned below the trigger.
+Content defined in the `helpText` slot will be rendered left aligned below the trigger.
 
 <div class="exampleWrapper">
   <auro-dropdown
@@ -604,7 +604,7 @@ Content defined in the `helperText` slot will be rendered left aligned below the
     bordered
     rounded>
     Lorem ipsum solar
-    <span slot="helperText">
+    <span slot="helpText">
       Helper text
     </span>
     <div slot="trigger">
@@ -623,7 +623,7 @@ Content defined in the `helperText` slot will be rendered left aligned below the
   bordered
   rounded>
   Lorem ipsum solar
-  <span slot="helperText">
+  <span slot="helpText">
     Helper text
   </span>
   <div slot="trigger">
@@ -638,7 +638,7 @@ Content defined in the `helperText` slot will be rendered left aligned below the
 
 #####
 
-When combined with the `error` property the `helperText` slot content is colored red.
+When combined with the `error` property the `helpText` slot content is colored red.
 
 <div class="exampleWrapper">
   <auro-dropdown
@@ -647,7 +647,7 @@ When combined with the `error` property the `helperText` slot content is colored
     rounded
     error>
     Lorem ipsum solar
-    <span slot="helperText">
+    <span slot="helpText">
       Helper text
     </span>
     <div slot="trigger">
@@ -667,7 +667,7 @@ When combined with the `error` property the `helperText` slot content is colored
   rounded
   error>
   Lorem ipsum solar
-  <span slot="helperText">
+  <span slot="helpText">
     Helper text
   </span>
   <div slot="trigger">
