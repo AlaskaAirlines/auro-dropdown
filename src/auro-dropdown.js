@@ -21,6 +21,7 @@ import Popover from "../lib/popover";
  * @attr { Boolean } inset - If declared, will apply padding around trigger slot content.
  * @attr { Boolean } rounded - If declared, will apply border-radius to trigger and default slots.
  * @attr { Boolean } toggle - If declared, the trigger will toggle the show/hide state of the dropdown.
+ * @attr { Boolean } noKeyboardShow - Disables keyboard control to show the dropdown.
  * @slot - Default slot for the popover content.
  * @slot label - Defines the content of the label.
  * @slot helperText - Defines the content of the helperText.
@@ -30,6 +31,7 @@ class AuroDropdown extends LitElement {
   constructor() {
     super();
 
+    this.isPopoverVisible = false;
     this.privateDefaults();
   }
 
@@ -38,7 +40,7 @@ class AuroDropdown extends LitElement {
    * @returns {void} Internal defaults.
    */
   privateDefaults() {
-    this.isPopoverVisible = false;
+    // this.isPopoverVisible = false;
     this.placement = 'bottom-start';
     this.bordered = false;
     this.chevron = false;
@@ -47,18 +49,20 @@ class AuroDropdown extends LitElement {
     this.inset = false;
     this.rounded = false;
     this.toggle = false;
+    this.noKeyboardShow = false;
   }
 
   // function to define props used within the scope of this component
   static get properties() {
     return {
-      bordered: { type: Boolean },
-      chevron:  { type: Boolean },
-      disabled: { type: Boolean },
-      error:    { type: Boolean },
-      inset:    { type: Boolean },
-      rounded:  { type: Boolean },
-      toggle:   { type: Boolean },
+      bordered:      { type: Boolean },
+      chevron:       { type: Boolean },
+      disabled:      { type: Boolean },
+      error:         { type: Boolean },
+      inset:         { type: Boolean },
+      rounded:       { type: Boolean },
+      toggle:        { type: Boolean },
+      noKeyboardShow: { type: Boolean },
 
       /**
        * @private
@@ -97,6 +101,8 @@ class AuroDropdown extends LitElement {
   firstUpdated() {
     this.fixWidth();
 
+    this.setAttribute('aria-expanded', false);
+
     this.trigger = this.shadowRoot.querySelector(`#trigger`);
     this.triggerChevron = this.shadowRoot.querySelector(`#showStateIcon`);
     this.popover = this.shadowRoot.querySelector('#popover');
@@ -133,7 +139,10 @@ class AuroDropdown extends LitElement {
     };
 
     const showByKeyboard = (event) => {
+      if (this.noKeyboardShow) return;
+
       const key = event.key.toLowerCase();
+
       if (key === ' ' || key === 'enter') {
         event.preventDefault();
         handleShow();
@@ -167,6 +176,7 @@ class AuroDropdown extends LitElement {
     this.popper.hide();
     this.isPopoverVisible = false;
     this.removeAttribute('data-show');
+    this.setAttribute('aria-expanded', false);
     if (this.chevron) {
       this.triggerChevron.removeAttribute('data-expanded');
     }
@@ -183,6 +193,7 @@ class AuroDropdown extends LitElement {
       this.popper.show();
       this.isPopoverVisible = true;
       this.setAttribute('data-show', true);
+      this.setAttribute('aria-expanded', true);
       if (this.chevron) {
         this.triggerChevron.setAttribute('data-expanded', true);
       }
@@ -196,6 +207,14 @@ class AuroDropdown extends LitElement {
    */
   hide() {
     this.toggleHide();
+  }
+
+  /**
+   * Shows the dropdown content.
+   * @returns {void}
+   */
+   show() {
+    this.toggleShow();
   }
 
   /**
