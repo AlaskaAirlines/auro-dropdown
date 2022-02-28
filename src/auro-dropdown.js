@@ -21,6 +21,7 @@ import Popover from "../lib/popover";
  * @attr { Boolean } inset - If declared, will apply padding around trigger slot content.
  * @attr { Boolean } rounded - If declared, will apply border-radius to trigger and default slots.
  * @attr { Boolean } toggle - If declared, the trigger will toggle the show/hide state of the dropdown.
+ * @prop { Boolean } isPopoverVisible - If true, the dropdown bib is displayed.
  * @slot - Default slot for the popover content.
  * @slot label - Defines the content of the label.
  * @slot helperText - Defines the content of the helperText.
@@ -30,6 +31,8 @@ class AuroDropdown extends LitElement {
   constructor() {
     super();
 
+    this.isPopoverVisible = false;
+
     this.privateDefaults();
   }
 
@@ -38,7 +41,6 @@ class AuroDropdown extends LitElement {
    * @returns {void} Internal defaults.
    */
   privateDefaults() {
-    this.isPopoverVisible = false;
     this.placement = 'bottom-start';
     this.bordered = false;
     this.chevron = false;
