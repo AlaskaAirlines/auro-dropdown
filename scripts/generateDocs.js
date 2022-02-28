@@ -53,6 +53,12 @@ function formatTemplateFileContents(content, destination) {
   result = result.replace(/\[namespace]/g, nameExtractionData.namespace);
   result = result.replace(/\[Namespace]/g, nameExtractionData.namespaceCap);
 
+   /**
+   * Strip all markdown-magic comments
+   */
+  result = result.replace(/<!-- AURO(.*?)-GENERATED-CONTENT(.*?)-->/g, '');
+  result = result.replace(/<!-- The below (.*?) is automatically added from(.*?)-->/g, '');
+
   /**
    * Cleanup line breaks
    */
