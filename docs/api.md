@@ -2,16 +2,15 @@
 
 ## Properties
 
-| Property           | Attribute  | Type        | Default | Description                                      |
-|--------------------|------------|-------------|---------|--------------------------------------------------|
-| `bordered`         | `bordered` | ` Boolean ` |         | If declared, applies a border around the trigger slot. |
-| `chevron`          | `chevron`  | ` Boolean ` |         | If declared, the dropdown displays an display state chevron on the right. |
-| `disabled`         | `disabled` | ` Boolean ` |         | If declared, the dropdown is not interactive.    |
-| `error`            | `error`    | ` Boolean ` |         | If declared in combination with `bordered` property or `helperText` slot content, will apply red color to both. |
-| `inset`            | `inset`    | ` Boolean ` |         | If declared, will apply padding around trigger slot content. |
-| `isPopoverVisible` |            | ` Boolean ` | false   | If true, the dropdown bib is displayed.          |
-| `rounded`          | `rounded`  | ` Boolean ` |         | If declared, will apply border-radius to trigger and default slots. |
-| `toggle`           | `toggle`   | ` Boolean ` |         | If declared, the trigger will toggle the show/hide state of the dropdown. |
+| Property   | Attribute  | Type        | Description                                      |
+|------------|------------|-------------|--------------------------------------------------|
+| `bordered` | `bordered` | ` Boolean ` | If declared, applies a border around the trigger slot. |
+| `chevron`  | `chevron`  | ` Boolean ` | If declared, the dropdown displays an display state chevron on the right. |
+| `disabled` | `disabled` | ` Boolean ` | If declared, the dropdown is not interactive.    |
+| `error`    | `error`    | ` Boolean ` | If declared in combination with `bordered` property or `helperText` slot content, will apply red color to both. |
+| `inset`    | `inset`    | ` Boolean ` | If declared, will apply padding around trigger slot content. |
+| `rounded`  | `rounded`  | ` Boolean ` | If declared, will apply border-radius to trigger and default slots. |
+| `toggle`   | `toggle`   | ` Boolean ` | If declared, the trigger will toggle the show/hide state of the dropdown. |
 
 ## Methods
 
@@ -21,9 +20,9 @@
 
 ## Events
 
-| Event             | Type                                  |
-|-------------------|---------------------------------------|
-| `dropdownToggled` | `CustomEvent<{ expanded: boolean; }>` |
+| Event             | Type                                             |
+|-------------------|--------------------------------------------------|
+| `dropdownToggled` | `CustomEvent<{ expanded: boolean \| undefined; }>` |
 
 ## Slots
 
