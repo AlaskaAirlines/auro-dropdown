@@ -1,5 +1,30 @@
 # Semantic Release Automated Changelog
 
+# [2.0.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v1.0.0...v2.0.0) (2022-03-03)
+
+
+### Bug Fixes
+
+* **helptext:** update slot name [#75](https://github.com/AlaskaAirlines/auro-dropdown/issues/75) ([f95944a](https://github.com/AlaskaAirlines/auro-dropdown/commit/f95944a31c23cab011e3587277c2fe95903d3a39))
+
+
+### Features
+
+* **API:** make isPopoverVisible property public ([37d8d68](https://github.com/AlaskaAirlines/auro-dropdown/commit/37d8d68605b82c615b156582b7f5da5ae4a5a211))
+
+
+### BREAKING CHANGES
+
+* **helptext:** This bug fix is to address an inconsistency with the slot
+name that is specific to help text with form elements.
+
+This is an API change and constitutes a MAJOR release.
+
+Changes to be committed:
+modified:   docs/api.md
+modified:   src/auro-dropdown.js
+modified:   src/style.scss
+
 # 1.0.0 (2022-01-11)
 
 
