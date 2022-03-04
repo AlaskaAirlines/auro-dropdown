@@ -6,6 +6,7 @@
 /* eslint-disable lit-a11y/click-events-have-key-events */
 
 import { LitElement, html, css } from "lit-element";
+import {ifDefined} from 'lit-html/directives/if-defined';
 
 // Import touch detection lib
 import "focus-visible/dist/focus-visible.min.js";
@@ -70,7 +71,17 @@ class AuroDropdown extends LitElement {
       /**
        * @private
        */
-      placement:     { type: String }
+      placement:     { type: String },
+
+      /**
+       * @private
+       */
+      ariaLabel: { type: String },
+
+      /**
+       * @private
+       */
+      ariaLabelledby: { type: String }
     };
   }
 
@@ -96,7 +107,32 @@ class AuroDropdown extends LitElement {
     this.dropdownWidth = this.getBoundingClientRect().width;
   }
 
+  /**
+   * @private
+   * @returns {void} Updates the trigger `aria-label` or `aria-labelledby`.
+   */
+  processAriaLabel() {
+    this.trigger = this.shadowRoot.querySelector(`#trigger`);
+
+    if (this.getAttribute('aria-label')) {
+      // If custom aria-label declared at root apply it to the trigger
+      this.ariaLabel = this.getAttribute('aria-label');
+    } else if (this.getAttribute('aria-labelledby')) {
+      // Else if custom aria-labelledby declared at root apply it to trigger
+      this.ariaLabelledby = this.getAttribute('aria-labelledby');
+    } else {
+      // Else, if the label slot has content use that as `aria-labelledby`
+      const labelNodes = this.shadowRoot.querySelector(`#trigger .label slot`).assignedNodes();
+      const [labelEl] = labelNodes;
+
+      if (labelEl) {
+        this.ariaLabelledby = 'triggerLabel';
+      }
+    }
+  }
+
   firstUpdated() {
+    this.processAriaLabel();
     this.fixWidth();
 
     this.trigger = this.shadowRoot.querySelector(`#trigger`);
@@ -221,9 +257,15 @@ class AuroDropdown extends LitElement {
       <div id="popover" class="popover" aria-live="polite" style=${`min-width: ${this.dropdownWidth}px;`}>
         <slot role="tooltip"></slot>
       </div>
-      <div id="trigger" class="trigger" data-trigger-placement="${this.placement}">
+      <div
+        id="trigger"
+        class="trigger"
+        role="button"
+        aria-label="${ifDefined(this.ariaLabel)}"
+        aria-labelledby="${ifDefined(this.ariaLabelledby)}"
+        data-trigger-placement="${this.placement}">
         <div class="triggerContentWrapper">
-          <div class="label">
+          <div class="label" id="triggerLabel">
             <slot name="label"></slot>
           </div>
           <div class="triggerContent" chevron=${this.chevron}>
