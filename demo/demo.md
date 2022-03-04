@@ -53,7 +53,7 @@ Failing to include one of the above options will prevent assistive technology fr
 ## Examples
 
 <div class="exampleWrapper">
-  <auro-dropdown id="commonBasic" aria-label="custom label" bordered rounded inset chevron>
+  <auro-dropdown id="commonBasic" aria-label="Label content for screen reader" bordered rounded inset chevron>
     <div style="padding: var(--auro-size-sm);">
       Lorem ipsum solar
       <br />
@@ -72,7 +72,7 @@ Failing to include one of the above options will prevent assistive technology fr
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown id="commonBasic" aria-label="custom label" bordered rounded inset chevron>
+<auro-dropdown id="commonBasic" aria-label="Label content for screen reader" bordered rounded inset chevron>
   <div style="padding: var(--auro-size-sm);">
     Lorem ipsum solar
     <br />
@@ -90,7 +90,7 @@ Failing to include one of the above options will prevent assistive technology fr
 
 </auro-accordion>
 <div class="exampleWrapper">
-  <auro-dropdown id="commonAdvanced" aria-label="custom label" bordered rounded inset chevron>
+  <auro-dropdown id="commonAdvanced" bordered rounded inset chevron>
     <div style="padding: var(--auro-size-sm);">
       Lorem ipsum solar
       <br />
@@ -102,7 +102,7 @@ Failing to include one of the above options will prevent assistive technology fr
       Helper text
     </span>
     <span slot="label">
-      label text
+      Element label (default text will be read by screen reader)
     </span>
     <div slot="trigger">
       <span tabindex="0">
@@ -115,7 +115,7 @@ Failing to include one of the above options will prevent assistive technology fr
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown id="commonAdvanced" aria-label="custom label" bordered rounded inset chevron>
+<auro-dropdown id="commonAdvanced" bordered rounded inset chevron>
   <div style="padding: var(--auro-size-sm);">
     Lorem ipsum solar
     <br />
@@ -127,7 +127,7 @@ Failing to include one of the above options will prevent assistive technology fr
     Helper text
   </span>
   <span slot="label">
-    label text
+    Element label (default text will be read by screen reader)
   </span>
   <div slot="trigger">
     <span tabindex="0">
