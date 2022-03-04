@@ -40,10 +40,20 @@ The dropdown can be closed with the following actions:
     - `spacebar`
     - `esc`
 
+## Accessibility requirements
+
+All instances of `auro-dropdown` must have a valid aria attribute for the label. There are three options available to meet this requirement. Only one of these options should be implemented.
+
+- Add the `aria-label` attribute to the dropdown root (e.g. `<auro-dropdown aria-label="value">`)
+- Add the `aria-labelledby` attribute to the dropdown root (e.g. `<auro-dropdown aria-labelledby="idOfElement">`)
+- Include content in the `label` slot. When doing so, the `aria-labelledby` attribute will automatically reference the label slot content.
+
+Failing to include one of the above options will prevent assistive technology from correctly identifying the dropdown to the user.
+
 ## Examples
 
 <div class="exampleWrapper">
-  <auro-dropdown id="commonBasic" bordered rounded inset chevron>
+  <auro-dropdown id="commonBasic" aria-label="custom label" bordered rounded inset chevron>
     <div style="padding: var(--auro-size-sm);">
       Lorem ipsum solar
       <br />
@@ -62,7 +72,7 @@ The dropdown can be closed with the following actions:
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown id="commonBasic" bordered rounded inset chevron>
+<auro-dropdown id="commonBasic" aria-label="custom label" bordered rounded inset chevron>
   <div style="padding: var(--auro-size-sm);">
     Lorem ipsum solar
     <br />
@@ -80,7 +90,7 @@ The dropdown can be closed with the following actions:
 
 </auro-accordion>
 <div class="exampleWrapper">
-  <auro-dropdown id="commonAdvanced" bordered rounded inset chevron>
+  <auro-dropdown id="commonAdvanced" aria-label="custom label" bordered rounded inset chevron>
     <div style="padding: var(--auro-size-sm);">
       Lorem ipsum solar
       <br />
@@ -105,7 +115,7 @@ The dropdown can be closed with the following actions:
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown id="commonAdvanced" bordered rounded inset chevron>
+<auro-dropdown id="commonAdvanced" aria-label="custom label" bordered rounded inset chevron>
   <div style="padding: var(--auro-size-sm);">
     Lorem ipsum solar
     <br />

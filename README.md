@@ -60,7 +60,7 @@ import "@aurodesignsystem/auro-dropdown";
 **Reference component in HTML**
 
 ```html
-<auro-dropdown>
+<auro-dropdown aria-label="custom label">
   Lorem ipsum solar
   <div slot="trigger">
     <span tabindex="0">
@@ -99,7 +99,7 @@ The `auro-dropdown` element should be used in situations where users may:
 ### Default auro-dropdown
 
 ```html
-<auro-dropdown>
+<auro-dropdown aria-label="custom label">
   Lorem ipsum solar
   <div slot="trigger">
     <span tabindex="0">
