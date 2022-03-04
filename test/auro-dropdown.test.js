@@ -4,7 +4,7 @@ import '../src/auro-dropdown.js';
 describe('auro-dropdown', () => {
   it('auro-dropdown is accessible', async () => {
     const el = await fixture(html`
-      <auro-dropdown></auro-dropdown>
+      <auro-dropdown aria-label="label"></auro-dropdown>
     `);
 
     await expect(el).to.be.accessible();
@@ -23,6 +23,37 @@ describe('auro-dropdown', () => {
 
     const chevronEl = el.shadowRoot.querySelector('#showStateIcon');
     expect(chevronEl).to.be.visible;
+  })
+
+  it('auro-dropdown aria rules with custom aria-label', async () => {
+    const el = await fixture(html`
+      <auro-dropdown aria-label="custom"></auro-dropdown>
+    `);
+
+    const triggerEl = el.shadowRoot.querySelector('#trigger');
+    expect(triggerEl).to.have.attribute('aria-label', 'custom');
+  })
+
+  it('auro-dropdown aria rules with custom aria-labelledby', async () => {
+    const el = await fixture(html`
+      <auro-dropdown aria-labelledby="elem"></auro-dropdown>
+    `);
+
+    const triggerEl = el.shadowRoot.querySelector('#trigger');
+    expect(triggerEl).to.have.attribute('aria-labelledby', 'elem');
+  })
+
+  it('auro-dropdown aria rules with label slot content', async () => {
+    const el = await fixture(html`
+      <auro-dropdown>
+        <span slot="label">
+          label text
+        </span>
+      </auro-dropdown>
+    `);
+
+    const triggerEl = el.shadowRoot.querySelector('#trigger');
+    expect(triggerEl).to.have.attribute('aria-labelledby', 'triggerLabel');
   })
 
   it('auro-dropdown shows only with click', async () => {
