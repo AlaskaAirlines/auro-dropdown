@@ -40,7 +40,7 @@
 
 ### Basic
 <div class="exampleWrapper">
-  <auro-dropdown>
+  <auro-dropdown aria-label="custom label">
     Lorem ipsum solar
     <div slot="trigger">
       <span tabindex="0">
@@ -53,7 +53,7 @@
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown>
+<auro-dropdown aria-label="custom label">
   Lorem ipsum solar
   <div slot="trigger">
     <span tabindex="0">
@@ -65,7 +65,7 @@
 
 </auro-accordion>
 <div class="exampleWrapper">
-<auro-dropdown>
+<auro-dropdown aria-label="custom label">
   Lorem ipsum solar
   <div slot="trigger">
     <auro-icon
@@ -78,7 +78,7 @@
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown>
+<auro-dropdown aria-label="custom label">
   Lorem ipsum solar
   <div slot="trigger">
     <auro-icon
@@ -90,7 +90,7 @@
 
 </auro-accordion>
 <div class="exampleWrapper">
-<auro-dropdown>
+<auro-dropdown aria-label="custom label">
   Lorem ipsum solar
   <div slot="trigger">
     <auro-button
@@ -105,7 +105,7 @@
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown>
+<auro-dropdown aria-label="custom label">
   Lorem ipsum solar
   <div slot="trigger">
     <auro-button
@@ -119,7 +119,7 @@
 
 </auro-accordion>
 <div class="exampleWrapper">
-<auro-dropdown>
+<auro-dropdown aria-label="custom label">
   Lorem ipsum solar
   <div slot="trigger">
     <auro-input
@@ -133,7 +133,7 @@
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown>
+<auro-dropdown aria-label="custom label">
   Lorem ipsum solar
   <div slot="trigger">
     <auro-input
@@ -151,7 +151,7 @@
 #### <a name="bordered"></a>bordered
 
 <div class="exampleWrapper">
-<auro-dropdown bordered>
+<auro-dropdown aria-label="custom label" bordered>
   Lorem ipsum solar
   <div slot="trigger">
     <span tabindex="0">
@@ -164,7 +164,7 @@
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown bordered>
+<auro-dropdown aria-label="custom label" bordered>
   Lorem ipsum solar
   <div slot="trigger">
     <span tabindex="0">
@@ -179,7 +179,7 @@
 #### <a name="chevron"></a>chevron
 
 <div class="exampleWrapper">
-<auro-dropdown chevron>
+<auro-dropdown aria-label="custom label" chevron>
   Lorem ipsum solar
   <div slot="trigger">
     <span tabindex="0">
@@ -192,7 +192,7 @@
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown chevron>
+<auro-dropdown aria-label="custom label" chevron>
   Lorem ipsum solar
   <div slot="trigger">
     <span tabindex="0">
@@ -204,7 +204,7 @@
 
 </auro-accordion>
 <div class="exampleWrapper">
-<auro-dropdown chevron>
+<auro-dropdown aria-label="custom label" chevron>
   Lorem ipsum solar
   <div slot="trigger">
     <auro-icon
@@ -217,7 +217,7 @@
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown chevron>
+<auro-dropdown aria-label="custom label" chevron>
   Lorem ipsum solar
   <div slot="trigger">
     <auro-icon
@@ -229,7 +229,7 @@
 
 </auro-accordion>
 <div class="exampleWrapper">
-<auro-dropdown chevron>
+<auro-dropdown aria-label="custom label" chevron>
   Lorem ipsum solar
   <div slot="trigger">
     <auro-button
@@ -244,7 +244,7 @@
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown chevron>
+<auro-dropdown aria-label="custom label" chevron>
   Lorem ipsum solar
   <div slot="trigger">
     <auro-button
@@ -258,7 +258,7 @@
 
 </auro-accordion>
 <div class="exampleWrapper">
-<auro-dropdown chevron>
+<auro-dropdown aria-label="custom label" chevron>
   Lorem ipsum solar
   <div slot="trigger">
     <auro-input
@@ -272,7 +272,7 @@
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown chevron>
+<auro-dropdown aria-label="custom label" chevron>
   Lorem ipsum solar
   <div slot="trigger">
     <auro-input
@@ -288,7 +288,7 @@
 #### <a name="disabled"></a>disabled
 
 <div class="exampleWrapper">
-<auro-dropdown disabled>
+<auro-dropdown aria-label="custom label" disabled>
   Lorem ipsum solar
   <div slot="trigger">
     <span tabindex="0">
@@ -301,7 +301,7 @@
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown disabled>
+<auro-dropdown aria-label="custom label" disabled>
   Lorem ipsum solar
   <div slot="trigger">
     <span tabindex="0">
@@ -314,6 +314,7 @@
 </auro-accordion>
 <div class="exampleWrapper">
   <auro-dropdown
+    aria-label="custom label"
     disabled
     chevron
     rounded
@@ -338,6 +339,7 @@
 
 ```html
 <auro-dropdown
+  aria-label="custom label"
   disabled
   chevron
   rounded
@@ -363,8 +365,7 @@
 #### <a name="error"></a>error
 
 <div class="exampleWrapper">
-  <auro-dropdown
-    error>
+  <auro-dropdown aria-label="custom label" error>
     Lorem ipsum solar
     <div slot="trigger">
       <span tabindex="0">
@@ -377,8 +378,7 @@
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown
-  error>
+<auro-dropdown aria-label="custom label" error>
   Lorem ipsum solar
   <div slot="trigger">
     <span tabindex="0">
@@ -391,6 +391,7 @@
 </auro-accordion>
 <div class="exampleWrapper">
   <auro-dropdown
+    aria-label="custom label"
     inset
     error
     rounded
@@ -408,6 +409,7 @@
 
 ```html
 <auro-dropdown
+  aria-label="custom label"
   inset
   error
   rounded
@@ -428,7 +430,7 @@
 The `inset` property applies a predefined amount of CSS `padding` to the `trigger` slot content.
 
 <div class="exampleWrapper">
-  <auro-dropdown inset>
+  <auro-dropdown aria-label="custom label" inset>
     Lorem ipsum solar
     <div slot="trigger">
       <span tabindex="0">
@@ -441,7 +443,7 @@ The `inset` property applies a predefined amount of CSS `padding` to the `trigge
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown inset>
+<auro-dropdown aria-label="custom label" inset>
   Lorem ipsum solar
   <div slot="trigger">
     <span tabindex="0">
@@ -454,6 +456,7 @@ The `inset` property applies a predefined amount of CSS `padding` to the `trigge
 </auro-accordion>
 <div class="exampleWrapper">
   <auro-dropdown
+    aria-label="custom label"
     inset
     rounded
     bordered>
@@ -470,6 +473,7 @@ The `inset` property applies a predefined amount of CSS `padding` to the `trigge
 
 ```html
 <auro-dropdown
+  aria-label="custom label"
   inset
   rounded
   bordered>
@@ -490,6 +494,7 @@ The `rounded` property applies `border-radius` CSS to the trigger and default sl
 
 <div class="exampleWrapper">
   <auro-dropdown
+    aria-label="custom label"
     rounded
     bordered>
     Lorem ipsum solar
@@ -505,6 +510,7 @@ The `rounded` property applies `border-radius` CSS to the trigger and default sl
 
 ```html
 <auro-dropdown
+  aria-label="custom label"
   rounded
   bordered>
   Lorem ipsum solar
@@ -523,7 +529,7 @@ The `rounded` property applies `border-radius` CSS to the trigger and default sl
 In cases where it is desired behavior for `auro-dropdown` to hide already displayed dropdown content when clicking on the trigger the `toggle` attribute must be applied.
 
 <div class="exampleWrapper">
-  <auro-dropdown toggle>
+  <auro-dropdown aria-label="custom label" toggle>
     Lorem ipsum solar
     <div slot="trigger">
       <span tabindex="0">
@@ -536,7 +542,7 @@ In cases where it is desired behavior for `auro-dropdown` to hide already displa
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown toggle>
+<auro-dropdown aria-label="custom label" toggle>
   Lorem ipsum solar
   <div slot="trigger">
     <span tabindex="0">
@@ -600,6 +606,7 @@ Content defined in the `helpText` slot will be rendered left aligned below the t
 
 <div class="exampleWrapper">
   <auro-dropdown
+    aria-label="custom label"
     inset
     bordered
     rounded>
@@ -619,6 +626,7 @@ Content defined in the `helpText` slot will be rendered left aligned below the t
 
 ```html
 <auro-dropdown
+  aria-label="custom label"
   inset
   bordered
   rounded>
@@ -642,6 +650,7 @@ When combined with the `error` property the `helpText` slot content is colored r
 
 <div class="exampleWrapper">
   <auro-dropdown
+    aria-label="custom label"
     inset
     bordered
     rounded
@@ -662,6 +671,7 @@ When combined with the `error` property the `helpText` slot content is colored r
 
 ```html
 <auro-dropdown
+  aria-label="custom label"
   inset
   bordered
   rounded
@@ -689,7 +699,7 @@ The `hide` method can be called from within the default slot content. This is us
 The `hide` method may also be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').hide()`.
 
 <div class="exampleWrapper">
-  <auro-dropdown id="hideExample" rounded bordered inset>
+  <auro-dropdown id="hideExample" aria-label="custom label" rounded bordered inset>
     <p>
       Lorem ipsum solar
     </p>
@@ -706,7 +716,7 @@ The `hide` method may also be called from anywhere in your code by executing `do
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown id="hideExample" rounded bordered inset>
+<auro-dropdown id="hideExample" aria-label="custom label" rounded bordered inset>
   <p>
     Lorem ipsum solar
   </p>
@@ -730,7 +740,7 @@ The `hide` method may also be called from anywhere in your code by executing `do
 `auro-dropdown` will consume all available width of the parent container. `auro-dropdown` can be made narrower by wrapping it in a container of the desired width.
 
 <div class="exampleWrapper">
-  <div style="width: 100px;">
+  <div style="width: 100px;" aria-label="custom label">
     <auro-dropdown inset bordered rounded chevron>
       <div style="width: 100px; max-height: 200px; overflow: scroll;">
         <p>
@@ -753,7 +763,7 @@ The `hide` method may also be called from anywhere in your code by executing `do
   <span slot="trigger">See code</span>
 
 ```html
-<div style="width: 100px;">
+<div style="width: 100px;" aria-label="custom label">
   <auro-dropdown inset bordered rounded chevron>
     <div style="width: 100px; max-height: 200px; overflow: scroll;">
       <p>
@@ -775,7 +785,7 @@ The `hide` method may also be called from anywhere in your code by executing `do
 
 </auro-accordion>
 <div class="exampleWrapper">
-  <div style="width: 300px;">
+  <div style="width: 300px;" aria-label="custom label">
     <auro-dropdown inset bordered rounded chevron>
       <div style="width: 300px; max-height: 200px; overflow: scroll;">
         <p>
@@ -798,7 +808,7 @@ The `hide` method may also be called from anywhere in your code by executing `do
   <span slot="trigger">See code</span>
 
 ```html
-<div style="width: 300px;">
+<div style="width: 300px;" aria-label="custom label">
   <auro-dropdown inset bordered rounded chevron>
     <div style="width: 300px; max-height: 200px; overflow: scroll;">
       <p>
