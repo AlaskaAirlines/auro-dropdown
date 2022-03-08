@@ -27,6 +27,19 @@ describe('auro-dropdown', () => {
     expect(chevronEl).to.be.visible;
   })
 
+  it('auro-dropdown aria rules with label slot content', async () => {
+    const el = await fixture(html`
+      <auro-dropdown>
+        <span slot="label">
+          label text
+        </span>
+      </auro-dropdown>
+    `);
+
+    const triggerEl = el.shadowRoot.querySelector('.triggerContent');
+    expect(triggerEl).to.have.attribute('aria-labelledby', 'triggerLabel');
+  })
+
   it('auro-dropdown shows only with click', async () => {
     const el = await fixture(html`
       <auro-dropdown></auro-dropdown>
