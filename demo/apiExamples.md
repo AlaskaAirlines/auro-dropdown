@@ -67,7 +67,7 @@
 <div class="exampleWrapper">
 <auro-dropdown aria-label="custom label">
   Lorem ipsum solar
-  <div slot="trigger">
+  <div slot="trigger" tabindex="0">
     <auro-icon
       category="interface"
       name="arrow-down"></auro-icon>
@@ -80,7 +80,7 @@
 ```html
 <auro-dropdown aria-label="custom label">
   Lorem ipsum solar
-  <div slot="trigger">
+  <div slot="trigger" tabindex="0">
     <auro-icon
       category="interface"
       name="arrow-down"></auro-icon>
@@ -206,7 +206,7 @@
 <div class="exampleWrapper">
 <auro-dropdown aria-label="custom label" chevron>
   Lorem ipsum solar
-  <div slot="trigger">
+  <div slot="trigger" tabindex="0">
     <auro-icon
       category="interface"
       name="arrow-down"></auro-icon>
@@ -219,7 +219,7 @@
 ```html
 <auro-dropdown aria-label="custom label" chevron>
   Lorem ipsum solar
-  <div slot="trigger">
+  <div slot="trigger" tabindex="0">
     <auro-icon
       category="interface"
       name="arrow-down"></auro-icon>
