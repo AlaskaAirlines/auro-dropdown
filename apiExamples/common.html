@@ -1,11 +1,14 @@
-<auro-dropdown id="commonBasic" aria-label="Label content for screen reader" bordered rounded inset chevron>
+<auro-dropdown id="common" aria-label="Label content for screen reader" bordered rounded inset chevron>
   <div style="padding: var(--auro-size-sm);">
     Lorem ipsum solar
     <br />
-    <auro-button onclick="document.querySelector('#commonBasic').hide()">
+    <auro-button onclick="document.querySelector('#common').hide()">
       Dismiss Dropdown
     </auro-button>
   </div>
+  <span slot="helpText">
+    Help text
+  </span>
   <div slot="trigger">
     <span tabindex="0">
       Trigger

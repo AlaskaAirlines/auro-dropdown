@@ -1,4 +1,6 @@
-<auro-dropdown id="commonAdvanced" bordered rounded inset chevron>
+<p id="foo">The element is labelled by content external to the element.</p>
+
+<auro-dropdown id="commonAdvanced" aria-labelledby="foo" bordered rounded inset chevron>
   <div style="padding: var(--auro-size-sm);">
     Lorem ipsum solar
     <br />
@@ -7,10 +9,7 @@
     </auro-button>
   </div>
   <span slot="helpText">
-    Helper text
-  </span>
-  <span slot="label">
-    Element label (default text will be read by screen reader)
+    Help text
   </span>
   <div slot="trigger">
     <span tabindex="0">
