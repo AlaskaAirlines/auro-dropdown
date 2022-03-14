@@ -194,5 +194,4 @@ The dropdown can be closed with the following actions:
 1. Clicking anywhere in the view outside of the dropdown.
 1. When the `toggle` attribute is added, clicking on the trigger.
 1. Programmatically via another control in the UI calling the `hide()` method (see api).
-1. Selecting an option within the dropdown by either keyboard or click/tap.
 1. Using the `esc` key.
