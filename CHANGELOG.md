@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.0.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.0.0...v2.0.1) (2022-03-15)
+
+
+### Bug Fixes
+
+* **aria:** add aria labeling to the trigger [#77](https://github.com/AlaskaAirlines/auro-dropdown/issues/77) ([2eb7c31](https://github.com/AlaskaAirlines/auro-dropdown/commit/2eb7c31c5e247f92a2719260438a0e5587fab12e))
+
 # [2.0.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v1.0.0...v2.0.0) (2022-03-03)
 
 
