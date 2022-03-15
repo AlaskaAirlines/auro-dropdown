@@ -20,7 +20,6 @@
 | Method | Type       | Description                 |
 |--------|------------|-----------------------------|
 | [hide](#hide) | `(): void` | Hides the dropdown content. |
-| [show](#show) | `(): void` | Shows the dropdown content. |
 
 ## Events
 

@@ -18,7 +18,6 @@
 | Method | Type       | Description                 |
 |--------|------------|-----------------------------|
 | `hide` | `(): void` | Hides the dropdown content. |
-| `show` | `(): void` | Shows the dropdown content. |
 
 ## Events
 
