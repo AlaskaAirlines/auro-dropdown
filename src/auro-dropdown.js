@@ -201,6 +201,14 @@ class AuroDropdown extends LitElement {
   }
 
   /**
+   * Shows the dropdown content.
+   * @returns {void}
+   */
+  show() {
+    this.toggleShow();
+  }
+
+  /**
    * @private
    * @returns {void} Dispatches event with an object showing the state of the dropdown.
    */
