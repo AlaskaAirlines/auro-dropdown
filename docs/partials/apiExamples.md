@@ -305,9 +305,26 @@ When combined with the `error` property the `helpText` slot content is colored r
 
 ### Method Examples
 
+#### show
+
+
+The `show` method may also be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').show()`.
+
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/programmaticallyShow.html) -->
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/programmaticallyShow.html) -->
+<!-- AURO-GENERATED-CONTENT:END -->
+
+</auro-accordion>
+
 #### hide
 
-The `hide` method can be called from within the default slot content. This is useful for cases such as `auro-dropdownmenu`.
+The `hide` method can be called from within the default slot content. This is useful for cases such as `auro-select`.
 
 The `hide` method may also be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').hide()`.
 

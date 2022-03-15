@@ -54,13 +54,14 @@ class AuroDropdown extends LitElement {
   // function to define props used within the scope of this component
   static get properties() {
     return {
-      bordered: { type: Boolean },
-      chevron:  { type: Boolean },
-      disabled: { type: Boolean },
-      error:    { type: Boolean },
-      inset:    { type: Boolean },
-      rounded:  { type: Boolean },
-      toggle:   { type: Boolean },
+      bordered:         { type: Boolean },
+      chevron:          { type: Boolean },
+      disabled:         { type: Boolean },
+      error:            { type: Boolean },
+      inset:            { type: Boolean },
+      rounded:          { type: Boolean },
+      toggle:           { type: Boolean },
+      isPopoverVisible: { type: Boolean },
 
       /**
        * @private
@@ -104,17 +105,7 @@ class AuroDropdown extends LitElement {
     this.popover = this.shadowRoot.querySelector('#popover');
     this.popper = new Popover(this.trigger, this.popover, this.placement);
 
-    const offClick = (event) => {
-      // Hide the dropdown content if we clicked anywhere outside auro-dropdown
-      const expectedIndex = -1;
-      if (event.composedPath().indexOf(this) === expectedIndex) {
-        document.removeEventListener('click', offClick);
-        this.toggleHide();
-      }
-    };
-
     const handleShow = () => {
-      document.addEventListener('click', offClick);
       this.toggleShow();
     };
 
@@ -181,6 +172,7 @@ class AuroDropdown extends LitElement {
    */
   toggleShow() {
     if (!this.hasAttribute('disabled')) {
+      document.expandedAuroDropdown = this;
       this.fixWidth();
       this.popper.show();
       this.isPopoverVisible = true;
@@ -201,6 +193,14 @@ class AuroDropdown extends LitElement {
   }
 
   /**
+   * Shows the dropdown content.
+   * @returns {void}
+   */
+  show() {
+    this.toggleShow();
+  }
+
+  /**
    * @private
    * @returns {void} Dispatches event with an object showing the state of the dropdown.
    */
@@ -213,6 +213,31 @@ class AuroDropdown extends LitElement {
     });
 
     this.dispatchEvent(event);
+  }
+
+  /**
+   * @param {Object} event - Event passed in from the document click event listener that this function gets attached to.
+   * @returns {void} Method used to close the dropdown bib when clicking in the view outside the dropdown.
+   */
+  outsideClick(event) {
+    // Dropdown content is hidden when a user clicks outside the element.
+    const expectedIndex = -1;
+
+    if (event.composedPath().indexOf(document.expandedAuroDropdown) === expectedIndex) {
+      document.expandedAuroDropdown.hide();
+    }
+  }
+
+  updated(changedProperties) {
+    if (changedProperties.has('isPopoverVisible')) {
+      if (this.isPopoverVisible) {
+        document.addEventListener('click', document.expandedAuroDropdown.outsideClick);
+      } else {
+        if (document.expandedAuroDropdown) {
+          document.removeEventListener('click', document.expandedAuroDropdown.outsideClick);
+        }
+      }
+    }
   }
 
   // function that renders the HTML and CSS into  the scope of the component
