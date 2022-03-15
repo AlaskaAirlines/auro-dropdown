@@ -4,22 +4,24 @@
 
 ## Properties
 
-| Property           | Attribute  | Type        | Default | Description                                      |
-|--------------------|------------|-------------|---------|--------------------------------------------------|
-| [bordered](#bordered)         | `bordered` | ` Boolean ` |         | If declared, applies a border around the trigger slot. |
-| [chevron](#chevron)          | `chevron`  | ` Boolean ` |         | If declared, the dropdown displays an display state chevron on the right. |
-| [disabled](#disabled)         | `disabled` | ` Boolean ` |         | If declared, the dropdown is not interactive.    |
-| [error](#error)            | `error`    | ` Boolean ` |         | If declared in combination with `bordered` property or `helpText` slot content, will apply red color to both. |
-| [inset](#inset)            | `inset`    | ` Boolean ` |         | If declared, will apply padding around trigger slot content. |
-| [isPopoverVisible](#isPopoverVisible) |            | ` Boolean ` | false   | If true, the dropdown bib is displayed.          |
-| [rounded](#rounded)          | `rounded`  | ` Boolean ` |         | If declared, will apply border-radius to trigger and default slots. |
-| [toggle](#toggle)           | `toggle`   | ` Boolean ` |         | If declared, the trigger will toggle the show/hide state of the dropdown. |
+| Property           | Attribute          | Type        | Default | Description                                      |
+|--------------------|--------------------|-------------|---------|--------------------------------------------------|
+| [bordered](#bordered)         | `bordered`         | ` Boolean ` |         | If declared, applies a border around the trigger slot. |
+| [chevron](#chevron)          | `chevron`          | ` Boolean ` |         | If declared, the dropdown displays an display state chevron on the right. |
+| [disabled](#disabled)         | `disabled`         | ` Boolean ` |         | If declared, the dropdown is not interactive.    |
+| [error](#error)            | `error`            | ` Boolean ` |         | If declared in combination with `bordered` property or `helpText` slot content, will apply red color to both. |
+| [inset](#inset)            | `inset`            | ` Boolean ` |         | If declared, will apply padding around trigger slot content. |
+| [isPopoverVisible](#isPopoverVisible) | `isPopoverVisible` | ` Boolean ` | false   | If true, the dropdown bib is displayed.          |
+| [rounded](#rounded)          | `rounded`          | ` Boolean ` |         | If declared, will apply border-radius to trigger and default slots. |
+| [toggle](#toggle)           | `toggle`           | ` Boolean ` |         | If declared, the trigger will toggle the show/hide state of the dropdown. |
 
 ## Methods
 
-| Method | Type       | Description                 |
-|--------|------------|-----------------------------|
-| [hide](#hide) | `(): void` | Hides the dropdown content. |
+| Method         | Type                    | Description                                      |
+|----------------|-------------------------|--------------------------------------------------|
+| [hide](#hide)         | `(): void`              | Hides the dropdown content.                      |
+| [outsideClick](#outsideClick) | `(event: Object): void` | **event**: Event passed in from the document click event listener that this function gets attached to. |
+| [show](#show)         | `(): void`              | Shows the dropdown content.                      |
 
 ## Events
 
@@ -636,9 +638,41 @@ When combined with the `error` property the `helpText` slot content is colored r
 
 ### Method Examples
 
+#### <a name="show"></a>show
+
+The `show` method may also be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').show()`.
+
+<div class="exampleWrapper">
+  <auro-input id="showExampleTriggerInput" required>
+    <span slot="label">Enter a value to show the dropdown</span>
+  </auro-input>
+  <auro-dropdown id="showMethodExample" aria-label="custom label" rounded bordered inset>
+    <p>
+      Lorem ipsum solar
+    </p>
+    <span slot="trigger">Trigger Label</span>
+  </auro-dropdown>
+</div>
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+```html
+<auro-input id="showExampleTriggerInput" required>
+  <span slot="label">Enter a value to show the dropdown</span>
+</auro-input>
+<auro-dropdown id="showMethodExample" aria-label="custom label" rounded bordered inset>
+  <p>
+    Lorem ipsum solar
+  </p>
+  <span slot="trigger">Trigger Label</span>
+</auro-dropdown>
+```
+
+</auro-accordion>
+
 #### <a name="hide"></a>hide
 
-The `hide` method can be called from within the default slot content. This is useful for cases such as `auro-dropdownmenu`.
+The `hide` method can be called from within the default slot content. This is useful for cases such as `auro-select`.
 
 The `hide` method may also be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').hide()`.
 

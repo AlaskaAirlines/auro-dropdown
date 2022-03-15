@@ -120,10 +120,9 @@ describe('auro-dropdown', () => {
     expectPopoverHidden(el);
     expect(chevron).to.not.have.attribute('data-expanded');
 
-    const trigger = el.shadowRoot.querySelector('#trigger');
     expectPopoverHidden(el);
 
-    trigger.click();
+    el.show();
     expectPopoverShown(el);
 
     el.hide();

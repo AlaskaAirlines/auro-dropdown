@@ -38,6 +38,9 @@
           const rawHtml = marked.parse(text);
           document.querySelector('main').innerHTML = rawHtml;
           Prism.highlightAll();
+        })
+        .then(() => {
+          handleShowExample();
         });
     </script>
     <script type="module" src="../src/auro-dropdown.js"></script>
@@ -47,5 +50,6 @@
     <script src="https://unpkg.com/@alaskaairux/auro-button@latest/dist/auro-button__bundled.js" type="module"></script>
     <script src="https://unpkg.com/@alaskaairux/auro-icon@latest/dist/auro-icon__bundled.js" type="module"></script>
     <script src="https://unpkg.com/@aurodesignsystem/auro-input@latest/dist/auro-input__bundled.js" type="module"></script>
+    <script src="../apiExamples/programmaticallyShow.js"></script>
   </body>
 </html>
