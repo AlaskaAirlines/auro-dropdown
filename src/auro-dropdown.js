@@ -159,6 +159,7 @@ class AuroDropdown extends LitElement {
     }
 
     this.trigger.addEventListener('keydown', hideByKeyboard);
+    this.popover.addEventListener('keydown', hideByKeyboard);
   }
 
   /**
@@ -218,9 +219,6 @@ class AuroDropdown extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
-      <div id="popover" class="popover" aria-live="polite" style=${`min-width: ${this.dropdownWidth}px;`}>
-        <slot role="tooltip"></slot>
-      </div>
       <div
         id="trigger"
         class="trigger"
@@ -246,6 +244,9 @@ class AuroDropdown extends LitElement {
       </div>
       <div class="helpText">
         <slot name="helpText"></slot>
+      </div>
+      <div id="popover" class="popover" aria-live="polite" style=${`min-width: ${this.dropdownWidth}px;`}>
+        <slot role="tooltip"></slot>
       </div>
     `;
   }
