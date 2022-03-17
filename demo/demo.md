@@ -47,9 +47,7 @@ This first common example uses the default `auro-dropdown` element with the attr
       Help text
     </span>
     <div slot="trigger">
-      <span tabindex="0">
-        Trigger
-      </span>
+      Trigger
     </div>
   </auro-dropdown>
 </div>
@@ -69,9 +67,7 @@ This first common example uses the default `auro-dropdown` element with the attr
     Help text
   </span>
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -96,9 +92,7 @@ This common example uses the default `auro-dropdown` element with the attributes
       Help text
     </span>
     <div slot="trigger">
-      <span tabindex="0">
-        Trigger
-      </span>
+      Trigger
     </div>
   </auro-dropdown>
 </div>
@@ -119,9 +113,7 @@ This common example uses the default `auro-dropdown` element with the attributes
     Help text
   </span>
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -148,9 +140,7 @@ This common example uses the default `auro-dropdown` element with the attributes
       Element label (default text will be read by screen reader)
     </span>
     <div slot="trigger">
-      <span tabindex="0">
-        Trigger
-      </span>
+      Trigger
     </div>
   </auro-dropdown>
 </div>
@@ -173,9 +163,7 @@ This common example uses the default `auro-dropdown` element with the attributes
     Element label (default text will be read by screen reader)
   </span>
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
