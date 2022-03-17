@@ -146,6 +146,7 @@ class AuroDropdown extends LitElement {
       const key = event.key.toLowerCase();
 
       if (key === ' ' || key === 'enter') {
+        event.preventDefault();
         toggleDropdown; /* eslint-disable-line no-unused-expressions */
       }
     };
