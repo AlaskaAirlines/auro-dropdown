@@ -63,9 +63,7 @@ import "@aurodesignsystem/auro-dropdown";
 <auro-dropdown aria-label="custom label">
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -102,9 +100,7 @@ The `auro-dropdown` element should be used in situations where users may:
 <auro-dropdown aria-label="custom label">
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```

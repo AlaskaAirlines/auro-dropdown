@@ -3,7 +3,7 @@
 
 // ---------------------------------------------------------------------
 
-/* eslint-disable lit-a11y/click-events-have-key-events */
+/* eslint-disable lit-a11y/click-events-have-key-events, max-lines */
 
 import { LitElement, html, css } from "lit-element";
 
@@ -48,6 +48,7 @@ class AuroDropdown extends LitElement {
     this.error = false;
     this.inset = false;
     this.rounded = false;
+    this.tabIndex = 0;
     this.toggle = false;
   }
 
@@ -70,7 +71,12 @@ class AuroDropdown extends LitElement {
       /**
        * @private
        */
-      placement:     { type: String }
+      placement:     { type: String },
+
+      /**
+       * @private
+       */
+      tabIndex: { type: Number }
     };
   }
 
@@ -94,6 +100,43 @@ class AuroDropdown extends LitElement {
    */
   fixWidth() {
     this.dropdownWidth = this.getBoundingClientRect().width;
+  }
+
+  /**
+   * @private
+   * @returns {void} Automatically defines tabindex where needed for trigger content.
+   */
+  handleTriggerTabIndex() {
+    const triggerSlotContentRoot = this.querySelector('[slot="trigger"');
+
+    // Don't overwrite any tabindex coded directly into the slotted trigger content
+    if (!triggerSlotContentRoot.getAttribute('tabindex')) {
+      const focusableElementSelectors = [
+        'a',
+        'button',
+        'input:not([type="hidden])',
+        'select',
+        'textarea',
+        '[tabindex]:not([tabindex="-1"])',
+        'auro-button',
+        'auro-input',
+        'auro-hyperlink'
+      ];
+
+      focusableElementSelectors.forEach((selector) => {
+        // check if the trigger root element itself is focusable
+        if (triggerSlotContentRoot.matches(selector)) {
+          this.tabIndex = 0;
+
+          return;
+        }
+
+        // check if any child content is focusable
+        if (triggerSlotContentRoot.querySelector(selector)) {
+          this.tabIndex = -1;
+        }
+      });
+    }
   }
 
   firstUpdated() {
@@ -223,13 +266,16 @@ class AuroDropdown extends LitElement {
         id="trigger"
         class="trigger"
         role="button"
-        data-trigger-placement="${this.placement}">
+        data-trigger-placement="${this.placement}"
+        tabindex="${this.tabIndex}">
         <div class="triggerContentWrapper">
           <label class="label" id="triggerLabel">
             <slot name="label"></slot>
           </label>
           <div class="triggerContent" chevron=${this.chevron} aria-labelledby="triggerLabel">
-            <slot name="trigger"></slot>
+            <slot
+              name="trigger"
+              @slotchange="${this.handleTriggerTabIndex()}"></slot>
           </div>
         </div>
         ${this.chevron ? html`

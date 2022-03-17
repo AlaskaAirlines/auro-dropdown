@@ -1,4 +1,4 @@
-import { fixture, html, expect } from '@open-wc/testing';
+import { fixture, html, expect, waitUntil } from '@open-wc/testing';
 import '../src/auro-dropdown.js';
 
 describe('auro-dropdown', () => {
@@ -20,11 +20,45 @@ describe('auro-dropdown', () => {
 
   it('auro-dropdown with chevron', async () => {
     const el = await fixture(html`
-      <auro-dropdown chevron></auro-dropdown>
+      <auro-dropdown chevron>
+        <div slot="trigger">Trigger</div>
+      </auro-dropdown>
     `);
 
     const chevronEl = el.shadowRoot.querySelector('#showStateIcon');
     expect(chevronEl).to.be.visible;
+  })
+
+  it('auro-dropdown with non-focusable trigger', async () => {
+    const el = await fixture(html`
+      <auro-dropdown chevron>
+        <span slot="trigger">Trigger</span>
+      </auro-dropdown>
+    `);
+
+    await expect (el.shadowRoot.querySelector('#trigger').getAttribute('tabindex')).to.equal('0');
+  })
+
+  it('auro-dropdown with focusable trigger', async () => {
+    const el = await fixture(html`
+      <auro-dropdown chevron>
+        <a slot="trigger">Trigger</a>
+      </auro-dropdown>
+    `);
+
+    await expect (el.shadowRoot.querySelector('#trigger').getAttribute('tabindex')).to.equal('0');
+  })
+
+  it('auro-dropdown with focusable trigger child element', async () => {
+    const el = await fixture(html`
+      <auro-dropdown chevron>
+        <span slot="trigger">
+          <a>Trigger</a>
+        </span>
+      </auro-dropdown>
+    `);
+
+    await expect (el.shadowRoot.querySelector('#trigger').getAttribute('tabindex')).to.equal('-1');
   })
 
   it('auro-dropdown aria rules with label slot content', async () => {
@@ -33,6 +67,7 @@ describe('auro-dropdown', () => {
         <span slot="label">
           label text
         </span>
+        <div slot="trigger">Trigger</div>
       </auro-dropdown>
     `);
 
@@ -42,7 +77,9 @@ describe('auro-dropdown', () => {
 
   it('auro-dropdown shows only with click', async () => {
     const el = await fixture(html`
-      <auro-dropdown></auro-dropdown>
+      <auro-dropdown>
+        <div slot="trigger">Trigger</div>
+      </auro-dropdown>
     `);
 
     const trigger = el.shadowRoot.querySelector('#trigger');
@@ -57,7 +94,9 @@ describe('auro-dropdown', () => {
 
   it('auro-dropdown toggle with click', async () => {
     const el = await fixture(html`
-      <auro-dropdown toggle></auro-dropdown>
+      <auro-dropdown toggle>
+        <div slot="trigger">Trigger</div>
+      </auro-dropdown>
     `);
 
     const trigger = el.shadowRoot.querySelector('#trigger');
@@ -72,7 +111,9 @@ describe('auro-dropdown', () => {
 
   it('auro-dropdown programmatically hide', async () => {
     const el = await fixture(html`
-      <auro-dropdown toggle chevron></auro-dropdown>
+      <auro-dropdown toggle chevron>
+        <div slot="trigger">Trigger</div>
+      </auro-dropdown>
     `);
 
     const chevron = el.shadowRoot.querySelector('#showStateIcon');
