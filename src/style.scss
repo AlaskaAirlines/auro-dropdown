@@ -39,7 +39,7 @@
 @media (hover: hover) {
   .trigger {
     &:hover {
-      background-color: var(--auro-color-background-lighter);
+      background-color: var(--auro-color-ui-bkg-hover-on-light);
       cursor: pointer;
     }
   }
@@ -117,16 +117,6 @@
 
     &:focus-within {
       border-color: var(--auro-color-border-active-on-light);
-    }
-  }
-}
-
-@media (hover: hover) {
-  :host([bordered]) {
-    .trigger {
-      &:hover {
-        background-color: var(--auro-color-background-lighter);
-      }
     }
   }
 }
