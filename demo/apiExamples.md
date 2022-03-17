@@ -43,9 +43,7 @@
   <auro-dropdown aria-label="custom label">
     Lorem ipsum solar
     <div slot="trigger">
-      <span tabindex="0">
-        Trigger
-      </span>
+      Trigger
     </div>
   </auro-dropdown>
 </div>
@@ -56,9 +54,7 @@
 <auro-dropdown aria-label="custom label">
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -67,7 +63,7 @@
 <div class="exampleWrapper">
 <auro-dropdown aria-label="custom label">
   Lorem ipsum solar
-  <div slot="trigger" tabindex="0">
+  <div slot="trigger">
     <auro-icon
       category="interface"
       name="arrow-down"></auro-icon>
@@ -80,7 +76,7 @@
 ```html
 <auro-dropdown aria-label="custom label">
   Lorem ipsum solar
-  <div slot="trigger" tabindex="0">
+  <div slot="trigger">
     <auro-icon
       category="interface"
       name="arrow-down"></auro-icon>
@@ -154,9 +150,7 @@
 <auro-dropdown aria-label="custom label" bordered>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 </div>
@@ -167,9 +161,7 @@
 <auro-dropdown aria-label="custom label" bordered>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -182,9 +174,7 @@
 <auro-dropdown aria-label="custom label" chevron>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 </div>
@@ -195,9 +185,7 @@
 <auro-dropdown aria-label="custom label" chevron>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -206,7 +194,7 @@
 <div class="exampleWrapper">
 <auro-dropdown aria-label="custom label" chevron>
   Lorem ipsum solar
-  <div slot="trigger" tabindex="0">
+  <div slot="trigger">
     <auro-icon
       category="interface"
       name="arrow-down"></auro-icon>
@@ -219,7 +207,7 @@
 ```html
 <auro-dropdown aria-label="custom label" chevron>
   Lorem ipsum solar
-  <div slot="trigger" tabindex="0">
+  <div slot="trigger">
     <auro-icon
       category="interface"
       name="arrow-down"></auro-icon>
@@ -291,9 +279,7 @@
 <auro-dropdown aria-label="custom label" disabled>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 </div>
@@ -304,9 +290,7 @@
 <auro-dropdown aria-label="custom label" disabled>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -322,9 +306,7 @@
     bordered>
     Lorem ipsum solar
     <div slot="trigger">
-      <span tabindex="0">
-        Trigger
-      </span>
+      Trigger
     </div>
     <span slot="helpText">
       Helper text
@@ -347,9 +329,7 @@
   bordered>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
   <span slot="helpText">
     Helper text
@@ -368,9 +348,7 @@
   <auro-dropdown aria-label="custom label" error>
     Lorem ipsum solar
     <div slot="trigger">
-      <span tabindex="0">
-        Trigger
-      </span>
+      Trigger
     </div>
   </auro-dropdown>
 </div>
@@ -381,9 +359,7 @@
 <auro-dropdown aria-label="custom label" error>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -398,9 +374,7 @@
     bordered>
     Lorem ipsum solar
     <div slot="trigger">
-      <span tabindex="0">
-        Trigger
-      </span>
+      Trigger
     </div>
   </auro-dropdown>
 </div>
@@ -416,9 +390,7 @@
   bordered>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -433,9 +405,7 @@ The `inset` property applies a predefined amount of CSS `padding` to the `trigge
   <auro-dropdown aria-label="custom label" inset>
     Lorem ipsum solar
     <div slot="trigger">
-      <span tabindex="0">
-        Trigger
-      </span>
+      Trigger
     </div>
   </auro-dropdown>
 </div>
@@ -446,9 +416,7 @@ The `inset` property applies a predefined amount of CSS `padding` to the `trigge
 <auro-dropdown aria-label="custom label" inset>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -462,9 +430,7 @@ The `inset` property applies a predefined amount of CSS `padding` to the `trigge
     bordered>
     Lorem ipsum solar
     <div slot="trigger">
-      <span tabindex="0">
-        Trigger
-      </span>
+      Trigger
     </div>
   </auro-dropdown>
 </div>
@@ -479,9 +445,7 @@ The `inset` property applies a predefined amount of CSS `padding` to the `trigge
   bordered>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -499,9 +463,7 @@ The `rounded` property applies `border-radius` CSS to the trigger and default sl
     bordered>
     Lorem ipsum solar
     <div slot="trigger">
-      <span tabindex="0">
-        Trigger
-      </span>
+      Trigger
     </div>
   </auro-dropdown>
 </div>
@@ -515,9 +477,7 @@ The `rounded` property applies `border-radius` CSS to the trigger and default sl
   bordered>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -532,9 +492,7 @@ In cases where it is desired behavior for `auro-dropdown` to hide already displa
   <auro-dropdown aria-label="custom label" toggle>
     Lorem ipsum solar
     <div slot="trigger">
-      <span tabindex="0">
-        Trigger
-      </span>
+      Trigger
     </div>
   </auro-dropdown>
 </div>
@@ -545,9 +503,7 @@ In cases where it is desired behavior for `auro-dropdown` to hide already displa
 <auro-dropdown aria-label="custom label" toggle>
   Lorem ipsum solar
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -573,9 +529,7 @@ Content defined in the `label` slot will be rendered left aligned inside the tri
     Lorem ipsum solar
     <span slot="label">Name</span>
     <div slot="trigger">
-      <span tabindex="0">
-        Trigger
-      </span>
+      Trigger
     </div>
   </auro-dropdown>
 </div>
@@ -591,9 +545,7 @@ Content defined in the `label` slot will be rendered left aligned inside the tri
   Lorem ipsum solar
   <span slot="label">Name</span>
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -615,9 +567,7 @@ Content defined in the `helpText` slot will be rendered left aligned below the t
       Helper text
     </span>
     <div slot="trigger">
-      <span tabindex="0">
-        Trigger
-      </span>
+      Trigger
     </div>
   </auro-dropdown>
 </div>
@@ -635,9 +585,7 @@ Content defined in the `helpText` slot will be rendered left aligned below the t
     Helper text
   </span>
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
@@ -660,9 +608,7 @@ When combined with the `error` property the `helpText` slot content is colored r
       Helper text
     </span>
     <div slot="trigger">
-      <span tabindex="0">
-        Trigger
-      </span>
+      Trigger
     </div>
   </auro-dropdown>
 </div>
@@ -681,9 +627,7 @@ When combined with the `error` property the `helpText` slot content is colored r
     Helper text
   </span>
   <div slot="trigger">
-    <span tabindex="0">
-      Trigger
-    </span>
+    Trigger
   </div>
 </auro-dropdown>
 ```
