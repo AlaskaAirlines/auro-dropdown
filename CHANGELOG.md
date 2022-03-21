@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.1.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.1.0...v2.1.1) (2022-03-21)
+
+
+### Bug Fixes
+
+* **hide:** always hide other open dropdown before showing ([66a3307](https://github.com/AlaskaAirlines/auro-dropdown/commit/66a330746d02d880a40201dc50f581925b235c9d))
+
 # [2.1.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.0.1...v2.1.0) (2022-03-21)
 
 
