@@ -277,10 +277,8 @@ class AuroDropdown extends LitElement {
     if (changedProperties.has('isPopoverVisible')) {
       if (this.isPopoverVisible) {
         document.addEventListener('click', document.expandedAuroDropdown.outsideClick);
-      } else {
-        if (document.expandedAuroDropdown) {
-          document.removeEventListener('click', document.expandedAuroDropdown.outsideClick);
-        }
+      } else if (document.expandedAuroDropdown) {
+        document.removeEventListener('click', document.expandedAuroDropdown.outsideClick);
       }
     }
   }
