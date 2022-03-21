@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+# [2.1.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.0.1...v2.1.0) (2022-03-21)
+
+
+### Bug Fixes
+
+* **toggle:** prevent default key behavior when toggle on dropdown ([f4c7f83](https://github.com/AlaskaAirlines/auro-dropdown/commit/f4c7f838bd638b391e127e6702de8ab3e135bbba))
+
+
+### Features
+
+* **show:** add public show() method ([a9f4d5f](https://github.com/AlaskaAirlines/auro-dropdown/commit/a9f4d5fe259ef1e036326d1f35abd0c94d00c702))
+* **tabindex:** manage tabindex of trigger ([8f6f15a](https://github.com/AlaskaAirlines/auro-dropdown/commit/8f6f15a6d691b0bcbd35cc2d021af21fdac55df8))
+
 ## [2.0.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.0.0...v2.0.1) (2022-03-15)
 
 
