@@ -217,6 +217,11 @@ class AuroDropdown extends LitElement {
    */
   toggleShow() {
     if (!this.hasAttribute('disabled')) {
+      // Close any dropdown that is already open
+      if (document.expandedAuroDropdown) {
+        document.expandedAuroDropdown.hide();
+      }
+
       document.expandedAuroDropdown = this;
       this.fixWidth();
       this.popper.show();
