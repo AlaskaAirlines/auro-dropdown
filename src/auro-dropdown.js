@@ -6,11 +6,7 @@
 /* eslint-disable lit-a11y/click-events-have-key-events, max-lines */
 
 import { LitElement, html, css } from "lit-element";
-
-// Import touch detection lib
-import "focus-visible/dist/focus-visible.min.js";
 import styleCss from "./style-css.js";
-
 import Popover from "../lib/popover";
 
 /**
