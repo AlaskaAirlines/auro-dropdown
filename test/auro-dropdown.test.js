@@ -46,7 +46,7 @@ describe('auro-dropdown', () => {
       </auro-dropdown>
     `);
 
-    await expect (el.shadowRoot.querySelector('#trigger').getAttribute('tabindex')).to.equal('0');
+    await expect (el.shadowRoot.querySelector('#trigger').getAttribute('tabindex')).to.equal('-1');
   })
 
   it('auro-dropdown with focusable trigger child element', async () => {
