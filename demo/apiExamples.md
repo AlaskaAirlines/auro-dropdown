@@ -2,6 +2,12 @@
 
 # auro-dropdown
 
+## Attributes
+
+| Attribute          | Type        | Description                                      |
+|--------------------|-------------|--------------------------------------------------|
+| [disableEventShow](#disableEventShow) | ` Boolean ` | If declared, the dropdown will only show by calling the API .show() public method. |
+
 ## Properties
 
 | Property           | Attribute          | Type        | Default | Description                                      |

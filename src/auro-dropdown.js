@@ -13,6 +13,7 @@ import Popover from "../lib/popover";
  * @attr { Boolean } bordered - If declared, applies a border around the trigger slot.
  * @attr { Boolean } chevron - If declared, the dropdown displays an display state chevron on the right.
  * @attr { Boolean } disabled - If declared, the dropdown is not interactive.
+ * @attr { Boolean } disableEventShow - If declared, the dropdown will only show by calling the API .show() public method.
  * @attr { Boolean } error - If declared in combination with `bordered` property or `helpText` slot content, will apply red color to both.
  * @attr { Boolean } inset - If declared, will apply padding around trigger slot content.
  * @attr { Boolean } rounded - If declared, will apply border-radius to trigger and default slots.
@@ -123,7 +124,7 @@ class AuroDropdown extends LitElement {
       focusableElementSelectors.forEach((selector) => {
         // check if the trigger root element itself is focusable
         if (triggerSlotContentRoot.matches(selector)) {
-          this.tabIndex = 0;
+          this.tabIndex = -1;
 
           return;
         }
@@ -138,6 +139,7 @@ class AuroDropdown extends LitElement {
 
   firstUpdated() {
     this.fixWidth();
+    this.setAttribute('aria-expanded', this.isPopoverVisible);
 
     this.trigger = this.shadowRoot.querySelector(`#trigger`);
     this.triggerChevron = this.shadowRoot.querySelector(`#showStateIcon`);
@@ -181,12 +183,14 @@ class AuroDropdown extends LitElement {
       }
     };
 
-    if (this.toggle) {
-      this.trigger.addEventListener('click', toggleDropdown);
-      this.trigger.addEventListener('keydown', toggleByKeyboard);
-    } else {
-      this.trigger.addEventListener('click', handleShow);
-      this.trigger.addEventListener('keydown', showByKeyboard);
+    if (!this.hasAttribute('disableEventShow')) {
+      if (this.toggle) {
+        this.trigger.addEventListener('click', toggleDropdown);
+        this.trigger.addEventListener('keydown', toggleByKeyboard);
+      } else {
+        this.trigger.addEventListener('click', handleShow);
+        this.trigger.addEventListener('keydown', showByKeyboard);
+      }
     }
 
     this.trigger.addEventListener('keydown', hideByKeyboard);
@@ -276,6 +280,7 @@ class AuroDropdown extends LitElement {
 
   updated(changedProperties) {
     if (changedProperties.has('isPopoverVisible')) {
+      this.setAttribute('aria-expanded', this.isPopoverVisible);
       if (this.isPopoverVisible) {
         document.addEventListener('click', document.expandedAuroDropdown.outsideClick);
       } else if (document.expandedAuroDropdown) {
