@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [2.2.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.1.1...v2.2.0) (2022-03-28)
+
+
+### Bug Fixes
+
+* **API:** add parenthesis to function call [#106](https://github.com/AlaskaAirlines/auro-dropdown/issues/106) ([78e16f0](https://github.com/AlaskaAirlines/auro-dropdown/commit/78e16f07477be037ce626d59f9c26f388667475c))
+
+
+### Features
+
+* **disableEventShow:** add attribute to only display bib with show method [#109](https://github.com/AlaskaAirlines/auro-dropdown/issues/109) [#110](https://github.com/AlaskaAirlines/auro-dropdown/issues/110) ([8ad22bc](https://github.com/AlaskaAirlines/auro-dropdown/commit/8ad22bc42509a33236c49043ac73952f5994df55))
+
 ## [2.1.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.1.0...v2.1.1) (2022-03-21)
 
 
