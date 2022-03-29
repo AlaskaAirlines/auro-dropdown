@@ -113,7 +113,7 @@
 
 :host([bordered]) {
   .trigger {
-    border-color: var(--auro-color-border-primary-on-dark);
+    border-color: var(--auro-color-border-primary-on-light);
 
     &:focus-within {
       border-color: var(--auro-color-border-active-on-light);
