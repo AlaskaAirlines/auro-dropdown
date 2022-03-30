@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.2.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.2.0...v2.2.1) (2022-03-30)
+
+
+### Bug Fixes
+
+* **style:** correct color for trigger border [#113](https://github.com/AlaskaAirlines/auro-dropdown/issues/113) ([0490fee](https://github.com/AlaskaAirlines/auro-dropdown/commit/0490fee57bfb137c9e91926d83e45cc0abbe31f9))
+
 # [2.2.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.1.1...v2.2.0) (2022-03-28)
 
 
