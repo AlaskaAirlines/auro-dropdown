@@ -44,6 +44,15 @@
 | [label](#label)    | Defines the content of the label.     |
 | [trigger](#trigger)  | Defines the content of the trigger.   |
 
+## CSS Shadow Parts
+
+| Part       | Description                                  |
+|------------|----------------------------------------------|
+| [chevron](#chevron)  | The collapsed/expanded state icon container. |
+| [helpText](#helpText) | The helpText content container.              |
+| [popover](#popover)  | The bib content container.                   |
+| [trigger](#trigger)  | The trigger content container.               |
+
 ## API Examples
 
 ### Basic

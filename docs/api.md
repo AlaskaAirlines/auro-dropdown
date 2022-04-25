@@ -41,3 +41,12 @@
 | `helpText` | Defines the content of the helpText.  |
 | `label`    | Defines the content of the label.     |
 | `trigger`  | Defines the content of the trigger.   |
+
+## CSS Shadow Parts
+
+| Part       | Description                                  |
+|------------|----------------------------------------------|
+| `chevron`  | The collapsed/expanded state icon container. |
+| `helpText` | The helpText content container.              |
+| `popover`  | The bib content container.                   |
+| `trigger`  | The trigger content container.               |
