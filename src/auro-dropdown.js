@@ -23,6 +23,10 @@ import Popover from "../lib/popover";
  * @slot label - Defines the content of the label.
  * @slot helpText - Defines the content of the helpText.
  * @slot trigger - Defines the content of the trigger.
+ * @csspart trigger - The trigger content container.
+ * @csspart chevron - The collapsed/expanded state icon container.
+ * @csspart helpText - The helpText content container.
+ * @csspart popover - The bib content container.
  */
 class AuroDropdown extends LitElement {
   constructor() {
@@ -295,6 +299,7 @@ class AuroDropdown extends LitElement {
       <div
         id="trigger"
         class="trigger"
+        part="trigger"
         role="button"
         data-trigger-placement="${this.placement}"
         tabindex="${this.tabIndex}">
@@ -309,7 +314,9 @@ class AuroDropdown extends LitElement {
           </div>
         </div>
         ${this.chevron ? html`
-          <div id="showStateIcon">
+          <div
+            id="showStateIcon"
+            part="chevron">
             <auro-icon
               category="interface"
               name="chevron-down"
@@ -318,10 +325,17 @@ class AuroDropdown extends LitElement {
           </div>
         ` : undefined}
       </div>
-      <div class="helpText">
+      <div
+        class="helpText"
+        part="helpText">
         <slot name="helpText"></slot>
       </div>
-      <div id="popover" class="popover" aria-live="polite" style=${`min-width: ${this.dropdownWidth}px;`}>
+      <div
+        id="popover"
+        class="popover"
+        part="popover"
+        aria-live="polite"
+        style=${`min-width: ${this.dropdownWidth}px;`}>
         <slot role="tooltip"></slot>
       </div>
     `;
