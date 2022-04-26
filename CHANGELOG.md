@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [2.3.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.2.1...v2.3.0) (2022-04-26)
+
+
+### Features
+
+* **CSS:** support CSS Parts [#116](https://github.com/AlaskaAirlines/auro-dropdown/issues/116) ([6311725](https://github.com/AlaskaAirlines/auro-dropdown/commit/6311725f17122c71dfdb66764ce41cadb9a92e6c))
+
 ## [2.2.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.2.0...v2.2.1) (2022-03-30)
 
 
