@@ -27,6 +27,7 @@ import Popover from "../lib/popover";
  * @csspart chevron - The collapsed/expanded state icon container.
  * @csspart helpText - The helpText content container.
  * @csspart popover - The bib content container.
+ * @fires auroDropdown-triggerClick - Notifies that the trigger has been clicked.
  */
 class AuroDropdown extends LitElement {
   constructor() {
@@ -188,7 +189,7 @@ class AuroDropdown extends LitElement {
     };
 
     const notifyTriggerClicked = () => {
-      const event = new CustomEvent('auroDropdown__triggerClick', {
+      const event = new CustomEvent('auroDropdown-triggerClick', {
         composed: true
       });
 

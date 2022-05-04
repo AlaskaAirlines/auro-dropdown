@@ -29,10 +29,10 @@
 
 ## Events
 
-| Event                        | Type                                  |
-|------------------------------|---------------------------------------|
-| `auroDropdown__triggerClick` | `CustomEvent<any>`                    |
-| `dropdownToggled`            | `CustomEvent<{ expanded: boolean; }>` |
+| Event                       | Type                                  | Description                                 |
+|-----------------------------|---------------------------------------|---------------------------------------------|
+| `auroDropdown-triggerClick` | `CustomEvent<any>`                    | Notifies that the trigger has been clicked. |
+| `dropdownToggled`           | `CustomEvent<{ expanded: boolean; }>` |                                             |
 
 ## Slots
 
