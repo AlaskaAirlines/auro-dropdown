@@ -29,9 +29,10 @@
 
 ## Events
 
-| Event             | Type                                  |
-|-------------------|---------------------------------------|
-| `dropdownToggled` | `CustomEvent<{ expanded: boolean; }>` |
+| Event                        | Type                                  |
+|------------------------------|---------------------------------------|
+| `auroDropdown__triggerClick` | `CustomEvent<any>`                    |
+| `dropdownToggled`            | `CustomEvent<{ expanded: boolean; }>` |
 
 ## Slots
 

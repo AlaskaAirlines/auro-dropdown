@@ -187,6 +187,14 @@ class AuroDropdown extends LitElement {
       }
     };
 
+    const notifyTriggerClicked = () => {
+      const event = new CustomEvent('auroDropdown__triggerClick', {
+        composed: true
+      });
+
+      this.dispatchEvent(event);
+    };
+
     if (!this.hasAttribute('disableEventShow')) {
       if (this.toggle) {
         this.trigger.addEventListener('click', toggleDropdown);
@@ -195,6 +203,9 @@ class AuroDropdown extends LitElement {
         this.trigger.addEventListener('click', handleShow);
         this.trigger.addEventListener('keydown', showByKeyboard);
       }
+    } else {
+      this.trigger.addEventListener('click', notifyTriggerClicked);
+      this.trigger.addEventListener('keydown', notifyTriggerClicked);
     }
 
     this.trigger.addEventListener('keydown', hideByKeyboard);
