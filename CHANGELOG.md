@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [2.4.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.3.0...v2.4.0) (2022-05-10)
+
+
+### Features
+
+* **API:** send custom event on trigger click [#118](https://github.com/AlaskaAirlines/auro-dropdown/issues/118) ([9c12727](https://github.com/AlaskaAirlines/auro-dropdown/commit/9c12727fcb26bec4d6ddb81193c3cd6aeb628e18))
+
 # [2.3.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.2.1...v2.3.0) (2022-04-26)
 
 
