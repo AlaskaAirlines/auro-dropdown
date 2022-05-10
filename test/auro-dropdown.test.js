@@ -1,4 +1,4 @@
-import { fixture, html, expect, waitUntil } from '@open-wc/testing';
+import { fixture, html, expect, oneEvent } from '@open-wc/testing';
 import '../src/auro-dropdown.js';
 
 describe('auro-dropdown', () => {
@@ -128,6 +128,23 @@ describe('auro-dropdown', () => {
     el.hide();
     expectPopoverHidden(el);
     expect(chevron).to.not.have.attribute('data-expanded');
+  })
+
+  it('auro-dropdown fires event - auroDropdown-triggerClick', async () => {
+    const el = await fixture(html`
+      <auro-dropdown disableEventShow>
+        <div slot="trigger">Trigger</div>
+      </auro-dropdown>
+    `);
+
+    const trigger = el.shadowRoot.querySelector('#trigger');
+    expectPopoverHidden(el);
+
+    const listener = oneEvent(el, 'auroDropdown-triggerClick');
+    trigger.click();
+    const { result } = await listener;
+
+    expect(result).to.equal(undefined);
   })
 });
 
