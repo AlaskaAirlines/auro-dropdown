@@ -146,6 +146,27 @@ describe('auro-dropdown', () => {
 
     expect(result).to.equal(undefined);
   })
+
+  it('auro-dropdown fires event - auroDropdown-toggled', async () => {
+    const el = await fixture(html`
+      <auro-dropdown toggle>
+        <div slot="trigger">Trigger</div>
+      </auro-dropdown>
+    `);
+
+    const trigger = el.shadowRoot.querySelector('#trigger');
+    expectPopoverHidden(el);
+
+    const listener = oneEvent(el, 'auroDropdown-toggled');
+    trigger.click();
+    const { result } = await listener;
+
+    expect(result).to.equal(undefined);
+
+    trigger.click();
+
+    expect(result).to.equal(undefined);
+  })
 });
 
 function expectPopoverShown(el) {
