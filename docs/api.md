@@ -29,10 +29,11 @@
 
 ## Events
 
-| Event                       | Type                                  | Description                                 |
-|-----------------------------|---------------------------------------|---------------------------------------------|
-| `auroDropdown-triggerClick` | `CustomEvent<any>`                    | Notifies that the trigger has been clicked. |
-| `dropdownToggled`           | `CustomEvent<{ expanded: boolean; }>` |                                             |
+| Event                       | Type                                  | Description                                      |
+|-----------------------------|---------------------------------------|--------------------------------------------------|
+| `auroDropdown-toggled`      | `CustomEvent<{ expanded: boolean; }>` | Notifies that the visibility of the dropdown bib has changed. |
+| `auroDropdown-triggerClick` | `CustomEvent<any>`                    | Notifies that the trigger has been clicked.      |
+| `dropdownToggled`           | `CustomEvent<{ expanded: boolean; }>` | (DEPRECATED) Notifies that the visibility of the dropdown bib has changed. |
 
 ## Slots
 

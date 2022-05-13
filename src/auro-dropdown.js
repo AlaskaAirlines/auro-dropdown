@@ -28,6 +28,8 @@ import Popover from "../lib/popover";
  * @csspart helpText - The helpText content container.
  * @csspart popover - The bib content container.
  * @fires auroDropdown-triggerClick - Notifies that the trigger has been clicked.
+ * @fires dropdownToggled - (DEPRECATED) Notifies that the visibility of the dropdown bib has changed.
+ * @fires auroDropdown-toggled - Notifies that the visibility of the dropdown bib has changed.
  */
 class AuroDropdown extends LitElement {
   constructor() {
@@ -271,7 +273,16 @@ class AuroDropdown extends LitElement {
    * @returns {void} Dispatches event with an object showing the state of the dropdown.
    */
   dispatchEventDropdownToggle() {
-    const event = new CustomEvent('dropdownToggled', {
+    const eventDeprecated = new CustomEvent('dropdownToggled', {
+      detail: {
+        expanded: this.isPopoverVisible,
+      },
+      composed: true
+    });
+
+    this.dispatchEvent(eventDeprecated);
+
+    const event = new CustomEvent('auroDropdown-toggled', {
       detail: {
         expanded: this.isPopoverVisible,
       },
