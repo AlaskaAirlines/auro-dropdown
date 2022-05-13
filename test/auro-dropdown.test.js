@@ -167,6 +167,90 @@ describe('auro-dropdown', () => {
 
     expect(result).to.equal(undefined);
   })
+
+  it('auro-dropdown toggles with spacebar', async () => {
+    const el = await fixture(html`
+      <auro-dropdown toggle>
+        <div slot="trigger">Trigger</div>
+      </auro-dropdown>
+    `);
+
+    const trigger = el.shadowRoot.querySelector('#trigger');
+
+    trigger.dispatchEvent(new KeyboardEvent('keydown', {
+      'key': ' '
+    }));
+
+    expectPopoverShown(el);
+  })
+
+  it('auro-dropdown toggles with enter key', async () => {
+    const el = await fixture(html`
+      <auro-dropdown toggle>
+        <div slot="trigger">Trigger</div>
+      </auro-dropdown>
+    `);
+
+    const trigger = el.shadowRoot.querySelector('#trigger');
+
+    trigger.dispatchEvent(new KeyboardEvent('keydown', {
+      'key': 'enter'
+    }));
+
+    expectPopoverShown(el);
+  })
+
+  it('auro-dropdown shows with spacebar', async () => {
+    const el = await fixture(html`
+      <auro-dropdown>
+        <div slot="trigger">Trigger</div>
+      </auro-dropdown>
+    `);
+
+    const trigger = el.shadowRoot.querySelector('#trigger');
+
+    trigger.dispatchEvent(new KeyboardEvent('keydown', {
+      'key': ' '
+    }));
+
+    expectPopoverShown(el);
+  })
+
+  it('auro-dropdown shows with enter key', async () => {
+    const el = await fixture(html`
+      <auro-dropdown>
+        <div slot="trigger">Trigger</div>
+      </auro-dropdown>
+    `);
+
+    const trigger = el.shadowRoot.querySelector('#trigger');
+
+    trigger.dispatchEvent(new KeyboardEvent('keydown', {
+      'key': 'enter'
+    }));
+
+    expectPopoverShown(el);
+  })
+
+  it('auro-dropdown hides with esc key', async () => {
+    const el = await fixture(html`
+      <auro-dropdown toggle>
+        <div slot="trigger">Trigger</div>
+      </auro-dropdown>
+    `);
+
+    const trigger = el.shadowRoot.querySelector('#trigger');
+
+    trigger.click();
+
+    expectPopoverShown(el);
+
+    trigger.dispatchEvent(new KeyboardEvent('keydown', {
+      'key': 'escape'
+    }));
+
+    expectPopoverHidden(el);
+  })
 });
 
 function expectPopoverShown(el) {
