@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [2.5.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.4.0...v2.5.0) (2022-05-17)
+
+
+### Features
+
+* **events:** rename existing events to match new convention [#122](https://github.com/AlaskaAirlines/auro-dropdown/issues/122) ([3763c88](https://github.com/AlaskaAirlines/auro-dropdown/commit/3763c88feeda92927e9343de1f56719d08555d4b))
+
 # [2.4.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.3.0...v2.4.0) (2022-05-10)
 
 
