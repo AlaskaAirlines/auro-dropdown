@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [2.6.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.5.0...v2.6.0) (2022-05-24)
+
+
+### Features
+
+* **readiness:** add readiness check and event notification [#125](https://github.com/AlaskaAirlines/auro-dropdown/issues/125) ([19265f0](https://github.com/AlaskaAirlines/auro-dropdown/commit/19265f003cc6ae5de0eb65370a0d97ffc80b5dcc))
+
 # [2.5.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.4.0...v2.5.0) (2022-05-17)
 
 
