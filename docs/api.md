@@ -16,6 +16,7 @@
 | `error`            | `error`            | ` Boolean ` |         | If declared in combination with `bordered` property or `helpText` slot content, will apply red color to both. |
 | `inset`            | `inset`            | ` Boolean ` |         | If declared, will apply padding around trigger slot content. |
 | `isPopoverVisible` | `isPopoverVisible` | ` Boolean ` | false   | If true, the dropdown bib is displayed.          |
+| `ready`            | `ready`            | `Boolean`   |         | When false the component API should not be called. |
 | `rounded`          | `rounded`          | ` Boolean ` |         | If declared, will apply border-radius to trigger and default slots. |
 | `toggle`           | `toggle`           | ` Boolean ` |         | If declared, the trigger will toggle the show/hide state of the dropdown. |
 
@@ -31,6 +32,7 @@
 
 | Event                       | Type                                  | Description                                      |
 |-----------------------------|---------------------------------------|--------------------------------------------------|
+| `auroDropdown-ready`        | `CustomEvent<any>`                    | Notifies that the component has finished initializing. |
 | `auroDropdown-toggled`      | `CustomEvent<{ expanded: boolean; }>` | Notifies that the visibility of the dropdown bib has changed. |
 | `auroDropdown-triggerClick` | `CustomEvent<any>`                    | Notifies that the trigger has been clicked.      |
 | `dropdownToggled`           | `CustomEvent<{ expanded: boolean; }>` | (DEPRECATED) Notifies that the visibility of the dropdown bib has changed. |
