@@ -19,6 +19,7 @@ import Popover from "../lib/popover";
  * @attr { Boolean } rounded - If declared, will apply border-radius to trigger and default slots.
  * @attr { Boolean } toggle - If declared, the trigger will toggle the show/hide state of the dropdown.
  * @prop { Boolean } isPopoverVisible - If true, the dropdown bib is displayed.
+ * @prop {Boolean} ready - When false the component API should not be called.
  * @slot - Default slot for the popover content.
  * @slot label - Defines the content of the label.
  * @slot helpText - Defines the content of the helpText.
@@ -29,6 +30,7 @@ import Popover from "../lib/popover";
  * @csspart popover - The bib content container.
  * @fires auroDropdown-triggerClick - Notifies that the trigger has been clicked.
  * @fires dropdownToggled - (DEPRECATED) Notifies that the visibility of the dropdown bib has changed.
+ * @fires auroDropdown-ready - Notifies that the component has finished initializing.
  * @fires auroDropdown-toggled - Notifies that the visibility of the dropdown bib has changed.
  */
 class AuroDropdown extends LitElement {
@@ -45,13 +47,14 @@ class AuroDropdown extends LitElement {
    * @returns {void} Internal defaults.
    */
   privateDefaults() {
-    this.placement = 'bottom-start';
     this.bordered = false;
     this.chevron = false;
     this.disabled = false;
     this.error = false;
     this.inset = false;
+    this.placement = 'bottom-start';
     this.rounded = false;
+    this.ready = false;
     this.tabIndex = 0;
     this.toggle = false;
   }
@@ -64,9 +67,10 @@ class AuroDropdown extends LitElement {
       disabled:         { type: Boolean },
       error:            { type: Boolean },
       inset:            { type: Boolean },
+      isPopoverVisible: { type: Boolean },
+      ready:            { type: Boolean },
       rounded:          { type: Boolean },
       toggle:           { type: Boolean },
-      isPopoverVisible: { type: Boolean },
 
       /**
        * @private
@@ -213,6 +217,22 @@ class AuroDropdown extends LitElement {
 
     this.trigger.addEventListener('keydown', hideByKeyboard);
     this.popover.addEventListener('keydown', hideByKeyboard);
+
+    this.notifyReady();
+  }
+
+  /**
+   * @private
+   * @returns {void} Marks the component as ready and sends event.
+   */
+  notifyReady() {
+    this.ready = true;
+
+    this.dispatchEvent(new CustomEvent('auroDropdown-ready', {
+      bubbles: true,
+      cancelable: false,
+      composed: true,
+    }));
   }
 
   /**
