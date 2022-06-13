@@ -140,6 +140,7 @@
   Lorem ipsum solar
   <div slot="trigger">
     <auro-input
+      borderless
       slot="trigger"
       id="inputExampleTrigger">
     </auro-input>
@@ -154,6 +155,7 @@
   Lorem ipsum solar
   <div slot="trigger">
     <auro-input
+      borderless
       slot="trigger"
       id="inputExampleTrigger">
     </auro-input>

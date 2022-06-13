@@ -32,7 +32,6 @@
 
   &:active {
     border-color: var(--auro-color-border-active-on-light);
-    box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-light);
   }
 }
 
@@ -115,6 +114,7 @@
   .trigger {
     border-color: var(--auro-color-border-primary-on-light);
 
+    &:active,
     &:focus-within {
       border-color: var(--auro-color-border-active-on-light);
     }
