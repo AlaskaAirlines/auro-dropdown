@@ -61,16 +61,35 @@ class AuroDropdown extends LitElement {
 
   // function to define props used within the scope of this component
   static get properties() {
+
     return {
-      bordered:         { type: Boolean, reflect: true },
-      chevron:          { type: Boolean, reflect: true },
-      disabled:         { type: Boolean, reflect: true },
-      error:            { type: Boolean, reflect: true },
-      inset:            { type: Boolean, reflect: true },
+      bordered: {
+        type: Boolean,
+        reflect: true
+      },
+      chevron: {
+        type: Boolean,
+        reflect: true
+      },
+      disabled: {
+        type: Boolean,
+        reflect: true
+      },
+      error: {
+        type: Boolean,
+        reflect: true
+      },
+      inset: {
+        type: Boolean,
+        reflect: true
+      },
+      rounded: {
+        type: Boolean,
+        reflect: true
+      },
+      toggle:           { type: Boolean },
       isPopoverVisible: { type: Boolean },
       ready:            { type: Boolean },
-      rounded:          { type: Boolean, reflect: true },
-      toggle:           { type: Boolean },
 
       /**
        * @private
