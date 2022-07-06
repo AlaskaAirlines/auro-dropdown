@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.6.2](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.6.1...v2.6.2) (2022-07-06)
+
+
+### Bug Fixes
+
+* **event:** only fire triggerClick event with space or enter key [#135](https://github.com/AlaskaAirlines/auro-dropdown/issues/135) ([35ed85c](https://github.com/AlaskaAirlines/auro-dropdown/commit/35ed85c933bb70d16ef5c656e71a9b1256eadb44))
+
 ## [2.6.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.6.0...v2.6.1) (2022-06-20)
 
 
