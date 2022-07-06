@@ -231,7 +231,13 @@ class AuroDropdown extends LitElement {
       }
     } else {
       this.trigger.addEventListener('click', notifyTriggerClicked);
-      this.trigger.addEventListener('keydown', notifyTriggerClicked);
+      this.trigger.addEventListener('keydown', (evt) => {
+        const key = evt.key.toLowerCase();
+
+        if (key === ' ' || key === 'enter') {
+          notifyTriggerClicked();
+        }
+      });
     }
 
     this.trigger.addEventListener('keydown', hideByKeyboard);
