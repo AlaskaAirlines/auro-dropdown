@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.6.3](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.6.2...v2.6.3) (2022-07-06)
+
+
+### Bug Fixes
+
+* **a11y:** move aria-expanded attribute to trigger; move aria-labelledby attribute to button div; add aria-controls attribute to button div ([f587908](https://github.com/AlaskaAirlines/auro-dropdown/commit/f587908a0f60586b4e51c1c5c43e6acf1a8e88d8))
+
 ## [2.6.2](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.6.1...v2.6.2) (2022-07-06)
 
 
