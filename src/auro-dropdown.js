@@ -169,10 +169,12 @@ class AuroDropdown extends LitElement {
 
   firstUpdated() {
     this.fixWidth();
-    this.setAttribute('aria-expanded', this.isPopoverVisible);
 
     this.trigger = this.shadowRoot.querySelector(`#trigger`);
+    this.trigger.setAttribute('aria-expanded', this.isPopoverVisible);
+
     this.triggerChevron = this.shadowRoot.querySelector(`#showStateIcon`);
+
     this.popover = this.shadowRoot.querySelector('#popover');
     this.popper = new Popover(this.trigger, this.popover, this.placement);
 
@@ -352,7 +354,7 @@ class AuroDropdown extends LitElement {
 
   updated(changedProperties) {
     if (changedProperties.has('isPopoverVisible')) {
-      this.setAttribute('aria-expanded', this.isPopoverVisible);
+      this.trigger.setAttribute('aria-expanded', this.isPopoverVisible);
       if (this.isPopoverVisible) {
         document.addEventListener('click', document.expandedAuroDropdown.outsideClick);
       } else if (document.expandedAuroDropdown) {
@@ -369,13 +371,15 @@ class AuroDropdown extends LitElement {
         class="trigger"
         part="trigger"
         role="button"
+        aria-labelledby="triggerLabel"
+        aria-controls="popover"
         data-trigger-placement="${this.placement}"
         tabindex="${this.tabIndex}">
         <div class="triggerContentWrapper">
           <label class="label" id="triggerLabel">
             <slot name="label"></slot>
           </label>
-          <div class="triggerContent" chevron=${this.chevron} aria-labelledby="triggerLabel">
+          <div class="triggerContent" chevron=${this.chevron}>
             <slot
               name="trigger"
               @slotchange="${this.handleTriggerTabIndex()}"></slot>
