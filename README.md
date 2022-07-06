@@ -37,6 +37,14 @@ For the most up to date information on [UI development browser support](https://
 $ npm i @aurodesignsystem/auro-dropdown
 ```
 
+### Peer dependencies
+
+```shell
+$ npm i @alaskaairux/auro-icon
+$ npm i @alaskaairux/design-tokens
+$ npm i @alaskaairux/webcorestylesheets
+```
+
 Installing as a direct, dev or peer dependency is up to the user installing the package. If you are unsure as to what type of dependency you should use, consider reading this [stack overflow](https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencies) answer.
 
 ### Design Token CSS Custom Property dependency
