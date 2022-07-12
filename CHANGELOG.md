@@ -1,5 +1,19 @@
 # Semantic Release Automated Changelog
 
+# [2.7.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.6.3...v2.7.0) (2022-07-12)
+
+
+### Bug Fixes
+
+* **dependency:** add missing peer dependency [#137](https://github.com/AlaskaAirlines/auro-dropdown/issues/137) ([b6f4277](https://github.com/AlaskaAirlines/auro-dropdown/commit/b6f4277baafc30c3b64820ba78c2c4615f75332a))
+* **focus:** correct focus styles [#132](https://github.com/AlaskaAirlines/auro-dropdown/issues/132) ([e7098ea](https://github.com/AlaskaAirlines/auro-dropdown/commit/e7098eaf9198557da42c15c5b52a3c7373aca432))
+* **package:** cleanup package-lock ([dbb52a1](https://github.com/AlaskaAirlines/auro-dropdown/commit/dbb52a1a4580ea2bdde37e0319490f7440c6154a))
+
+
+### Features
+
+* **common:** add common attribute [#93](https://github.com/AlaskaAirlines/auro-dropdown/issues/93) ([1af3144](https://github.com/AlaskaAirlines/auro-dropdown/commit/1af31448db93f252c90e1bb2c4257092e786686b))
+
 ## [2.6.3](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.6.2...v2.6.3) (2022-07-06)
 
 
