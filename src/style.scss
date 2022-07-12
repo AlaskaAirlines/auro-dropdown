@@ -3,9 +3,11 @@
 .popover {
   display: inline-block;
   box-sizing: border-box;
+
   border-width: 1px;
   border-style: solid;
   border-color: transparent;
+
   background-color: var(--auro-color-background-lightest);
   box-shadow: -2px 0 5px 2px rgba(0 0 0 / .08), 0 2px 5px 1px rgba(0 0 0 / .08);
   color: var(--auro-color-text-primary-on-light);
@@ -13,25 +15,33 @@
 
 .label {
   color: var(--auro-color-text-secondary-on-light);
+
   font-size: var(--auro-text-body-size-xs);
   line-height: var(--auro-text-body-size-default);
 }
 
 .trigger {
   position: relative;
+
   display: flex;
+
   align-items: center;
+
   border-width: 1px;
   border-style: solid;
   border-color: transparent;
+
   color: var(--auro-color-text-primary-on-light);
 
-  &:focus-within {
+  &:focus-within,
+  &:active {
     border-color: var(--auro-color-border-active-on-light);
   }
 
-  &:active {
-    border-color: var(--auro-color-border-active-on-light);
+  &:focus-within {
+    &:not(:active) {
+      outline: 1px solid var(--auro-color-ui-default-on-light);
+    }
   }
 }
 
@@ -39,6 +49,7 @@
   .trigger {
     &:hover {
       background-color: var(--auro-color-ui-bkg-hover-on-light);
+
       cursor: pointer;
     }
   }
@@ -51,12 +62,16 @@
 #showStateIcon {
   display: flex;
   height: 100%;
+
   align-items: center;
+
   margin-left: var(--auro-size-xs);
+
   color: var(--auro-color-icon-primary-on-light);
 
   auro-icon {
     height: 1.5rem;
+
     line-height: 1.5rem;
   }
 
@@ -69,7 +84,9 @@
 
 .helpText {
   margin-top: 4px;
+
   color: var(--auro-color-text-secondary-on-light);
+
   font-size: var(--auro-text-body-size-xs);
   line-height: var(--auro-text-body-size-default);
 }
@@ -90,6 +107,7 @@
   .trigger,
   .popover {
     overflow: hidden;
+
     border-radius: var(--auro-border-radius);
   }
 }
@@ -128,15 +146,18 @@
 
   .trigger {
     border-color: var(--auro-color-border-error-on-light);
+
     box-shadow: inset 0 0 0 1px var(--auro-color-border-error-on-light);
 
     &:focus-within {
       border-color: var(--auro-color-border-active-on-light);
+
       box-shadow: none;
     }
 
     &:active {
       border-color: var(--auro-color-border-active-on-light);
+
       box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-light);
     }
   }
@@ -151,15 +172,18 @@
 :host([bordered][error]) {
   .trigger {
     border-color: var(--auro-color-border-error-on-light);
+
     box-shadow: inset 0 0 0 1px var(--auro-color-border-error-on-light);
 
     &:focus-within {
       border-color: var(--auro-color-border-active-on-light);
+
       box-shadow: none;
     }
 
     &:active {
       border-color: var(--auro-color-border-active-on-light);
+
       box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-light);
     }
   }
@@ -175,11 +199,13 @@
 
     &:focus-within {
       border-color: var(--auro-color-border-active-on-dark);
+
       box-shadow: none;
     }
 
     &:active {
       border-color: var(--auro-color-border-active-on-dark);
+
       box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-dark);
     }
   }
@@ -211,15 +237,18 @@
 
   .trigger {
     border-color: var(--auro-color-border-error-on-dark);
+
     box-shadow: inset 0 0 0 1px var(--auro-color-border-error-on-dark);
 
     &:focus-within {
       border-color: var(--auro-color-border-active-on-dark);
+
       box-shadow: none;
     }
 
     &:active {
       border-color: var(--auro-color-border-active-on-dark);
+
       box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-dark);
     }
   }
