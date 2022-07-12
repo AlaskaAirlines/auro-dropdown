@@ -103,6 +103,7 @@
   }
 }
 
+:host([common]),
 :host([rounded]) {
   .trigger,
   .popover {
@@ -112,6 +113,7 @@
   }
 }
 
+:host([common]),
 :host([inset]) {
   .trigger {
     padding: var(--auro-size-xs) var(--auro-size-sm);
@@ -128,6 +130,7 @@
   }
 }
 
+:host([common]),
 :host([bordered]) {
   .trigger {
     border-color: var(--auro-color-border-primary-on-light);
@@ -163,12 +166,14 @@
   }
 }
 
+:host([disabled][common]),
 :host([disabled][bordered]) {
   .trigger {
     border-color: var(--auro-color-border-disabled);
   }
 }
 
+:host([common][error]),
 :host([bordered][error]) {
   .trigger {
     border-color: var(--auro-color-border-error-on-light);

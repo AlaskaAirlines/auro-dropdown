@@ -35,7 +35,7 @@ Not including one of the above options will result in your UI being non-complian
 This first common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle` and `chevron`. Additionally the `aria-label` attribute is used to define a string value that labels an interactive element.
 
 <div class="exampleWrapper">
-  <auro-dropdown id="common" aria-label="Label content for screen reader" bordered rounded inset chevron>
+  <auro-dropdown id="common" common aria-label="Label content for screen reader">
     <div style="padding: var(--auro-size-sm);">
       Lorem ipsum solar
       <br />
@@ -55,7 +55,7 @@ This first common example uses the default `auro-dropdown` element with the attr
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown id="common" aria-label="Label content for screen reader" bordered rounded inset chevron>
+<auro-dropdown id="common" common aria-label="Label content for screen reader">
   <div style="padding: var(--auro-size-sm);">
     Lorem ipsum solar
     <br />
