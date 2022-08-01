@@ -18,6 +18,7 @@
 | [error](#error)            | `error`            | ` Boolean ` |         | If declared in combination with `bordered` property or `helpText` slot content, will apply red color to both. |
 | [inset](#inset)            | `inset`            | ` Boolean ` |         | If declared, will apply padding around trigger slot content. |
 | [isPopoverVisible](#isPopoverVisible) | `isPopoverVisible` | ` Boolean ` | false   | If true, the dropdown bib is displayed.          |
+| [matchWidth](#matchWidth)       | `matchWidth`       | ` Boolean ` | false   | If declared, the popover and trigger will be set to the same width. |
 | [ready](#ready)            | `ready`            | `Boolean`   |         | When false the component API should not be called. |
 | [rounded](#rounded)          | `rounded`          | ` Boolean ` |         | If declared, will apply border-radius to trigger and default slots. |
 | [toggle](#toggle)           | `toggle`           | ` Boolean ` |         | If declared, the trigger will toggle the show/hide state of the dropdown. |

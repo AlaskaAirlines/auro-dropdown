@@ -15,6 +15,7 @@ import Popover from "../lib/popover";
  * @attr { Boolean } disabled - If declared, the dropdown is not interactive.
  * @attr { Boolean } disableEventShow - If declared, the dropdown will only show by calling the API .show() public method.
  * @attr { Boolean } error - If declared in combination with `bordered` property or `helpText` slot content, will apply red color to both.
+ * @attr { Boolean } matchWidth - If declared, the popover and trigger will be set to the same width.
  * @attr { Boolean } inset - If declared, will apply padding around trigger slot content.
  * @attr { Boolean } rounded - If declared, will apply border-radius to trigger and default slots.
  * @attr { Boolean } toggle - If declared, the trigger will toggle the show/hide state of the dropdown.
@@ -38,6 +39,7 @@ class AuroDropdown extends LitElement {
     super();
 
     this.isPopoverVisible = false;
+    this.matchWidth = false;
 
     this.privateDefaults();
   }
@@ -80,6 +82,10 @@ class AuroDropdown extends LitElement {
         reflect: true
       },
       inset: {
+        type: Boolean,
+        reflect: true
+      },
+      matchWidth: {
         type: Boolean,
         reflect: true
       },
@@ -127,7 +133,9 @@ class AuroDropdown extends LitElement {
    * @returns {void} Makes dropdown content width match the trigger.
    */
   fixWidth() {
-    this.dropdownWidth = this.getBoundingClientRect().width;
+    if (this.matchWidth) {
+      this.dropdownWidth = this.getBoundingClientRect().width;
+    }
   }
 
   /**

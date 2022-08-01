@@ -170,6 +170,90 @@ This common example uses the default `auro-dropdown` element with the attributes
 
 </auro-accordion>
 
+## Common use with popover content wider than the trigger
+
+This common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle` and `chevron`. Additionally the trigger is full width of the containing element and the popover content is set to a width wider than the trigger.
+
+<div class="exampleWrapper">
+  <div style="width: 250px;">
+    <auro-dropdown common aria-label="Label content for screen reader">
+      <div style="padding: var(--auro-size-sm); width: 500px;">
+        This is special content.
+      </div>
+      <span slot="helpText">
+        Help text
+      </span>
+      <div slot="trigger">
+        Trigger
+      </div>
+    </auro-dropdown>
+  </div>
+</div>
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+```html
+<div style="width: 250px;">
+  <auro-dropdown common aria-label="Label content for screen reader">
+    <div style="padding: var(--auro-size-sm); width: 500px;">
+      This is special content.
+    </div>
+    <span slot="helpText">
+      Help text
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
+```
+
+</auro-accordion>
+
+## Common use with popover width matching the trigger
+
+This common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle` and `chevron`. Additionally  `matchWidth` attribute is used to make the popover match the width of the trigger.
+
+<div class="exampleWrapper">
+  <auro-dropdown id="common" common matchWidth aria-label="Label content for screen reader">
+    <div style="padding: var(--auro-size-sm);">
+      Lorem ipsum solar
+      <br />
+      <auro-button onclick="document.querySelector('#common').hide()">
+        Dismiss Dropdown
+      </auro-button>
+    </div>
+    <span slot="helpText">
+      Help text
+    </span>
+    <div slot="trigger">
+      Trigger
+    </div>
+  </auro-dropdown>
+</div>
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+```html
+<auro-dropdown id="common" common matchWidth aria-label="Label content for screen reader">
+  <div style="padding: var(--auro-size-sm);">
+    Lorem ipsum solar
+    <br />
+    <auro-button onclick="document.querySelector('#common').hide()">
+      Dismiss Dropdown
+    </auro-button>
+  </div>
+  <span slot="helpText">
+    Help text
+  </span>
+  <div slot="trigger">
+    Trigger
+  </div>
+</auro-dropdown>
+```
+
+</auro-accordion>
+
 ## Supported standard and accessible interactions
 
 The dropdown can be opened with the following actions:
