@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [2.8.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.7.0...v2.8.0) (2022-08-03)
+
+
+### Bug Fixes
+
+* change background color [#128](https://github.com/AlaskaAirlines/auro-dropdown/issues/128) ([9335d6f](https://github.com/AlaskaAirlines/auro-dropdown/commit/9335d6fb4ed1d62ebc7ecfc108a2d22cf1c8dde7))
+
+
+### Features
+
+* **width:** defaults to  dynamic widths and supports matching widths [#138](https://github.com/AlaskaAirlines/auro-dropdown/issues/138) ([081f958](https://github.com/AlaskaAirlines/auro-dropdown/commit/081f958f4272e88a3505ea0a4a6b8cd42f47227f))
+
 # [2.7.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.6.3...v2.7.0) (2022-07-12)
 
 
