@@ -1,8 +1,6 @@
-function handleShowExample() {
-  const showExampleInput = document.querySelector('#showExampleTriggerInput');
-  const showExampleDropdown = document.querySelector('#showMethodExample');
-
-  showExampleInput.addEventListener('keydown', () => {
-    showExampleDropdown.show();
+export function showExample(elem) {
+  const triggerInput = document.querySelector('#showExampleTriggerInput')
+  triggerInput.addEventListener('keydown', () => {
+    elem.show();
   })
 }

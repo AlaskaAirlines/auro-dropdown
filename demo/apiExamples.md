@@ -690,6 +690,15 @@ The `show` method may also be called from anywhere in your code by executing `do
 </auro-dropdown>
 ```
 
+```js
+export function showExample(elem) {
+  const triggerInput = document.querySelector('#showExampleTriggerInput')
+  triggerInput.addEventListener('keydown', () => {
+    elem.show();
+  })
+}
+```
+
 </auro-accordion>
 
 #### <a name="hide"></a>hide
