@@ -320,6 +320,9 @@ The `show` method may also be called from anywhere in your code by executing `do
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/programmaticallyShow.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/programmaticallyShow.js) -->
+<!-- AURO-GENERATED-CONTENT:END -->
+
 </auro-accordion>
 
 #### hide
