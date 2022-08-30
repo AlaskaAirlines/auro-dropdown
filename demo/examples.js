@@ -22,7 +22,7 @@ function initializeExample(element, callback, retryCount) {
 /**
  * Programmatically show the dropdown
  */
-import { showExample } from './programmaticallyShow.js';
+import { showExample } from './../apiExamples/programmaticallyShow.js';
 
 (function(){
   initializeExample('#showMethodExample', function(elem) {
