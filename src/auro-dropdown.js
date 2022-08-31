@@ -175,6 +175,28 @@ class AuroDropdown extends LitElement {
     }
   }
 
+  assessFocusWithin() {
+    setTimeout(() => {
+      if (this.contains(document.activeElement)) {
+        this.trackFocus();
+      } else {
+        this.hide();
+      }
+    }, 100); /* eslint-disable-line no-magic-numbers */
+  }
+
+  trackFocus() {
+    const focusElem = document.activeElement;
+
+    window.addEventListener('blur', () => {
+      this.hide();
+    });
+
+    focusElem.addEventListener('blur', () => {
+      this.assessFocusWithin();
+    });
+  }
+
   firstUpdated() {
     this.fixWidth();
 
@@ -232,6 +254,9 @@ class AuroDropdown extends LitElement {
     };
 
     if (!this.hasAttribute('disableEventShow')) {
+      this.trigger.addEventListener('click', () => {
+        this.trigger.focus();
+      });
       if (this.toggle) {
         this.trigger.addEventListener('click', toggleDropdown);
         this.trigger.addEventListener('keydown', toggleByKeyboard);
@@ -303,6 +328,9 @@ class AuroDropdown extends LitElement {
       if (this.chevron) {
         this.triggerChevron.setAttribute('data-expanded', true);
       }
+
+      this.trackFocus();
+
       this.dispatchEventDropdownToggle();
     }
   }
@@ -347,27 +375,9 @@ class AuroDropdown extends LitElement {
     this.dispatchEvent(event);
   }
 
-  /**
-   * @param {Object} event - Event passed in from the document click event listener that this function gets attached to.
-   * @returns {void} Method used to close the dropdown bib when clicking in the view outside the dropdown.
-   */
-  outsideClick(event) {
-    // Dropdown content is hidden when a user clicks outside the element.
-    const expectedIndex = -1;
-
-    if (event.composedPath().indexOf(document.expandedAuroDropdown) === expectedIndex) {
-      document.expandedAuroDropdown.hide();
-    }
-  }
-
   updated(changedProperties) {
     if (changedProperties.has('isPopoverVisible')) {
       this.trigger.setAttribute('aria-expanded', this.isPopoverVisible);
-      if (this.isPopoverVisible) {
-        document.addEventListener('click', document.expandedAuroDropdown.outsideClick);
-      } else if (document.expandedAuroDropdown) {
-        document.removeEventListener('click', document.expandedAuroDropdown.outsideClick);
-      }
     }
   }
 
