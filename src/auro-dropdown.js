@@ -375,19 +375,6 @@ class AuroDropdown extends LitElement {
     this.dispatchEvent(event);
   }
 
-  /**
-   * @param {Object} event - Event passed in from the document click event listener that this function gets attached to.
-   * @returns {void} Method used to close the dropdown bib when clicking in the view outside the dropdown.
-   */
-  outsideClick(event) {
-    // Dropdown content is hidden when a user clicks outside the element.
-    const expectedIndex = -1;
-
-    if (event.composedPath().indexOf(document.expandedAuroDropdown) === expectedIndex) {
-      document.expandedAuroDropdown.hide();
-    }
-  }
-
   updated(changedProperties) {
     if (changedProperties.has('isPopoverVisible')) {
       this.trigger.setAttribute('aria-expanded', this.isPopoverVisible);
