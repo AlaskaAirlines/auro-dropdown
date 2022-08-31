@@ -175,6 +175,28 @@ class AuroDropdown extends LitElement {
     }
   }
 
+  assessFocusWithin() {
+    setTimeout(() => {
+      if (this.contains(document.activeElement)) {
+        this.trackFocus();
+      } else {
+        this.hide();
+      }
+    }, 100); /* eslint-disable-line no-magic-numbers */
+  }
+
+  trackFocus() {
+    const focusElem = document.activeElement;
+
+    window.addEventListener('blur', () => {
+      this.hide();
+    });
+
+    focusElem.addEventListener('blur', () => {
+      this.assessFocusWithin();
+    });
+  }
+
   firstUpdated() {
     this.fixWidth();
 
@@ -232,6 +254,9 @@ class AuroDropdown extends LitElement {
     };
 
     if (!this.hasAttribute('disableEventShow')) {
+      this.trigger.addEventListener('click', () => {
+        this.trigger.focus();
+      });
       if (this.toggle) {
         this.trigger.addEventListener('click', toggleDropdown);
         this.trigger.addEventListener('keydown', toggleByKeyboard);
@@ -303,6 +328,9 @@ class AuroDropdown extends LitElement {
       if (this.chevron) {
         this.triggerChevron.setAttribute('data-expanded', true);
       }
+
+      this.trackFocus();
+
       this.dispatchEventDropdownToggle();
     }
   }
@@ -363,11 +391,6 @@ class AuroDropdown extends LitElement {
   updated(changedProperties) {
     if (changedProperties.has('isPopoverVisible')) {
       this.trigger.setAttribute('aria-expanded', this.isPopoverVisible);
-      if (this.isPopoverVisible) {
-        document.addEventListener('click', document.expandedAuroDropdown.outsideClick);
-      } else if (document.expandedAuroDropdown) {
-        document.removeEventListener('click', document.expandedAuroDropdown.outsideClick);
-      }
     }
   }
 
