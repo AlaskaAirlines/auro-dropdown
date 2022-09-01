@@ -25,12 +25,10 @@
 
 ## Methods
 
-| Method              | Type       | Description                 |
-|---------------------|------------|-----------------------------|
-| [assessFocusWithin](#assessFocusWithin) | `(): void` |                             |
-| [hide](#hide)              | `(): void` | Hides the dropdown content. |
-| [show](#show)              | `(): void` | Shows the dropdown content. |
-| [trackFocus](#trackFocus)        | `(): void` |                             |
+| Method | Type       | Description                 |
+|--------|------------|-----------------------------|
+| [hide](#hide) | `(): void` | Hides the dropdown content. |
+| [show](#show) | `(): void` | Shows the dropdown content. |
 
 ## Events
 

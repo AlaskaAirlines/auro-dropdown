@@ -23,12 +23,10 @@
 
 ## Methods
 
-| Method              | Type       | Description                 |
-|---------------------|------------|-----------------------------|
-| `assessFocusWithin` | `(): void` |                             |
-| `hide`              | `(): void` | Hides the dropdown content. |
-| `show`              | `(): void` | Shows the dropdown content. |
-| `trackFocus`        | `(): void` |                             |
+| Method | Type       | Description                 |
+|--------|------------|-----------------------------|
+| `hide` | `(): void` | Hides the dropdown content. |
+| `show` | `(): void` | Shows the dropdown content. |
 
 ## Events
 

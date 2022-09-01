@@ -175,6 +175,10 @@ class AuroDropdown extends LitElement {
     }
   }
 
+  /**
+   * @private
+   * @returns {void}  Hides bib when the dropdown or it's contents lose focus.
+   */
   assessFocusWithin() {
     setTimeout(() => {
       if (this.contains(document.activeElement)) {
@@ -185,6 +189,10 @@ class AuroDropdown extends LitElement {
     }, 100); /* eslint-disable-line no-magic-numbers */
   }
 
+  /**
+   * @private
+   * @returns {void} Determines if dropdown bib should be closed on focus change.
+   */
   trackFocus() {
     const focusElem = document.activeElement;
 
