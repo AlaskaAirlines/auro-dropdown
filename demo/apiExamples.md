@@ -25,13 +25,12 @@
 
 ## Methods
 
-| Method              | Type                    | Description                                      |
-|---------------------|-------------------------|--------------------------------------------------|
-| [assessFocusWithin](#assessFocusWithin) | `(): void`              |                                                  |
-| [hide](#hide)              | `(): void`              | Hides the dropdown content.                      |
-| [outsideClick](#outsideClick)      | `(event: Object): void` | **event**: Event passed in from the document click event listener that this function gets attached to. |
-| [show](#show)              | `(): void`              | Shows the dropdown content.                      |
-| [trackFocus](#trackFocus)        | `(): void`              |                                                  |
+| Method              | Type       | Description                 |
+|---------------------|------------|-----------------------------|
+| [assessFocusWithin](#assessFocusWithin) | `(): void` |                             |
+| [hide](#hide)              | `(): void` | Hides the dropdown content. |
+| [show](#show)              | `(): void` | Shows the dropdown content. |
+| [trackFocus](#trackFocus)        | `(): void` |                             |
 
 ## Events
 
