@@ -4,6 +4,9 @@
 ## API Examples
 
 ### Basic
+
+The most basic, simple version of auro-drodown.
+
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/basic.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
@@ -60,6 +63,8 @@
 
 #### bordered
 
+Adds the border style around the dropdown trigger.
+
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/bordered.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
@@ -74,6 +79,8 @@
 </auro-accordion>
 
 #### chevron
+
+Adds the bib visibility state chevron to the right side of the trigger content.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/chevron.html) -->
@@ -129,6 +136,8 @@
 
 #### disabled
 
+Disables the trigger preventing the dropdown bib from being shown.
+
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/disabled.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
@@ -156,6 +165,8 @@
 </auro-accordion>
 
 #### error
+
+Adds the error state UI to the trigger.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/error.html) -->
