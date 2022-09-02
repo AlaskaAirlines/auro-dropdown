@@ -76,9 +76,9 @@ describe('auro-dropdown', () => {
     expect(triggerEl).to.have.attribute('aria-controls', 'popover');
   })
 
-  it('auro-dropdown shows only with click', async () => {
+  it('auro-dropdown shows only with click when using noToggle attribute', async () => {
     const el = await fixture(html`
-      <auro-dropdown>
+      <auro-dropdown noToggle>
         <div slot="trigger">Trigger</div>
       </auro-dropdown>
     `);
@@ -95,7 +95,7 @@ describe('auro-dropdown', () => {
 
   it('auro-dropdown toggle with click', async () => {
     const el = await fixture(html`
-      <auro-dropdown toggle>
+      <auro-dropdown>
         <div slot="trigger">Trigger</div>
       </auro-dropdown>
     `);
@@ -171,7 +171,7 @@ describe('auro-dropdown', () => {
 
   it('auro-dropdown toggles with spacebar', async () => {
     const el = await fixture(html`
-      <auro-dropdown toggle>
+      <auro-dropdown>
         <div slot="trigger">Trigger</div>
       </auro-dropdown>
     `);
@@ -187,7 +187,7 @@ describe('auro-dropdown', () => {
 
   it('auro-dropdown toggles with enter key', async () => {
     const el = await fixture(html`
-      <auro-dropdown toggle>
+      <auro-dropdown>
         <div slot="trigger">Trigger</div>
       </auro-dropdown>
     `);

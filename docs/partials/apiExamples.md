@@ -241,18 +241,18 @@ The `rounded` property applies `border-radius` CSS to the trigger and default sl
 
 </auro-accordion>
 
-#### toggle
+#### noToggle
 
-In cases where it is desired behavior for `auro-dropdown` to hide already displayed dropdown content when clicking on the trigger the `toggle` attribute must be applied.
+In cases where it is desired behavior for `auro-dropdown` to only show, not toggle, the bib content when activating the trigger the `noToggle` attribute must be applied.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/toggle.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/noToggle.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/toggle.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/noToggle.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
