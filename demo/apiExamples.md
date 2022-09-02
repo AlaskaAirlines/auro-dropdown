@@ -60,6 +60,9 @@
 ## API Examples
 
 ### Basic
+
+The most basic, simple version of auro-drodown.
+
 <div class="exampleWrapper">
   <auro-dropdown aria-label="custom label">
     Lorem ipsum solar
@@ -169,6 +172,8 @@
 
 #### <a name="bordered"></a>bordered
 
+Adds the border style around the dropdown trigger.
+
 <div class="exampleWrapper">
 <auro-dropdown aria-label="custom label" bordered>
   Lorem ipsum solar
@@ -192,6 +197,8 @@
 </auro-accordion>
 
 #### <a name="chevron"></a>chevron
+
+Adds the bib visibility state chevron to the right side of the trigger content.
 
 <div class="exampleWrapper">
 <auro-dropdown aria-label="custom label" chevron>
@@ -298,6 +305,8 @@
 
 #### <a name="disabled"></a>disabled
 
+Disables the trigger preventing the dropdown bib from being shown.
+
 <div class="exampleWrapper">
 <auro-dropdown aria-label="custom label" disabled>
   Lorem ipsum solar
@@ -366,6 +375,8 @@
 </auro-accordion>
 
 #### <a name="error"></a>error
+
+Adds the error state UI to the trigger.
 
 <div class="exampleWrapper">
   <auro-dropdown aria-label="custom label" error>
