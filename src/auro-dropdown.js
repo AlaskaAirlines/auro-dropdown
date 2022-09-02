@@ -18,7 +18,7 @@ import Popover from "../lib/popover";
  * @attr { Boolean } matchWidth - If declared, the popover and trigger will be set to the same width.
  * @attr { Boolean } inset - If declared, will apply padding around trigger slot content.
  * @attr { Boolean } rounded - If declared, will apply border-radius to trigger and default slots.
- * @attr { Boolean } toggle - If declared, the trigger will toggle the show/hide state of the dropdown.
+ * @attr { Boolean } noToggle - If declared, the trigger will only show the the dropdown bib.
  * @prop { Boolean } isPopoverVisible - If true, the dropdown bib is displayed.
  * @prop {Boolean} ready - When false the component API should not be called.
  * @slot - Default slot for the popover content.
@@ -58,7 +58,7 @@ class AuroDropdown extends LitElement {
     this.rounded = false;
     this.ready = false;
     this.tabIndex = 0;
-    this.toggle = false;
+    this.noToggle = false;
   }
 
   // function to define props used within the scope of this component
@@ -93,7 +93,10 @@ class AuroDropdown extends LitElement {
         type: Boolean,
         reflect: true
       },
-      toggle:           { type: Boolean },
+      noToggle: {
+        type: Boolean,
+        reflect: true
+      },
       isPopoverVisible: { type: Boolean },
       ready:            { type: Boolean },
 
@@ -265,12 +268,12 @@ class AuroDropdown extends LitElement {
       this.trigger.addEventListener('click', () => {
         this.trigger.focus();
       });
-      if (this.toggle) {
-        this.trigger.addEventListener('click', toggleDropdown);
-        this.trigger.addEventListener('keydown', toggleByKeyboard);
-      } else {
+      if (this.noToggle) {
         this.trigger.addEventListener('click', handleShow);
         this.trigger.addEventListener('keydown', showByKeyboard);
+      } else {
+        this.trigger.addEventListener('click', toggleDropdown);
+        this.trigger.addEventListener('keydown', toggleByKeyboard);
       }
     } else {
       this.trigger.addEventListener('click', notifyTriggerClicked);

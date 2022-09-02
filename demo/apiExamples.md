@@ -19,9 +19,9 @@
 | [inset](#inset)            | `inset`            | ` Boolean ` |         | If declared, will apply padding around trigger slot content. |
 | [isPopoverVisible](#isPopoverVisible) | `isPopoverVisible` | ` Boolean ` | false   | If true, the dropdown bib is displayed.          |
 | [matchWidth](#matchWidth)       | `matchWidth`       | ` Boolean ` | false   | If declared, the popover and trigger will be set to the same width. |
+| [noToggle](#noToggle)         | `noToggle`         | ` Boolean ` |         | If declared, the trigger will only show the the dropdown bib. |
 | [ready](#ready)            | `ready`            | `Boolean`   |         | When false the component API should not be called. |
 | [rounded](#rounded)          | `rounded`          | ` Boolean ` |         | If declared, will apply border-radius to trigger and default slots. |
-| [toggle](#toggle)           | `toggle`           | ` Boolean ` |         | If declared, the trigger will toggle the show/hide state of the dropdown. |
 
 ## Methods
 
@@ -518,12 +518,12 @@ The `rounded` property applies `border-radius` CSS to the trigger and default sl
 
 </auro-accordion>
 
-#### <a name="toggle"></a>toggle
+#### <a name="noToggle"></a>noToggle
 
-In cases where it is desired behavior for `auro-dropdown` to hide already displayed dropdown content when clicking on the trigger the `toggle` attribute must be applied.
+In cases where it is desired behavior for `auro-dropdown` to only show, not toggle, the bib content when activating the trigger the `noToggle` attribute must be applied.
 
 <div class="exampleWrapper">
-  <auro-dropdown aria-label="custom label" toggle>
+  <auro-dropdown aria-label="custom label" noToggle>
     Lorem ipsum solar
     <div slot="trigger">
       Trigger
@@ -534,7 +534,7 @@ In cases where it is desired behavior for `auro-dropdown` to hide already displa
   <span slot="trigger">See code</span>
 
 ```html
-<auro-dropdown aria-label="custom label" toggle>
+<auro-dropdown aria-label="custom label" noToggle>
   Lorem ipsum solar
   <div slot="trigger">
     Trigger
