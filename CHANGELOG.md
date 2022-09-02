@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+# [2.9.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.8.0...v2.9.0) (2022-09-02)
+
+
+### Bug Fixes
+
+* **css:** update consistent background-color for all states [#147](https://github.com/AlaskaAirlines/auro-dropdown/issues/147) ([2e59f74](https://github.com/AlaskaAirlines/auro-dropdown/commit/2e59f74eaaf83be649cd81f5308c6e4df53cd43b))
+* **focus:** better handling of focus loss [#146](https://github.com/AlaskaAirlines/auro-dropdown/issues/146) ([0f9ee9f](https://github.com/AlaskaAirlines/auro-dropdown/commit/0f9ee9f93915c1d071515cd16534abf8b97e46e1))
+
+
+### Features
+
+* **noToggle:** reverse toggle API [#90](https://github.com/AlaskaAirlines/auro-dropdown/issues/90) /n/n BREAKING CHANGE: dropdown will toggle by default ([3395a06](https://github.com/AlaskaAirlines/auro-dropdown/commit/3395a06d4614df3af5c23093fbb4fb5b52009bfa))
+
 # [2.8.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.7.0...v2.8.0) (2022-08-03)
 
 
