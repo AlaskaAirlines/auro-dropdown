@@ -19,8 +19,9 @@ import Popover from "../lib/popover";
  * @attr { Boolean } inset - If declared, will apply padding around trigger slot content.
  * @attr { Boolean } rounded - If declared, will apply border-radius to trigger and default slots.
  * @attr { Boolean } noToggle - If declared, the trigger will only show the the dropdown bib.
+ * @attr { Boolean } noHideOnThisFocusLoss - If delclared, the dropdown will not hide when moving focus outside the element.
  * @prop { Boolean } isPopoverVisible - If true, the dropdown bib is displayed.
- * @prop {Boolean} ready - When false the component API should not be called.
+ * @prop { Boolean } ready - When false the component API should not be called.
  * @slot - Default slot for the popover content.
  * @slot label - Defines the content of the label.
  * @slot helpText - Defines the content of the helpText.
@@ -40,6 +41,7 @@ class AuroDropdown extends LitElement {
 
     this.isPopoverVisible = false;
     this.matchWidth = false;
+    this.noHideOnThisFocusLoss = false;
 
     this.privateDefaults();
   }
@@ -186,7 +188,7 @@ class AuroDropdown extends LitElement {
     setTimeout(() => {
       if (this.contains(document.activeElement)) {
         this.trackFocus();
-      } else {
+      } else if (!this.noHideOnThisFocusLoss && !this.hasAttribute('noHideOnThisFocusLoss')) {
         this.hide();
       }
     }, 100); /* eslint-disable-line no-magic-numbers */
@@ -197,15 +199,18 @@ class AuroDropdown extends LitElement {
    * @returns {void} Determines if dropdown bib should be closed on focus change.
    */
   trackFocus() {
-    const focusElem = document.activeElement;
 
     window.addEventListener('blur', () => {
       this.hide();
     });
 
-    focusElem.addEventListener('blur', () => {
-      this.assessFocusWithin();
-    });
+    if (!this.noHideOnThisFocusLoss) {
+      const focusElem = document.activeElement;
+
+      focusElem.addEventListener('blur', () => {
+        this.assessFocusWithin();
+      });
+    }
   }
 
   firstUpdated() {
