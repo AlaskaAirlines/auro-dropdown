@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.9.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.0...v2.9.1) (2022-09-26)
+
+
+### Bug Fixes
+
+* **hide:** major refactor for logic when we hide the bib ([f39038c](https://github.com/AlaskaAirlines/auro-dropdown/commit/f39038cba867038f5f9f286fa2a655be6b94ada5))
+
 # [2.9.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.8.0...v2.9.0) (2022-09-02)
 
 
