@@ -99,6 +99,10 @@ class AuroDropdown extends LitElement {
         type: Boolean,
         reflect: true
       },
+      noHideOnThisFocusLoss: {
+        type: Boolean,
+        reflect: true
+      },
       isPopoverVisible: { type: Boolean },
       ready:            { type: Boolean },
 
@@ -182,33 +186,14 @@ class AuroDropdown extends LitElement {
 
   /**
    * @private
-   * @returns {void}  Hides bib when the dropdown or it's contents lose focus.
-   */
-  assessFocusWithin() {
-    setTimeout(() => {
-      if (this.contains(document.activeElement)) {
-        this.trackFocus();
-      } else if (!this.noHideOnThisFocusLoss && !this.hasAttribute('noHideOnThisFocusLoss')) {
-        this.hide();
-      }
-    }, 100); /* eslint-disable-line no-magic-numbers */
-  }
-
-  /**
-   * @private
    * @returns {void} Determines if dropdown bib should be closed on focus change.
    */
-  trackFocus() {
-
-    window.addEventListener('blur', () => {
-      this.hide();
-    });
-
-    if (!this.noHideOnThisFocusLoss) {
-      const focusElem = document.activeElement;
-
-      focusElem.addEventListener('blur', () => {
-        this.assessFocusWithin();
+  handleFocusLoss() {
+    if (!this.noHideOnThisFocusLoss && !this.hasAttribute('noHideOnThisFocusLoss')) {
+      document.activeElement.addEventListener('focusout', () => {
+        if (!this.contains(document.activeElement)) {
+          this.hide();
+        }
       });
     }
   }
@@ -294,6 +279,10 @@ class AuroDropdown extends LitElement {
     this.trigger.addEventListener('keydown', hideByKeyboard);
     this.popover.addEventListener('keydown', hideByKeyboard);
 
+    window.addEventListener('blur', () => {
+      this.hide();
+    });
+
     this.notifyReady();
   }
 
@@ -345,7 +334,7 @@ class AuroDropdown extends LitElement {
         this.triggerChevron.setAttribute('data-expanded', true);
       }
 
-      this.trackFocus();
+      this.handleFocusLoss();
 
       this.dispatchEventDropdownToggle();
     }
