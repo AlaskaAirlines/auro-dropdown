@@ -191,7 +191,7 @@ class AuroDropdown extends LitElement {
   handleFocusLoss() {
     if (!this.noHideOnThisFocusLoss && !this.hasAttribute('noHideOnThisFocusLoss')) {
       document.activeElement.addEventListener('focusout', () => {
-        if (!this.contains(document.activeElement)) {
+        if (document.activeElement !== document.querySelector('body') && !this.contains(document.activeElement)) {
           this.hide();
         }
       });
