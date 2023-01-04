@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+## [2.9.3](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.2...v2.9.3) (2023-01-04)
+
+
+### Bug Fixes
+
+* **focus:** better focus handling [#94](https://github.com/AlaskaAirlines/auro-dropdown/issues/94) ([3e33438](https://github.com/AlaskaAirlines/auro-dropdown/commit/3e33438805f470e433a8752f44f5edf0a1b37d57))
+* **focus:** don't hide bib during client tab focus cycle ([4b24344](https://github.com/AlaskaAirlines/auro-dropdown/commit/4b2434497e7396a7ee742b4ab3275365a3871fed))
+
 ## [2.9.2](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.1...v2.9.2) (2023-01-04)
 
 
