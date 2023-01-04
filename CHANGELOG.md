@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.9.2](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.1...v2.9.2) (2023-01-04)
+
+
+### Bug Fixes
+
+* **ui:** fix focus outline [#172](https://github.com/AlaskaAirlines/auro-dropdown/issues/172) ([fa932b8](https://github.com/AlaskaAirlines/auro-dropdown/commit/fa932b83605436403789cc80117509c0c371ad0b))
+
 ## [2.9.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.0...v2.9.1) (2022-09-26)
 
 
