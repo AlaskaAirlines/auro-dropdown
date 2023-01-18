@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.9.4](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.3...v2.9.4) (2023-01-18)
+
+
+### Bug Fixes
+
+* **trigger:** change color of placeholder [#166](https://github.com/AlaskaAirlines/auro-dropdown/issues/166) ([01d1cc3](https://github.com/AlaskaAirlines/auro-dropdown/commit/01d1cc34b905d2d81b843704d08e3548cb442702))
+
 ## [2.9.3](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.2...v2.9.3) (2023-01-04)
 
 
