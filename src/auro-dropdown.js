@@ -200,7 +200,7 @@ class AuroDropdown extends LitElement {
         if (!evt.composedPath().includes(this)) {
           this.hide();
         }
-      })
+      });
     }
   }
 
