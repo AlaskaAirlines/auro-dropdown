@@ -195,6 +195,12 @@ class AuroDropdown extends LitElement {
           this.hide();
         }
       });
+
+      document.querySelector('body').addEventListener('click', (evt) => {
+        if (!evt.composedPath().includes(this)) {
+          this.hide();
+        }
+      })
     }
   }
 
