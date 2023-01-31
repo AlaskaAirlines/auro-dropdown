@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+## [2.9.5](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.4...v2.9.5) (2023-01-31)
+
+
+### Bug Fixes
+
+* **hide:** hide bib when clicking on document body [#178](https://github.com/AlaskaAirlines/auro-dropdown/issues/178) ([6fde78a](https://github.com/AlaskaAirlines/auro-dropdown/commit/6fde78a8fdc382ab685e68ff3496af3858e27f2f))
+
+
+### Performance Improvements
+
+* **deps:** update to latest deps ([2505aeb](https://github.com/AlaskaAirlines/auro-dropdown/commit/2505aebc606b1f7bed2f0fa24f6c1cec528a77e3))
+
 ## [2.9.4](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.3...v2.9.4) (2023-01-18)
 
 
