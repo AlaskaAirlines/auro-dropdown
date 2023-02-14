@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+## [2.9.6](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.5...v2.9.6) (2023-02-14)
+
+
+### Bug Fixes
+
+* **color:** trigger color should always be primary on light [#180](https://github.com/AlaskaAirlines/auro-dropdown/issues/180) ([be275fd](https://github.com/AlaskaAirlines/auro-dropdown/commit/be275fd9cc2eeb86dde2e747dce3f4a20eb24380))
+
+
+### Performance Improvements
+
+* **deps:** update dependencies to latest versions ([317de2d](https://github.com/AlaskaAirlines/auro-dropdown/commit/317de2d6f181fdbe65db0f56c1c01b32d25231c1))
+
 ## [2.9.5](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.4...v2.9.5) (2023-01-31)
 
 
