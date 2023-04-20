@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.9.7](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.6...v2.9.7) (2023-04-20)
+
+
+### Performance Improvements
+
+* **ce:** implement custom naming convention [#185](https://github.com/AlaskaAirlines/auro-dropdown/issues/185) ([44d43ba](https://github.com/AlaskaAirlines/auro-dropdown/commit/44d43ba1f598b22bb5b143e513e0ebc86288e9d6))
+
 ## [2.9.6](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.5...v2.9.6) (2023-02-14)
 
 
