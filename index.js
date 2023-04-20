@@ -1,1 +1,13 @@
-export * from './dist/auro-dropdown';
+import { AuroDropdown } from './src/auro-dropdown.js';
+
+/**
+ * Register Custom Element.
+ * @param {Object} name - Name to use for custom element.
+ * @returns {void}
+ */
+export function registerComponent(name) {
+  // alias definition
+  if (!customElements.get(name)) {
+    customElements.define(name, class extends AuroDropdown {});
+  }
+}

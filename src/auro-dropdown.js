@@ -35,7 +35,7 @@ import Popover from "../lib/popover";
  * @fires auroDropdown-ready - Notifies that the component has finished initializing.
  * @fires auroDropdown-toggled - Notifies that the visibility of the dropdown bib has changed.
  */
-class AuroDropdown extends LitElement {
+export class AuroDropdown extends LitElement {
   constructor() {
     super();
 
@@ -443,8 +443,7 @@ class AuroDropdown extends LitElement {
   }
 }
 
-/* istanbul ignore else */
-// define the name of the custom component
+// default internal definition
 if (!customElements.get("auro-dropdown")) {
   customElements.define("auro-dropdown", AuroDropdown);
 }
