@@ -5,7 +5,7 @@
 
 /* eslint-disable lit-a11y/click-events-have-key-events, max-lines */
 
-import { LitElement, html, css } from "lit";
+import { LitElement, html } from "lit";
 import styleCss from "./style-css.js";
 import Popover from "../lib/popover";
 
@@ -124,9 +124,7 @@ export class AuroDropdown extends LitElement {
   }
 
   static get styles() {
-    return css`
-      ${styleCss},
-    `;
+    return [styleCss];
   }
 
   connectedCallback() {
