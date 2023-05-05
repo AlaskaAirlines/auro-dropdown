@@ -5,7 +5,7 @@
 
 /* eslint-disable lit-a11y/click-events-have-key-events, max-lines */
 
-import { LitElement, html, css } from "lit-element";
+import { LitElement, html, css } from "lit";
 import styleCss from "./style-css.js";
 import Popover from "../lib/popover";
 
