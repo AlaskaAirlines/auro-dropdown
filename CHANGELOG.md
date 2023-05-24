@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+## [2.9.8](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.7...v2.9.8) (2023-05-24)
+
+
+### Performance Improvements
+
+* **es5:** remove legacy es5 bundling resources [#188](https://github.com/AlaskaAirlines/auro-dropdown/issues/188) ([00fc103](https://github.com/AlaskaAirlines/auro-dropdown/commit/00fc103b0ccd06df0def6219e044ff191420956e))
+* **husky:** update .husky/pre-commit and necessary pre-commit actions ([1dd87cc](https://github.com/AlaskaAirlines/auro-dropdown/commit/1dd87cc6b69da2d5c9584655952784cec72142ae))
+* remove unused script ([6f13cd2](https://github.com/AlaskaAirlines/auro-dropdown/commit/6f13cd22e90d09b385dc743e10c679abf83159ff))
+* update general feedback for update node 18 ([af2692e](https://github.com/AlaskaAirlines/auro-dropdown/commit/af2692edfb6a5c74f57ed59f50ec0d3f84e442ad))
+* update to Lit2.0, TS support, issue templates, component registration extension and update to Node 18+ ([8432071](https://github.com/AlaskaAirlines/auro-dropdown/commit/843207104c7286d73f273265206ecf3496bb93f0))
+* update webcorestylesheets from "@alaskaairux/webcorestylesheets": "^3.7.3" into "@aurodesignsystem/webcorestylesheets": "^4.2.0" ([5566dbf](https://github.com/AlaskaAirlines/auro-dropdown/commit/5566dbf1c26c26d6d2c08e4ccff3bbff739da125))
+
 ## [2.9.7](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.6...v2.9.7) (2023-04-20)
 
 
