@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.9.9](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.8...v2.9.9) (2023-06-01)
+
+
+### Bug Fixes
+
+* **popover:** update namespace to remove collision [#196](https://github.com/AlaskaAirlines/auro-dropdown/issues/196) ([1997ba5](https://github.com/AlaskaAirlines/auro-dropdown/commit/1997ba55556c5732c10cf4ecbe775e5b81ae3d10))
+
 ## [2.9.8](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.7...v2.9.8) (2023-05-24)
 
 
