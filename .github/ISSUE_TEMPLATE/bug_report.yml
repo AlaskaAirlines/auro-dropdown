@@ -18,7 +18,7 @@ body:
     attributes:
       value: >
         [![See it on
-        NPM!](https://img.shields.io/npm/v/@alaskaairux/auro-dropdown?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@alaskaairux/auro-dropdown)
+        NPM!](https://img.shields.io/npm/v/@aurodesignsystem/auro-dropdown?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@aurodesignsystem/auro-dropdown)
   - type: textarea
     id: details
     attributes:
