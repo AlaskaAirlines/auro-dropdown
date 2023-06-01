@@ -210,8 +210,8 @@ export class AuroDropdown extends LitElement {
 
     this.triggerChevron = this.shadowRoot.querySelector(`#showStateIcon`);
 
-    this.popover = this.shadowRoot.querySelector('#popover');
-    this.popper = new Popover(this.trigger, this.popover, this.placement);
+    this.auroPopover = this.shadowRoot.querySelector('#popover');
+    this.popper = new Popover(this.trigger, this.auroPopover, this.placement);
 
     const handleShow = () => {
       this.toggleShow();
@@ -281,7 +281,7 @@ export class AuroDropdown extends LitElement {
     }
 
     this.trigger.addEventListener('keydown', hideByKeyboard);
-    this.popover.addEventListener('keydown', hideByKeyboard);
+    this.auroPopover.addEventListener('keydown', hideByKeyboard);
 
     window.addEventListener('blur', () => {
       this.hide();
