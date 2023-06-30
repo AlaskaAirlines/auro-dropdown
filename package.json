@@ -21,7 +21,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.7",
     "chalk": "^5.2.0",
-    "lit": "^2.7.4"
+    "lit": "^2.7.5"
   },
   "peerDependencies": {
     "@alaskaairux/auro-icon": "^3.3.1",
