@@ -1,3 +1,11 @@
+// Copyright (c) Alaska Air. All right reserved. Licensed under the Apache-2.0 license.
+// See LICENSE in the project root for license information.
+
+// ---------------------------------------------------------------------
+
+// layout styles - define any layout specifications for UI that is contained WITHIN the component
+// never define layout that would cause effect on element outside the scope of this component
+
 /* stylelint-disable no-descending-specificity */
 
 .popover {
@@ -6,15 +14,15 @@
   border-width: 1px;
   border-style: solid;
   border-color: transparent;
-  background-color: var(--auro-color-background-lightest);
+  background-color: var(--ds-color-background-lightest);
   box-shadow: -2px 0 5px 2px rgba(0 0 0 / .08), 0 2px 5px 1px rgba(0 0 0 / .08);
-  color: var(--auro-color-text-primary-on-light);
+  color: var(--ds-color-text-primary-default);
 }
 
 .label {
-  color: var(--auro-color-text-secondary-on-light);
-  font-size: var(--auro-text-body-size-xs);
-  line-height: var(--auro-text-body-size-default);
+  color: var(--ds-color-text-secondary-default);
+  font-size: var(--ds-text-body-size-xs);
+  line-height: var(--ds-text-body-size-default);
 }
 
 .trigger {
@@ -24,17 +32,17 @@
   border-width: 1px;
   border-style: solid;
   border-color: transparent;
-  background-color: var(--auro-color-background-lightest);
-  color: var(--auro-color-text-primary-on-light);
+  background-color: var(--ds-color-background-lightest);
+  color: var(--ds-color-text-primary-default);
 
   &:focus-within,
   &:active {
-    border-color: var(--auro-color-border-active-on-light);
+    border-color: var(--ds-color-border-active-default);
   }
 
   &:focus-within {
     &:not(:active) {
-      box-shadow: inset 0 0 0 1px var(--auro-color-ui-default-on-light);
+      box-shadow: inset 0 0 0 1px var(--ds-color-ui-default-default);
     }
   }
 }
@@ -55,8 +63,8 @@
   display: flex;
   height: 100%;
   align-items: center;
-  margin-left: var(--auro-size-xs);
-  color: var(--auro-color-icon-primary-on-light);
+  margin-left: var(--ds-size-100);
+  color: var(--ds-color-icon-primary-default);
 
   auro-icon {
     height: 1.5rem;
@@ -72,9 +80,9 @@
 
 .helpText {
   margin-top: 4px;
-  color: var(--auro-color-text-secondary-on-light);
-  font-size: var(--auro-text-body-size-xs);
-  line-height: var(--auro-text-body-size-default);
+  color: var(--ds-color-text-secondary-default);
+  font-size: var(--ds-text-body-size-xs);
+  line-height: var(--ds-text-body-size-default);
 }
 
 :host(:not([data-show])) {
@@ -85,7 +93,7 @@
 
 :host([data-show]) {
   .popover {
-    z-index: var(--auro-depth-tooltip);
+    z-index: var(--ds-depth-tooltip);
   }
 }
 
@@ -94,14 +102,14 @@
   .trigger,
   .popover {
     overflow: hidden;
-    border-radius: var(--auro-border-radius);
+    border-radius: var(--ds-border-radius);
   }
 }
 
 :host([common]),
 :host([inset]) {
   .trigger {
-    padding: var(--auro-size-xs) var(--auro-size-sm);
+    padding: var(--ds-size-100) var(--ds-size-150);
   }
 }
 
@@ -111,39 +119,39 @@
   .trigger,
   .label,
   #showStateIcon {
-    color: var(--auro-color-text-disabled-on-light);
+    color: var(--ds-color-text-disabled-default);
   }
 }
 
 :host([common]),
 :host([bordered]) {
   .trigger {
-    border-color: var(--auro-color-border-primary-on-light);
+    border-color: var(--ds-color-border-primary-default);
 
     &:active,
     &:focus-within {
-      border-color: var(--auro-color-border-active-on-light);
+      border-color: var(--ds-color-border-active-default);
     }
   }
 }
 
 :host([error]) {
   .helpText {
-    color: var(--auro-color-text-error-on-light);
+    color: var(--ds-color-text-error-default);
   }
 
   .trigger {
-    border-color: var(--auro-color-border-error-on-light);
-    box-shadow: inset 0 0 0 1px var(--auro-color-border-error-on-light);
+    border-color: var(--ds-color-border-error-default);
+    box-shadow: inset 0 0 0 1px var(--ds-color-border-error-default);
 
     &:focus-within {
-      border-color: var(--auro-color-border-active-on-light);
+      border-color: var(--ds-color-border-active-default);
       box-shadow: none;
     }
 
     &:active {
-      border-color: var(--auro-color-border-active-on-light);
-      box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-light);
+      border-color: var(--ds-color-border-active-default);
+      box-shadow: inset 0 0 0 1px var(--ds-color-border-active-default);
     }
   }
 }
@@ -151,24 +159,24 @@
 :host([disabled][common]),
 :host([disabled][bordered]) {
   .trigger {
-    border-color: var(--auro-color-border-disabled);
+    border-color: var(--ds-color-border-disabled-default);
   }
 }
 
 :host([common][error]),
 :host([bordered][error]) {
   .trigger {
-    border-color: var(--auro-color-border-error-on-light);
-    box-shadow: inset 0 0 0 1px var(--auro-color-border-error-on-light);
+    border-color: var(--ds-color-border-error-default);
+    box-shadow: inset 0 0 0 1px var(--ds-color-border-error-default);
 
     &:focus-within {
-      border-color: var(--auro-color-border-active-on-light);
+      border-color: var(--ds-color-border-active-default);
       box-shadow: none;
     }
 
     &:active {
-      border-color: var(--auro-color-border-active-on-light);
-      box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-light);
+      border-color: var(--ds-color-border-active-default);
+      box-shadow: inset 0 0 0 1px var(--ds-color-border-active-default);
     }
   }
 }
@@ -179,26 +187,26 @@
 
 :host([onDark]) {
   .trigger {
-    color: var(--auro-color-text-primary-on-dark);
+    color: var(--ds-color-text-primary-inverse);
 
     &:focus-within {
-      border-color: var(--auro-color-border-active-on-dark);
+      border-color: var(--ds-color-ui-default-inverse);
       box-shadow: none;
     }
 
     &:active {
-      border-color: var(--auro-color-border-active-on-dark);
-      box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-dark);
+      border-color: var(--ds-color-ui-default-inverse);
+      box-shadow: inset 0 0 0 1px var(--ds-color-ui-default-inverse);
     }
   }
 
   .label,
   .helpText {
-    color: var(--auro-color-text-secondary-on-dark);
+    color: var(--ds-color-text-secondary-inverse);
   }
 
   #showStateIcon {
-    color: var(--auro-color-icon-primary-on-dark);
+    color: var(--ds-color-icon-primary-inverse);
   }
 }
 
@@ -214,21 +222,21 @@
 
 :host([onDark][error]) {
   .helpText {
-    color: var(--auro-color-text-error-on-dark);
+    color: var(--ds-color-text-error-inverse);
   }
 
   .trigger {
-    border-color: var(--auro-color-border-error-on-dark);
-    box-shadow: inset 0 0 0 1px var(--auro-color-border-error-on-dark);
+    border-color: var(--ds-color-state-error-100);
+    box-shadow: inset 0 0 0 1px var(--ds-color-state-error-100);
 
     &:focus-within {
-      border-color: var(--auro-color-border-active-on-dark);
+      border-color: var(--ds-color-ui-default-inverse);
       box-shadow: none;
     }
 
     &:active {
-      border-color: var(--auro-color-border-active-on-dark);
-      box-shadow: inset 0 0 0 1px var(--auro-color-border-active-on-dark);
+      border-color: var(--ds-color-ui-default-inverse);
+      box-shadow: inset 0 0 0 1px var(--ds-color-ui-default-inverse);
     }
   }
 }
@@ -237,12 +245,12 @@
   .trigger,
   .label,
   .helpText {
-    color: var(--auro-color-text-disabled-on-dark);
+    color: var(--ds-color-text-disabled-default);
   }
 }
 
 :host([onDark][disabled][bordered]) {
   .trigger {
-    border-color: var(--auro-color-border-disabled-on-dark);
+    border-color: var(--ds-color-border-disabled-default);
   }
 }
