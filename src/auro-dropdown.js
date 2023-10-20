@@ -42,6 +42,7 @@ export class AuroDropdown extends LitElement {
     this.isPopoverVisible = false;
     this.matchWidth = false;
     this.noHideOnThisFocusLoss = false;
+    this.modalTrigger = false;
 
     this.privateDefaults();
   }
@@ -105,6 +106,10 @@ export class AuroDropdown extends LitElement {
       },
       isPopoverVisible: { type: Boolean },
       ready:            { type: Boolean },
+      modalTrigger: {
+        type: Boolean,
+        reflect: true
+      },
 
       /**
        * @private
@@ -394,49 +399,53 @@ export class AuroDropdown extends LitElement {
   render() {
     return html`
       <div
-        id="trigger"
-        class="trigger"
-        part="trigger"
-        role="button"
-        aria-labelledby="triggerLabel"
-        aria-controls="popover"
-        data-trigger-placement="${this.placement}"
-        tabindex="${this.tabIndex}">
-        <div class="triggerContentWrapper">
-          <label class="label" id="triggerLabel">
-            <slot name="label"></slot>
-          </label>
-          <div class="triggerContent" chevron=${this.chevron}>
-            <slot
-              name="trigger"
-              @slotchange="${this.handleTriggerTabIndex()}"></slot>
+        class="wrapper"
+        ?modalDisplay=${this.modalTrigger && this.isPopoverVisible}>
+        <div
+          id="trigger"
+          class="trigger"
+          part="trigger"
+          role="button"
+          aria-labelledby="triggerLabel"
+          aria-controls="popover"
+          data-trigger-placement="${this.placement}"
+          tabindex="${this.tabIndex}">
+          <div class="triggerContentWrapper">
+            <label class="label" id="triggerLabel">
+              <slot name="label"></slot>
+            </label>
+            <div class="triggerContent" chevron=${this.chevron}>
+              <slot
+                name="trigger"
+                @slotchange="${this.handleTriggerTabIndex()}"></slot>
+            </div>
           </div>
+          ${this.chevron ? html`
+            <div
+              id="showStateIcon"
+              part="chevron">
+              <auro-icon
+                category="interface"
+                name="chevron-down"
+                customColor>
+              </auro-icon>
+            </div>
+          ` : undefined}
         </div>
-        ${this.chevron ? html`
-          <div
-            id="showStateIcon"
-            part="chevron">
-            <auro-icon
-              category="interface"
-              name="chevron-down"
-              customColor>
-            </auro-icon>
-          </div>
-        ` : undefined}
-      </div>
-      <div
-        class="helpText"
-        part="helpText">
-        <slot name="helpText"></slot>
-      </div>
-      <div
-        id="popover"
-        class="popover"
-        part="popover"
-        aria-live="polite"
-        style=${`min-width: ${this.dropdownWidth}px;`}>
-        <slot role="tooltip"></slot>
-      </div>
+        <div
+          class="helpText"
+          part="helpText">
+          <slot name="helpText"></slot>
+        </div>
+        <div
+          id="popover"
+          class="popover"
+          part="popover"
+          aria-live="polite"
+          style=${`min-width: ${this.dropdownWidth}px;`}>
+          <slot role="tooltip"></slot>
+        </div>
+      <div>
     `;
   }
 }

@@ -1,12 +1,17 @@
-const path = require('path');
-const chalk = require('chalk');
-const markdownMagic = require('markdown-magic');
-const fs = require('fs');
-const https = require('https');
+import path from 'path';
+import { fileURLToPath } from 'url';
+import chalk from 'chalk';
+import markdownMagic from 'markdown-magic'
+import fs from 'fs'
+import https from 'https';
 
 const readmeTemplateUrl = 'https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/README.md';
 const dirDocTemplates = './docTemplates';
 const readmeFilePath = dirDocTemplates + '/README.md';
+
+const __filename = fileURLToPath(import.meta.url);
+
+const __dirname = path.dirname(__filename);
 
 /**
  * Extract NPM, NAMESPACE and NAME from package.json
@@ -19,7 +24,7 @@ const readmeFilePath = dirDocTemplates + '/README.md';
     }
   })
 
-  pName = JSON.parse(packageJson).name;
+  let pName = JSON.parse(packageJson).name;
 
   let npmStart = pName.indexOf('@');
   let namespaceStart = pName.indexOf('/');

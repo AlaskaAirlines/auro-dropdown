@@ -34,14 +34,24 @@ Not including one of the above options will result in your UI being non-complian
 
 This first common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle` and `chevron`. Additionally the `aria-label` attribute is used to define a string value that labels an interactive element.
 
+
+### modal
+
 <div class="exampleWrapper">
-  <auro-dropdown id="common" common aria-label="Label content for screen reader">
+  <auro-dropdown id="common" common modal="sm" aria-label="Label content for screen reader">
     <div style="padding: var(--auro-size-sm);">
       Lorem ipsum solar
       <br />
+      <input />
       <auro-button onclick="document.querySelector('#common').hide()">
         Dismiss Dropdown
       </auro-button>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <input />
     </div>
     <span slot="helpText">
       Help text
@@ -51,17 +61,52 @@ This first common example uses the default `auro-dropdown` element with the attr
     </div>
   </auro-dropdown>
 </div>
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
 
-```html
+### modal with trigger
+
+<div class="exampleWrapper">
+  <auro-dropdown id="modalWithTrigger" common modal="sm" modalTrigger aria-label="Label content for screen reader">
+    <div style="padding: var(--auro-size-sm);">
+      Lorem ipsum solar
+      <br />
+      <input />
+      <auro-button onclick="document.querySelector('#modalWithTrigger').hide()">
+        Dismiss Dropdown
+      </auro-button>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <input />
+    </div>
+    <span slot="helpText">
+      Help text
+    </span>
+    <div slot="trigger">
+      <auro-input>
+        <span slot="label">Input label</span>
+      </auro-input>
+    </div>
+  </auro-dropdown>
+</div>
+
+### Default
+
 <auro-dropdown id="common" common aria-label="Label content for screen reader">
   <div style="padding: var(--auro-size-sm);">
     Lorem ipsum solar
     <br />
+    <input />
     <auro-button onclick="document.querySelector('#common').hide()">
       Dismiss Dropdown
     </auro-button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <input />
   </div>
   <span slot="helpText">
     Help text
