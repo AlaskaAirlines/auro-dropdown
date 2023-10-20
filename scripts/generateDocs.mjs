@@ -2,9 +2,8 @@ import path from 'path';
 import markdownMagic from 'markdown-magic';
 import fs from 'fs';
 import https from 'https';
-import { fileURLToPath } from 'url';
 
-const __dirname = fileURLToPath(new URL('.', import.meta.url));
+const __dirname = new URL('.', import.meta.url).pathname;
 
 const readmeTemplateUrl = 'https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/README.md';
 const dirDocTemplates = './docTemplates';
@@ -124,7 +123,7 @@ function processReadme() {
 }
 
 /**
- * Compiles `./docTemplates/index.md` -> `./demo/index.md`
+ * Compiles `./docs/partials/index.md` -> `./demo/index.md`
  */
 
 function processDemo() {
@@ -149,7 +148,7 @@ function processDemo() {
 }
 
 /**
- * Compiles `./docTemplates/api.md` -> `./demo/api.md`
+ * Compiles `./docs/partials/api.md` -> `./demo/api.md`
  */
 
 function processApiExamples() {
