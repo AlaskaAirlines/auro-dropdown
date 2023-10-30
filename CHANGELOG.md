@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+## [2.9.10](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.9...v2.9.10) (2023-10-30)
+
+
+### Performance Improvements
+
+* add old design-tokens deps ([dc7d139](https://github.com/AlaskaAirlines/auro-dropdown/commit/dc7d1393da151695059788c0319ba9ffe97d057b))
+* **token:** update token per new theming [#205](https://github.com/AlaskaAirlines/auro-dropdown/issues/205) ([66afa65](https://github.com/AlaskaAirlines/auro-dropdown/commit/66afa654b52209bb60d17e831fcb079ab0f48c74))
+
 ## [2.9.9](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.8...v2.9.9) (2023-06-01)
 
 
