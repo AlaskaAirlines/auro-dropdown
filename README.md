@@ -1,7 +1,7 @@
 <!--
 The README.md file is a compiled document. No edits should be made directly to this file.
 
-README.md is created by running `npm run build:markdownDocs`.
+README.md is created by running `npm run build:docs`.
 
 This file is generated based on a template fetched from
 `https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/README.md`
@@ -32,7 +32,6 @@ For the most up to date information on [UI development browser support](https://
 [![Build Status](https://img.shields.io/github/actions/workflow/status/AlaskaAirlines/auro-dropdown/testPublish.yml?style=for-the-badge)](https://github.com/AlaskaAirlines/auro-dropdown/actions/workflows/testPublish.yml)
 [![See it on NPM!](https://img.shields.io/npm/v/@aurodesignsystem/auro-dropdown?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@aurodesignsystem/auro-dropdown)
 [![License](https://img.shields.io/npm/l/@aurodesignsystem/auro-dropdown?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/@aurodesignsystem/auro-dropdown?style=for-the-badge)](https://snyk.io/test/npm/@aurodesignsystem/auro-dropdown?tab=issues)
 
 ```shell
 $ npm i @aurodesignsystem/auro-dropdown
@@ -69,24 +68,20 @@ import "@aurodesignsystem/auro-dropdown";
 </auro-dropdown>
 ```
 
-## CDN Use
+## Install bundled assets from CDN
 
-In cases where the project is not able to process JS assets, there are pre-processed assets available for use.
+In cases where the project is not able to process JS assets, there are pre-processed assets available for use. See -- `auro-dropdown__bundled.js` for modern browsers. Legacy browsers such as IE11 are no longer supported.
 
-### Install
-Include the following example HTML code in the `<head>` element of your page.
+We recommend you load these bundles using [differential serving](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/) so that the browser only loads the bundle correctly. To accomplish this, the script tag for the modern bundle should have `type="module"` and the script tag.
+
+### Bundle example code
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@aurodesignsystem/design-tokens@latest/dist/tokens/CSSCustomProperties.css" />
+<!-- **NOTE:** Be sure to replace `@latest` in the URL with the version of the asset you want. @latest is NOT aware of any MAJOR releases, use at your own risk. -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@alaskaairux/design-tokens@latest/dist/tokens/CSSCustomProperties.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@aurodesignsystem/webcorestylesheets@latest/dist/bundled/essentials.css" />
 <script src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-dropdown@latest/dist/auro-dropdown__bundled.js" type="module"></script>
 ```
-
-**NOTE:** Be sure to replace `@latest` in the URL with the version of the asset you want. @latest is NOT aware of any MAJOR releases, use at your own risk.
-
-### CDN options
-
-Both [Unpkg](https://www.unpkg.com/) and [JSDelivr](https://www.jsdelivr.com/) are free open source options that you can use. These are 3rd party resources and Auro is not responsible for their uptime. **Use at your own risk.** These bundle resources are included with the npm package, you are free to use any CDN resource that fits your needs.
 
 ## auro-dropdown use cases
 
@@ -144,8 +139,4 @@ Automated tests are required for every Auro component. See `.\test\auro-dropdown
 ### Bundled assets
 
 Bundled assets are only generated in the remote and not merged back to this repo. To review and/or test a bundled asset locally, run `$ npm run bundler` to generate assets.
-
-### Demo deployment
-
-To deploy a demo version of the component for review, run `npm run build:demo` to create a `./build` directory that can be pushed to any static server.
 
