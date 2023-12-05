@@ -104,7 +104,6 @@
 :host([rounded]) {
   .trigger,
   .popover {
-    overflow: hidden;
     border-radius: var(--ds-border-radius, $ds-border-radius);
   }
 }
