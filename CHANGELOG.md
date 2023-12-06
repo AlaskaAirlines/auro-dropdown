@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.9.11](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.10...v2.9.11) (2023-12-06)
+
+
+### Bug Fixes
+
+* **overflow:** remove overflow hidden rule [#210](https://github.com/AlaskaAirlines/auro-dropdown/issues/210) ([a56c910](https://github.com/AlaskaAirlines/auro-dropdown/commit/a56c9106a4f3f61019048ffb75cae6ae01e43834))
+
 ## [2.9.10](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.9...v2.9.10) (2023-10-30)
 
 
