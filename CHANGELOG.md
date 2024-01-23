@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+# [2.10.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.11...v2.10.0) (2024-01-23)
+
+
+### Features
+
+* add suport for SSR projects [#213](https://github.com/AlaskaAirlines/auro-dropdown/issues/213) ([a0479f8](https://github.com/AlaskaAirlines/auro-dropdown/commit/a0479f81caeac1d4835c868b5cd30a516c060541))
+
+
+### Performance Improvements
+
+* update legacy dependency ([f274b44](https://github.com/AlaskaAirlines/auro-dropdown/commit/f274b441eaa80f95dc14ce9b1de89c79a0512f9d))
+* update to support current node policy ([214f269](https://github.com/AlaskaAirlines/auro-dropdown/commit/214f2692553e01dae020d6a538ddd401a6339d4d))
+
 ## [2.9.11](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.10...v2.9.11) (2023-12-06)
 
 
