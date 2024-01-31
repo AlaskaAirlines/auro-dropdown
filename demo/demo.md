@@ -44,7 +44,7 @@ This first common example uses the default `auro-dropdown` element with the attr
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/common.html) -->
   <!-- The below content is automatically added from ./../../apiExamples/common.html -->
   <auro-dropdown id="common" common aria-label="Label content for screen reader">
-    <div style="padding: var(--auro-size-sm);">
+    <div style="padding: var(--ds-size-150);">
       Lorem ipsum solar
       <br />
       <auro-button onclick="document.querySelector('#common').hide()">
@@ -67,7 +67,7 @@ This first common example uses the default `auro-dropdown` element with the attr
 
 ```html
 <auro-dropdown id="common" common aria-label="Label content for screen reader">
-  <div style="padding: var(--auro-size-sm);">
+  <div style="padding: var(--ds-size-150);">
     Lorem ipsum solar
     <br />
     <auro-button onclick="document.querySelector('#common').hide()">
@@ -94,7 +94,7 @@ This common example uses the default `auro-dropdown` element with the attributes
   <!-- The below content is automatically added from ./../../apiExamples/commonLabelledby.html -->
   <p id="foo">The element is labelled by content external to the element.</p>
   <auro-dropdown id="commonAdvanced" aria-labelledby="foo" bordered rounded inset chevron>
-    <div style="padding: var(--auro-size-sm);">
+    <div style="padding: var(--ds-size-150);">
       Lorem ipsum solar
       <br />
       <auro-button onclick="document.querySelector('#commonAdvanced').hide()">
@@ -118,7 +118,7 @@ This common example uses the default `auro-dropdown` element with the attributes
 ```html
 <p id="foo">The element is labelled by content external to the element.</p>
 <auro-dropdown id="commonAdvanced" aria-labelledby="foo" bordered rounded inset chevron>
-  <div style="padding: var(--auro-size-sm);">
+  <div style="padding: var(--ds-size-150);">
     Lorem ipsum solar
     <br />
     <auro-button onclick="document.querySelector('#commonAdvanced').hide()">
@@ -144,7 +144,7 @@ This common example uses the default `auro-dropdown` element with the attributes
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/commonSlot.html) -->
   <!-- The below content is automatically added from ./../../apiExamples/commonSlot.html -->
   <auro-dropdown id="commonSlot" bordered rounded inset chevron>
-    <div style="padding: var(--auro-size-sm);">
+    <div style="padding: var(--ds-size-150);">
       Lorem ipsum solar
       <br />
       <auro-button onclick="document.querySelector('#commonSlot').hide()">
@@ -170,7 +170,7 @@ This common example uses the default `auro-dropdown` element with the attributes
 
 ```html
 <auro-dropdown id="commonSlot" bordered rounded inset chevron>
-  <div style="padding: var(--auro-size-sm);">
+  <div style="padding: var(--ds-size-150);">
     Lorem ipsum solar
     <br />
     <auro-button onclick="document.querySelector('#commonSlot').hide()">
@@ -200,7 +200,7 @@ This common example uses the default `auro-dropdown` element with the attributes
   <!-- The below content is automatically added from ./../../apiExamples/widerPopover.html -->
   <div style="width: 250px;">
     <auro-dropdown common aria-label="Label content for screen reader">
-      <div style="padding: var(--auro-size-sm); width: 500px;">
+      <div style="padding: var(--ds-size-150); width: 500px;">
         This is special content.
       </div>
       <span slot="helpText">
@@ -221,7 +221,7 @@ This common example uses the default `auro-dropdown` element with the attributes
 ```html
 <div style="width: 250px;">
   <auro-dropdown common aria-label="Label content for screen reader">
-    <div style="padding: var(--auro-size-sm); width: 500px;">
+    <div style="padding: var(--ds-size-150); width: 500px;">
       This is special content.
     </div>
     <span slot="helpText">
@@ -244,7 +244,7 @@ This common example uses the default `auro-dropdown` element with the attributes
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/commonMatchWidth.html) -->
   <!-- The below content is automatically added from ./../../apiExamples/commonMatchWidth.html -->
   <auro-dropdown id="common" common matchWidth aria-label="Label content for screen reader">
-    <div style="padding: var(--auro-size-sm);">
+    <div style="padding: var(--ds-size-150);">
       Lorem ipsum solar
       <br />
       <auro-button onclick="document.querySelector('#common').hide()">
@@ -267,7 +267,7 @@ This common example uses the default `auro-dropdown` element with the attributes
 
 ```html
 <auro-dropdown id="common" common matchWidth aria-label="Label content for screen reader">
-  <div style="padding: var(--auro-size-sm);">
+  <div style="padding: var(--ds-size-150);">
     Lorem ipsum solar
     <br />
     <auro-button onclick="document.querySelector('#common').hide()">
