@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+## [2.10.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.10.0...v2.10.1) (2024-01-31)
+
+
+### Bug Fixes
+
+* **docs:** update doc styles to use --ds ([1e030a8](https://github.com/AlaskaAirlines/auro-dropdown/commit/1e030a87c0c7f02ac7ff665cb5671696a488da06))
+
+
+### Performance Improvements
+
+* alaskaairux ref updates ([eac253b](https://github.com/AlaskaAirlines/auro-dropdown/commit/eac253b4ed1383258e7804efa694090025e58345))
+
 # [2.10.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.9.11...v2.10.0) (2024-01-23)
 
 
