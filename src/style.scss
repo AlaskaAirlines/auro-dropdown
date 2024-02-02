@@ -26,6 +26,7 @@
   color: var(--ds-color-text-secondary-default, $ds-color-text-secondary-default);
   font-size: var(--ds-text-body-size-xs, $ds-text-body-size-xs);
   line-height: var(--ds-text-body-size-default, $ds-text-body-size-default);
+  white-space: normal;
 }
 
 .trigger {
@@ -59,7 +60,10 @@
 }
 
 .triggerContentWrapper {
+  overflow: hidden;
   flex: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 #showStateIcon {
