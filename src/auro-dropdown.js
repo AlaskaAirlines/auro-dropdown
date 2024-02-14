@@ -30,10 +30,10 @@ import Popover from "../lib/popover";
  * @csspart chevron - The collapsed/expanded state icon container.
  * @csspart helpText - The helpText content container.
  * @csspart popover - The bib content container.
- * @fires auroDropdown-triggerClick - Notifies that the trigger has been clicked.
- * @fires dropdownToggled - (DEPRECATED) Notifies that the visibility of the dropdown bib has changed.
- * @fires auroDropdown-ready - Notifies that the component has finished initializing.
- * @fires auroDropdown-toggled - Notifies that the visibility of the dropdown bib has changed.
+ * @event auroDropdown-triggerClick - Notifies that the trigger has been clicked.
+ * @event dropdownToggled - (DEPRECATED) Notifies that the visibility of the dropdown bib has changed.
+ * @event auroDropdown-ready - Notifies that the component has finished initializing.
+ * @event auroDropdown-toggled - Notifies that the visibility of the dropdown bib has changed.
  */
 export class AuroDropdown extends LitElement {
   constructor() {
