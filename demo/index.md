@@ -207,7 +207,7 @@ This common example uses the default `auro-dropdown` element with the attributes
         Help text
       </span>
       <div slot="trigger">
-        Trigger
+        I really prefer Alaska Airlines for my vacation travels
       </div>
     </auro-dropdown>
   </div>
@@ -228,7 +228,7 @@ This common example uses the default `auro-dropdown` element with the attributes
       Help text
     </span>
     <div slot="trigger">
-      Trigger
+      I really prefer Alaska Airlines for my vacation travels
     </div>
   </auro-dropdown>
 </div>
@@ -281,6 +281,51 @@ This common example uses the default `auro-dropdown` element with the attributes
     Trigger
   </div>
 </auro-dropdown>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
+</auro-accordion>
+
+#### Selected text truncated
+
+`auro-dropdown` will selected the menu have much long text the component should be truncated the text to display in `auro-dropdown`.
+
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/truncatedText.html) -->
+  <!-- The below content is automatically added from ./../../apiExamples/truncatedText.html -->
+  <div style="width: 250px;">
+    <auro-dropdown common aria-label="Label content for screen reader">
+      <div style="padding: var(--ds-size-150); width: 500px;">
+        This is special content with truncated text.
+      </div>
+      <span slot="helpText">
+        Help text
+      </span>
+      <div slot="trigger">
+        I really prefer Alaska Airlines for my vacation travels
+      </div>
+    </auro-dropdown>
+  </div>
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/truncatedText.html) -->
+<!-- The below code snippet is automatically added from ./../../apiExamples/truncatedText.html -->
+
+```html
+<div style="width: 250px;">
+  <auro-dropdown common aria-label="Label content for screen reader">
+    <div style="padding: var(--ds-size-150); width: 500px;">
+      This is special content with truncated text.
+    </div>
+    <span slot="helpText">
+      Help text
+    </span>
+    <div slot="trigger">
+      I really prefer Alaska Airlines for my vacation travels
+    </div>
+  </auro-dropdown>
+</div>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
