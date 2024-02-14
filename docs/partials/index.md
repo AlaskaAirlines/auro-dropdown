@@ -106,6 +106,22 @@ This common example uses the default `auro-dropdown` element with the attributes
 
 </auro-accordion>
 
+#### Selected text truncated
+
+`auro-dropdown` will selected the menu have much long text the component should be truncated the text to display in `auro-dropdown`.
+
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/truncatedText.html) -->
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/truncatedText.html) -->
+<!-- AURO-GENERATED-CONTENT:END -->
+
+</auro-accordion>
+
 ## Supported standard and accessible interactions
 
 The dropdown can be opened with the following actions:
