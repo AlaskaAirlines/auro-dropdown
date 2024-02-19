@@ -2,8 +2,9 @@ import path from 'path';
 import markdownMagic from 'markdown-magic';
 import fs from 'fs';
 import https from 'https';
+import { fileURLToPath } from 'url';
 
-const __dirname = new URL('.', import.meta.url).pathname;
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 const readmeTemplateUrl = 'https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/README.md';
 const dirDocTemplates = './docTemplates';
