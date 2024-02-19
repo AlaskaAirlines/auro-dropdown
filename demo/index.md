@@ -207,7 +207,7 @@ This common example uses the default `auro-dropdown` element with the attributes
         Help text
       </span>
       <div slot="trigger">
-        I really prefer Alaska Airlines for my vacation travels
+        Trigger
       </div>
     </auro-dropdown>
   </div>
@@ -228,7 +228,7 @@ This common example uses the default `auro-dropdown` element with the attributes
       Help text
     </span>
     <div slot="trigger">
-      I really prefer Alaska Airlines for my vacation travels
+      Trigger
     </div>
   </auro-dropdown>
 </div>
@@ -285,9 +285,9 @@ This common example uses the default `auro-dropdown` element with the attributes
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-#### Selected text truncated
+#### Truncated trigger component with fixed width
 
-`auro-dropdown` will selected the menu have much long text the component should be truncated the text to display in `auro-dropdown`.
+`auro-dropdown` trigger component will be truncated if the text is too long than its container width.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/truncatedText.html) -->
@@ -295,7 +295,7 @@ This common example uses the default `auro-dropdown` element with the attributes
   <div style="width: 250px;">
     <auro-dropdown common aria-label="Label content for screen reader">
       <div style="padding: var(--ds-size-150); width: 500px;">
-        This is special content with truncated text.
+        I really prefer Alaska Airlines for my vacation travels
       </div>
       <span slot="helpText">
         Help text
@@ -316,7 +316,7 @@ This common example uses the default `auro-dropdown` element with the attributes
 <div style="width: 250px;">
   <auro-dropdown common aria-label="Label content for screen reader">
     <div style="padding: var(--ds-size-150); width: 500px;">
-      This is special content with truncated text.
+      I really prefer Alaska Airlines for my vacation travels
     </div>
     <span slot="helpText">
       Help text

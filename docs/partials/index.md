@@ -106,9 +106,9 @@ This common example uses the default `auro-dropdown` element with the attributes
 
 </auro-accordion>
 
-#### Selected text truncated
+#### Truncated trigger component with fixed width
 
-`auro-dropdown` will selected the menu have much long text the component should be truncated the text to display in `auro-dropdown`.
+`auro-dropdown` trigger component will be truncated if the text is too long than its container width.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/truncatedText.html) -->
