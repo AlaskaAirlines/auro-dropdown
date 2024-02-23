@@ -1,6 +1,8 @@
-export function showExample(elem) {
-  const triggerInput = document.querySelector('#showExampleTriggerInput')
+export function showExample() {
+  const triggerInput = document.querySelector('#showExampleTriggerInput');
+  const dropdownElem = document.querySelector('#showMethodExample');
+
   triggerInput.addEventListener('keydown', () => {
-    elem.show();
-  })
+    dropdownElem.show();
+  });
 }

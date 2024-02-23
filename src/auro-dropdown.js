@@ -3,7 +3,7 @@
 
 // ---------------------------------------------------------------------
 
-/* eslint-disable lit-a11y/click-events-have-key-events, max-lines, lit-a11y/accessible-name, lit-a11y/no-aria-slot */
+/* eslint-disable lit-a11y/click-events-have-key-events, max-lines */
 
 import { LitElement, html } from "lit";
 import styleCss from "./style-css.js";

@@ -289,12 +289,53 @@ This common example uses the default `auro-dropdown` element with the attributes
 
 The dropdown can be opened with the following actions:
 
-1. Clicking/tapping on the trigger will open the dropdown UI.
-1. Tabbing to the trigger and using the `enter` or `spacebar` keys will open the dropdown UI.
+1. Clicking/tapping on the trigger.
+1. Tabbing to the trigger and using the `enter` or `spacebar` keys.
+1. Programmatically via another control in the UI calling the `show()` method (see api).
 
 The dropdown can be closed with the following actions:
 
 1. Clicking anywhere in the view outside of the dropdown.
-1. When the `toggle` attribute is added, clicking on the trigger.
-1. Programmatically via another control in the UI calling the `hide()` method (see api).
+1. Clicking on the trigger when the `toggle` attribute is used.
 1. Using the `esc` key.
+1. Programmatically via another control in the UI calling the `hide()` method (see api).
+
+## Recommended Use and Version Control
+
+There are two important parts of every Auro component. The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">class</a> and the custom clement. The class is exported and then used as part of defining the Web Component. When importing this component as described in the <a href="#install">install</a> section, the class is imported and the `auro-button` custom element is defined automatically.
+
+To protect from versioning conflicts with other instances of the component being loaded, it is recommended to use our `registerComponent(name)` method and pass in a unique name.
+
+```js
+import './node_modules/@aurodesignsystem/auro-button';
+registerComponent('custom-button');
+```
+
+This will create a new custom element that you can use in your HTML that will function identically to the `<auro-button>` element.
+
+<div class="exampleWrapper exampleWrapper--flex">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/custom.html) -->
+  <!-- The below content is automatically added from ./../../apiExamples/custom.html -->
+  <custom-dropdown aria-label="custom label">
+    Lorem ipsum solar
+    <div slot="trigger">
+      Trigger
+    </div>
+  </custom-dropdown>
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/custom.html) -->
+<!-- The below code snippet is automatically added from ./../../apiExamples/custom.html -->
+
+```html
+<custom-dropdown aria-label="custom label">
+  Lorem ipsum solar
+  <div slot="trigger">
+    Trigger
+  </div>
+</custom-dropdown>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
+</auro-accordion>

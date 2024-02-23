@@ -319,7 +319,7 @@ When combined with the `error` property the `helpText` slot content is colored r
 #### show
 
 
-The `show` method may also be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').show()`.
+The `show` method may also be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').show()`. This example will execute the `show` method on a `keydown` event with focus in the input element.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/programmaticallyShow.html) -->
@@ -338,9 +338,11 @@ The `show` method may also be called from anywhere in your code by executing `do
 
 #### hide
 
-The `hide` method can be called from within the default slot content. This is useful for cases such as `auro-select`.
+The `hide` method can be called from within the default slot content. This is useful for cases such as `auro-select` when the dropdown should be collapsed after making a selection.
 
 The `hide` method may also be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').hide()`.
+
+This example demonstrations collapsing the dropdown by clicking a button within the dropdown bib content.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/programmaticallyHide.html) -->
