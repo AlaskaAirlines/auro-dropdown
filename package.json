@@ -130,7 +130,7 @@
     "web components"
   ],
   "scripts": {
-    "build": "npm-run-all build:sass sass:render dist:js bundler postinstall build:api types",
+    "build": "npm-run-all build:sass sass:render dist:js bundler postinstall build:api types build:docs",
     "build:api": "wca analyze 'src/auro-dropdown.js' --outFiles docs/api.md",
     "build:dev:assets": "npm-run-all build:sass:component postCss:component sass:render",
     "build:sass": "npm-run-all build:sass:component postCss:component sass:render",
