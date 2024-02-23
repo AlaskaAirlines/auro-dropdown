@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+## [2.10.4](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.10.3...v2.10.4) (2024-02-23)
+
+
+### Performance Improvements
+
+* **deps:** update to latest dependencies ([7039e37](https://github.com/AlaskaAirlines/auro-dropdown/commit/7039e379fd38c81c90676bf2793525b44d287d0a))
+* **docs:** refactor the JS examples ([a7aed9c](https://github.com/AlaskaAirlines/auro-dropdown/commit/a7aed9cccea9422f4b5d4d72103a7c5478dbe075))
+
 ## [2.10.3](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.10.2...v2.10.3) (2024-02-15)
 
 
