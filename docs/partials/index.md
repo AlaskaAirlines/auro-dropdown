@@ -106,22 +106,6 @@ This common example uses the default `auro-dropdown` element with the attributes
 
 </auro-accordion>
 
-#### Truncated trigger component with fixed width
-
-`auro-dropdown` trigger component will be truncated if the text is too long than its container width.
-
-<div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/truncatedText.html) -->
-  <!-- AURO-GENERATED-CONTENT:END -->
-</div>
-<auro-accordion alignRight>
-  <span slot="trigger">See code</span>
-
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/truncatedText.html) -->
-<!-- AURO-GENERATED-CONTENT:END -->
-
-</auro-accordion>
-
 ## Supported standard and accessible interactions
 
 The dropdown can be opened with the following actions:
