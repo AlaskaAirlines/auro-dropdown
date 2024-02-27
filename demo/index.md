@@ -285,51 +285,6 @@ This common example uses the default `auro-dropdown` element with the attributes
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-#### Truncated trigger component with fixed width
-
-`auro-dropdown` trigger component will be truncated if the text is too long than its container width.
-
-<div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/truncatedText.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/truncatedText.html -->
-  <div style="width: 250px;">
-    <auro-dropdown common aria-label="Label content for screen reader">
-      <div style="padding: var(--ds-size-150); width: 500px;">
-        I really prefer Alaska Airlines for my vacation travels
-      </div>
-      <span slot="helpText">
-        Help text
-      </span>
-      <div slot="trigger">
-        I really prefer Alaska Airlines for my vacation travels
-      </div>
-    </auro-dropdown>
-  </div>
-  <!-- AURO-GENERATED-CONTENT:END -->
-</div>
-<auro-accordion alignRight>
-  <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/truncatedText.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/truncatedText.html -->
-
-```html
-<div style="width: 250px;">
-  <auro-dropdown common aria-label="Label content for screen reader">
-    <div style="padding: var(--ds-size-150); width: 500px;">
-      I really prefer Alaska Airlines for my vacation travels
-    </div>
-    <span slot="helpText">
-      Help text
-    </span>
-    <div slot="trigger">
-      I really prefer Alaska Airlines for my vacation travels
-    </div>
-  </auro-dropdown>
-</div>
-```
-<!-- AURO-GENERATED-CONTENT:END -->
-</auro-accordion>
-
 ## Supported standard and accessible interactions
 
 The dropdown can be opened with the following actions:
