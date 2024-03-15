@@ -11,14 +11,34 @@
 
 /* stylelint-disable no-descending-specificity */
 
+$ds-color-ui-transparent-default: transparent;
+$ds-color-ui-none-default: none;
+
+// Tier 3 tokens
+$ds-color-dropdown-popover-boxshadow-default: rgba(0, 0, 0, 0.8);
+$ds-color-dropdown-ondark-trigger-hover-default: rgba(178 178 178 / .1);
+$ds-color-dropdown-icon-disabled-default: var(--ds-color-text-disabled-default, $ds-color-text-disabled-default);
+
+/* Will box-shadows need their own tokens? Some are using border tokens and other are using UI tokens */
+
+:host {
+  --ds-color-ui-transparent-default: transparent;
+  --ds-color-ui-none-default: none;
+
+  // Tier 3 tokens
+  --ds-color-dropdown-popover-boxshadow-default: rgba(0, 0, 0, 0.8);
+  --ds-color-dropdown-ondark-trigger-hover-default: rgba(178 178 178 / .1);
+  --ds-color-dropdown-icon-disabled-default: var(--ds-color-text-disabled-default, $ds-color-text-disabled-default);
+}
+
 .popover {
   display: inline-block;
   box-sizing: border-box;
   border-width: 1px;
   border-style: solid;
-  border-color: transparent;
+  border-color: var(--ds-color-ui-transparent-default, $ds-color-ui-transparent-default);
   background-color: var(--ds-color-background-lightest, $ds-color-background-lightest);
-  box-shadow: -2px 0 5px 2px rgba(0 0 0 / .08), 0 2px 5px 1px rgba(0 0 0 / .08);
+  box-shadow: -2px 0 5px 2px var(--ds-color-dropdown-popover-boxshadow-default, $ds-color-dropdown-popover-boxshadow-default), 0 2px 5px 1px var(--ds-color-dropdown-popover-boxshadow-default, $ds-color-dropdown-popover-boxshadow-default);
   color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
 }
 
@@ -35,7 +55,7 @@
   align-items: center;
   border-width: 1px;
   border-style: solid;
-  border-color: transparent;
+  border-color: var(--ds-color-ui-transparent-default, $ds-color-ui-transparent-default);
   background-color: var(--ds-color-background-lightest, $ds-color-background-lightest);
   color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
 
@@ -123,9 +143,12 @@
   pointer-events: none;
 
   .trigger,
-  .label,
-  #showStateIcon {
+  .label {
     color: var(--ds-color-text-disabled-default, $ds-color-text-disabled-default);
+  }
+
+  #showStateIcon {
+    color: var(--ds-color-dropdown-icon-disabled-default, $ds-color-dropdown-icon-disabled-default);
   }
 }
 
@@ -152,7 +175,7 @@
 
     &:focus-within {
       border-color: var(--ds-color-border-active-default, $ds-color-border-active-default);
-      box-shadow: none;
+      box-shadow: var(--ds-color-ui-none-default, $ds-color-ui-none-default);
     }
 
     &:active {
@@ -220,7 +243,7 @@
   :host([onDark]) {
     .trigger {
       &:hover {
-        background-color: rgba(178 178 178 / .1);
+        background-color: var(--ds-color-dropdown-ondark-trigger-hover-default, $ds-color-dropdown-ondark-trigger-hover-default);
       }
     }
   }
