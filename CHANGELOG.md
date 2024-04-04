@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+## [2.10.6](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.10.5...v2.10.6) (2024-04-04)
+
+
+### Bug Fixes
+
+* issue on dependencies auro-select for matchWidth for the value text to much long ([996654b](https://github.com/AlaskaAirlines/auro-dropdown/commit/996654b9339a7bd4488c29aa924744530c1e859a))
+
+
+### Performance Improvements
+
+* update scripts ([37b5338](https://github.com/AlaskaAirlines/auro-dropdown/commit/37b533818a047fb45e84abc9b546ffc70bcb41bb))
+
 ## [2.10.5](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.10.4...v2.10.5) (2024-02-26)
 
 
