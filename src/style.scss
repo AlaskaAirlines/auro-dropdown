@@ -134,6 +134,11 @@
   .trigger {
     border-color: var(--ds-color-border-primary-default, $ds-color-border-primary-default);
 
+    &[aria-expanded='true'] {
+      border-color: var(--ds-color-border-active-default, $ds-color-border-active-default);
+      box-shadow: inset 0 0 0 1px var(--ds-color-border-active-default, $ds-color-border-active-default);
+    }
+
     &:active,
     &:focus-within {
       border-color: var(--ds-color-border-active-default, $ds-color-border-active-default);
@@ -172,14 +177,12 @@
 :host([common][error]),
 :host([bordered][error]) {
   .trigger {
-    border-color: var(--ds-color-border-error-default, $ds-color-border-error-default);
-    box-shadow: inset 0 0 0 1px var(--ds-color-border-error-default, $ds-color-border-error-default);
-
-    &:focus-within {
-      border-color: var(--ds-color-border-active-default, $ds-color-border-active-default);
-      box-shadow: none;
+    &[aria-expanded='false'] {
+      border-color: var(--ds-color-border-error-default, $ds-color-border-error-default);
+      box-shadow: inset 0 0 0 1px var(--ds-color-border-error-default, $ds-color-border-error-default);
     }
 
+    &:focus-within,
     &:active {
       border-color: var(--ds-color-border-active-default, $ds-color-border-active-default);
       box-shadow: inset 0 0 0 1px var(--ds-color-border-active-default, $ds-color-border-active-default);
