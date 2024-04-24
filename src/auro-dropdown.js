@@ -7,7 +7,7 @@
 
 import { LitElement, html } from "lit";
 import styleCss from "./style-css.js";
-import Popover from "../lib/popover";
+import Popover from "../lib/popover.js";
 
 /**
  * @attr { Boolean } bordered - If declared, applies a border around the trigger slot.
