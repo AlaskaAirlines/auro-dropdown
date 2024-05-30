@@ -1,0 +1,150 @@
+// Copyright (c) Alaska Air. All right reserved. Licensed under the Apache-2.0 license.
+// See LICENSE in the project root for license information.
+
+// ---------------------------------------------------------------------
+
+/* stylelint-disable declaration-empty-line-before, declaration-no-important, color-named, order/properties-order, scss/at-mixin-pattern, at-rule-empty-line-before, declaration-block-no-duplicate-properties, selector-attribute-quotes */
+
+@import './../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables';
+
+.popover {
+  display: inline-block;
+  box-sizing: border-box;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: var(--ds-color-background-lightest, $ds-color-background-lightest);
+  box-shadow: -2px 0 5px 2px rgba(0 0 0 / .08), 0 2px 5px 1px rgba(0 0 0 / .08);
+  color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
+}
+
+/**
+ * Handling for when the trigger should NOT be rendered as part of the fullscreen modal
+ */
+
+ @mixin modalBreakpointStylesDefault($maxWidth) {
+  color: lime;
+    @media screen and (max-width: $maxWidth) {
+      .popover {
+        position: fixed !important; // must be important to override inline styles of popperJs
+        
+        width: 100svw;
+        height: 100vh;
+        height: 100dvh;
+  
+        overflow: auto !important;
+  
+        margin: unset !important;
+  
+        border-radius: unset !important;
+  
+        transform: unset !important; // must be important to override inline styles of popperJs
+  
+        inset: 0 !important;
+        overscroll-behavior: contain;
+
+        box-shadow: unset !important;
+      }
+    }
+  }
+
+// Handle our `common` layout
+:host([common]) {
+  @include modalBreakpointStylesDefault($ds-grid-breakpoint-sm);
+}
+
+// This is the default breakpoint for the modal
+:host([modal]:not([modal=false])) {
+  @include modalBreakpointStylesDefault($ds-grid-breakpoint-sm);
+}
+
+:host([modal='xs']) {
+  @include modalBreakpointStylesDefault($ds-grid-breakpoint-xs);
+}
+
+:host([modal='sm']) {
+  @include modalBreakpointStylesDefault($ds-grid-breakpoint-sm);
+}
+
+:host([modal='md']) {
+  @include modalBreakpointStylesDefault($ds-grid-breakpoint-md);
+}
+
+:host([modal='lg']) {
+  @include modalBreakpointStylesDefault($ds-grid-breakpoint-lg);
+}
+
+:host([modal='xl']) {
+  @include modalBreakpointStylesDefault($ds-grid-breakpoint-xl);
+}
+
+/**
+* Handling for when the trigger should be rendered as part of the fullscreen modal
+*/
+
+@mixin modalBreakpointStylesWithTrigger($maxWidth) {
+  @media screen and (max-width: $maxWidth) {
+    .wrapper {
+      &[modalDisplay] {
+        position: fixed;
+        z-index: 999;
+
+        display: flex;
+        width: 100svw;
+        height: 100vh;
+        height: 100dvh;
+
+        flex-direction: column;
+
+        background-color: var(--ds-color-background-lightest, $ds-color-background-lightest);
+
+        inset: 0;
+        overscroll-behavior: contain;
+      }
+    }
+
+    .popover {
+      position: relative !important; // must be important to override inline styles of popperJs
+
+      overflow: auto !important;
+      flex: 1;
+
+      margin: unset !important;
+
+      border-radius: unset !important;
+
+      transform: unset !important; // must be important to override inline styles of popperJs
+
+      inset: 0 !important;
+      overscroll-behavior: contain;
+
+      box-shadow: unset !important;
+    }
+  }
+}
+
+// This is the default breakpoint for the modal
+:host([modalWithTrigger]:not([modalWithTrigger=false])) {
+  @include modalBreakpointStylesWithTrigger($ds-grid-breakpoint-sm);
+}
+
+:host([modalWithTrigger='xs']) {
+  @include modalBreakpointStylesWithTrigger($ds-grid-breakpoint-xs);
+}
+
+:host([modalWithTrigger='sm']) {
+  @include modalBreakpointStylesWithTrigger($ds-grid-breakpoint-sm);
+}
+
+:host([modalWithTrigger='md']) {
+  @include modalBreakpointStylesWithTrigger($ds-grid-breakpoint-md);
+}
+
+:host([modalWithTrigger='lg']) {
+  @include modalBreakpointStylesWithTrigger($ds-grid-breakpoint-lg);
+}
+
+:host([modalWithTrigger='xl']) {
+  @include modalBreakpointStylesWithTrigger($ds-grid-breakpoint-xl);
+}

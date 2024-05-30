@@ -38,7 +38,7 @@ Not including one of the above options will result in your UI being non-complian
 
 ## Common use with auro-label
 
-This first common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle` and `chevron`. Additionally the `aria-label` attribute is used to define a string value that labels an interactive element.
+This first common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle`, `chevron` and `modal`. Additionally the `aria-label` attribute is used to define a string value that labels an interactive element.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/common.html) -->
@@ -87,7 +87,7 @@ This first common example uses the default `auro-dropdown` element with the attr
 
 ## Common use with aria-labelledby
 
-This common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle` and `chevron`. Additionally the `aria-labelledby` attribute to identify the element that labels the element it is applied to.
+This common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle`, `chevron` and `modal`. Additionally the `aria-labelledby` attribute to identify the element that labels the element it is applied to.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/commonLabelledby.html) -->
@@ -138,7 +138,7 @@ This common example uses the default `auro-dropdown` element with the attributes
 
 ## Common use using the label content slot
 
-This common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle` and `chevron`. Additionally the `slot` content container to define a string value that labels the interactive element.
+This common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle`, `chevron` and `modal`. Additionally the `slot` content container to define a string value that labels the interactive element.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/commonSlot.html) -->
@@ -193,7 +193,7 @@ This common example uses the default `auro-dropdown` element with the attributes
 
 ## Common use with popover content wider than the trigger
 
-This common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle` and `chevron`. Additionally the trigger is full width of the containing element and the popover content is set to a width wider than the trigger.
+This common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle`, `chevron` and `modal`. Additionally the trigger is full width of the containing element and the popover content is set to a width wider than the trigger.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/widerPopover.html) -->
@@ -238,7 +238,7 @@ This common example uses the default `auro-dropdown` element with the attributes
 
 ## Common use with popover width matching the trigger
 
-This common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle` and `chevron`. Additionally  `matchWidth` attribute is used to make the popover match the width of the trigger.
+This common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle`, `chevron` and `modal`. Additionally  `matchWidth` attribute is used to make the popover match the width of the trigger.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/commonMatchWidth.html) -->

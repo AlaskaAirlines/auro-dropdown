@@ -6,21 +6,10 @@
 // layout styles - define any layout specifications for UI that is contained WITHIN the component
 // never define layout that would cause effect on element outside the scope of this component
 
+/* stylelint-disable no-descending-specificity, declaration-empty-line-before, comment-empty-line-before */
+
 // Support for fallback values
-@import "./../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables.scss";
-
-/* stylelint-disable no-descending-specificity */
-
-.popover {
-  display: inline-block;
-  box-sizing: border-box;
-  border-width: 1px;
-  border-style: solid;
-  border-color: transparent;
-  background-color: var(--ds-color-background-lightest, $ds-color-background-lightest);
-  box-shadow: -2px 0 5px 2px rgba(0 0 0 / .08), 0 2px 5px 1px rgba(0 0 0 / .08);
-  color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
-}
+@import './../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables';
 
 .label {
   color: var(--ds-color-text-secondary-default, $ds-color-text-secondary-default);
@@ -31,8 +20,11 @@
 
 .trigger {
   position: relative;
+
   display: flex;
+
   align-items: center;
+
   border-width: 1px;
   border-style: solid;
   border-color: transparent;
@@ -51,14 +43,6 @@
   }
 }
 
-@media (hover: hover) {
-  .trigger {
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
-
 .triggerContentWrapper {
   overflow: hidden;
   flex: 1;
@@ -69,12 +53,14 @@
 #showStateIcon {
   display: flex;
   height: 100%;
+
   align-items: center;
   margin-left: var(--ds-size-100, $ds-size-100);
   color: var(--ds-color-icon-primary-default, $ds-color-icon-primary-default);
 
   auro-icon {
     height: 1.5rem;
+
     line-height: 1.5rem;
   }
 
@@ -187,6 +173,13 @@
   }
 }
 
+@media (hover: hover) {
+  .trigger {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
 /**
  * All styles below pertain to the onDark theme
  */

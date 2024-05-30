@@ -11,19 +11,21 @@
 
 ## Properties
 
-| Property                | Attribute               | Type        | Default | Description                                      |
-|-------------------------|-------------------------|-------------|---------|--------------------------------------------------|
-| [bordered](#bordered)              | `bordered`              | ` Boolean ` |         | If declared, applies a border around the trigger slot. |
-| [chevron](#chevron)               | `chevron`               | ` Boolean ` |         | If declared, the dropdown displays an display state chevron on the right. |
-| [disabled](#disabled)              | `disabled`              | ` Boolean ` |         | If declared, the dropdown is not interactive.    |
-| [error](#error)                 | `error`                 | ` Boolean ` |         | If declared in combination with `bordered` property or `helpText` slot content, will apply red color to both. |
-| [inset](#inset)                 | `inset`                 | ` Boolean ` |         | If declared, will apply padding around trigger slot content. |
-| [isPopoverVisible](#isPopoverVisible)      | `isPopoverVisible`      | ` Boolean ` | false   | If true, the dropdown bib is displayed.          |
-| [matchWidth](#matchWidth)            | `matchWidth`            | ` Boolean ` | false   | If declared, the popover and trigger will be set to the same width. |
-| [noHideOnThisFocusLoss](#noHideOnThisFocusLoss) | `noHideOnThisFocusLoss` | ` Boolean ` | false   | If delclared, the dropdown will not hide when moving focus outside the element. |
-| [noToggle](#noToggle)              | `noToggle`              | ` Boolean ` |         | If declared, the trigger will only show the the dropdown bib. |
-| [ready](#ready)                 | `ready`                 | ` Boolean ` |         | When false the component API should not be called. |
-| [rounded](#rounded)               | `rounded`               | ` Boolean ` |         | If declared, will apply border-radius to trigger and default slots. |
+| Property                | Attribute               | Type                    | Default | Description                                      |
+|-------------------------|-------------------------|-------------------------|---------|--------------------------------------------------|
+| [bordered](#bordered)              | `bordered`              | ` Boolean `             |         | If declared, applies a border around the trigger slot. |
+| [chevron](#chevron)               | `chevron`               | ` Boolean `             |         | If declared, the dropdown displays an display state chevron on the right. |
+| [disabled](#disabled)              | `disabled`              | ` Boolean `             |         | If declared, the dropdown is not interactive.    |
+| [error](#error)                 | `error`                 | ` Boolean `             |         | If declared in combination with `bordered` property or `helpText` slot content, will apply red color to both. |
+| [inset](#inset)                 | `inset`                 | ` Boolean `             |         | If declared, will apply padding around trigger slot content. |
+| [isPopoverVisible](#isPopoverVisible)      | `isPopoverVisible`      | ` Boolean `             | false   | If true, the dropdown bib is displayed.          |
+| [matchWidth](#matchWidth)            | `matchWidth`            | ` Boolean `             | false   | If declared, the popover and trigger will be set to the same width. |
+| [modal](#modal)                 | `modal`                 | ` String \|\| Boolean ` | false   | If declared, the dropdown will be displayed as a modal on a mobile device at the defined breakpoint, defaulting to 'sm'. |
+| [modalWithTrigger](#modalWithTrigger)      | `modalWithTrigger`      | ` String \|\| Boolean ` | false   | If declared, the trigger and dropdown bib will be displayed as a modal on a mobile device at the defined breakpoint, defaulting to 'sm'. |
+| [noHideOnThisFocusLoss](#noHideOnThisFocusLoss) | `noHideOnThisFocusLoss` | ` Boolean `             | false   | If delclared, the dropdown will not hide when moving focus outside the element. |
+| [noToggle](#noToggle)              | `noToggle`              | ` Boolean `             |         | If declared, the trigger will only show the the dropdown bib. |
+| [ready](#ready)                 | `ready`                 | ` Boolean `             |         | When false the component API should not be called. |
+| [rounded](#rounded)               | `rounded`               | ` Boolean `             |         | If declared, will apply border-radius to trigger and default slots. |
 
 ## Methods
 
@@ -564,6 +566,120 @@ The `inset` property applies a predefined amount of CSS `padding` to the `trigge
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
+#### modal
+
+The `modal` property will make the popover display full screen at a specified breakpoint. If no value is set, `modal` defaults to `sm`.
+
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/modal.html) -->
+  <!-- The below content is automatically added from ./../../apiExamples/modal.html -->
+  <auro-dropdown modal id="modal">
+    <div slot="trigger">
+      Trigger
+    </div>
+    <div style="padding: var(--auro-size-sm);">
+      Lorem ipsum solar
+      <br />
+      <input />
+      <auro-button onclick="document.querySelector('#modal').hide()">
+        Dismiss
+      </auro-button>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <input />
+    </div>
+  </auro-dropdown>
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/modal.html) -->
+<!-- The below code snippet is automatically added from ./../../apiExamples/modal.html -->
+
+```html
+<auro-dropdown modal id="modal">
+  <div slot="trigger">
+    Trigger
+  </div>
+  <div style="padding: var(--auro-size-sm);">
+    Lorem ipsum solar
+    <br />
+    <input />
+    <auro-button onclick="document.querySelector('#modal').hide()">
+      Dismiss
+    </auro-button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <input />
+  </div>
+</auro-dropdown>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
+</auro-accordion>
+
+#### modalWithTrigger
+
+The `modalWithTrigger` property will make the trigger and popover display full screen at a specified breakpoint. If no value is set, `modalWithTrigger` defaults to `sm`.
+
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/modalWithTrigger.html) -->
+  <!-- The below content is automatically added from ./../../apiExamples/modalWithTrigger.html -->
+  <auro-dropdown modalWithTrigger id="modalWithTrigger">
+    <div slot="trigger">
+      Trigger
+    </div>
+    <div style="padding: var(--auro-size-sm);">
+      Lorem ipsum solar
+      <br />
+      <input />
+      <auro-button onclick="document.querySelector('#modalWithTrigger').hide()">
+        Dismiss 
+      </auro-button>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+      <input />
+    </div>
+  </auro-dropdown>
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/modalWithTrigger.html) -->
+<!-- The below code snippet is automatically added from ./../../apiExamples/modalWithTrigger.html -->
+
+```html
+<auro-dropdown modalWithTrigger id="modalWithTrigger">
+  <div slot="trigger">
+    Trigger
+  </div>
+  <div style="padding: var(--auro-size-sm);">
+    Lorem ipsum solar
+    <br />
+    <input />
+    <auro-button onclick="document.querySelector('#modalWithTrigger').hide()">
+      Dismiss 
+    </auro-button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed. Cursus eget nunc scelerisque viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Viverra vitae congue eu consequat ac felis. Amet volutpat consequat mauris nunc congue nisi. Praesent tristique magna sit amet purus gravida quis blandit turpis. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Consectetur lorem donec massa sapien faucibus et molestie. Non odio euismod lacinia at quis risus sed vulputate. Id ornare arcu odio ut sem. Eget mi proin sed libero. Dui accumsan sit amet nulla. Tellus integer feugiat scelerisque varius morbi enim. Fermentum iaculis eu non diam phasellus vestibulum. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Dolor morbi non arcu risus quis varius.</p>
+    <input />
+  </div>
+</auro-dropdown>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
+</auro-accordion>
+
 #### rounded
 
 The `rounded` property applies `border-radius` CSS to the trigger and default slot content.
@@ -775,7 +891,7 @@ When combined with the `error` property the `helpText` slot content is colored r
 
 #### show
 
-The `show` method may also be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').show()`. This example will execute the `show` method on a `keydown` event with focus in the input element.
+The `show` method may also be called from anywhere in your code by executing `.show()` on the element. This example will execute the `show` method on a `keydown` event with focus in the input element.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/programmaticallyShow.html) -->
@@ -828,7 +944,7 @@ export function showExample() {
 
 The `hide` method can be called from within the default slot content. This is useful for cases such as `auro-select` when the dropdown should be collapsed after making a selection.
 
-The `hide` method may also be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').hide()`.
+The `hide` method may also be called from anywhere in your code by executing `.hide()` on the element.
 
 This example demonstrations collapsing the dropdown by clicking a button within the dropdown bib content.
 

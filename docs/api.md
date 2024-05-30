@@ -8,19 +8,21 @@
 
 ## Properties
 
-| Property                | Attribute               | Type        | Default | Description                                      |
-|-------------------------|-------------------------|-------------|---------|--------------------------------------------------|
-| `bordered`              | `bordered`              | ` Boolean ` |         | If declared, applies a border around the trigger slot. |
-| `chevron`               | `chevron`               | ` Boolean ` |         | If declared, the dropdown displays an display state chevron on the right. |
-| `disabled`              | `disabled`              | ` Boolean ` |         | If declared, the dropdown is not interactive.    |
-| `error`                 | `error`                 | ` Boolean ` |         | If declared in combination with `bordered` property or `helpText` slot content, will apply red color to both. |
-| `inset`                 | `inset`                 | ` Boolean ` |         | If declared, will apply padding around trigger slot content. |
-| `isPopoverVisible`      | `isPopoverVisible`      | ` Boolean ` | false   | If true, the dropdown bib is displayed.          |
-| `matchWidth`            | `matchWidth`            | ` Boolean ` | false   | If declared, the popover and trigger will be set to the same width. |
-| `noHideOnThisFocusLoss` | `noHideOnThisFocusLoss` | ` Boolean ` | false   | If delclared, the dropdown will not hide when moving focus outside the element. |
-| `noToggle`              | `noToggle`              | ` Boolean ` |         | If declared, the trigger will only show the the dropdown bib. |
-| `ready`                 | `ready`                 | ` Boolean ` |         | When false the component API should not be called. |
-| `rounded`               | `rounded`               | ` Boolean ` |         | If declared, will apply border-radius to trigger and default slots. |
+| Property                | Attribute               | Type                    | Default | Description                                      |
+|-------------------------|-------------------------|-------------------------|---------|--------------------------------------------------|
+| `bordered`              | `bordered`              | ` Boolean `             |         | If declared, applies a border around the trigger slot. |
+| `chevron`               | `chevron`               | ` Boolean `             |         | If declared, the dropdown displays an display state chevron on the right. |
+| `disabled`              | `disabled`              | ` Boolean `             |         | If declared, the dropdown is not interactive.    |
+| `error`                 | `error`                 | ` Boolean `             |         | If declared in combination with `bordered` property or `helpText` slot content, will apply red color to both. |
+| `inset`                 | `inset`                 | ` Boolean `             |         | If declared, will apply padding around trigger slot content. |
+| `isPopoverVisible`      | `isPopoverVisible`      | ` Boolean `             | false   | If true, the dropdown bib is displayed.          |
+| `matchWidth`            | `matchWidth`            | ` Boolean `             | false   | If declared, the popover and trigger will be set to the same width. |
+| `modal`                 | `modal`                 | ` String \|\| Boolean ` | false   | If declared, the dropdown will be displayed as a modal on a mobile device at the defined breakpoint, defaulting to 'sm'. |
+| `modalWithTrigger`      | `modalWithTrigger`      | ` String \|\| Boolean ` | false   | If declared, the trigger and dropdown bib will be displayed as a modal on a mobile device at the defined breakpoint, defaulting to 'sm'. |
+| `noHideOnThisFocusLoss` | `noHideOnThisFocusLoss` | ` Boolean `             | false   | If delclared, the dropdown will not hide when moving focus outside the element. |
+| `noToggle`              | `noToggle`              | ` Boolean `             |         | If declared, the trigger will only show the the dropdown bib. |
+| `ready`                 | `ready`                 | ` Boolean `             |         | When false the component API should not be called. |
+| `rounded`               | `rounded`               | ` Boolean `             |         | If declared, will apply border-radius to trigger and default slots. |
 
 ## Methods
 

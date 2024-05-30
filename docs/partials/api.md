@@ -224,6 +224,40 @@ The `inset` property applies a predefined amount of CSS `padding` to the `trigge
 
 </auro-accordion>
 
+#### modal
+
+The `modal` property will make the popover display full screen at a specified breakpoint. If no value is set, `modal` defaults to `sm`.
+
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/modal.html) -->
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/modal.html) -->
+<!-- AURO-GENERATED-CONTENT:END -->
+
+</auro-accordion>
+
+#### modalWithTrigger
+
+The `modalWithTrigger` property will make the trigger and popover display full screen at a specified breakpoint. If no value is set, `modalWithTrigger` defaults to `sm`.
+
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/modalWithTrigger.html) -->
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/modalWithTrigger.html) -->
+<!-- AURO-GENERATED-CONTENT:END -->
+
+</auro-accordion>
+
 #### rounded
 
 The `rounded` property applies `border-radius` CSS to the trigger and default slot content.
@@ -319,7 +353,7 @@ When combined with the `error` property the `helpText` slot content is colored r
 #### show
 
 
-The `show` method may also be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').show()`. This example will execute the `show` method on a `keydown` event with focus in the input element.
+The `show` method may also be called from anywhere in your code by executing `.show()` on the element. This example will execute the `show` method on a `keydown` event with focus in the input element.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/programmaticallyShow.html) -->
@@ -340,7 +374,7 @@ The `show` method may also be called from anywhere in your code by executing `do
 
 The `hide` method can be called from within the default slot content. This is useful for cases such as `auro-select` when the dropdown should be collapsed after making a selection.
 
-The `hide` method may also be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').hide()`.
+The `hide` method may also be called from anywhere in your code by executing `.hide()` on the element.
 
 This example demonstrations collapsing the dropdown by clicking a button within the dropdown bib content.
 
