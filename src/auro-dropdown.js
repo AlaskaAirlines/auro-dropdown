@@ -6,8 +6,11 @@
 /* eslint-disable lit-a11y/click-events-have-key-events, max-lines, lit-a11y/accessible-name, lit-a11y/no-aria-slot */
 
 import { LitElement, html } from "lit";
-import styleCss from "./style-css.js";
 import Popover from "../lib/popover";
+
+import styleCss from "./style-css.js";
+import colorCss from "./color-css.js";
+import tokensCss from "./tokens-css.js";
 
 /**
  * @attr { Boolean } bordered - If declared, applies a border around the trigger slot.
@@ -124,7 +127,11 @@ export class AuroDropdown extends LitElement {
   }
 
   static get styles() {
-    return [styleCss];
+    return [
+      styleCss,
+      colorCss,
+      tokensCss
+    ];
   }
 
   connectedCallback() {
