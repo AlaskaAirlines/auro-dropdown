@@ -1023,3 +1023,25 @@ This example demonstrations collapsing the dropdown by clicking a button within 
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
+
+### Theme Support
+
+The component may be restyled using the following code sample and changing the values of the following token(s).
+
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../src/tokens.scss) -->
+<!-- The below code snippet is automatically added from ./../../src/tokens.scss -->
+
+```scss
+:host {
+  --ds-auro-dropdown-icon-color: var(--ds-color-icon-primary-default, $ds-color-icon-primary-default);
+  --ds-auro-dropdown-help-text-color: var(--ds-color-text-secondary-default, $ds-color-text-secondary-default);
+  --ds-auro-dropdown-label-text-color: var(--ds-color-text-secondary-default, $ds-color-text-secondary-default);
+  --ds-auro-dropdown-popover-background-color: var(--ds-color-container-primary-default, $ds-color-container-primary-default);
+  --ds-auro-dropdown-popover-border-color: transparent;
+  --ds-auro-dropdown-popover-text-color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
+  --ds-auro-dropdown-trigger-background-color: var(--ds-color-container-primary-default, $ds-color-container-primary-default);
+  --ds-auro-dropdown-trigger-border-color: transparent;
+  --ds-auro-dropdown-trigger-text-color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
+}
+```
+<!-- AURO-GENERATED-CONTENT:END -->
