@@ -318,7 +318,6 @@ When combined with the `error` property the `helpText` slot content is colored r
 
 #### show
 
-
 The `show` method may also be called from anywhere in your code by executing `document.querySelector('#idOfTheDropdownElement').show()`. This example will execute the `show` method on a `keydown` event with focus in the input element.
 
 <div class="exampleWrapper">
@@ -402,3 +401,10 @@ This example demonstrations collapsing the dropdown by clicking a button within 
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
+
+### Theme Support
+
+The component may be restyled using the following code sample and changing the values of the following token(s).
+
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../src/tokens.scss) -->
+<!-- AURO-GENERATED-CONTENT:END -->
