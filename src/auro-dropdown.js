@@ -3,10 +3,15 @@
 
 // ---------------------------------------------------------------------
 
-/* eslint-disable lit-a11y/click-events-have-key-events, max-lines, lit-a11y/accessible-name, lit-a11y/no-aria-slot */
+/* eslint-disable lit-a11y/click-events-have-key-events, max-lines, lit-a11y/accessible-name, lit-a11y/no-aria-slot, lit/binding-positions, lit/no-invalid-html */
 
-import { LitElement, html } from "lit";
+import { html } from "lit/static-html.js";
+import { LitElement } from "lit";
 import Popover from "../lib/popover";
+
+import { AuroDependencyVersioning } from '@aurodesignsystem/auro-library/scripts/runtime/dependencyTagVersioning.mjs';
+import { AuroIcon } from '@aurodesignsystem/auro-icon/src/auro-icon.js';
+import iconVersion from './iconVersion';
 
 import styleCss from "./style-css.js";
 import colorCss from "./color-css.js";
@@ -64,6 +69,12 @@ export class AuroDropdown extends LitElement {
     this.ready = false;
     this.tabIndex = 0;
     this.noToggle = false;
+
+    /**
+     * Generate unique names for dependency components.
+     */
+    const versioning = new AuroDependencyVersioning();
+    this.iconTag = versioning.generateTag('auro-icon', iconVersion, AuroIcon);
   }
 
   // function to define props used within the scope of this component
@@ -423,11 +434,13 @@ export class AuroDropdown extends LitElement {
           <div
             id="showStateIcon"
             part="chevron">
-            <auro-icon
+            <${this.iconTag}
               category="interface"
               name="chevron-down"
-              customColor>
-            </auro-icon>
+              customColor
+              ?disabled=${this.disabled}
+              >
+            </${this.iconTag}>
           </div>
         ` : undefined}
       </div>
