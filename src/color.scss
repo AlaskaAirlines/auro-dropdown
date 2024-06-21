@@ -9,7 +9,7 @@
 
 .popover {
   border-color: var(--ds-auro-dropdown-popover-border-color);
-  background-color: var(--ds-auro-dropdown-popover-background-color);
+  background-color: var(--ds-auro-dropdown-popover-container-color);
   box-shadow: -2px 0 5px 2px rgba(0 0 0 / .08), 0 2px 5px 1px rgba(0 0 0 / .08);
   color: var(--ds-auro-dropdown-popover-text-color);
 }
@@ -20,7 +20,7 @@
 
 .trigger {
   border-color: var(--ds-auro-dropdown-trigger-border-color);
-  background-color: var(--ds-auro-dropdown-trigger-background-color);
+  background-color: var(--ds-auro-dropdown-trigger-container-color);
   color: var(--ds-auro-dropdown-trigger-text-color);
 
   &:focus-within,
@@ -36,10 +36,6 @@
   }
 }
 
-#showStateIcon {
-  color: var(--ds-auro-dropdown-icon-color);
-}
-
 .helpText {
   color: var(--ds-auro-dropdown-help-text-color);
 }
@@ -47,7 +43,6 @@
 :host([disabled]) {
   --ds-auro-dropdown-trigger-text-color: var(--ds-color-text-ui-disabled-default, #{$ds-color-text-ui-disabled-default});
   --ds-auro-dropdown-label-text-color: var(--ds-color-text-ui-disabled-default, #{$ds-color-text-ui-disabled-default});
-  --ds-auro-dropdown-icon-color: var(--ds-color-icon-ui-disabled-default, #{$ds-color-icon-ui-disabled-default});
 }
 
 :host([error]) {

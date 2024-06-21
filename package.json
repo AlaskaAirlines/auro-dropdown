@@ -20,13 +20,13 @@
     "node": "^18 || ^20"
   },
   "dependencies": {
+    "@aurodesignsystem/auro-icon": "^5.0.0-beta.1",
     "@popperjs/core": "^2.11.8",
     "chalk": "^5.2.0",
     "lit": "^3.1.4"
   },
   "peerDependencies": {
     "@alaskaairux/design-tokens": "^3.11.0",
-    "@aurodesignsystem/auro-icon": "^4.2.0",
     "@aurodesignsystem/design-tokens": "^4.1.1",
     "@aurodesignsystem/webcorestylesheets": "^5.0.3"
   },
@@ -145,13 +145,14 @@
     "build:docs": "node scripts/generateDocs.mjs",
     "build:sass": "npm-run-all build:sass:component postCss:component sass:render",
     "build:sass:component": "sass --no-source-map src:src",
+    "build:version": "node scripts/version.mjs",
     "build:watch": "nodemon -e scss,js,html --watch src --watch apiExamples/**/* --exec npm run build:dev:assets",
     "bundler": "rollup -c",
     "bundler:test": "rollup -c -w",
     "scssLint": "stylelint \"./src/**/*.scss\"",
     "dev": "concurrently --kill-others \"npm run build:watch\" \"npm run serve\"",
     "dist:js": "copyfiles -u 1 -V './src/**/*.js' ./dist",
-    "esLint": "./node_modules/.bin/eslint src/**/*.js",
+    "esLint": "./node_modules/.bin/eslint src/**/*.js --ignore-pattern 'src/**/*Version.js'",
     "linters": "npm-run-all scssLint esLint",
     "preCommit": "node scripts/pre-commit.mjs",
     "postCss:component": "node scripts/postCss.mjs",
