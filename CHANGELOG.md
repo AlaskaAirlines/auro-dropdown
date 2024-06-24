@@ -1,5 +1,28 @@
 # Semantic Release Automated Changelog
 
+# [3.0.0-beta.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.10.6...v3.0.0-beta.1) (2024-06-24)
+
+
+### Code Refactoring
+
+* remove OnDark style support ([1557e77](https://github.com/AlaskaAirlines/auro-dropdown/commit/1557e77d4aa819b8d276d38548865a9553959604))
+
+
+### Features
+
+* refactor color token structure with tier 3 tokens [#223](https://github.com/AlaskaAirlines/auro-dropdown/issues/223) ([14168c1](https://github.com/AlaskaAirlines/auro-dropdown/commit/14168c184ce7c75341378611930b758d15c22fb5))
+
+
+### Performance Improvements
+
+* **icon:** update to use beta of auro-icon with theme support ([b16fe03](https://github.com/AlaskaAirlines/auro-dropdown/commit/b16fe03630488922c708f69bf69e39e918fc5473))
+* replace hard coded size values with tokens ([d35b4be](https://github.com/AlaskaAirlines/auro-dropdown/commit/d35b4be4872d6f0e88188c435713f118338f10e3))
+
+
+### BREAKING CHANGES
+
+* remove all references to the OnDark API
+
 ## [2.10.6](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.10.5...v2.10.6) (2024-04-04)
 
 
