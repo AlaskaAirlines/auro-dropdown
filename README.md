@@ -39,10 +39,11 @@ For the most up to date information on [UI development browser support](https://
 
 ## Install
 
-<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/usage/componentInstall.md) -->
+<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/usage/componentInstall_esm.md) -->
 [![Build Status](https://img.shields.io/github/actions/workflow/status/AlaskaAirlines/auro-dropdown/testPublish.yml?style=for-the-badge)](https://github.com/AlaskaAirlines/auro-dropdown/actions/workflows/testPublish.yml)
 [![See it on NPM!](https://img.shields.io/npm/v/@aurodesignsystem/auro-dropdown?style=for-the-badge&color=orange)](https://www.npmjs.com/package/@aurodesignsystem/auro-dropdown)
 [![License](https://img.shields.io/npm/l/@aurodesignsystem/auro-dropdown?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
+![ESM supported](https://img.shields.io/badge/ESM-compatible-FFE900?style=for-the-badge)
 
 ```shell
 $ npm i @aurodesignsystem/auro-dropdown
@@ -56,15 +57,6 @@ Installing as a direct, dev or peer dependency is up to the user installing the 
 
 <!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/development/designTokens.md) -->
 The use of any Auro custom element has a dependency on the [Auro Design Tokens](https://auro.alaskaair.com/getting-started/developers/design-tokens).
-
-<!-- AURO-GENERATED-CONTENT:END -->
-
-### CSS Custom Property fallbacks
-
-<!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/partials/usage/cssFallbacks.md) -->
-[CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) are [not supported](https://auro.alaskaair.com/support/custom-properties) in older browsers. For this, fallback properties are pre-generated and included with the npm.
-
-Any update to the Auro Design Tokens will be immediately reflected with browsers that support CSS custom properties, legacy browsers will require updated components with pre-generated fallback properties.
 
 <!-- AURO-GENERATED-CONTENT:END -->
 

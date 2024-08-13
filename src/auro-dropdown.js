@@ -9,7 +9,10 @@ import { html } from "lit/static-html.js";
 import { LitElement } from "lit";
 import Popover from "../lib/popover";
 
+import AuroLibraryRuntimeUtils from '@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs';
+
 import { AuroDependencyVersioning } from '@aurodesignsystem/auro-library/scripts/runtime/dependencyTagVersioning.mjs';
+
 import { AuroIcon } from '@aurodesignsystem/auro-icon/src/auro-icon.js';
 import iconVersion from './iconVersion';
 
@@ -69,6 +72,11 @@ export class AuroDropdown extends LitElement {
     this.ready = false;
     this.tabIndex = 0;
     this.noToggle = false;
+
+    /**
+     * @private
+     */
+    this.runtimeUtils = new AuroLibraryRuntimeUtils();
 
     /**
      * Generate unique names for dependency components.
@@ -221,6 +229,9 @@ export class AuroDropdown extends LitElement {
   }
 
   firstUpdated() {
+    // Add the tag name as an attribute if it is different than the component name
+    this.runtimeUtils.handleComponentTagRename(this, 'auro-dropdown');
+
     this.fixWidth();
 
     this.trigger = this.shadowRoot.querySelector(`#trigger`);
