@@ -9,7 +9,7 @@
 // Support for fallback values
 @import "./../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables.scss";
 
-/* stylelint-disable no-descending-specificity */
+/* stylelint-disable no-descending-specificity, selector-max-attribute */
 
 .popover {
   display: inline-block;
@@ -53,13 +53,13 @@
   align-items: center;
   margin-left: var(--ds-size-100, $ds-size-100);
 
-  auro-icon {
+  [auro-icon] {
     height: var(--ds-size-300, $ds-size-300);
     line-height: var(--ds-size-300, $ds-size-300);
   }
 
   &[data-expanded='true'] {
-    auro-icon {
+    [auro-icon] {
       transform: rotate(-180deg);
     }
   }
