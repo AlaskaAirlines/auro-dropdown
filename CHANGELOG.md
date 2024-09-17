@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [3.0.0-beta.5](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.0.0-beta.4...v3.0.0-beta.5) (2024-09-17)
+
+
+### Bug Fixes
+
+* **theming:** resolve minor color theming issues [#223](https://github.com/AlaskaAirlines/auro-dropdown/issues/223) ([bb61dcb](https://github.com/AlaskaAirlines/auro-dropdown/commit/bb61dcb54f9f60a319dd30dabde09153b4a9607f))
+
 # [3.0.0-beta.4](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.0.0-beta.3...v3.0.0-beta.4) (2024-08-26)
 
 
