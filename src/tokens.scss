@@ -1,8 +1,9 @@
 :host {
   --ds-auro-dropdown-help-text-color: var(--ds-color-text-secondary-default, $ds-color-text-secondary-default);
   --ds-auro-dropdown-label-text-color: var(--ds-color-text-secondary-default, $ds-color-text-secondary-default);
-  --ds-auro-dropdown-popover-container-color: var(--ds-color-container-primary-default, $ds-color-container-primary-default);
   --ds-auro-dropdown-popover-border-color: transparent;
+  --ds-auro-dropdown-popover-boxshadow-color: rgba(0 0 0 / .08);
+  --ds-auro-dropdown-popover-container-color: var(--ds-color-container-primary-default, $ds-color-container-primary-default);
   --ds-auro-dropdown-popover-text-color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
   --ds-auro-dropdown-trigger-container-color: var(--ds-color-container-primary-default, $ds-color-container-primary-default);
   --ds-auro-dropdown-trigger-border-color: transparent;
