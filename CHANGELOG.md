@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [3.0.0-beta.6](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.0.0-beta.5...v3.0.0-beta.6) (2024-09-18)
+
+
+### Performance Improvements
+
+* refactor custom component registration config ([1ec40bc](https://github.com/AlaskaAirlines/auro-dropdown/commit/1ec40bc2a7b75739eb2626b571ee34932f1d2f31))
+
 ## [2.10.6](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.10.5...v2.10.6) (2024-04-04)
 
 
