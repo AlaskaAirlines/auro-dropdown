@@ -3,7 +3,7 @@
 
 // ---------------------------------------------------------------------
 
-/* eslint-disable lit-a11y/click-events-have-key-events, max-lines, lit-a11y/accessible-name, lit-a11y/no-aria-slot, lit/binding-positions, lit/no-invalid-html */
+/* eslint-disable max-lines, lit-a11y/accessible-name, lit-a11y/no-aria-slot, lit/binding-positions, lit/no-invalid-html */
 
 import { html } from "lit/static-html.js";
 import { LitElement } from "lit";
@@ -275,7 +275,7 @@ export class AuroDropdown extends LitElement {
 
       if (key === ' ' || key === 'enter') {
         event.preventDefault();
-        toggleDropdown(); /* eslint-disable-line no-unused-expressions */
+        toggleDropdown();
       }
     };
 
