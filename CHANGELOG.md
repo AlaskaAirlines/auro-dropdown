@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [3.0.0-beta.7](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.0.0-beta.6...v3.0.0-beta.7) (2024-09-24)
+
+
+### Performance Improvements
+
+* update dependencies ([3098c34](https://github.com/AlaskaAirlines/auro-dropdown/commit/3098c34f7ae2db13928e27505eb3e0b86abc2a60))
+
+
+### BREAKING CHANGES
+
+* trigger major release for theming support #223
+
 ## [2.10.6](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.10.5...v2.10.6) (2024-04-04)
 
 
