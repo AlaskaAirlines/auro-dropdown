@@ -7,14 +7,14 @@
 
 import { html } from "lit/static-html.js";
 import { LitElement } from "lit";
-import Popover from "../lib/popover";
+import Popover from "../lib/popover.js";
 
 import AuroLibraryRuntimeUtils from '@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs';
 
 import { AuroDependencyVersioning } from '@aurodesignsystem/auro-library/scripts/runtime/dependencyTagVersioning.mjs';
 
 import { AuroIcon } from '@aurodesignsystem/auro-icon/src/auro-icon.js';
-import iconVersion from './iconVersion';
+import iconVersion from './iconVersion.js';
 
 import styleCss from "./style-css.js";
 import colorCss from "./color-css.js";
