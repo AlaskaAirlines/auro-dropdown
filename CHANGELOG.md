@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.0.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.0.0...v3.0.1) (2024-10-08)
+
+
+### Bug Fixes
+
+* moves auro library to dependencies in package.json [#247](https://github.com/AlaskaAirlines/auro-dropdown/issues/247) ([dbf6a18](https://github.com/AlaskaAirlines/auro-dropdown/commit/dbf6a18e7787ecc233a2ff2f81bc710d624c59fc))
+
 # [3.0.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v2.10.6...v3.0.0) (2024-09-30)
 
 
