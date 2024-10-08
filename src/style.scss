@@ -30,6 +30,10 @@
   align-items: center;
   border-width: 1px;
   border-style: solid;
+
+  &:focus {
+    outline-style: none;
+  }
 }
 
 @media (hover: hover) {
