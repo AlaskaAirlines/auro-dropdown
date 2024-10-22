@@ -1,6 +1,8 @@
 /* eslint-disable jsdoc/require-jsdoc, no-magic-numbers, no-param-reassign */
+import { AuroDropdown } from '../src/auro-dropdown.js';
 
-// import { auroMenuResetExample } from '../apiExamples/reset';
+AuroDropdown.register();
+AuroDropdown.register('custom-dropdown');
 
 export function initExamples(initCount) {
   initCount = initCount || 0;
