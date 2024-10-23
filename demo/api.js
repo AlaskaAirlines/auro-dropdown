@@ -2,6 +2,9 @@
 
 import { showExample } from './../apiExamples/programmaticallyShow.js';
 import { hideExample } from './../apiExamples/programmaticallyHide.js';
+import { AuroDropdown } from '../src/auro-dropdown.js';
+
+AuroDropdown.register();
 
 export function initExamples(initCount) {
   initCount = initCount || 0;
