@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [3.1.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.0.2...v3.1.0) (2024-10-25)
+
+
+### Features
+
+* **api:** add register static method [#251](https://github.com/AlaskaAirlines/auro-dropdown/issues/251) ([5f06c2f](https://github.com/AlaskaAirlines/auro-dropdown/commit/5f06c2fbbd7680606f3aefcb96f3057894d3e67b))
+
 ## [3.0.2](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.0.1...v3.0.2) (2024-10-08)
 
 
