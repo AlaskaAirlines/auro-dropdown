@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.1.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.1.0...v3.1.1) (2024-10-30)
+
+
+### Bug Fixes
+
+* add file extension for SSR support ([840d450](https://github.com/AlaskaAirlines/auro-dropdown/commit/840d450a2efd851258b9587c849d69d367aa0407))
+
 # [3.1.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.0.2...v3.1.0) (2024-10-25)
 
 
