@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.1.3](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.1.2...v3.1.3) (2024-10-30)
+
+
+### Bug Fixes
+
+* change popper js import ([44b7a17](https://github.com/AlaskaAirlines/auro-dropdown/commit/44b7a175611f92cc1df8875ce623955c7268b9c3))
+
 ## [3.1.2](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.1.1...v3.1.2) (2024-10-30)
 
 
