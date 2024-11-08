@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@aurodesignsystem/auro-icon": "^5.0.0",
-    "@aurodesignsystem/auro-library": "^2.8.0",
+    "@aurodesignsystem/auro-library": "^3.0.1",
     "@popperjs/core": "^2.11.8",
     "chalk": "^5.2.0",
     "lit": "^3.2.0"

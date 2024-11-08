@@ -4,7 +4,7 @@ The README.md file is a compiled document. No edits should be made directly to t
 README.md is created by running `npm run build:docs`.
 
 This file is generated based on a template fetched from
-`https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/README.md`
+`https://raw.githubusercontent.com/AlaskaAirlines/WC-Generator/master/componentDocs/README_updated_paths.md`
 and copied to `./componentDocs/README.md` each time the the docs are compiled.
 
 The following sections are editable by making changes to the following files:
@@ -19,14 +19,14 @@ The following sections are editable by making changes to the following files:
 
 # Dropdown
 
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../docs/partials/description.md) -->
-<!-- The below content is automatically added from ./../docs/partials/description.md -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./docs/partials/description.md) -->
+<!-- The below content is automatically added from ./docs/partials/description.md -->
 The `auro-dropdown` component is a trigger and dropdown element combination intended to be used with dropdown content that is interactive. `auro-dropdown` is content agnostic and any valid HTML can be placed in either the trigger or the dropdown.
 
 _Note: if the dropdown content in your implementation is not interactive (e.g. a tooltip) [auro-popover](http://auro.alaskaair.com/components/auro/popover) may better serve your needs._
 <!-- AURO-GENERATED-CONTENT:END -->
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../docs/partials/readmeAddlInfo.md) -->
-<!-- The below content is automatically added from ./../docs/partials/readmeAddlInfo.md -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./docs/partials/readmeAddlInfo.md) -->
+<!-- The below content is automatically added from ./docs/partials/readmeAddlInfo.md -->
 <!-- AURO-GENERATED-CONTENT This file is to be used for any additional content that should be included in the README.md which is specific to this component. -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
@@ -74,8 +74,8 @@ import "@aurodesignsystem/auro-dropdown";
 
 <!-- AURO-GENERATED-CONTENT:END -->
 **Reference component in HTML**
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/basic.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/basic.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./apiExamples/basic.html) -->
+<!-- The below code snippet is automatically added from ./apiExamples/basic.html -->
 
 ```html
 <auro-dropdown aria-label="custom label">
@@ -110,8 +110,8 @@ In cases where the project is not able to process JS assets, there are pre-proce
 
 ## auro-dropdown use cases
 
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../docs/partials/useCases.md) -->
-<!-- The below content is automatically added from ./../docs/partials/useCases.md -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./docs/partials/useCases.md) -->
+<!-- The below content is automatically added from ./docs/partials/useCases.md -->
 The `auro-dropdown` element should be used in situations where users may:
 
 * interact with an element to get clarification on content offering
@@ -123,8 +123,8 @@ The `auro-dropdown` element should be used in situations where users may:
 
 ### Default auro-dropdown
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/basic.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/basic.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./apiExamples/basic.html) -->
+<!-- The below code snippet is automatically added from ./apiExamples/basic.html -->
 
 ```html
 <auro-dropdown aria-label="custom label">

@@ -3,17 +3,17 @@ The index.md file is a compiled document. No edits should be made directly to th
 
 index.md is created by running `npm run build:markdownDocs`.
 
-This file is generated based on a template fetched from `./docs/partials/index.md`
+This file is generated based on a template fetched from `../docs/partials/index.md`
 -->
 
 # Dropdown
 
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./description.md) -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=../docs/partials/description.md) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## Dropdown use cases
 
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./useCases.md) -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=../docs/partials/useCases.md) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 ## Accessibility support
 
@@ -30,13 +30,13 @@ Not including one of the above options will result in your UI being non-complian
 This first common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle` and `chevron`. Additionally the `aria-label` attribute is used to define a string value that labels an interactive element.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/common.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/common.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/common.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/common.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -46,13 +46,13 @@ This first common example uses the default `auro-dropdown` element with the attr
 This common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle` and `chevron`. Additionally the `aria-labelledby` attribute to identify the element that labels the element it is applied to.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/commonLabelledby.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/commonLabelledby.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/commonLabelledby.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/commonLabelledby.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -63,13 +63,13 @@ This common example uses the default `auro-dropdown` element with the attributes
 This common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle` and `chevron`. Additionally the `slot` content container to define a string value that labels the interactive element.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/commonSlot.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/commonSlot.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/commonSlot.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/commonSlot.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -79,13 +79,13 @@ This common example uses the default `auro-dropdown` element with the attributes
 This common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle` and `chevron`. Additionally the trigger is full width of the containing element and the popover content is set to a width wider than the trigger.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/widerPopover.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/widerPopover.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/widerPopover.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/widerPopover.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -95,13 +95,13 @@ This common example uses the default `auro-dropdown` element with the attributes
 This common example uses the default `auro-dropdown` element with the attributes of `bordered` `rounded` `inset` `toggle` and `chevron`. Additionally  `matchWidth` attribute is used to make the popover match the width of the trigger.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/commonMatchWidth.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/commonMatchWidth.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/commonMatchWidth.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/commonMatchWidth.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -136,11 +136,11 @@ AuroDropdown.register('custom-dropdown');
 This will create a new custom element that you can use in your HTML that will function identically to the `<auro-dropdown>` element.
 
 <div class="exampleWrapper exampleWrapper--flex">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/custom.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=../apiExamples/custom.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/custom.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=../apiExamples/custom.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
