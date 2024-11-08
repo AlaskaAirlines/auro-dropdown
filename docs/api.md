@@ -18,7 +18,7 @@
 | `isPopoverVisible`      | `isPopoverVisible`      | ` Boolean ` | false   | If true, the dropdown bib is displayed.          |
 | `matchWidth`            | `matchWidth`            | ` Boolean ` | false   | If declared, the popover and trigger will be set to the same width. |
 | `noHideOnThisFocusLoss` | `noHideOnThisFocusLoss` | ` Boolean ` | false   | If delclared, the dropdown will not hide when moving focus outside the element. |
-| `noToggle`              | `noToggle`              | ` Boolean ` |         | If declared, the trigger will only show the the dropdown bib. |
+| `noToggle`              | `noToggle`              | ` Boolean ` |         | If declared, the trigger will only show the dropdown bib. |
 | `ready`                 | `ready`                 | ` Boolean ` |         | When false the component API should not be called. |
 | `rounded`               | `rounded`               | ` Boolean ` |         | If declared, will apply border-radius to trigger and default slots. |
 

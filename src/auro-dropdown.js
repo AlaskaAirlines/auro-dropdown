@@ -29,7 +29,7 @@ import tokensCss from "./tokens-css.js";
  * @attr { Boolean } matchWidth - If declared, the popover and trigger will be set to the same width.
  * @attr { Boolean } inset - If declared, will apply padding around trigger slot content.
  * @attr { Boolean } rounded - If declared, will apply border-radius to trigger and default slots.
- * @attr { Boolean } noToggle - If declared, the trigger will only show the the dropdown bib.
+ * @attr { Boolean } noToggle - If declared, the trigger will only show the dropdown bib.
  * @attr { Boolean } noHideOnThisFocusLoss - If delclared, the dropdown will not hide when moving focus outside the element.
  * @prop { Boolean } isPopoverVisible - If true, the dropdown bib is displayed.
  * @prop { Boolean } ready - When false the component API should not be called.
