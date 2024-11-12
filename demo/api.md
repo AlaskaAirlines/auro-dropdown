@@ -1032,6 +1032,8 @@ The component may be restyled using the following code sample and changing the v
 <!-- The below code snippet is automatically added from ./../src/tokens.scss -->
 
 ```scss
+@import "./../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables";
+
 :host {
   --ds-auro-dropdown-help-text-color: var(--ds-color-text-secondary-default, $ds-color-text-secondary-default);
   --ds-auro-dropdown-label-text-color: var(--ds-color-text-secondary-default, $ds-color-text-secondary-default);

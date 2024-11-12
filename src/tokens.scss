@@ -1,3 +1,5 @@
+@import "./../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables";
+
 :host {
   --ds-auro-dropdown-help-text-color: var(--ds-color-text-secondary-default, $ds-color-text-secondary-default);
   --ds-auro-dropdown-label-text-color: var(--ds-color-text-secondary-default, $ds-color-text-secondary-default);
