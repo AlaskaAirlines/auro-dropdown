@@ -175,6 +175,14 @@ export class AuroDropdown extends LitElement {
 
   /**
    * @private
+   * @returns {void} Exposes CSS parts for styling from parent components.
+   */
+  exposeCssParts() {
+    this.setAttribute('exportparts', 'trigger:dropdownTrigger, chevron:dropdownChevron, helpText:dropdownHelpText, popover:dropdownPopover');
+  }
+
+  /**
+   * @private
    * @returns {void} Makes dropdown content width match the trigger.
    */
   fixWidth() {
