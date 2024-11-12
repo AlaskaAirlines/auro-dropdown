@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+## [3.1.4](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.1.3...v3.1.4) (2024-11-12)
+
+
+### Bug Fixes
+
+* update markdown partial pathing to consume new auro lib [#259](https://github.com/AlaskaAirlines/auro-dropdown/issues/259) ([6029837](https://github.com/AlaskaAirlines/auro-dropdown/commit/60298371e0a91f06f557f96383aebe35e3faa783))
+
+
+### Performance Improvements
+
+* update dependencies ([ec397b9](https://github.com/AlaskaAirlines/auro-dropdown/commit/ec397b9e3e2699bac9a8a40d3d2e4591aea8acd0))
+
 ## [3.1.3](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.1.2...v3.1.3) (2024-10-30)
 
 
