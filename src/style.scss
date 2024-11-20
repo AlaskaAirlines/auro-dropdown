@@ -9,7 +9,7 @@
 // Support for fallback values
 @import "./../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables";
 
-/* stylelint-disable no-descending-specificity, selector-max-attribute */
+/* stylelint-disable no-descending-specificity, selector-max-attribute, declaration-no-important */
 
 .popover {
   display: inline-block;
@@ -84,6 +84,19 @@
 :host([data-show]) {
   .popover {
     z-index: var(--ds-depth-tooltip, $ds-depth-tooltip);
+  }
+}
+
+:host([fullScreenPopover]) {
+  .popover {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    margin-bottom: var(--ds-size-200, $ds-size-200);
+    overflow-y: auto;
+    transform: unset !important;
   }
 }
 

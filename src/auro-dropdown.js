@@ -30,7 +30,8 @@ import tokensCss from "./tokens-css.js";
  * @attr { Boolean } inset - If declared, will apply padding around trigger slot content.
  * @attr { Boolean } rounded - If declared, will apply border-radius to trigger and default slots.
  * @attr { Boolean } noToggle - If declared, the trigger will only show the dropdown bib.
- * @attr { Boolean } noHideOnThisFocusLoss - If delclared, the dropdown will not hide when moving focus outside the element.
+ * @attr { Boolean } noHideOnThisFocusLoss - If declared, the dropdown will not hide when moving focus outside the element.
+ * @prop { Boolean } fullScreenPopover - If true, the dropdown will fill the entire viewport when opened.
  * @prop { Boolean } isPopoverVisible - If true, the dropdown bib is displayed.
  * @prop { Boolean } ready - When false the component API should not be called.
  * @slot - Default slot for the popover content.
@@ -50,6 +51,7 @@ export class AuroDropdown extends LitElement {
   constructor() {
     super();
 
+    this.fullScreenPopover = false;
     this.isPopoverVisible = false;
     this.matchWidth = false;
     this.noHideOnThisFocusLoss = false;
@@ -125,8 +127,9 @@ export class AuroDropdown extends LitElement {
         type: Boolean,
         reflect: true
       },
-      isPopoverVisible: { type: Boolean },
-      ready:            { type: Boolean },
+      fullScreenPopover:   { type: Boolean },
+      isPopoverVisible:    { type: Boolean },
+      ready:               { type: Boolean },
 
       /**
        * @private
