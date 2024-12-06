@@ -75,6 +75,10 @@
   line-height: var(--ds-text-body-size-default, $ds-text-body-size-default);
 }
 
+:host {
+  display: inherit;
+}
+
 :host(:not([data-show])) {
   .popover {
     display: none;
