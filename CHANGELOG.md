@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.2.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.2.0...v3.2.1) (2024-12-06)
+
+
+### Bug Fixes
+
+* update display property for dependent components [#267](https://github.com/AlaskaAirlines/auro-dropdown/issues/267) ([b229f79](https://github.com/AlaskaAirlines/auro-dropdown/commit/b229f79ebcd876db5c833b9deda88309429e1f35))
+
 # [3.2.0](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.1.4...v3.2.0) (2024-11-13)
 
 
