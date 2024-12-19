@@ -53,7 +53,7 @@ export class AuroDropdown extends LitElement {
     this.isPopoverVisible = false;
     this.matchWidth = false;
     this.noHideOnThisFocusLoss = false;
-    this.resizeObserver = null;
+    this.resizeObserver = undefined;
 
     this.privateDefaults();
   }
@@ -172,6 +172,8 @@ export class AuroDropdown extends LitElement {
 
   disconnectedCallback() {
     super.disconnectedCallback();
+
+    this.resizeObserver?.unobserve(this.trigger);
   }
 
   /**
@@ -368,7 +370,7 @@ export class AuroDropdown extends LitElement {
       this.triggerChevron.removeAttribute('data-expanded');
     }
     this.dispatchEventDropdownToggle();
-    this.resizeObserver.unobserve(this.trigger);
+    this.resizeObserver?.unobserve(this.trigger);
   }
 
   /**
@@ -393,7 +395,7 @@ export class AuroDropdown extends LitElement {
 
       this.handleFocusLoss();
       this.dispatchEventDropdownToggle();
-      this.resizeObserver.observe(this.trigger);
+      this.resizeObserver?.observe(this.trigger);
     }
   }
 
