@@ -53,6 +53,7 @@ export class AuroDropdown extends LitElement {
     this.isPopoverVisible = false;
     this.matchWidth = false;
     this.noHideOnThisFocusLoss = false;
+    this.resizeObserver = null;
 
     this.privateDefaults();
   }
@@ -337,6 +338,8 @@ export class AuroDropdown extends LitElement {
     });
 
     this.notifyReady();
+
+    this.setUpResizeObserver();
   }
 
   /**
@@ -365,6 +368,7 @@ export class AuroDropdown extends LitElement {
       this.triggerChevron.removeAttribute('data-expanded');
     }
     this.dispatchEventDropdownToggle();
+    this.resizeObserver.unobserve(this.trigger);
   }
 
   /**
@@ -388,8 +392,8 @@ export class AuroDropdown extends LitElement {
       }
 
       this.handleFocusLoss();
-
       this.dispatchEventDropdownToggle();
+      this.resizeObserver.observe(this.trigger);
     }
   }
 
@@ -436,6 +440,20 @@ export class AuroDropdown extends LitElement {
   updated(changedProperties) {
     if (changedProperties.has('isPopoverVisible')) {
       this.trigger.setAttribute('aria-expanded', this.isPopoverVisible);
+    }
+  }
+
+  /**
+   * Internal method to set up the resize observer. When an element is resized, we update
+   * the popper instance.
+   * @private
+   * @return {void}
+   */
+  setUpResizeObserver() {
+    if ('ResizeObserver' in window) {
+      this.resizeObserver = new ResizeObserver(() => {
+        this.popper.triggerUpdate();
+      });
     }
   }
 
