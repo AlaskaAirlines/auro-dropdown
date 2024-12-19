@@ -172,8 +172,6 @@ export class AuroDropdown extends LitElement {
 
   disconnectedCallback() {
     super.disconnectedCallback();
-
-    this.resizeObserver?.unobserve(this.trigger);
   }
 
   /**
