@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.2.2](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.2.1...v3.2.2) (2024-12-19)
+
+
+### Bug Fixes
+
+* add resizeObserver to trigger popper update [#270](https://github.com/AlaskaAirlines/auro-dropdown/issues/270) ([bac19b1](https://github.com/AlaskaAirlines/auro-dropdown/commit/bac19b1a4bc6fb8483d83fdc40f05904a3d93441))
+
 ## [3.2.1](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.2.0...v3.2.1) (2024-12-06)
 
 
