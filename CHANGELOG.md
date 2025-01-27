@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.2.4](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.2.3...v3.2.4) (2025-01-27)
+
+
+### Performance Improvements
+
+* remove auro-buttons from index page demos [#274](https://github.com/AlaskaAirlines/auro-dropdown/issues/274) ([e620091](https://github.com/AlaskaAirlines/auro-dropdown/commit/e620091e2fdbd4ebc333d7a06df31c6ba1ee4286))
+
 ## [3.2.3](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.2.2...v3.2.3) (2024-12-23)
 
 
