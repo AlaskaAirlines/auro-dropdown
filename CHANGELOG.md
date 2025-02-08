@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.2.5](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.2.4...v3.2.5) (2025-02-08)
+
+
+### Performance Improvements
+
+* update dependencies ([85b770a](https://github.com/AlaskaAirlines/auro-dropdown/commit/85b770ad795a4095d3bcd3bf56b05ec39fd17979))
+
 ## [3.2.4](https://github.com/AlaskaAirlines/auro-dropdown/compare/v3.2.3...v3.2.4) (2025-01-27)
 
 
